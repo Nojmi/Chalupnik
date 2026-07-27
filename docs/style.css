@@ -125,13 +125,16 @@ body {
   line-height: 1.45;
 }
 
-.form-group { display: flex; flex-direction: column; gap: .3rem; }
+.form-group { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
 .form-group label {
   font-size: .75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .06em;
   color: rgba(255,255,255,.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .form-group input {
