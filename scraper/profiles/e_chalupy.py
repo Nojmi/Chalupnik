@@ -36,6 +36,16 @@ Poznámky k portálu:
   hory, Šumava, Krkonoše): žádná kolize (žádný tag nematchne obě
   regexy současně, např. "3 apartmány" nematchne ani jednu - správně,
   není to ani kapacita ani ložnice).
+- "Pronajímá se celé" (entire_property): žádné bool pole přímo v
+  odpovědi není (přestože filtr "entireProperty" existuje ve
+  vyhledávacím formuláři portálu), ale item["units"] to spolehlivě
+  strukturálně kóduje - ověřeno na stejném vzorku ~2500 nabídek:
+    - units.items je list (víc samostatných jednotek) -> False
+    - units.header text obsahuje "pronajímá celý"          -> True
+    - units.header text obsahuje "samostatná část"         -> False
+      (pronajímá se jen část objektu, může být přítomen majitel)
+    - jinak (typicky prázdný header, žádné items)           -> None
+  Žádná kolize mezi těmito třemi vzory na testovaném vzorku.
 """
 
 import json
@@ -125,6 +135,23 @@ def _extract_price(price_text: str | None) -> float | None:
     return float(match.group(1).replace(" ", ""))
 
 
+def _extract_entire_property(units: dict | None) -> tuple[bool | None, str]:
+    """Returns (entire_property, header_text_used) - header kept for raw_extra/debugging."""
+    if not units:
+        return None, ""
+
+    if isinstance(units.get("items"), list) and units["items"]:
+        return False, ""
+
+    header = units.get("header") or {}
+    header_text = header.get("desktop") or header.get("mobile") or ""
+    if "pronajímá celý" in header_text:
+        return True, header_text
+    if "samostatná část" in header_text:
+        return False, header_text
+    return None, header_text
+
+
 def _parse_item(item: dict) -> Listing:
     slug = item.get("slug", "")
     item_id = item.get("id")
@@ -137,6 +164,7 @@ def _parse_item(item: dict) -> Listing:
     location = ", ".join(t for t in (area_title, area2_title) if t)
 
     capacity, bedrooms = _extract_capacity_bedrooms(item.get("tagsFeatured") or [])
+    entire_property, units_header = _extract_entire_property(item.get("units"))
 
     images = item.get("images") or []
     image_url = f"{BASE_URL}/foto/{images[0]['src']}" if images and images[0].get("src") else None
@@ -152,6 +180,7 @@ def _parse_item(item: dict) -> Listing:
         price_unit=item.get("priceLabel"),
         amenities=list(item.get("tags") or []),
         image_url=image_url,
+        entire_property=entire_property,
         raw_extra={
             "id": item_id,
             "tags_featured": item.get("tagsFeatured") or [],
@@ -162,6 +191,7 @@ def _parse_item(item: dict) -> Listing:
             "gps": item.get("gps"),
             "rating": item.get("rating"),
             "reviews": item.get("reviews"),
+            "units_header": units_header,
         },
     )
 

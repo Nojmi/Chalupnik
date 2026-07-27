@@ -57,6 +57,10 @@ def matches(listing: Listing, criteria: dict) -> bool:
             if req.lower() not in listing_amenities_lower:
                 return False
 
+    if criteria.get("entire_property_only") and listing.entire_property is not None:
+        if not listing.entire_property:
+            return False
+
     return True
 
 

@@ -129,9 +129,10 @@ function getFilters() {
   const bedrooms     = parseInt(document.getElementById("f-bedrooms").value)     || null;
   const bedroomsMax  = parseInt(document.getElementById("f-bedrooms-max").value) || null;
   const maxPrice     = parseFloat(document.getElementById("f-maxprice").value)   || null;
-  const amenities    = [...document.querySelectorAll(".amenity-check input:checked")]
+  const entireProperty = document.getElementById("f-entire-property").checked;
+  const amenities    = [...document.querySelectorAll(".amenity-group .amenity-check input:checked")]
     .map((cb) => cb.value.toLowerCase());
-  return { location, capacity, capacityMax, bedrooms, bedroomsMax, maxPrice, amenities };
+  return { location, capacity, capacityMax, bedrooms, bedroomsMax, maxPrice, entireProperty, amenities };
 }
 
 function applyFilters() {
@@ -155,6 +156,9 @@ function applyFilters() {
     if (f.maxPrice != null && l.price != null) {
       if (l.price > f.maxPrice) return false;
     }
+    if (f.entireProperty && l.entire_property != null) {
+      if (!l.entire_property) return false;
+    }
     if (f.amenities.length) {
       const has = (l.amenities || []).map((a) => a.toLowerCase());
       if (!f.amenities.every((a) => has.includes(a))) return false;
@@ -174,7 +178,8 @@ function resetFilters() {
   document.getElementById("f-bedrooms").value      = "";
   document.getElementById("f-bedrooms-max").value  = "";
   document.getElementById("f-maxprice").value      = "";
-  document.querySelectorAll(".amenity-check input").forEach((cb) => (cb.checked = false));
+  document.getElementById("f-entire-property").checked = false;
+  document.querySelectorAll(".amenity-group .amenity-check input").forEach((cb) => (cb.checked = false));
   renderCards(allListings);
 }
 
