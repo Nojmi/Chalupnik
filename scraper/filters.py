@@ -1,4 +1,14 @@
+import re
+import unicodedata
+
 from scraper.models import Listing
+
+
+def _slugify(text: str) -> str:
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
+    text = text.lower().strip()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return text.strip("-")
 
 
 def matches(listing: Listing, criteria: dict) -> bool:
@@ -10,7 +20,18 @@ def matches(listing: Listing, criteria: dict) -> bool:
     """
     location = criteria.get("location")
     if location and listing.location is not None:
-        if not listing.raw_extra.get("location_prefiltered"):
+        area_slug = listing.raw_extra.get("area2_slug")
+        if area_slug:
+            # Profile resolved an exact region/area code (e.g. e-chalupy.cz's
+            # area2) - compare slugs precisely instead of a fuzzy substring
+            # match against the human-readable location text.
+            if _slugify(location) != area_slug:
+                return False
+        elif listing.raw_extra.get("location_prefiltered"):
+            # Profile already scoped the fetch by location server-side but
+            # didn't give us a slug to compare exactly - trust it.
+            pass
+        else:
             if location.lower() not in listing.location.lower():
                 return False
 
