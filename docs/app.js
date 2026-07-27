@@ -161,8 +161,12 @@ function applyFilters() {
       if (!l.entire_property) return false;
     }
     if (f.amenities.length) {
+      // Substring match (not exact) - e.g. "bazén" also matches a future
+      // "bazén - venkovní"/"bazén - vnitřní" tag variant, should the portál
+      // ever start splitting it that way (currently it doesn't).
       const has = (l.amenities || []).map((a) => a.toLowerCase());
-      if (!f.amenities.every((a) => has.includes(a))) return false;
+      const matchesAll = f.amenities.every((req) => has.some((tag) => tag.includes(req)));
+      if (!matchesAll) return false;
     }
     return true;
   });
