@@ -62,7 +62,7 @@ jobs:
           CRIT_AMENITIES: ${{ github.event.inputs.amenities }}
           CRIT_DATE_FROM: ${{ github.event.inputs.date_from }}
           CRIT_DATE_TO: ${{ github.event.inputs.date_to }}
-        run: python scraper/main.py
+        run: python -m scraper.main
 
       - name: Commit and push results
         run: |
