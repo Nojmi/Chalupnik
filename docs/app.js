@@ -21,8 +21,9 @@ async function loadData() {
     const ts = data.generated_at
       ? new Date(data.generated_at).toLocaleString("cs-CZ")
       : "–";
+    const location = data.criteria && data.criteria.location;
     metaEl.textContent =
-      `Poslední běh: ${ts}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
+      `Poslední běh: ${ts}  |  Lokalita: ${location || "nezadána"}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
 
     renderCards(allListings);
   } catch (err) {

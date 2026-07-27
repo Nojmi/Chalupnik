@@ -16,13 +16,14 @@
         <span class="header-logo">&#9978;</span>
         <div>
           <h1 class="site-title">Chalupník</h1>
-          <p class="site-tagline">Hledač chat a chalup k pronájmu v Česku</p>
+          <p class="site-tagline">Hledač chat, chalup, srubů a roubenek k pronájmu v Česku</p>
         </div>
       </div>
       <a
         class="btn-run-workflow"
         href="https://github.com/Nojmi/Chalupnik/actions/workflows/scrape.yml"
         target="_blank"
+        aria-disabled="true"
         rel="noopener noreferrer"
       >
         Spustit nové hledání ↗
@@ -75,16 +76,32 @@
       <label class="amenity-check"><input type="checkbox" id="f-entire-property" /> Jen celé objekty</label>
 
       <fieldset class="amenity-group">
-        <legend>Vybavení</legend>
+        <legend>Vnitřní vybavení</legend>
+        <label class="amenity-check"><input type="checkbox" value="sauna" /> Sauna</label>
+        <label class="amenity-check"><input type="checkbox" value="společenská místnost" /> Spol. místnost</label>
+        <label class="amenity-check"><input type="checkbox" value="myčka nádobí" /> Myčka nádobí</label>
+        <label class="amenity-check"><input type="checkbox" value="lednička" /> Lednička</label>
+        <label class="amenity-check"><input type="checkbox" value="klimatizace" /> Klimatizace</label>
+        <label class="amenity-check"><input type="checkbox" value="televize" /> Televize</label>
+        <label class="amenity-check"><input type="checkbox" value="wifi" /> Wifi</label>
+      </fieldset>
+
+      <fieldset class="amenity-group">
+        <legend>Venkovní vybavení</legend>
         <label class="amenity-check"><input type="checkbox" value="bazén" /> Bazén</label>
         <label class="amenity-check"><input type="checkbox" value="vířivka" /> Vířivka</label>
-        <label class="amenity-check"><input type="checkbox" value="sauna" /> Sauna</label>
         <label class="amenity-check"><input type="checkbox" value="krb" /> Krb</label>
-        <label class="amenity-check"><input type="checkbox" value="parkování" /> Parkování</label>
-        <label class="amenity-check"><input type="checkbox" value="společenská místnost" /> Spol. místnost</label>
         <label class="amenity-check"><input type="checkbox" value="na samotě" /> Na samotě</label>
         <label class="amenity-check"><input type="checkbox" value="u lesa" /> U lesa</label>
+        <label class="amenity-check"><input type="checkbox" value="pískoviště" /> Pískoviště</label>
+        <label class="amenity-check"><input type="checkbox" value="ohniště" /> Ohniště</label>
+        <label class="amenity-check"><input type="checkbox" value="gril" /> Gril</label>
+      </fieldset>
+
+      <fieldset class="amenity-group">
+        <legend>Další</legend>
         <label class="amenity-check"><input type="checkbox" value="se psem" /> Se psem</label>
+        <label class="amenity-check"><input type="checkbox" value="parkování" /> Parkování</label>
       </fieldset>
 
       <button class="btn-filter" id="btn-apply">Použít filtry</button>
