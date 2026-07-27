@@ -1,0 +1,370 @@
+/* ================================================================
+   CHALUPNÍK — custom design tokens
+   ================================================================ */
+:root {
+  --forest:    #1E362B;
+  --paper:     #F1EEE3;
+  --amber:     #BD8636;
+  --moss:      #74845A;
+  --moss-light:#9FAF80;
+  --ink:       #1A1A18;
+  --ink-soft:  #4A4A44;
+  --border:    #D8D4C6;
+  --card-bg:   #FDFAF3;
+  --shadow:    0 2px 8px rgba(30,54,43,.10);
+  --radius:    10px;
+
+  --font-head: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.site-header {
+  background: var(--forest);
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 0;
+}
+
+.header-brand { display: flex; align-items: center; gap: .9rem; }
+
+.header-logo {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+}
+
+.site-title {
+  font-family: var(--font-head);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.site-tagline {
+  font-size: .8rem;
+  color: rgba(255,255,255,.65);
+  margin-top: .15rem;
+}
+
+.btn-run-workflow {
+  display: inline-block;
+  background: var(--amber);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .82rem;
+  padding: .55rem 1.1rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: background .15s, transform .1s;
+}
+.btn-run-workflow:hover { background: #a87230; transform: translateY(-1px); }
+
+/* ── Layout ──────────────────────────────────────────────────── */
+.layout {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  padding: 1.5rem 1.5rem 2rem;
+}
+
+/* ── Filter panel ────────────────────────────────────────────── */
+.filter-panel {
+  background: var(--forest);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 1.4rem 1.2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  align-self: start;
+  position: sticky;
+  top: 1rem;
+}
+
+.panel-title {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.panel-note {
+  font-size: .73rem;
+  color: rgba(255,255,255,.55);
+  line-height: 1.45;
+}
+
+.form-group { display: flex; flex-direction: column; gap: .3rem; }
+.form-group label {
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: rgba(255,255,255,.7);
+}
+
+.form-group input {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 6px;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: .88rem;
+  padding: .45rem .7rem;
+  transition: border-color .15s, background .15s;
+}
+.form-group input::placeholder { color: rgba(255,255,255,.35); }
+.form-group input:focus {
+  outline: none;
+  border-color: var(--amber);
+  background: rgba(255,255,255,.12);
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+
+/* ── Amenity checkboxes ──────────────────────────────────────── */
+.amenity-group {
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 6px;
+  padding: .7rem .8rem .8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.amenity-group legend {
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: rgba(255,255,255,.7);
+  padding: 0 .3rem;
+}
+.amenity-check {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .84rem;
+  color: rgba(255,255,255,.85);
+  cursor: pointer;
+}
+.amenity-check input[type="checkbox"] {
+  accent-color: var(--amber);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.btn-filter, .btn-reset {
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .55rem;
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+}
+.btn-filter {
+  background: var(--amber);
+  color: #fff;
+}
+.btn-filter:hover { background: #a87230; transform: translateY(-1px); }
+.btn-reset {
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.75);
+  border: 1px solid rgba(255,255,255,.2);
+}
+.btn-reset:hover { background: rgba(255,255,255,.18); }
+
+/* ── Results area ────────────────────────────────────────────── */
+.results-area {
+  padding-left: 1.5rem;
+  min-height: 60vh;
+}
+
+.results-meta {
+  font-size: .8rem;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.1rem;
+}
+
+/* ── Listing card ────────────────────────────────────────────── */
+.listing-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s, transform .15s;
+}
+.listing-card:hover {
+  box-shadow: 0 6px 20px rgba(30,54,43,.14);
+  transform: translateY(-2px);
+}
+
+/* Mountain ridge SVG signature */
+.card-ridge {
+  display: block;
+  width: 100%;
+  height: 48px;
+  background: var(--forest);
+}
+
+.card-body {
+  padding: .95rem 1rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.card-source {
+  font-size: .68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--moss);
+}
+
+.card-title {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.card-location {
+  font-size: .8rem;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+.card-location::before { content: "📍"; font-size: .75rem; }
+
+.card-stats {
+  display: flex;
+  gap: .7rem;
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  color: var(--ink-soft);
+}
+.stat { display: flex; align-items: center; gap: .25rem; }
+
+.card-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+.amenity-tag {
+  background: rgba(116,132,90,.13);
+  color: var(--moss);
+  border: 1px solid rgba(116,132,90,.3);
+  border-radius: 20px;
+  font-size: .7rem;
+  font-weight: 500;
+  padding: .2rem .55rem;
+}
+
+.card-footer {
+  padding: .7rem 1rem .85rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.card-price {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--amber);
+}
+.card-price-unit {
+  font-size: .7rem;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+}
+
+.card-link {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--forest);
+  text-decoration: none;
+  border: 1px solid var(--forest);
+  border-radius: 5px;
+  padding: .3rem .65rem;
+  transition: background .15s, color .15s;
+}
+.card-link:hover { background: var(--forest); color: #fff; }
+
+/* ── Empty state ─────────────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--ink-soft);
+}
+.empty-icon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.empty-state p { margin-bottom: .5rem; font-size: .95rem; }
+.empty-hint { font-size: .83rem; }
+.empty-hint a { color: var(--amber); }
+
+.hidden { display: none !important; }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .filter-panel {
+    position: static;
+    border-radius: var(--radius);
+  }
+  .results-area { padding-left: 0; margin-top: .5rem; }
+  .header-inner { flex-wrap: wrap; gap: .6rem; }
+  .site-title { font-size: 1.3rem; }
+}

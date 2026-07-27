@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-07-27T10:00:00+00:00",
+  "criteria": {
+    "location": null,
+    "min_capacity": null,
+    "min_bedrooms": null,
+    "max_price": null,
+    "amenities": [],
+    "date_from": null,
+    "date_to": null
+  },
+  "total_found": 2,
+  "total_matched": 2,
+  "errors": [],
+  "listings": [
+    {
+      "source": "ukázkový portál",
+      "title": "Chalupa Na Kopci — Šumava",
+      "location": "Železná Ruda, Šumava",
+      "url": "https://example.cz/chalupa-na-kopci",
+      "capacity": 8,
+      "bedrooms": 3,
+      "price": 3200,
+      "price_unit": "noc",
+      "amenities": ["krb", "parkování", "u lesa", "na samotě", "se psem"],
+      "image_url": null,
+      "raw_extra": {}
+    },
+    {
+      "source": "ukázkový portál",
+      "title": "Chata Pohoda — Krkonoše",
+      "location": "Pec pod Sněžkou, Krkonoše",
+      "url": "https://example.cz/chata-pohoda",
+      "capacity": 12,
+      "bedrooms": 5,
+      "price": 5800,
+      "price_unit": "noc",
+      "amenities": ["bazén", "vířivka", "sauna", "krb", "parkování", "společenská místnost"],
+      "image_url": null,
+      "raw_extra": {}
+    }
+  ]
+}
