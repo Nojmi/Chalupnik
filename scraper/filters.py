@@ -10,8 +10,9 @@ def matches(listing: Listing, criteria: dict) -> bool:
     """
     location = criteria.get("location")
     if location and listing.location is not None:
-        if location.lower() not in listing.location.lower():
-            return False
+        if not listing.raw_extra.get("location_prefiltered"):
+            if location.lower() not in listing.location.lower():
+                return False
 
     min_capacity = criteria.get("min_capacity")
     if min_capacity and listing.capacity is not None:

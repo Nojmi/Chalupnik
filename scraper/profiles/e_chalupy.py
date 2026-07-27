@@ -68,7 +68,7 @@ def _build_search_url(criteria: dict) -> str:
     return f"{BASE_URL}/vyhledavani{query}"
 
 
-def _parse_card(card) -> Listing:
+def _parse_card(card, location_prefiltered: bool = False) -> Listing:
     title_el = card.select_one(".top .tl a.title")
     title = title_el.get_text(strip=True) if title_el else "Bez názvu"
     url = urljoin(BASE_URL, title_el["href"]) if title_el and title_el.has_attr("href") else BASE_URL
@@ -111,7 +111,7 @@ def _parse_card(card) -> Listing:
         price=price,
         price_unit=price_unit,
         amenities=amenities,
-        raw_extra={"tags": tag_texts},
+        raw_extra={"tags": tag_texts, "location_prefiltered": location_prefiltered},
     )
 
 
@@ -119,14 +119,21 @@ def search(criteria: dict) -> list[Listing]:
     url = _build_search_url(criteria)
     response = requests.get(url, headers=HEADERS, timeout=20)
 
+    # Region/obec URL (e.g. /krusne-hory) already scopes results by location
+    # server-side. Only if that page doesn't exist do we fall back to the
+    # unscoped general search, which still needs filters.py's location
+    # substring check applied afterwards.
+    location_prefiltered = bool(criteria.get("location"))
+
     if response.status_code == 404 and criteria.get("location"):
         fallback_criteria = dict(criteria)
         fallback_criteria["location"] = None
         url = _build_search_url(fallback_criteria)
         response = requests.get(url, headers=HEADERS, timeout=20)
+        location_prefiltered = False
 
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "lxml")
 
     cards = soup.select(".property-list .item.c-property")
-    return [_parse_card(card) for card in cards]
+    return [_parse_card(card, location_prefiltered=location_prefiltered) for card in cards]
