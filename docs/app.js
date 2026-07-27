@@ -21,9 +21,11 @@ async function loadData() {
     const ts = data.generated_at
       ? new Date(data.generated_at).toLocaleString("cs-CZ")
       : "–";
-    const location = data.criteria && data.criteria.location;
+    const rawLocation = data.criteria && data.criteria.location;
+    const firstArea2 = allListings.length && allListings[0].raw_extra && allListings[0].raw_extra.area2_title;
+    const displayLocation = firstArea2 || rawLocation;
     metaEl.textContent =
-      `Poslední aktualizce: ${ts}  |  Lokalita: ${location || "nezadána"}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
+      `Poslední aktualizce: ${ts}  |  Lokalita: ${displayLocation || "nezadána"}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
 
     renderCards(allListings);
   } catch (err) {
