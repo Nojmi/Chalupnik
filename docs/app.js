@@ -23,7 +23,7 @@ async function loadData() {
       : "–";
     const location = data.criteria && data.criteria.location;
     metaEl.textContent =
-      `Poslední běh: ${ts}  |  Lokalita: ${location || "nezadána"}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
+      `Poslední aktualizce: ${ts}  |  Lokalita: ${location || "nezadána"}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
 
     renderCards(allListings);
   } catch (err) {
