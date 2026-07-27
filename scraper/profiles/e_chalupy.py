@@ -46,6 +46,19 @@ Poznámky k portálu:
       (pronajímá se jen část objektu, může být přítomen majitel)
     - jinak (typicky prázdný header, žádné items)           -> None
   Žádná kolize mezi těmito třemi vzory na testovaném vzorku.
+- Celostátní dotaz (bez destinations) jsme zkoušeli - API se natvrdo
+  zastaví přesně na offset=10000 (items začne vracet [], total.value
+  zůstává navždy zaseklé na {"value": 10000, "relation": "gte"}).
+  Je to defaultní ES/OpenSearch max_result_window strop, ne líný
+  odhad - žádným stránkováním se přes něj nedostaneme. Proto
+  destinations (lokalita) zůstává povinná/doporučená - jednotlivé
+  regiony mají řádově stovky až nízké tisíce nabídek (největší
+  pozorovaný: Jižní Čechy 2224), hluboko pod stropem.
+- persons/bedrooms se do API dotazu NEPOSÍLAJÍ - stahujeme kompletní
+  (byť lokalitou omezená) data a filtrování podle kapacity/ložnic/
+  ceny necháváme čistě na filters.py a frontendu. Jeden fetch regionu
+  tak pokryje libovolnou kombinaci těchto kritérií bez nutnosti
+  nového dotazu na API.
 """
 
 import json
@@ -73,7 +86,7 @@ BEDROOMS_RE = re.compile(r"(\d+)\s*lo[žz]nic")
 PRICE_RE = re.compile(r"([\d\s]+)\s*K[čc]")
 
 PAGE_SIZE = 200
-MAX_LISTINGS = 1000
+MAX_LISTINGS = 5000
 
 DESTINATION_RE = re.compile(r"window\.dataSearchBoxSelectedData\s*=\s*(\{.*?\});")
 
@@ -205,10 +218,9 @@ def search(criteria: dict) -> list[Listing]:
         if area_id:
             params["destinations"] = area_id
 
-    if criteria.get("min_capacity"):
-        params["persons"] = criteria["min_capacity"]
-    if criteria.get("min_bedrooms"):
-        params["bedrooms"] = criteria["min_bedrooms"]
+    # min_capacity/min_bedrooms/max_price se záměrně neposílají do API -
+    # stahujeme kompletní data pro lokalitu a tahle kritéria filtrujeme
+    # až v filters.py/frontendu (viz poznámky v docstringu modulu).
 
     listings: list[Listing] = []
     offset = 0
