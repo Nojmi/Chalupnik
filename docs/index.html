@@ -41,25 +41,29 @@
         <input type="text" id="f-location" placeholder="např. Šumava, Krkonoše…" />
       </div>
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="f-capacity">Osob od</label>
-          <input type="number" id="f-capacity" min="1" placeholder="4" />
+      <div class="form-group range-field">
+        <div class="range-field-head">
+          <label>Kapacita</label>
+          <span class="range-value" id="capacity-range-value">1 – 70 osob</span>
         </div>
-        <div class="form-group">
-          <label for="f-capacity-max">Osob do</label>
-          <input type="number" id="f-capacity-max" min="1" placeholder="10" />
+        <div class="dual-range">
+          <div class="dual-range-track"></div>
+          <div class="dual-range-fill" id="capacity-range-fill"></div>
+          <input type="range" id="f-capacity" min="1" max="70" value="1" step="1" aria-label="Min. počet osob" />
+          <input type="range" id="f-capacity-max" min="1" max="70" value="70" step="1" aria-label="Max. počet osob" />
         </div>
       </div>
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="f-bedrooms">Ložnic od</label>
-          <input type="number" id="f-bedrooms" min="1" placeholder="2" />
+      <div class="form-group range-field">
+        <div class="range-field-head">
+          <label>Ložnice</label>
+          <span class="range-value" id="bedrooms-range-value">1 – 15 ložnic</span>
         </div>
-        <div class="form-group">
-          <label for="f-bedrooms-max">Ložnic do</label>
-          <input type="number" id="f-bedrooms-max" min="1" placeholder="5" />
+        <div class="dual-range">
+          <div class="dual-range-track"></div>
+          <div class="dual-range-fill" id="bedrooms-range-fill"></div>
+          <input type="range" id="f-bedrooms" min="1" max="15" value="1" step="1" aria-label="Min. počet ložnic" />
+          <input type="range" id="f-bedrooms-max" min="1" max="15" value="15" step="1" aria-label="Max. počet ložnic" />
         </div>
       </div>
 

@@ -8,6 +8,7 @@ const metaEl    = document.getElementById("results-meta");
 const emptyEl   = document.getElementById("empty-state");
 
 let allListings = [];
+let updateCapacityRange, updateBedroomsRange;
 
 // ── Fetch ──────────────────────────────────────────────────────
 async function loadData() {
@@ -173,14 +174,52 @@ function applyFilters() {
 
 function resetFilters() {
   document.getElementById("f-location").value      = "";
-  document.getElementById("f-capacity").value      = "";
-  document.getElementById("f-capacity-max").value  = "";
-  document.getElementById("f-bedrooms").value      = "";
-  document.getElementById("f-bedrooms-max").value  = "";
+  const capMin = document.getElementById("f-capacity");
+  const capMax = document.getElementById("f-capacity-max");
+  const bedMin = document.getElementById("f-bedrooms");
+  const bedMax = document.getElementById("f-bedrooms-max");
+  capMin.value = capMin.min;
+  capMax.value = capMax.max;
+  bedMin.value = bedMin.min;
+  bedMax.value = bedMax.max;
+  updateCapacityRange();
+  updateBedroomsRange();
   document.getElementById("f-maxprice").value      = "";
   document.getElementById("f-entire-property").checked = false;
   document.querySelectorAll(".amenity-group .amenity-check input").forEach((cb) => (cb.checked = false));
   renderCards(allListings);
+}
+
+// ── Dual range sliders ──────────────────────────────────────────
+function initDualRange(minInput, maxInput, fillEl, displayEl, unitLabel) {
+  const lo = Number(minInput.min);
+  const hi = Number(minInput.max);
+
+  function update() {
+    const minVal = Number(minInput.value);
+    const maxVal = Number(maxInput.value);
+    const leftPct  = ((minVal - lo) / (hi - lo)) * 100;
+    const rightPct = ((maxVal - lo) / (hi - lo)) * 100;
+    fillEl.style.left  = `${leftPct}%`;
+    fillEl.style.width = `${rightPct - leftPct}%`;
+    displayEl.textContent = `${minVal} – ${maxVal} ${unitLabel}`;
+  }
+
+  minInput.addEventListener("input", () => {
+    if (Number(minInput.value) > Number(maxInput.value)) {
+      minInput.value = maxInput.value;
+    }
+    update();
+  });
+  maxInput.addEventListener("input", () => {
+    if (Number(maxInput.value) < Number(minInput.value)) {
+      maxInput.value = minInput.value;
+    }
+    update();
+  });
+
+  update();
+  return update;
 }
 
 // ── Helpers ────────────────────────────────────────────────────
@@ -194,6 +233,21 @@ function escHtml(str) {
 function escAttr(str) { return escHtml(str); }
 
 // ── Bootstrap ──────────────────────────────────────────────────
+updateCapacityRange = initDualRange(
+  document.getElementById("f-capacity"),
+  document.getElementById("f-capacity-max"),
+  document.getElementById("capacity-range-fill"),
+  document.getElementById("capacity-range-value"),
+  "osob"
+);
+updateBedroomsRange = initDualRange(
+  document.getElementById("f-bedrooms"),
+  document.getElementById("f-bedrooms-max"),
+  document.getElementById("bedrooms-range-fill"),
+  document.getElementById("bedrooms-range-value"),
+  "ložnic"
+);
+
 document.getElementById("btn-apply").addEventListener("click", applyFilters);
 document.getElementById("btn-reset").addEventListener("click", resetFilters);
 
