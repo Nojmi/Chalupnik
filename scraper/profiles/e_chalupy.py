@@ -59,6 +59,32 @@ Poznámky k portálu:
   ceny necháváme čistě na filters.py a frontendu. Jeden fetch regionu
   tak pokryje libovolnou kombinaci těchto kritérií bez nutnosti
   nového dotazu na API.
+- Vybavení z volného textu (tags) je pro některá klíčová slova
+  nespolehlivé - ověřeno na Šumavě (1200 nabídek) proti webovému
+  filtru portálu (dataSearchBoxfiltersCounter + funkční query param
+  filters=<id>, který vrací přesně stejná čísla jako ten čítač):
+    - "se psem" a "společenská místnost" jsou v tags VŽDY 0x, přestože
+      přes polovinu nabídek je reálně má (655, resp. 594 podle
+      filters=72/10) - tahle dvě jsou textem nezjistitelná úplně.
+    - "bazén" text pokrývá jen 75 % (156 vs. 207 přes filters=65).
+    - "krb" text naopak textem OVERcountuje (622 vs. 494 jen za
+      filters=7 vnitřní), protože slučuje vnitřní i venkovní krb do
+      jednoho tagu - proto se sjednocuje s OBĚMA ID (7 vnitřní + 30
+      venkovní), ať se nic neztratí.
+    - vířivka (37), sauna (11), na samotě (40) sedí textem přesně
+      (100 %), u lesa (42) skoro přesně (93 %).
+  Filter ID nejsou pole na položce v odpovědi (žádné "amenityIds" v
+  items[] není) - jde jen o query parametr (filters=<id>), který
+  vrátí množinu ID nabídek. Pro každé z těchto 8 vybavení proto
+  stahujeme ID-množinu zvlášť (stránkovaně, stejně jako hlavní dotaz)
+  a sjednocujeme ji s textovými tagy při stavbě amenities.
+  "Parkování" nemá na portálu žádné odpovídající filtr ID vůbec -
+  zůstává čistě textové. "entire_property" (filters=84, "Pouze celé
+  objekty") jsme cíleně NEpoužili navzdory dostupnosti - namátková
+  kontrola ukázala nabídku s units.header "Pronajímá se samostatná
+  část" (jasně NE celý objekt), kterou filters=84 přesto zahrnuje,
+  takže sémantika toho filtru na webu neodpovídá tomu, co název
+  napovídá - units pole zůstává spolehlivější zdroj pravdy.
 """
 
 import json
@@ -89,6 +115,20 @@ PAGE_SIZE = 200
 MAX_LISTINGS = 5000
 
 DESTINATION_RE = re.compile(r"window\.dataSearchBoxSelectedData\s*=\s*(\{.*?\});")
+
+# Kanonický název vybavení -> ID filtru/filtrů na portálu (viz docstring
+# modulu). "krb" má dvě ID (vnitřní + venkovní), protože náš text-tag je
+# slučuje do jednoho tagu a nechceme o tuhle informaci přijít.
+AMENITY_FILTER_IDS: dict[str, tuple[int, ...]] = {
+    "bazén": (65,),
+    "vířivka": (37,),
+    "sauna": (11,),
+    "krb": (7, 30),
+    "na samotě": (40,),
+    "u lesa": (42,),
+    "se psem": (72,),
+    "společenská místnost": (10,),
+}
 
 
 def _slugify(text: str) -> str:
@@ -209,6 +249,48 @@ def _parse_item(item: dict) -> Listing:
     )
 
 
+def _fetch_filter_id_set(base_params: dict, filter_id: int) -> set[int]:
+    """Vrátí množinu ID nabídek, které portál sám řadí pod daný filtr ID."""
+    ids: set[int] = set()
+    offset = 0
+    while offset < MAX_LISTINGS:
+        response = requests.get(
+            API_URL,
+            headers=HEADERS,
+            params={**base_params, "filters": filter_id, "limit": PAGE_SIZE, "offset": offset},
+            timeout=20,
+        )
+        response.raise_for_status()
+        items = response.json().get("items") or []
+        if not items:
+            break
+        ids.update(item["id"] for item in items if item.get("id") is not None)
+        offset += PAGE_SIZE
+    return ids
+
+
+def _enrich_amenities_from_filters(listings: list[Listing], base_params: dict) -> None:
+    """
+    Doplní listing.amenities o vybavení potvrzené přes server-side
+    filters=<id>, i když se odpovídající slovo v tags vůbec nevyskytuje
+    jako text (viz docstring modulu - "se psem"/"společenská místnost"
+    jsou v tags vždy 0x navzdory stovkám reálných shod).
+    """
+    by_id = {l.raw_extra["id"]: l for l in listings if l.raw_extra.get("id") is not None}
+    if not by_id:
+        return
+
+    for amenity_name, filter_ids in AMENITY_FILTER_IDS.items():
+        matched_ids: set[int] = set()
+        for filter_id in filter_ids:
+            matched_ids |= _fetch_filter_id_set(base_params, filter_id)
+
+        for item_id in matched_ids & by_id.keys():
+            listing = by_id[item_id]
+            if not any(amenity_name in a.lower() for a in listing.amenities):
+                listing.amenities.append(amenity_name)
+
+
 def search(criteria: dict) -> list[Listing]:
     params = {}
 
@@ -239,5 +321,7 @@ def search(criteria: dict) -> list[Listing]:
 
         listings.extend(_parse_item(item) for item in items)
         offset += PAGE_SIZE
+
+    _enrich_amenities_from_filters(listings, params)
 
     return listings
