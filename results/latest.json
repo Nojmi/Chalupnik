@@ -1,18 +1,2541 @@
 {
-  "generated_at": "2026-07-27T14:53:12.600969+00:00",
+  "generated_at": "2026-07-27T15:01:02.924798+00:00",
   "criteria": {
-    "location": "Krušné hory",
-    "min_capacity": "5",
+    "location": "krusne-hory",
+    "min_capacity": "4",
     "min_bedrooms": "2",
     "max_price": null,
     "amenities": [],
     "date_from": null,
     "date_to": null
   },
-  "total_found": 474,
-  "total_matched": 458,
+  "total_found": 492,
+  "total_matched": 475,
   "errors": [],
   "listings": [
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Borůvka",
+      "location": "Mariánská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chata-boruvka-marianska-ubytovani-apartmany-o5331",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 1900.0,
+      "price_unit": "pokoj za noc",
+      "amenities": [
+        "vířivka",
+        "mazlíčci vítáni",
+        "krb",
+        "koupací sud",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-boruvka-marianska-9142-390d-511976.jpg",
+      "raw_extra": {
+        "id": 5331,
+        "tags_featured": [
+          "2 pokoje",
+          "10 osob"
+        ],
+        "area_title": "Mariánská",
+        "area_slug": "marianska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3546619444,
+          "lon": 12.8927991667
+        },
+        "rating": 96,
+        "reviews": 70
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán pod Plešivcem",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartman-pod-plesivcem-abertamy-ubytovani-o10073",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1850.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartman-pod-plesivcem-88da-0ea3-1180954.jpg",
+      "raw_extra": {
+        "id": 10073,
+        "tags_featured": [
+          "apartmán 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3631630556,
+          "lon": 12.8405711111
+        },
+        "rating": 100,
+        "reviews": 12
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "SKI apartmán Snowcat",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ski-apartman-snowcat-abertamy-ubytovani-o11714",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1400.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/img-1337-8cbd-28e2-920073.jpg",
+      "raw_extra": {
+        "id": 11714,
+        "tags_featured": [
+          "apartmán 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3634992,
+          "lon": 12.8411169
+        },
+        "rating": 100,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Za Humny",
+      "location": "Horní Blatná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartman-za-humny-horni-blatna-ubytovani-o16878",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1750.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartman-za-humny-horni-blatna-036b-c805-760460.jpg",
+      "raw_extra": {
+        "id": 16878,
+        "tags_featured": [
+          "apartmán 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Horní Blatná",
+        "area_slug": "horni-blatna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3902713889,
+          "lon": 12.7682302778
+        },
+        "rating": 99,
+        "reviews": 8
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Lucie",
+      "location": "Horní Blatná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-lucie-horni-blatna-ubytovani-o10345",
+      "capacity": 8,
+      "bedrooms": null,
+      "price": 1500.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [],
+      "image_url": "https://e-chalupy.cz/foto/vstup-do-objektu-apartmany-lucie-horni-blatna-6563-9705-807760.jpg",
+      "raw_extra": {
+        "id": 10345,
+        "tags_featured": [
+          "2 apartmány",
+          "8 osob"
+        ],
+        "area_title": "Horní Blatná",
+        "area_slug": "horni-blatna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3912367,
+          "lon": 12.7735561
+        },
+        "rating": 99,
+        "reviews": 6
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata House 111",
+      "location": "Šemnice, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-semnice-chata-house-111-pronajem-o19697",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 3900.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "sauna",
+        "oploceno",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/zasklena-terasa-c4ac-5748-1079259.jpg",
+      "raw_extra": {
+        "id": 19697,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Šemnice",
+        "area_slug": "semnice",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.24527,
+          "lon": 12.9826208333
+        },
+        "rating": 99,
+        "reviews": 4
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Mobilheim Hájovna",
+      "location": "Svahová, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-svahova-mobilheim-hajovna-pronajem-o15837",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 2286.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "sauna",
+        "oploceno",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/mobilheim-hajovna-svahova-875d-7527-739103.jpg",
+      "raw_extra": {
+        "id": 15837,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Svahová",
+        "area_slug": "svahova",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.5543405556,
+          "lon": 13.4107477778
+        },
+        "rating": 99,
+        "reviews": 3
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Hájovna",
+      "location": "Svahová, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-hajovna-svahova-ubytovani-o11550",
+      "capacity": 8,
+      "bedrooms": null,
+      "price": 625.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "sauna",
+        "mazlíčci vítáni",
+        "koupací sud",
+        "u lesa",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/letni-hajovna-svahova-efcd-31da-642790.jpg",
+      "raw_extra": {
+        "id": 11550,
+        "tags_featured": [
+          "2 apartmány",
+          "8 osob"
+        ],
+        "area_title": "Svahová",
+        "area_slug": "svahova",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.5547722222,
+          "lon": 13.4078669444
+        },
+        "rating": 96,
+        "reviews": 16
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pronájem chaty",
+      "location": "Háj, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-haj-chata-pronajem-o2039",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 986.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-haj-3303-432c-430757.jpg",
+      "raw_extra": {
+        "id": 2039,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Háj",
+        "area_slug": "haj",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4101258333,
+          "lon": 12.9930286111
+        },
+        "rating": 100,
+        "reviews": 2
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Cozy Chalet",
+      "location": "Smolné Pece, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-smolne-pece-cozy-chalet-pronajem-o17739",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 4995.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "sauna",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "koupací sud",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/cozy-chalet-b567-b793-1113927.jpg",
+      "raw_extra": {
+        "id": 17739,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Smolné Pece",
+        "area_slug": "smolne-pece",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2951497222,
+          "lon": 12.7720552778
+        },
+        "rating": 100,
+        "reviews": 2
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Victorka",
+      "location": "Nové Město u Jáchymova, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-nove-mesto-u-jachymova-chata-victorka-pronajem-o23291",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 2843.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-victorka-v-krusnych-horach-9a11-36e1-1180041.jpg",
+      "raw_extra": {
+        "id": 23291,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Nové Město u Jáchymova",
+        "area_slug": "nove-mesto-u-jachymova",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3704891667,
+          "lon": 12.9057122222
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány",
+      "location": "Potůčky, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-potucky-apartmany-o7303",
+      "capacity": 8,
+      "bedrooms": null,
+      "price": 1690.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "sauna",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-potucky-c4bb-7698-559336.jpg",
+      "raw_extra": {
+        "id": 7303,
+        "tags_featured": [
+          "2 apartmány",
+          "8 osob"
+        ],
+        "area_title": "Potůčky",
+        "area_slug": "potucky",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4272308333,
+          "lon": 12.7425594444
+        },
+        "rating": 99,
+        "reviews": 34
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Naďa na Velkém Rybníku u Karlových Varů",
+      "location": "Velký Rybník, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-velky-rybnik-chata-nada-pronajem-o12443",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1700.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "oploceno",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-nada-na-velkem-rybniku-4443-5c98-664239.jpg",
+      "raw_extra": {
+        "id": 12443,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Velký Rybník",
+        "area_slug": "velky-rybnik",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2954497222,
+          "lon": 12.8747275
+        },
+        "rating": 98,
+        "reviews": 25
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata u Lázní Evženie",
+      "location": "Klášterec nad Ohří, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-klasterec-nad-ohri-chata-u-lazni-evzenie-pronajmuti-o2734",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1414.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pohled-na-chatu-od-zapadu-34b3-b55d-1042616.jpg",
+      "raw_extra": {
+        "id": 2734,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Klášterec nad Ohří",
+        "area_slug": "klasterec-nad-ohri",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3758469444,
+          "lon": 13.1677983333
+        },
+        "rating": 99,
+        "reviews": 71
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Na Vršku",
+      "location": "Dolní Žďár, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ostrov-ubytovani-dolni-zdar-apartman-na-vrsku-o18802",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 800.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/zahrada-094e-24d7-941068.jpg",
+      "raw_extra": {
+        "id": 18802,
+        "tags_featured": [
+          "apartmán 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Dolní Žďár",
+        "area_slug": "dolni-zdar-ostrov",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3313319,
+          "lon": 12.9350353
+        },
+        "rating": 91,
+        "reviews": 3
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Útulná chalupa pro rodinu",
+      "location": "Nové Hamry, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-nove-hamry-chalupa-pro-rodinu-o8824",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1571.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "oploceno",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-nove-hamry-od-cesty-f3a3-c044-599435.jpg",
+      "raw_extra": {
+        "id": 8824,
+        "tags_featured": [
+          "chalupa 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Nové Hamry",
+        "area_slug": "nove-hamry",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3571541667,
+          "lon": 12.7223233333
+        },
+        "rating": 100,
+        "reviews": 49
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Krušnohorská chata s kachlovými kamny",
+      "location": "Tellerhauser, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-nemecko-grunhain-beierfeld-krusnohorska-chata-s-kachlovymi-kamny-o22294",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1800.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "pro děti",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/unbensfsfsfwgannt-4238-7fde-1142732.jpg",
+      "raw_extra": {
+        "id": 22294,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Tellerhauser",
+        "area_slug": "tellerhauser",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.5603475,
+          "lon": 12.8029347222
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Sofia Chalet",
+      "location": "Bublava, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-bublava-sofia-chalet-pronajem-o5043",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1950.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/4-d7ca-a358-949205.jpg",
+      "raw_extra": {
+        "id": 5043,
+        "tags_featured": [
+          "chata 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Bublava",
+        "area_slug": "bublava",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3799605556,
+          "lon": 12.5057613889
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Lenka",
+      "location": "Nová Role, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-nova-role-apartman-lenka-o13844",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 600.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/loznice-c-1-s-balkonem-bf86-2a87-822211.jpg",
+      "raw_extra": {
+        "id": 13844,
+        "tags_featured": [
+          "apartmán 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Nová Role",
+        "area_slug": "nova-role",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2734525,
+          "lon": 12.7830458333
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány U Radka",
+      "location": "Chodov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-chodov-apartmany-u-radka-o21067",
+      "capacity": 7,
+      "bedrooms": null,
+      "price": 1500.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-u-radka-0d99-1eb1-1063205.jpg",
+      "raw_extra": {
+        "id": 21067,
+        "tags_featured": [
+          "2 pokoje",
+          "7 osob"
+        ],
+        "area_title": "Chodov",
+        "area_slug": "chodov-sokolov",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2330591667,
+          "lon": 12.7493369444
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán U Zlaté břízy",
+      "location": "Horní Blatná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartman-u-zlate-brizy-horni-blatna-ubytovani-o10723",
+      "capacity": 4,
+      "bedrooms": 2,
+      "price": 1900.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartman-u-zlate-brizy-64e0-2747-790633.jpg",
+      "raw_extra": {
+        "id": 10723,
+        "tags_featured": [
+          "apartmán 4 osoby",
+          "2 ložnice"
+        ],
+        "area_title": "Horní Blatná",
+        "area_slug": "horni-blatna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3902781,
+          "lon": 12.7682275
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Ruprechtov",
+      "location": "Ruprechtov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-ruprechtov-apartmany-o1661",
+      "capacity": 13,
+      "bedrooms": null,
+      "price": 1800.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/20200623-080346-c741-c3b5-421115.jpg",
+      "raw_extra": {
+        "id": 1661,
+        "tags_featured": [
+          "3 apartmány",
+          "13 osob"
+        ],
+        "area_title": "Ruprechtov",
+        "area_slug": "ruprechtov-hroznetin",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2917716667,
+          "lon": 12.8506666667
+        },
+        "rating": 92,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Atlantis",
+      "location": "Klášterec nad Ohří, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-klasterec-nad-ohri-apartmany-atlantis-o5851",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 600.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "krb",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-atlantis-klasterec-nad-ohri-e39b-9bd8-957153.jpg",
+      "raw_extra": {
+        "id": 5851,
+        "tags_featured": [
+          "3 apartmány",
+          "10 osob"
+        ],
+        "area_title": "Klášterec nad Ohří",
+        "area_slug": "klasterec-nad-ohri",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3860108,
+          "lon": 13.1723211
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Mája",
+      "location": "Mariánská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chata-maja-marianska-pronajem-o10517",
+      "capacity": 16,
+      "bedrooms": null,
+      "price": 4200.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "oploceno",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-maja-debb-1f24-790310.jpg",
+      "raw_extra": {
+        "id": 10517,
+        "tags_featured": [
+          "3 pokoje",
+          "16 osob"
+        ],
+        "area_title": "Mariánská",
+        "area_slug": "marianska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3567686111,
+          "lon": 12.8939427778
+        },
+        "rating": 98,
+        "reviews": 2
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Ubytování Gerhard",
+      "location": "Rašov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/rasov-ubytovani-gerhard-o4251",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 1200.0,
+      "price_unit": "pokoj za noc",
+      "amenities": [
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/ubytovani-gerhard-kliny-aca3-96a9-1138615.jpg",
+      "raw_extra": {
+        "id": 4251,
+        "tags_featured": [
+          "1 apartmán + 2 pokoje",
+          "10 osob"
+        ],
+        "area_title": "Rašov",
+        "area_slug": "rasov",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.6285180556,
+          "lon": 13.5643113889
+        },
+        "rating": 100,
+        "reviews": 5
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Anna&Jan",
+      "location": "Pernink, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-pernink-apartmany-anna-a-jan-o18714",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 1500.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-annaamp-jan-ubytovani-pernink-00dd-194d-914015.jpg",
+      "raw_extra": {
+        "id": 18714,
+        "tags_featured": [
+          "2 apartmány",
+          "10 osob"
+        ],
+        "area_title": "Pernink",
+        "area_slug": "pernink",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3681763889,
+          "lon": 12.7782775
+        },
+        "rating": 99,
+        "reviews": 7
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Mobilheim Pilka",
+      "location": "Nové Hamry, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-nove-hamry-mobilheim-pilka-o23433",
+      "capacity": 4,
+      "bedrooms": 3,
+      "price": 1429.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/mobilheim-pilka-ad55-75c0-1185832.jpg",
+      "raw_extra": {
+        "id": 23433,
+        "tags_featured": [
+          "mobilheim 4 osoby",
+          "3 ložnice"
+        ],
+        "area_title": "Nové Hamry",
+        "area_slug": "nove-hamry",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3590394444,
+          "lon": 12.7317544444
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Ubytování v soukromí „Harmonie“",
+      "location": "Mariánská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-harmonie-marianska-ubytovani-o11268",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 600.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "na samotě",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/harmonie-d476-9c3c-1177068.jpg",
+      "raw_extra": {
+        "id": 11268,
+        "tags_featured": [
+          "3 apartmány",
+          "12 osob"
+        ],
+        "area_title": "Mariánská",
+        "area_slug": "marianska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3562222222,
+          "lon": 12.9033483333
+        },
+        "rating": 100,
+        "reviews": 16
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pronájem chalupy",
+      "location": "Bublava, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chalupa-bublava-o9849",
+      "capacity": 16,
+      "bedrooms": null,
+      "price": 550.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-bublava-57eb-c868-625166.jpg",
+      "raw_extra": {
+        "id": 9849,
+        "tags_featured": [
+          "1 apartmán + 3 pokoje",
+          "16 osob"
+        ],
+        "area_title": "Bublava",
+        "area_slug": "bublava",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3718097222,
+          "lon": 12.5076963889
+        },
+        "rating": 100,
+        "reviews": 6
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalets Resort",
+      "location": "Cínovec, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-cinovec-chalets-resort-o5104",
+      "capacity": 16,
+      "bedrooms": null,
+      "price": 3500.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalets-resort-cinovec-308b-2439-949543.jpg",
+      "raw_extra": {
+        "id": 5104,
+        "tags_featured": [
+          "3 objekty",
+          "16 osob"
+        ],
+        "area_title": "Cínovec",
+        "area_slug": "cinovec",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.7323975,
+          "lon": 13.7634066667
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány 178",
+      "location": "Horní Blatná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-178-horni-blatna-o12682",
+      "capacity": 13,
+      "bedrooms": null,
+      "price": 1250.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/cabin-studio-63ec-dfd0-960725.jpg",
+      "raw_extra": {
+        "id": 12682,
+        "tags_featured": [
+          "3 apartmány",
+          "13 osob"
+        ],
+        "area_title": "Horní Blatná",
+        "area_slug": "horni-blatna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3924330556,
+          "lon": 12.7710875
+        },
+        "rating": 98,
+        "reviews": 16
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Twins",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-twins-abertamy-ubytovani-o17365",
+      "capacity": 8,
+      "bedrooms": null,
+      "price": 1400.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-twins-abertamy-f8fe-927b-857095.jpg",
+      "raw_extra": {
+        "id": 17365,
+        "tags_featured": [
+          "2 apartmány",
+          "8 osob"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3685583,
+          "lon": 12.8201881
+        },
+        "rating": 99,
+        "reviews": 5
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Pod komínem",
+      "location": "Skalná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-skalna-apartman-pod-kominem-o5011",
+      "capacity": 14,
+      "bedrooms": null,
+      "price": 1080.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/20240714-141524000-ios-d056-872d-1171692.jpg",
+      "raw_extra": {
+        "id": 5011,
+        "tags_featured": [
+          "4 pokoje",
+          "14 osob"
+        ],
+        "area_title": "Skalná",
+        "area_slug": "skalna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.1697588889,
+          "lon": 12.35563
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Mariánka",
+      "location": "Mariánská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chata-marianka-marianska-ubytovani-o16010",
+      "capacity": 14,
+      "bedrooms": null,
+      "price": 350.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-marianka-b49e-8b76-831060.jpg",
+      "raw_extra": {
+        "id": 16010,
+        "tags_featured": [
+          "4 pokoje",
+          "14 osob"
+        ],
+        "area_title": "Mariánská",
+        "area_slug": "marianska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3563677778,
+          "lon": 12.8940911111
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Ubytování Háj",
+      "location": "Háj u Jindřichovic, Krušné hory",
+      "url": "https://www.e-chalupy.cz/jindrichovice-ubytovani-haj-apartman-o17971",
+      "capacity": 13,
+      "bedrooms": null,
+      "price": null,
+      "price_unit": null,
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/1000090034-163e-19ba-1153071.jpg",
+      "raw_extra": {
+        "id": 17971,
+        "tags_featured": [
+          "3 apartmány",
+          "13 osob"
+        ],
+        "area_title": "Háj u Jindřichovic",
+        "area_slug": "haj-u-jindrichovic",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2535780556,
+          "lon": 12.6013405556
+        },
+        "rating": 96,
+        "reviews": 4
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horallka - ubytování v soukromí",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartman-abertamy-ubytovani-horallka-o4045",
+      "capacity": 15,
+      "bedrooms": null,
+      "price": 649.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "oploceno",
+        "krb"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/horallka-81e1-13b6-480113.jpg",
+      "raw_extra": {
+        "id": 4045,
+        "tags_featured": [
+          "2 apartmány + 2 pokoje",
+          "15 osob"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.367805,
+          "lon": 12.8157758333
+        },
+        "rating": 100,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Cestář",
+      "location": "Boží Dar, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-bozi-dar-apartmany-cestar-o5377",
+      "capacity": 23,
+      "bedrooms": null,
+      "price": 500.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "vířivka",
+        "sauna",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-cestar-bozi-dar-a2e2-b800-805652.jpg",
+      "raw_extra": {
+        "id": 5377,
+        "tags_featured": [
+          "4 apartmány",
+          "23 osob"
+        ],
+        "area_title": "Boží Dar",
+        "area_slug": "bozi-dar",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4091386111,
+          "lon": 12.9268661111
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "MAX Klínovec",
+      "location": "Loučná pod Klínovcem, Krušné hory",
+      "url": "https://www.e-chalupy.cz/penzion-loucna-pod-klinovcem-haj-ubytovani-max-o2932",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 730.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/penzion-max-maxpark-dojezd-sjezdovky-damska-1c5c-3139-452423.jpg",
+      "raw_extra": {
+        "id": 2932,
+        "tags_featured": [
+          "5 pokojů",
+          "20 osob"
+        ],
+        "area_title": "Loučná pod Klínovcem",
+        "area_slug": "loucna-pod-klinovcem",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4034008333,
+          "lon": 12.9819011111
+        },
+        "rating": 62,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pension u Matěje",
+      "location": "Pernink, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-pernink-penzion-u-mateje-o1036",
+      "capacity": 23,
+      "bedrooms": null,
+      "price": 4400.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pension-u-mateje-a30e-e034-406160.jpg",
+      "raw_extra": {
+        "id": 1036,
+        "tags_featured": [
+          "5 pokojů",
+          "23 osob"
+        ],
+        "area_title": "Pernink",
+        "area_slug": "pernink",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3676677778,
+          "lon": 12.7816886111
+        },
+        "rating": 98,
+        "reviews": 3
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Fara Stříbrná",
+      "location": "Stříbrná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-stribrna-fara-o18850",
+      "capacity": 27,
+      "bedrooms": null,
+      "price": 2714.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/294302105-549701936891086-6981584551590765963-n-d93c-f142-996491.jpg",
+      "raw_extra": {
+        "id": 18850,
+        "tags_featured": [
+          "4 pokoje + 1 objekt",
+          "27 osob"
+        ],
+        "area_title": "Stříbrná",
+        "area_slug": "stribrna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3593966667,
+          "lon": 12.5242041667
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "SportCentrum Klínovec",
+      "location": "Loučná pod Klínovcem, Krušné hory",
+      "url": "https://www.e-chalupy.cz/loucna-pod-klinovcem-ubytovani-penzion-sportcentrum-klinovec-o755",
+      "capacity": 23,
+      "bedrooms": null,
+      "price": 690.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "u lesa",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/sport-centrum-klinovec-219d-75dc-398954.jpg",
+      "raw_extra": {
+        "id": 755,
+        "tags_featured": [
+          "5 pokojů",
+          "23 osob"
+        ],
+        "area_title": "Loučná pod Klínovcem",
+        "area_slug": "loucna-pod-klinovcem",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4042905556,
+          "lon": 12.9835366667
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Stará Hračkárna",
+      "location": "Český Jiřetín, Krušné hory",
+      "url": "https://www.e-chalupy.cz/stara-hrackarna-cesky-jiretin-ubytovani-o8829",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 400.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/stara-hrackarna-b8e0-1679-840066.jpg",
+      "raw_extra": {
+        "id": 8829,
+        "tags_featured": [
+          "6 apartmánů",
+          "20 osob"
+        ],
+        "area_title": "Český Jiřetín",
+        "area_slug": "cesky-jiretin",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.7060633333,
+          "lon": 13.5477236111
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Stráň",
+      "location": "Stráň, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-potucky-apartmany-stran-o21656",
+      "capacity": 16,
+      "bedrooms": null,
+      "price": 1200.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "vířivka",
+        "sauna",
+        "oploceno",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-stran-33d7-5cb4-1090151.jpg",
+      "raw_extra": {
+        "id": 21656,
+        "tags_featured": [
+          "3 apartmány + 2 pokoje",
+          "16 osob"
+        ],
+        "area_title": "Stráň",
+        "area_slug": "stran-potucky",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4182566667,
+          "lon": 12.7369230556
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Penzion Jajka",
+      "location": "Loučná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-penzion-jajka-o9379",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 2500.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "sauna"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/penzion-jajka-a32b-ccaf-987981.jpg",
+      "raw_extra": {
+        "id": 9379,
+        "tags_featured": [
+          "3 apartmány",
+          "12 osob"
+        ],
+        "area_title": "Loučná",
+        "area_slug": "loucna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4171608333,
+          "lon": 12.9776863889
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Hacienda",
+      "location": "Boží Dar, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-hacienda-bozi-dar-ubytovani-o11410",
+      "capacity": 18,
+      "bedrooms": null,
+      "price": 1300.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-hacienda-bozi-dar-441c-066b-639327.jpg",
+      "raw_extra": {
+        "id": 11410,
+        "tags_featured": [
+          "4 apartmány",
+          "18 osob"
+        ],
+        "area_title": "Boží Dar",
+        "area_slug": "bozi-dar",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4126711111,
+          "lon": 12.9204791667
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Quattro",
+      "location": "Loučná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-apartmany-quattro-o7716",
+      "capacity": 19,
+      "bedrooms": null,
+      "price": 1200.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-quattro-pod-klinovcem-61df-4b5b-965099.jpg",
+      "raw_extra": {
+        "id": 7716,
+        "tags_featured": [
+          "4 apartmány",
+          "19 osob"
+        ],
+        "area_title": "Loučná",
+        "area_slug": "loucna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4130875,
+          "lon": 12.9788714
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Penzion Studánka",
+      "location": "Klíny, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-kliny-penzion-studanka-o1920",
+      "capacity": 25,
+      "bedrooms": null,
+      "price": 1685.0,
+      "price_unit": "pokoj za noc",
+      "amenities": [
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "koupací sud",
+        "u lesa",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/penzion-studanka-e3e9-7cfb-1177203.jpg",
+      "raw_extra": {
+        "id": 1920,
+        "tags_featured": [
+          "1 apartmán + 5 pokojů",
+          "25 osob"
+        ],
+        "area_title": "Klíny",
+        "area_slug": "kliny",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.6337044444,
+          "lon": 13.5564961111
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Forest House",
+      "location": "Kovářská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/kovarska-ubytovani-apartman-forest-o454",
+      "capacity": 22,
+      "bedrooms": null,
+      "price": 8500.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/forest-house-06d8-77c9-1146793.jpg",
+      "raw_extra": {
+        "id": 454,
+        "tags_featured": [
+          "5 apartmánů",
+          "22 osob"
+        ],
+        "area_title": "Kovářská",
+        "area_slug": "kovarska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4486022222,
+          "lon": 13.0573941667
+        },
+        "rating": 97,
+        "reviews": 4
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenky Slunný vrch",
+      "location": "Český Jiřetín, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-roubenky-slunny-vrch-o4049",
+      "capacity": 19,
+      "bedrooms": null,
+      "price": 1857.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "pro děti",
+        "krb",
+        "v lese"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/mala-roubenka-a8a6-e38f-480187.jpg",
+      "raw_extra": {
+        "id": 4049,
+        "tags_featured": [
+          "3 objekty",
+          "19 osob"
+        ],
+        "area_title": "Český Jiřetín",
+        "area_slug": "cesky-jiretin",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.7074502778,
+          "lon": 13.5751361111
+        },
+        "rating": 99,
+        "reviews": 138
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horský penzion Čepice (i pro skupiny)",
+      "location": "Pernink, Krušné hory",
+      "url": "https://www.e-chalupy.cz/penzion-cepice-pernink-ubytovani-o13622",
+      "capacity": 19,
+      "bedrooms": null,
+      "price": 550.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/penzion-cepice-7a4b-3e30-1067654.jpg",
+      "raw_extra": {
+        "id": 13622,
+        "tags_featured": [
+          "1 apartmán + 4 pokoje",
+          "19 osob"
+        ],
+        "area_title": "Pernink",
+        "area_slug": "pernink",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3624833333,
+          "lon": 12.7863194444
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská chata Hugo",
+      "location": "Stříbrná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-stribrna-horska-chata-hugo-pronajem-o2933",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 1275.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/horska-chata-hugo-stribrna-leto-d015-5c0d-452450.jpg",
+      "raw_extra": {
+        "id": 2933,
+        "tags_featured": [
+          "3 apartmány",
+          "20 osob"
+        ],
+        "area_title": "Stříbrná",
+        "area_slug": "stribrna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3566977778,
+          "lon": 12.5259866667
+        },
+        "rating": 96,
+        "reviews": 6
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Pod sjezdovkou",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-apartmany-pod-sjezdovkou-o6810",
+      "capacity": 22,
+      "bedrooms": null,
+      "price": 2100.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "bazén",
+        "sauna",
+        "pro děti",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pohled-na-dum-d454-f35a-546821.jpg",
+      "raw_extra": {
+        "id": 6810,
+        "tags_featured": [
+          "4 apartmány",
+          "22 osob"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3657019444,
+          "lon": 12.8384580556
+        },
+        "rating": 100,
+        "reviews": 5
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány U Muzea",
+      "location": "Horní Blatná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-u-muzea-horni-blatna-pronajem-o13497",
+      "capacity": 28,
+      "bedrooms": null,
+      "price": 1400.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "pro děti",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-u-muzea-horni-blatna-bcf3-2bcb-686956.jpg",
+      "raw_extra": {
+        "id": 13497,
+        "tags_featured": [
+          "6 apartmánů",
+          "28 osob"
+        ],
+        "area_title": "Horní Blatná",
+        "area_slug": "horni-blatna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3915247222,
+          "lon": 12.7703905556
+        },
+        "rating": 98,
+        "reviews": 67
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Mlýn Byňov",
+      "location": "Byňov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/mlyn-bynov-ubytovani-o12083",
+      "capacity": 17,
+      "bedrooms": null,
+      "price": 2600.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "krb",
+        "u lesa",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/neni-nad-relax-na-nasi-zahrade--3966-dc38-655868.jpg",
+      "raw_extra": {
+        "id": 12083,
+        "tags_featured": [
+          "4 apartmány",
+          "17 osob"
+        ],
+        "area_title": "Byňov",
+        "area_slug": "bynov",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.6405477778,
+          "lon": 14.153305
+        },
+        "rating": 100,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Penzion U Dvou pánů",
+      "location": "Pernink, Krušné hory",
+      "url": "https://www.e-chalupy.cz/penzion-u-dvou-panu-pernink-ubytovani-o11258",
+      "capacity": 19,
+      "bedrooms": null,
+      "price": 740.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "oploceno",
+        "u lesa",
+        "u vody",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/u-dvou-panu-bc8f-201c-635211.jpg",
+      "raw_extra": {
+        "id": 11258,
+        "tags_featured": [
+          "7 pokojů",
+          "19 osob"
+        ],
+        "area_title": "Pernink",
+        "area_slug": "pernink",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3601586111,
+          "lon": 12.7883263889
+        },
+        "rating": 98,
+        "reviews": 14
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata na Rozcestí",
+      "location": "Háj, Krušné hory",
+      "url": "https://www.e-chalupy.cz/loucna-pod-klinovcem-ubytovani-haj-chata-na-rozcesti-o18225",
+      "capacity": 24,
+      "bedrooms": null,
+      "price": 2000.0,
+      "price_unit": "pokoj za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-na-rozcesti-9ccc-b319-892412.jpg",
+      "raw_extra": {
+        "id": 18225,
+        "tags_featured": [
+          "2 apartmány + 4 pokoje",
+          "24 osob"
+        ],
+        "area_title": "Háj",
+        "area_slug": "haj",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.42,
+          "lon": 12.9971531
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Penzion Horská",
+      "location": "Mikulov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/penzion-horska-mikulov-ubytovani-o14488",
+      "capacity": 25,
+      "bedrooms": null,
+      "price": 700.0,
+      "price_unit": "pokoj za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/penzion-horska-mikulov-krusne-hory-036f-02ca-710152.jpg",
+      "raw_extra": {
+        "id": 14488,
+        "tags_featured": [
+          "8 pokojů",
+          "25 osob"
+        ],
+        "area_title": "Mikulov",
+        "area_slug": "mikulov-teplice",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.6881069444,
+          "lon": 13.7194075
+        },
+        "rating": 88,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa TAMA",
+      "location": "Hřebečná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-hrebecna-chalupa-tama-pronajmuti-o3988",
+      "capacity": 33,
+      "bedrooms": null,
+      "price": 690.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "bazén",
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-tama-velikonoce-duben-2019-eec4-b236-478646.jpg",
+      "raw_extra": {
+        "id": 3988,
+        "tags_featured": [
+          "9 pokojů",
+          "33 osob"
+        ],
+        "area_title": "Hřebečná",
+        "area_slug": "hrebecna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3786833333,
+          "lon": 12.8271477778
+        },
+        "rating": 98,
+        "reviews": 46
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská vila Meluzína",
+      "location": "Háj, Krušné hory",
+      "url": "https://www.e-chalupy.cz/horska-vila-meluzina-haj-u-loucne-pod-klinovcem-o14190",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 450.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/horska-vila-meluzina-haj-u-loucne-pod-klinovcem-fe87-7010-703461.jpg",
+      "raw_extra": {
+        "id": 14190,
+        "tags_featured": [
+          "2 apartmány + 1 pokoj",
+          "20 osob"
+        ],
+        "area_title": "Háj",
+        "area_slug": "haj",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4191716667,
+          "lon": 12.9966888889
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Ubytování Eret Pernink",
+      "location": "Pernink, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-eret-pernink-o6249",
+      "capacity": 24,
+      "bedrooms": null,
+      "price": 400.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pokoj-c-6-v-patre-pro-4-6-osob-se-spolecnou-kuchyni-a-socialnim-zarizenim-9ea6-1f85-533921.jpg",
+      "raw_extra": {
+        "id": 6249,
+        "tags_featured": [
+          "3 apartmány + 4 pokoje",
+          "24 osob"
+        ],
+        "area_title": "Pernink",
+        "area_slug": "pernink",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3647744444,
+          "lon": 12.7849152778
+        },
+        "rating": 96,
+        "reviews": 31
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chaloupka Slaměnka",
+      "location": "Loučná pod Klínovcem, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-haj-chalupa-slamenka-pronajem-o9541",
+      "capacity": 33,
+      "bedrooms": null,
+      "price": 350.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/ptaci-pohled-1-907e-f1ba-616922.jpg",
+      "raw_extra": {
+        "id": 9541,
+        "tags_featured": [
+          "7 apartmánů",
+          "33 osob"
+        ],
+        "area_title": "Loučná pod Klínovcem",
+        "area_slug": "loucna-pod-klinovcem",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4233469444,
+          "lon": 13.0020802778
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Trampská bouda",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-penzion-trampska-bouda-o21507",
+      "capacity": 21,
+      "bedrooms": null,
+      "price": 600.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "sauna",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/penzion-trampska-bouda-a64b-59ed-1078706.jpg",
+      "raw_extra": {
+        "id": 21507,
+        "tags_featured": [
+          "6 apartmánů",
+          "21 osob"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3635533,
+          "lon": 12.8419339
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány U Hastrmana",
+      "location": "Velký Rybník, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-velky-rybnik-apartmany-u-hastrmana-o6435",
+      "capacity": 28,
+      "bedrooms": null,
+      "price": 1000.0,
+      "price_unit": "pokoj za noc",
+      "amenities": [
+        "oploceno"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/ubytovani-u-hastrmana-s-terasou-a-zahradou-4b1a-3d18-1186228.jpg",
+      "raw_extra": {
+        "id": 6435,
+        "tags_featured": [
+          "1 apartmán + 4 pokoje + 1 objekt",
+          "28 osob"
+        ],
+        "area_title": "Velký Rybník",
+        "area_slug": "velky-rybnik",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.2878889,
+          "lon": 12.8657436
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Javor",
+      "location": "Bublava, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-javor-bublava-o6007",
+      "capacity": 32,
+      "bedrooms": null,
+      "price": 1100.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "sauna",
+        "pro děti",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-javor-pronajem-bublava-2765-685f-528001.jpg",
+      "raw_extra": {
+        "id": 6007,
+        "tags_featured": [
+          "8 apartmánů",
+          "32 osob"
+        ],
+        "area_title": "Bublava",
+        "area_slug": "bublava",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3761538889,
+          "lon": 12.5041661111
+        },
+        "rating": 100,
+        "reviews": 1
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Klínovec 129",
+      "location": "Loučná pod Klínovcem, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chalupa-loucna-pod-klinovcem-o7036",
+      "capacity": 24,
+      "bedrooms": null,
+      "price": 5000.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "sauna",
+        "pro děti",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/-ana4006-hdr-4d47-147f-925353.jpg",
+      "raw_extra": {
+        "id": 7036,
+        "tags_featured": [
+          "3 apartmány + 1 objekt",
+          "24 osob"
+        ],
+        "area_title": "Loučná pod Klínovcem",
+        "area_slug": "loucna-pod-klinovcem",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4179002778,
+          "lon": 12.9782069444
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská chata Akademie",
+      "location": "Mariánská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/horska-chata-akademie-marianska-ubytovani-o2772",
+      "capacity": 36,
+      "bedrooms": null,
+      "price": 400.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "oploceno",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/horska-chata-akademie-pronajem-marianska-4c0f-965d-806646.jpg",
+      "raw_extra": {
+        "id": 2772,
+        "tags_featured": [
+          "3 apartmány + 3 pokoje",
+          "36 osob"
+        ],
+        "area_title": "Mariánská",
+        "area_slug": "marianska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3569155556,
+          "lon": 12.8933752778
+        },
+        "rating": 96,
+        "reviews": 11
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa pod Plešivcem",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chalupa-pod-plesivcem-abertamy-pronajem-o6917",
+      "capacity": 24,
+      "bedrooms": null,
+      "price": 5750.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-pod-plesivcem-abertamy-e801-1422-1112132.jpg",
+      "raw_extra": {
+        "id": 6917,
+        "tags_featured": [
+          "2 apartmány + 1 objekt",
+          "24 osob"
+        ],
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3643711111,
+          "lon": 12.83945
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Břachovna",
+      "location": "Mikulov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-brachovna-mikulov-o12635",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": null,
+      "price_unit": null,
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartman-3-obyvaci-pokoj-s-kuchyni-9ebb-9cc0-668615.jpg",
+      "raw_extra": {
+        "id": 12635,
+        "tags_featured": [
+          "3 apartmány + 1 pokoj",
+          "20 osob"
+        ],
+        "area_title": "Mikulov",
+        "area_slug": "mikulov-teplice",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.6880502778,
+          "lon": 13.7224113889
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Barbora",
+      "location": "Český Jiřetín, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chata-barbora-cesky-jiretin-ubytovani-o9626",
+      "capacity": 48,
+      "bedrooms": null,
+      "price": 700.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "krb",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-barbora-e11e-f731-1123678.jpg",
+      "raw_extra": {
+        "id": 9626,
+        "tags_featured": [
+          "5 pokojů + 1 objekt",
+          "48 osob"
+        ],
+        "area_title": "Český Jiřetín",
+        "area_slug": "cesky-jiretin",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.7075375,
+          "lon": 13.5656719444
+        },
+        "rating": 94,
+        "reviews": 85
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata PAM",
+      "location": "Nové Město u Jáchymova, Krušné hory",
+      "url": "https://www.e-chalupy.cz/pronajem-chata-pam-nove-mesto-o11339",
+      "capacity": 36,
+      "bedrooms": null,
+      "price": 350.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chata-pam-nove-mesto-u-jachymova-6b9c-f170-637508.jpg",
+      "raw_extra": {
+        "id": 11339,
+        "tags_featured": [
+          "9 pokojů",
+          "36 osob"
+        ],
+        "area_title": "Nové Město u Jáchymova",
+        "area_slug": "nove-mesto-u-jachymova",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3694219444,
+          "lon": 12.90273
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Kemp Nechranice",
+      "location": "Vikletice, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-vikletice-kemp-nechranice-o18885",
+      "capacity": 65,
+      "bedrooms": null,
+      "price": 1350.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "pro děti",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/bungalovy-vasco-de-gama-c563-eba8-926831.jpg",
+      "raw_extra": {
+        "id": 18885,
+        "tags_featured": [
+          "1 apartmán + 14 objektů",
+          "65 osob"
+        ],
+        "area_title": "Vikletice",
+        "area_slug": "vikletice",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3480614,
+          "lon": 13.4087164
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "U Zlatého Jelena",
+      "location": "Výsluní, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-vysluni-penzion-u-zlateho-jelena-o1847",
+      "capacity": 41,
+      "bedrooms": null,
+      "price": 450.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pronajem-ubytovani-u-zlateho-jelena-vysluni-bd5a-040b-425779.jpg",
+      "raw_extra": {
+        "id": 1847,
+        "tags_featured": [
+          "1 apartmán + 9 pokojů",
+          "41 osob"
+        ],
+        "area_title": "Výsluní",
+        "area_slug": "vysluni",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4656011111,
+          "lon": 13.2360955556
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pension Mikuláš",
+      "location": "Mikulov, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-mikulov-v-krusnych-horach-pension-mikulas-o6897",
+      "capacity": 48,
+      "bedrooms": null,
+      "price": 550.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pension-mikulas-bd0a-4174-979363.jpg",
+      "raw_extra": {
+        "id": 6897,
+        "tags_featured": [
+          "18 pokojů",
+          "48 osob"
+        ],
+        "area_title": "Mikulov",
+        "area_slug": "mikulov-teplice",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.6874463889,
+          "lon": 13.7229827778
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Engadin",
+      "location": "Boží Dar, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-bozi-dar-apartmany-engadin-o5401",
+      "capacity": 64,
+      "bedrooms": null,
+      "price": 2100.0,
+      "price_unit": "apartmán za noc",
+      "amenities": [
+        "bazén",
+        "vířivka",
+        "sauna",
+        "mazlíčci vítáni",
+        "krb",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/apartmany-engadin-ubytovani-bozi-dar-wellness-centrum-73aa-8212-1102540.jpg",
+      "raw_extra": {
+        "id": 5401,
+        "tags_featured": [
+          "17 apartmánů",
+          "64 osob"
+        ],
+        "area_title": "Boží Dar",
+        "area_slug": "bozi-dar",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4095991667,
+          "lon": 12.9219666667
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Rybářský domov",
+      "location": "Vikletice, Krušné hory",
+      "url": "https://www.e-chalupy.cz/rybarsky-domov-vikletice-ubytovani-o12889",
+      "capacity": 68,
+      "bedrooms": null,
+      "price": 450.0,
+      "price_unit": "osoba za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chaty-b6d5-c0b9-926231.jpg",
+      "raw_extra": {
+        "id": 12889,
+        "tags_featured": [
+          "1 apartmán + 8 pokojů + 10 objektů",
+          "68 osob"
+        ],
+        "area_title": "Vikletice",
+        "area_slug": "vikletice",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.3504469444,
+          "lon": 13.4016138889
+        },
+        "rating": 0,
+        "reviews": 0
+      }
+    },
     {
       "source": "e-chalupy.cz",
       "title": "Roubenka na zelené",
@@ -759,34 +3282,68 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmány Ruprechtov",
-      "location": "Ruprechtov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-ruprechtov-apartmany-o1661",
-      "capacity": 13,
+      "title": "Apartmány Plešivec",
+      "location": "Abertamy, Krušné hory",
+      "url": "https://www.e-chalupy.cz/apartmany-plesivec-abertamy-o13762",
+      "capacity": 10,
       "bedrooms": null,
-      "price": 1800.0,
+      "price": 2900.0,
       "price_unit": "apartmán za noc",
       "amenities": [
-        "krb",
-        "u lesa"
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "u lesa",
+        "luxusní"
       ],
-      "image_url": "https://e-chalupy.cz/foto/20200623-080346-c741-c3b5-421115.jpg",
+      "image_url": "https://e-chalupy.cz/foto/chalupa-apartmany-plesivec-e016-290e-844941.jpg",
       "raw_extra": {
-        "id": 1661,
+        "id": 13762,
         "tags_featured": [
-          "3 apartmány",
-          "13 osob"
+          "2 apartmány",
+          "10 osob"
         ],
-        "area_title": "Ruprechtov",
-        "area_slug": "ruprechtov-hroznetin",
+        "area_title": "Abertamy",
+        "area_slug": "abertamy",
         "area2_title": "Krušné hory",
         "area2_slug": "krusne-hory",
         "gps": {
-          "lat": 50.2917716667,
-          "lon": 12.8506666667
+          "lat": 50.3650138889,
+          "lon": 12.8390230556
         },
-        "rating": 92,
-        "reviews": 1
+        "rating": 99,
+        "reviews": 28
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Nela - apartmány",
+      "location": "Háj, Krušné hory",
+      "url": "https://www.e-chalupy.cz/pronajem-chalupa-nela-apartmany-haj-loucna-pod-klinovcem-o12584",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 3143.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "krb"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-nela-91b6-f1a3-667411.jpg",
+      "raw_extra": {
+        "id": 12584,
+        "tags_featured": [
+          "2 apartmány",
+          "10 osob"
+        ],
+        "area_title": "Háj",
+        "area_slug": "haj",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4204144444,
+          "lon": 12.9981516667
+        },
+        "rating": 98,
+        "reviews": 11
       }
     },
     {
@@ -816,6 +3373,41 @@
         },
         "rating": 99,
         "reviews": 2
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Na Kovy",
+      "location": "Kovářská, Krušné hory",
+      "url": "https://www.e-chalupy.cz/pronajem-chalupa-na-kovy-kovarska-ubytovani-o17916",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 4100.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-na-kovy-kovarska-dlouha-105-857b-c7ee-1059032.jpg",
+      "raw_extra": {
+        "id": 17916,
+        "tags_featured": [
+          "3 pokoje",
+          "10 osob"
+        ],
+        "area_title": "Kovářská",
+        "area_slug": "kovarska",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.4430714,
+          "lon": 13.0560394
+        },
+        "rating": 98,
+        "reviews": 5
       }
     },
     {
@@ -954,39 +3546,66 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmán Pod komínem",
-      "location": "Skalná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-skalna-apartman-pod-kominem-o5011",
-      "capacity": 14,
+      "title": "Chalupa Jachovka",
+      "location": "Nová Ves v Horách, Krušné hory",
+      "url": "https://www.e-chalupy.cz/ubytovani-nova-ves-v-horach-chalupa-jachovka-pronajem-o14428",
+      "capacity": 10,
       "bedrooms": null,
-      "price": 1080.0,
-      "price_unit": "objekt za noc",
+      "price": 520.0,
+      "price_unit": "osoba za noc",
       "amenities": [
-        "bazén",
-        "pro děti",
-        "oploceno",
-        "mazlíčci vítáni",
-        "u lesa",
-        "u vody",
-        "snídaně"
+        "pro děti"
       ],
-      "image_url": "https://e-chalupy.cz/foto/20240714-141524000-ios-d056-872d-1171692.jpg",
+      "image_url": "https://e-chalupy.cz/foto/jachovka-cff4-474b-1088223.jpg",
       "raw_extra": {
-        "id": 5011,
+        "id": 14428,
         "tags_featured": [
-          "4 pokoje",
-          "14 osob"
+          "2 apartmány",
+          "10 osob"
         ],
-        "area_title": "Skalná",
-        "area_slug": "skalna",
+        "area_title": "Nová Ves v Horách",
+        "area_slug": "nova-ves-v-horach",
         "area2_title": "Krušné hory",
         "area2_slug": "krusne-hory",
         "gps": {
-          "lat": 50.1697588889,
-          "lon": 12.35563
+          "lat": 50.5925238889,
+          "lon": 13.4871055556
         },
-        "rating": 0,
-        "reviews": 0
+        "rating": 100,
+        "reviews": 6
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Pankrác & Servác",
+      "location": "Horní Blatná, Krušné hory",
+      "url": "https://www.e-chalupy.cz/chalupa-pankrac-a-servac-horni-blatna-pronajem-o16480",
+      "capacity": 8,
+      "bedrooms": null,
+      "price": 5000.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "koupací sud"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/chalupa-pohled-ze-zahrady-2cd6-e10a-791809.jpg",
+      "raw_extra": {
+        "id": 16480,
+        "tags_featured": [
+          "2 apartmány",
+          "8 osob"
+        ],
+        "area_title": "Horní Blatná",
+        "area_slug": "horni-blatna",
+        "area2_title": "Krušné hory",
+        "area2_slug": "krusne-hory",
+        "gps": {
+          "lat": 50.39109,
+          "lon": 12.7717894444
+        },
+        "rating": 100,
+        "reviews": 8
       }
     },
     {
@@ -1122,38 +3741,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "MAX Klínovec",
-      "location": "Loučná pod Klínovcem, Krušné hory",
-      "url": "https://www.e-chalupy.cz/penzion-loucna-pod-klinovcem-haj-ubytovani-max-o2932",
-      "capacity": 20,
-      "bedrooms": null,
-      "price": 730.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/penzion-max-maxpark-dojezd-sjezdovky-damska-1c5c-3139-452423.jpg",
-      "raw_extra": {
-        "id": 2932,
-        "tags_featured": [
-          "5 pokojů",
-          "20 osob"
-        ],
-        "area_title": "Loučná pod Klínovcem",
-        "area_slug": "loucna-pod-klinovcem",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4034008333,
-          "lon": 12.9819011111
-        },
-        "rating": 62,
-        "reviews": 1
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Chata Lukas",
       "location": "Loučná pod Klínovcem, Krušné hory",
       "url": "https://www.e-chalupy.cz/chata-loucna-pod-klinovcem-o8355",
@@ -1182,70 +3769,6 @@
         },
         "rating": 84,
         "reviews": 10
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Fara Stříbrná",
-      "location": "Stříbrná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-stribrna-fara-o18850",
-      "capacity": 27,
-      "bedrooms": null,
-      "price": 2714.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "oploceno",
-        "mazlíčci vítáni"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/294302105-549701936891086-6981584551590765963-n-d93c-f142-996491.jpg",
-      "raw_extra": {
-        "id": 18850,
-        "tags_featured": [
-          "4 pokoje + 1 objekt",
-          "27 osob"
-        ],
-        "area_title": "Stříbrná",
-        "area_slug": "stribrna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3593966667,
-          "lon": 12.5242041667
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "SportCentrum Klínovec",
-      "location": "Loučná pod Klínovcem, Krušné hory",
-      "url": "https://www.e-chalupy.cz/loucna-pod-klinovcem-ubytovani-penzion-sportcentrum-klinovec-o755",
-      "capacity": 23,
-      "bedrooms": null,
-      "price": 690.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "u lesa",
-        "snídaně"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/sport-centrum-klinovec-219d-75dc-398954.jpg",
-      "raw_extra": {
-        "id": 755,
-        "tags_featured": [
-          "5 pokojů",
-          "23 osob"
-        ],
-        "area_title": "Loučná pod Klínovcem",
-        "area_slug": "loucna-pod-klinovcem",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4042905556,
-          "lon": 12.9835366667
-        },
-        "rating": 0,
-        "reviews": 0
       }
     },
     {
@@ -1280,112 +3803,6 @@
         },
         "rating": 99,
         "reviews": 3
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Penzion Studánka",
-      "location": "Klíny, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-kliny-penzion-studanka-o1920",
-      "capacity": 25,
-      "bedrooms": null,
-      "price": 1685.0,
-      "price_unit": "pokoj za noc",
-      "amenities": [
-        "sauna",
-        "pro děti",
-        "oploceno",
-        "koupací sud",
-        "u lesa",
-        "u vody",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/penzion-studanka-e3e9-7cfb-1177203.jpg",
-      "raw_extra": {
-        "id": 1920,
-        "tags_featured": [
-          "1 apartmán + 5 pokojů",
-          "25 osob"
-        ],
-        "area_title": "Klíny",
-        "area_slug": "kliny",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.6337044444,
-          "lon": 13.5564961111
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány U Muzea",
-      "location": "Horní Blatná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-u-muzea-horni-blatna-pronajem-o13497",
-      "capacity": 28,
-      "bedrooms": null,
-      "price": 1400.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "pro děti",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-u-muzea-horni-blatna-bcf3-2bcb-686956.jpg",
-      "raw_extra": {
-        "id": 13497,
-        "tags_featured": [
-          "6 apartmánů",
-          "28 osob"
-        ],
-        "area_title": "Horní Blatná",
-        "area_slug": "horni-blatna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3915247222,
-          "lon": 12.7703905556
-        },
-        "rating": 98,
-        "reviews": 67
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Mlýn Byňov",
-      "location": "Byňov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/mlyn-bynov-ubytovani-o12083",
-      "capacity": 17,
-      "bedrooms": null,
-      "price": 2600.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "pro děti",
-        "oploceno",
-        "krb",
-        "u lesa",
-        "u vody",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/neni-nad-relax-na-nasi-zahrade--3966-dc38-655868.jpg",
-      "raw_extra": {
-        "id": 12083,
-        "tags_featured": [
-          "4 apartmány",
-          "17 osob"
-        ],
-        "area_title": "Byňov",
-        "area_slug": "bynov",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.6405477778,
-          "lon": 14.153305
-        },
-        "rating": 100,
-        "reviews": 1
       }
     },
     {
@@ -1520,176 +3937,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Chalupa TAMA",
-      "location": "Hřebečná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-hrebecna-chalupa-tama-pronajmuti-o3988",
-      "capacity": 33,
-      "bedrooms": null,
-      "price": 690.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "bazén",
-        "sauna",
-        "pro děti",
-        "oploceno",
-        "mazlíčci vítáni",
-        "u lesa",
-        "snídaně"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-tama-velikonoce-duben-2019-eec4-b236-478646.jpg",
-      "raw_extra": {
-        "id": 3988,
-        "tags_featured": [
-          "9 pokojů",
-          "33 osob"
-        ],
-        "area_title": "Hřebečná",
-        "area_slug": "hrebecna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3786833333,
-          "lon": 12.8271477778
-        },
-        "rating": 98,
-        "reviews": 46
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Horská vila Meluzína",
-      "location": "Háj, Krušné hory",
-      "url": "https://www.e-chalupy.cz/horska-vila-meluzina-haj-u-loucne-pod-klinovcem-o14190",
-      "capacity": 20,
-      "bedrooms": null,
-      "price": 450.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "mazlíčci vítáni",
-        "krb",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/horska-vila-meluzina-haj-u-loucne-pod-klinovcem-fe87-7010-703461.jpg",
-      "raw_extra": {
-        "id": 14190,
-        "tags_featured": [
-          "2 apartmány + 1 pokoj",
-          "20 osob"
-        ],
-        "area_title": "Háj",
-        "area_slug": "haj",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4191716667,
-          "lon": 12.9966888889
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chaloupka Slaměnka",
-      "location": "Loučná pod Klínovcem, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-haj-chalupa-slamenka-pronajem-o9541",
-      "capacity": 33,
-      "bedrooms": null,
-      "price": 350.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/ptaci-pohled-1-907e-f1ba-616922.jpg",
-      "raw_extra": {
-        "id": 9541,
-        "tags_featured": [
-          "7 apartmánů",
-          "33 osob"
-        ],
-        "area_title": "Loučná pod Klínovcem",
-        "area_slug": "loucna-pod-klinovcem",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4233469444,
-          "lon": 13.0020802778
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Javor",
-      "location": "Bublava, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-javor-bublava-o6007",
-      "capacity": 32,
-      "bedrooms": null,
-      "price": 1100.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "sauna",
-        "pro děti",
-        "u lesa",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-javor-pronajem-bublava-2765-685f-528001.jpg",
-      "raw_extra": {
-        "id": 6007,
-        "tags_featured": [
-          "8 apartmánů",
-          "32 osob"
-        ],
-        "area_title": "Bublava",
-        "area_slug": "bublava",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3761538889,
-          "lon": 12.5041661111
-        },
-        "rating": 100,
-        "reviews": 1
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Horská chata Akademie",
-      "location": "Mariánská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/horska-chata-akademie-marianska-ubytovani-o2772",
-      "capacity": 36,
-      "bedrooms": null,
-      "price": 400.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "oploceno",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/horska-chata-akademie-pronajem-marianska-4c0f-965d-806646.jpg",
-      "raw_extra": {
-        "id": 2772,
-        "tags_featured": [
-          "3 apartmány + 3 pokoje",
-          "36 osob"
-        ],
-        "area_title": "Mariánská",
-        "area_slug": "marianska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3569155556,
-          "lon": 12.8933752778
-        },
-        "rating": 96,
-        "reviews": 11
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Penzion Florian",
       "location": "Moldava, Krušné hory",
       "url": "https://www.e-chalupy.cz/ubytovani-moldava-penzion-florian-o9864",
@@ -1717,77 +3964,6 @@
         "gps": {
           "lat": 50.7182536111,
           "lon": 13.6899777778
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Pension Mikuláš",
-      "location": "Mikulov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-mikulov-v-krusnych-horach-pension-mikulas-o6897",
-      "capacity": 48,
-      "bedrooms": null,
-      "price": 550.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa",
-        "snídaně"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/pension-mikulas-bd0a-4174-979363.jpg",
-      "raw_extra": {
-        "id": 6897,
-        "tags_featured": [
-          "18 pokojů",
-          "48 osob"
-        ],
-        "area_title": "Mikulov",
-        "area_slug": "mikulov-teplice",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.6874463889,
-          "lon": 13.7229827778
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Engadin",
-      "location": "Boží Dar, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-bozi-dar-apartmany-engadin-o5401",
-      "capacity": 64,
-      "bedrooms": null,
-      "price": 2100.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "bazén",
-        "vířivka",
-        "sauna",
-        "mazlíčci vítáni",
-        "krb",
-        "u vody",
-        "snídaně"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-engadin-ubytovani-bozi-dar-wellness-centrum-73aa-8212-1102540.jpg",
-      "raw_extra": {
-        "id": 5401,
-        "tags_featured": [
-          "17 apartmánů",
-          "64 osob"
-        ],
-        "area_title": "Boží Dar",
-        "area_slug": "bozi-dar",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4095991667,
-          "lon": 12.9219666667
         },
         "rating": 0,
         "reviews": 0
@@ -1824,43 +4000,6 @@
         },
         "rating": 100,
         "reviews": 4
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chata Borůvka",
-      "location": "Mariánská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chata-boruvka-marianska-ubytovani-apartmany-o5331",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 1900.0,
-      "price_unit": "pokoj za noc",
-      "amenities": [
-        "vířivka",
-        "mazlíčci vítáni",
-        "krb",
-        "koupací sud",
-        "u lesa",
-        "snídaně",
-        "polopenze"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chata-boruvka-marianska-9142-390d-511976.jpg",
-      "raw_extra": {
-        "id": 5331,
-        "tags_featured": [
-          "2 pokoje",
-          "10 osob"
-        ],
-        "area_title": "Mariánská",
-        "area_slug": "marianska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3546619444,
-          "lon": 12.8927991667
-        },
-        "rating": 96,
-        "reviews": 70
       }
     },
     {
@@ -3430,37 +5569,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmány Anna&Jan",
-      "location": "Pernink, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-pernink-apartmany-anna-a-jan-o18714",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 1500.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "mazlíčci vítáni"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-annaamp-jan-ubytovani-pernink-00dd-194d-914015.jpg",
-      "raw_extra": {
-        "id": 18714,
-        "tags_featured": [
-          "2 apartmány",
-          "10 osob"
-        ],
-        "area_title": "Pernink",
-        "area_slug": "pernink",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3681763889,
-          "lon": 12.7782775
-        },
-        "rating": 99,
-        "reviews": 7
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Krušnohorské Stráně - Klínovec",
       "location": "Háj, Krušné hory",
       "url": "https://www.e-chalupy.cz/apartmany-krusnohorske-strane-haj-ubytovani-o16345",
@@ -3805,75 +5913,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Ubytování v soukromí „Harmonie“",
-      "location": "Mariánská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-harmonie-marianska-ubytovani-o11268",
-      "capacity": 12,
-      "bedrooms": null,
-      "price": 600.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "na samotě",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/harmonie-d476-9c3c-1177068.jpg",
-      "raw_extra": {
-        "id": 11268,
-        "tags_featured": [
-          "3 apartmány",
-          "12 osob"
-        ],
-        "area_title": "Mariánská",
-        "area_slug": "marianska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3562222222,
-          "lon": 12.9033483333
-        },
-        "rating": 100,
-        "reviews": 16
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Pronájem chalupy",
-      "location": "Bublava, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chalupa-bublava-o9849",
-      "capacity": 16,
-      "bedrooms": null,
-      "price": 550.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "bazén",
-        "pro děti",
-        "oploceno",
-        "u lesa",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-bublava-57eb-c868-625166.jpg",
-      "raw_extra": {
-        "id": 9849,
-        "tags_featured": [
-          "1 apartmán + 3 pokoje",
-          "16 osob"
-        ],
-        "area_title": "Bublava",
-        "area_slug": "bublava",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3718097222,
-          "lon": 12.5076963889
-        },
-        "rating": 100,
-        "reviews": 6
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Apartmány Marie",
       "location": "Jáchymov, Krušné hory",
       "url": "https://www.e-chalupy.cz/apartmany-marie-jachymov-ubytovani-o11841",
@@ -3902,40 +5941,6 @@
         },
         "rating": 100,
         "reviews": 2
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Ubytování Háj",
-      "location": "Háj u Jindřichovic, Krušné hory",
-      "url": "https://www.e-chalupy.cz/jindrichovice-ubytovani-haj-apartman-o17971",
-      "capacity": 13,
-      "bedrooms": null,
-      "price": null,
-      "price_unit": null,
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "na samotě",
-        "krb"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/1000090034-163e-19ba-1153071.jpg",
-      "raw_extra": {
-        "id": 17971,
-        "tags_featured": [
-          "3 apartmány",
-          "13 osob"
-        ],
-        "area_title": "Háj u Jindřichovic",
-        "area_slug": "haj-u-jindrichovic",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.2535780556,
-          "lon": 12.6013405556
-        },
-        "rating": 96,
-        "reviews": 4
       }
     },
     {
@@ -4003,37 +6008,6 @@
         },
         "rating": 94,
         "reviews": 6
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Hacienda",
-      "location": "Boží Dar, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-hacienda-bozi-dar-ubytovani-o11410",
-      "capacity": 18,
-      "bedrooms": null,
-      "price": 1300.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-hacienda-bozi-dar-441c-066b-639327.jpg",
-      "raw_extra": {
-        "id": 11410,
-        "tags_featured": [
-          "4 apartmány",
-          "18 osob"
-        ],
-        "area_title": "Boží Dar",
-        "area_slug": "bozi-dar",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4126711111,
-          "lon": 12.9204791667
-        },
-        "rating": 0,
-        "reviews": 0
       }
     },
     {
@@ -4108,70 +6082,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmány Quattro",
-      "location": "Loučná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-apartmany-quattro-o7716",
-      "capacity": 19,
-      "bedrooms": null,
-      "price": 1200.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-quattro-pod-klinovcem-61df-4b5b-965099.jpg",
-      "raw_extra": {
-        "id": 7716,
-        "tags_featured": [
-          "4 apartmány",
-          "19 osob"
-        ],
-        "area_title": "Loučná",
-        "area_slug": "loucna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4130875,
-          "lon": 12.9788714
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Roubenky Slunný vrch",
-      "location": "Český Jiřetín, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-roubenky-slunny-vrch-o4049",
-      "capacity": 19,
-      "bedrooms": null,
-      "price": 1857.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "pro děti",
-        "krb",
-        "v lese"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/mala-roubenka-a8a6-e38f-480187.jpg",
-      "raw_extra": {
-        "id": 4049,
-        "tags_featured": [
-          "3 objekty",
-          "19 osob"
-        ],
-        "area_title": "Český Jiřetín",
-        "area_slug": "cesky-jiretin",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.7074502778,
-          "lon": 13.5751361111
-        },
-        "rating": 99,
-        "reviews": 138
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Apartmány Bollehaus",
       "location": "Mariánská, Krušné hory",
       "url": "https://www.e-chalupy.cz/apartmany-bollehaus-marianska-o13653",
@@ -4197,217 +6107,6 @@
         "gps": {
           "lat": 50.3563944,
           "lon": 12.8969058
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Penzion Horská",
-      "location": "Mikulov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/penzion-horska-mikulov-ubytovani-o14488",
-      "capacity": 25,
-      "bedrooms": null,
-      "price": 700.0,
-      "price_unit": "pokoj za noc",
-      "amenities": [
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/penzion-horska-mikulov-krusne-hory-036f-02ca-710152.jpg",
-      "raw_extra": {
-        "id": 14488,
-        "tags_featured": [
-          "8 pokojů",
-          "25 osob"
-        ],
-        "area_title": "Mikulov",
-        "area_slug": "mikulov-teplice",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.6881069444,
-          "lon": 13.7194075
-        },
-        "rating": 88,
-        "reviews": 1
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Trampská bouda",
-      "location": "Abertamy, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-penzion-trampska-bouda-o21507",
-      "capacity": 21,
-      "bedrooms": null,
-      "price": 600.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "sauna",
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa",
-        "u vody",
-        "snídaně"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/penzion-trampska-bouda-a64b-59ed-1078706.jpg",
-      "raw_extra": {
-        "id": 21507,
-        "tags_featured": [
-          "6 apartmánů",
-          "21 osob"
-        ],
-        "area_title": "Abertamy",
-        "area_slug": "abertamy",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3635533,
-          "lon": 12.8419339
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa Klínovec 129",
-      "location": "Loučná pod Klínovcem, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chalupa-loucna-pod-klinovcem-o7036",
-      "capacity": 24,
-      "bedrooms": null,
-      "price": 5000.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "sauna",
-        "pro děti",
-        "mazlíčci vítáni",
-        "na samotě",
-        "krb",
-        "u lesa",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/-ana4006-hdr-4d47-147f-925353.jpg",
-      "raw_extra": {
-        "id": 7036,
-        "tags_featured": [
-          "3 apartmány + 1 objekt",
-          "24 osob"
-        ],
-        "area_title": "Loučná pod Klínovcem",
-        "area_slug": "loucna-pod-klinovcem",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4179002778,
-          "lon": 12.9782069444
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Břachovna",
-      "location": "Mikulov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-brachovna-mikulov-o12635",
-      "capacity": 20,
-      "bedrooms": null,
-      "price": null,
-      "price_unit": null,
-      "amenities": [
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartman-3-obyvaci-pokoj-s-kuchyni-9ebb-9cc0-668615.jpg",
-      "raw_extra": {
-        "id": 12635,
-        "tags_featured": [
-          "3 apartmány + 1 pokoj",
-          "20 osob"
-        ],
-        "area_title": "Mikulov",
-        "area_slug": "mikulov-teplice",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.6880502778,
-          "lon": 13.7224113889
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chata Barbora",
-      "location": "Český Jiřetín, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chata-barbora-cesky-jiretin-ubytovani-o9626",
-      "capacity": 48,
-      "bedrooms": null,
-      "price": 700.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "krb",
-        "u lesa",
-        "snídaně",
-        "polopenze"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chata-barbora-e11e-f731-1123678.jpg",
-      "raw_extra": {
-        "id": 9626,
-        "tags_featured": [
-          "5 pokojů + 1 objekt",
-          "48 osob"
-        ],
-        "area_title": "Český Jiřetín",
-        "area_slug": "cesky-jiretin",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.7075375,
-          "lon": 13.5656719444
-        },
-        "rating": 94,
-        "reviews": 85
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Rybářský domov",
-      "location": "Vikletice, Krušné hory",
-      "url": "https://www.e-chalupy.cz/rybarsky-domov-vikletice-ubytovani-o12889",
-      "capacity": 68,
-      "bedrooms": null,
-      "price": 450.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chaty-b6d5-c0b9-926231.jpg",
-      "raw_extra": {
-        "id": 12889,
-        "tags_featured": [
-          "1 apartmán + 8 pokojů + 10 objektů",
-          "68 osob"
-        ],
-        "area_title": "Vikletice",
-        "area_slug": "vikletice",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3504469444,
-          "lon": 13.4016138889
         },
         "rating": 0,
         "reviews": 0
@@ -5241,39 +6940,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmány 178",
-      "location": "Horní Blatná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-178-horni-blatna-o12682",
-      "capacity": 13,
-      "bedrooms": null,
-      "price": 1250.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/cabin-studio-63ec-dfd0-960725.jpg",
-      "raw_extra": {
-        "id": 12682,
-        "tags_featured": [
-          "3 apartmány",
-          "13 osob"
-        ],
-        "area_title": "Horní Blatná",
-        "area_slug": "horni-blatna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3924330556,
-          "lon": 12.7710875
-        },
-        "rating": 98,
-        "reviews": 16
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Apartmány U Fořtů",
       "location": "Potůčky, Krušné hory",
       "url": "https://www.e-chalupy.cz/apartmany-u-fortu-potucky-ubytovani-o10172",
@@ -5339,146 +7005,6 @@
         },
         "rating": 0,
         "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Cestář",
-      "location": "Boží Dar, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-bozi-dar-apartmany-cestar-o5377",
-      "capacity": 23,
-      "bedrooms": null,
-      "price": 500.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "vířivka",
-        "sauna",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-cestar-bozi-dar-a2e2-b800-805652.jpg",
-      "raw_extra": {
-        "id": 5377,
-        "tags_featured": [
-          "4 apartmány",
-          "23 osob"
-        ],
-        "area_title": "Boží Dar",
-        "area_slug": "bozi-dar",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4091386111,
-          "lon": 12.9268661111
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Forest House",
-      "location": "Kovářská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/kovarska-ubytovani-apartman-forest-o454",
-      "capacity": 22,
-      "bedrooms": null,
-      "price": 8500.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "sauna",
-        "pro děti",
-        "oploceno",
-        "mazlíčci vítáni",
-        "na samotě",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/forest-house-06d8-77c9-1146793.jpg",
-      "raw_extra": {
-        "id": 454,
-        "tags_featured": [
-          "5 apartmánů",
-          "22 osob"
-        ],
-        "area_title": "Kovářská",
-        "area_slug": "kovarska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4486022222,
-          "lon": 13.0573941667
-        },
-        "rating": 97,
-        "reviews": 4
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Horský penzion Čepice (i pro skupiny)",
-      "location": "Pernink, Krušné hory",
-      "url": "https://www.e-chalupy.cz/penzion-cepice-pernink-ubytovani-o13622",
-      "capacity": 19,
-      "bedrooms": null,
-      "price": 550.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "u lesa",
-        "snídaně",
-        "polopenze"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/penzion-cepice-7a4b-3e30-1067654.jpg",
-      "raw_extra": {
-        "id": 13622,
-        "tags_featured": [
-          "1 apartmán + 4 pokoje",
-          "19 osob"
-        ],
-        "area_title": "Pernink",
-        "area_slug": "pernink",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3624833333,
-          "lon": 12.7863194444
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Pod sjezdovkou",
-      "location": "Abertamy, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-apartmany-pod-sjezdovkou-o6810",
-      "capacity": 22,
-      "bedrooms": null,
-      "price": 2100.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "bazén",
-        "sauna",
-        "pro děti",
-        "mazlíčci vítáni",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/pohled-na-dum-d454-f35a-546821.jpg",
-      "raw_extra": {
-        "id": 6810,
-        "tags_featured": [
-          "4 apartmány",
-          "22 osob"
-        ],
-        "area_title": "Abertamy",
-        "area_slug": "abertamy",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3657019444,
-          "lon": 12.8384580556
-        },
-        "rating": 100,
-        "reviews": 5
       }
     },
     {
@@ -6825,38 +8351,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Chata Mája",
-      "location": "Mariánská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chata-maja-marianska-pronajem-o10517",
-      "capacity": 16,
-      "bedrooms": null,
-      "price": 4200.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "oploceno",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chata-maja-debb-1f24-790310.jpg",
-      "raw_extra": {
-        "id": 10517,
-        "tags_featured": [
-          "3 pokoje",
-          "16 osob"
-        ],
-        "area_title": "Mariánská",
-        "area_slug": "marianska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3567686111,
-          "lon": 12.8939427778
-        },
-        "rating": 98,
-        "reviews": 2
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Chata Václav",
       "location": "Mezihoří, Krušné hory",
       "url": "https://www.e-chalupy.cz/ubytovani-mezihori-chata-vaclav-k-pronajmu-o11176",
@@ -7294,41 +8788,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Chalets Resort",
-      "location": "Cínovec, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-cinovec-chalets-resort-o5104",
-      "capacity": 16,
-      "bedrooms": null,
-      "price": 3500.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "mazlíčci vítáni",
-        "na samotě",
-        "krb",
-        "u lesa",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalets-resort-cinovec-308b-2439-949543.jpg",
-      "raw_extra": {
-        "id": 5104,
-        "tags_featured": [
-          "3 objekty",
-          "16 osob"
-        ],
-        "area_title": "Cínovec",
-        "area_slug": "cinovec",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.7323975,
-          "lon": 13.7634066667
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Chalupa Karolka",
       "location": "Abertamy, Krušné hory",
       "url": "https://www.e-chalupy.cz/ubytovani-abertamy-chalupa-karolka-pronajmuti-o2122",
@@ -7360,39 +8819,6 @@
         },
         "rating": 99,
         "reviews": 44
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa Pankrác & Servác",
-      "location": "Horní Blatná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chalupa-pankrac-a-servac-horni-blatna-pronajem-o16480",
-      "capacity": 8,
-      "bedrooms": null,
-      "price": 5000.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "pro děti",
-        "oploceno",
-        "koupací sud"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-pohled-ze-zahrady-2cd6-e10a-791809.jpg",
-      "raw_extra": {
-        "id": 16480,
-        "tags_featured": [
-          "2 apartmány",
-          "8 osob"
-        ],
-        "area_title": "Horní Blatná",
-        "area_slug": "horni-blatna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.39109,
-          "lon": 12.7717894444
-        },
-        "rating": 100,
-        "reviews": 8
       }
     },
     {
@@ -7460,41 +8886,6 @@
         },
         "rating": 93,
         "reviews": 41
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Pension u Matěje",
-      "location": "Pernink, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-pernink-penzion-u-mateje-o1036",
-      "capacity": 23,
-      "bedrooms": null,
-      "price": 4400.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/pension-u-mateje-a30e-e034-406160.jpg",
-      "raw_extra": {
-        "id": 1036,
-        "tags_featured": [
-          "5 pokojů",
-          "23 osob"
-        ],
-        "area_title": "Pernink",
-        "area_slug": "pernink",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3676677778,
-          "lon": 12.7816886111
-        },
-        "rating": 98,
-        "reviews": 3
       }
     },
     {
@@ -7569,40 +8960,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Horská chata Hugo",
-      "location": "Stříbrná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-stribrna-horska-chata-hugo-pronajem-o2933",
-      "capacity": 20,
-      "bedrooms": null,
-      "price": 1275.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/horska-chata-hugo-stribrna-leto-d015-5c0d-452450.jpg",
-      "raw_extra": {
-        "id": 2933,
-        "tags_featured": [
-          "3 apartmány",
-          "20 osob"
-        ],
-        "area_title": "Stříbrná",
-        "area_slug": "stribrna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3566977778,
-          "lon": 12.5259866667
-        },
-        "rating": 96,
-        "reviews": 6
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Chalupa Jáchymov",
       "location": "Jáchymov, Krušné hory",
       "url": "https://www.e-chalupy.cz/chalupa-k-pronajmuti-jachymov-o13874",
@@ -7634,73 +8991,6 @@
         },
         "rating": 94,
         "reviews": 13
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa pod Plešivcem",
-      "location": "Abertamy, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chalupa-pod-plesivcem-abertamy-pronajem-o6917",
-      "capacity": 24,
-      "bedrooms": null,
-      "price": 5750.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-pod-plesivcem-abertamy-e801-1422-1112132.jpg",
-      "raw_extra": {
-        "id": 6917,
-        "tags_featured": [
-          "2 apartmány + 1 objekt",
-          "24 osob"
-        ],
-        "area_title": "Abertamy",
-        "area_slug": "abertamy",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3643711111,
-          "lon": 12.83945
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "U Zlatého Jelena",
-      "location": "Výsluní, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-vysluni-penzion-u-zlateho-jelena-o1847",
-      "capacity": 41,
-      "bedrooms": null,
-      "price": 450.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/pronajem-ubytovani-u-zlateho-jelena-vysluni-bd5a-040b-425779.jpg",
-      "raw_extra": {
-        "id": 1847,
-        "tags_featured": [
-          "1 apartmán + 9 pokojů",
-          "41 osob"
-        ],
-        "area_title": "Výsluní",
-        "area_slug": "vysluni",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4656011111,
-          "lon": 13.2360955556
-        },
-        "rating": 0,
-        "reviews": 0
       }
     },
     {
@@ -8452,72 +9742,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmány Plešivec",
-      "location": "Abertamy, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-plesivec-abertamy-o13762",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 2900.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "sauna",
-        "pro děti",
-        "oploceno",
-        "u lesa",
-        "luxusní"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-apartmany-plesivec-e016-290e-844941.jpg",
-      "raw_extra": {
-        "id": 13762,
-        "tags_featured": [
-          "2 apartmány",
-          "10 osob"
-        ],
-        "area_title": "Abertamy",
-        "area_slug": "abertamy",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3650138889,
-          "lon": 12.8390230556
-        },
-        "rating": 99,
-        "reviews": 28
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa Nela - apartmány",
-      "location": "Háj, Krušné hory",
-      "url": "https://www.e-chalupy.cz/pronajem-chalupa-nela-apartmany-haj-loucna-pod-klinovcem-o12584",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 3143.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "krb"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-nela-91b6-f1a3-667411.jpg",
-      "raw_extra": {
-        "id": 12584,
-        "tags_featured": [
-          "2 apartmány",
-          "10 osob"
-        ],
-        "area_title": "Háj",
-        "area_slug": "haj",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4204144444,
-          "lon": 12.9981516667
-        },
-        "rating": 98,
-        "reviews": 11
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Pronájem chaty",
       "location": "Háj, Krušné hory",
       "url": "https://www.e-chalupy.cz/ubytovani-haj-chata-pronajmuti-o9804",
@@ -8786,41 +10010,6 @@
         },
         "rating": 99,
         "reviews": 18
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa Na Kovy",
-      "location": "Kovářská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/pronajem-chalupa-na-kovy-kovarska-ubytovani-o17916",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 4100.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "pro děti",
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chalupa-na-kovy-kovarska-dlouha-105-857b-c7ee-1059032.jpg",
-      "raw_extra": {
-        "id": 17916,
-        "tags_featured": [
-          "3 pokoje",
-          "10 osob"
-        ],
-        "area_title": "Kovářská",
-        "area_slug": "kovarska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4430714,
-          "lon": 13.0560394
-        },
-        "rating": 98,
-        "reviews": 5
       }
     },
     {
@@ -9286,37 +10475,6 @@
         },
         "rating": 0,
         "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa Jachovka",
-      "location": "Nová Ves v Horách, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-nova-ves-v-horach-chalupa-jachovka-pronajem-o14428",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 520.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/jachovka-cff4-474b-1088223.jpg",
-      "raw_extra": {
-        "id": 14428,
-        "tags_featured": [
-          "2 apartmány",
-          "10 osob"
-        ],
-        "area_title": "Nová Ves v Horách",
-        "area_slug": "nova-ves-v-horach",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.5925238889,
-          "lon": 13.4871055556
-        },
-        "rating": 100,
-        "reviews": 6
       }
     },
     {
@@ -11320,41 +12478,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Chata Mariánka",
-      "location": "Mariánská, Krušné hory",
-      "url": "https://www.e-chalupy.cz/chata-marianka-marianska-ubytovani-o16010",
-      "capacity": 14,
-      "bedrooms": null,
-      "price": 350.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "u lesa",
-        "snídaně",
-        "polopenze"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chata-marianka-b49e-8b76-831060.jpg",
-      "raw_extra": {
-        "id": 16010,
-        "tags_featured": [
-          "4 pokoje",
-          "14 osob"
-        ],
-        "area_title": "Mariánská",
-        "area_slug": "marianska",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3563677778,
-          "lon": 12.8940911111
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Ubytování Picura",
       "location": "Horní Blatná, Krušné hory",
       "url": "https://www.e-chalupy.cz/horni-blatna-chalupa-pronajmuti-ubytovani-picura-o180",
@@ -11694,37 +12817,6 @@
         },
         "rating": 94,
         "reviews": 12
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány U Hastrmana",
-      "location": "Velký Rybník, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-velky-rybnik-apartmany-u-hastrmana-o6435",
-      "capacity": 28,
-      "bedrooms": null,
-      "price": 1000.0,
-      "price_unit": "pokoj za noc",
-      "amenities": [
-        "oploceno"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/ubytovani-u-hastrmana-s-terasou-a-zahradou-4b1a-3d18-1186228.jpg",
-      "raw_extra": {
-        "id": 6435,
-        "tags_featured": [
-          "1 apartmán + 4 pokoje + 1 objekt",
-          "28 osob"
-        ],
-        "area_title": "Velký Rybník",
-        "area_slug": "velky-rybnik",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.2878889,
-          "lon": 12.8657436
-        },
-        "rating": 0,
-        "reviews": 0
       }
     },
     {
@@ -13276,42 +14368,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Stará Hračkárna",
-      "location": "Český Jiřetín, Krušné hory",
-      "url": "https://www.e-chalupy.cz/stara-hrackarna-cesky-jiretin-ubytovani-o8829",
-      "capacity": 20,
-      "bedrooms": null,
-      "price": 400.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "sauna",
-        "pro děti",
-        "oploceno",
-        "krb",
-        "u lesa",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/stara-hrackarna-b8e0-1679-840066.jpg",
-      "raw_extra": {
-        "id": 8829,
-        "tags_featured": [
-          "6 apartmánů",
-          "20 osob"
-        ],
-        "area_title": "Český Jiřetín",
-        "area_slug": "cesky-jiretin",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.7060633333,
-          "lon": 13.5477236111
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Chata Javorka",
       "location": "Pernink, Krušné hory",
       "url": "https://www.e-chalupy.cz/chata-pernink-ubytovani-javorka-pronajmuti-o4062",
@@ -13827,68 +14883,6 @@
         },
         "rating": 100,
         "reviews": 1
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chata na Rozcestí",
-      "location": "Háj, Krušné hory",
-      "url": "https://www.e-chalupy.cz/loucna-pod-klinovcem-ubytovani-haj-chata-na-rozcesti-o18225",
-      "capacity": 24,
-      "bedrooms": null,
-      "price": 2000.0,
-      "price_unit": "pokoj za noc",
-      "amenities": [
-        "mazlíčci vítáni"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chata-na-rozcesti-9ccc-b319-892412.jpg",
-      "raw_extra": {
-        "id": 18225,
-        "tags_featured": [
-          "2 apartmány + 4 pokoje",
-          "24 osob"
-        ],
-        "area_title": "Háj",
-        "area_slug": "haj",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.42,
-          "lon": 12.9971531
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Ubytování Eret Pernink",
-      "location": "Pernink, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-eret-pernink-o6249",
-      "capacity": 24,
-      "bedrooms": null,
-      "price": 400.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "mazlíčci vítáni"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/pokoj-c-6-v-patre-pro-4-6-osob-se-spolecnou-kuchyni-a-socialnim-zarizenim-9ea6-1f85-533921.jpg",
-      "raw_extra": {
-        "id": 6249,
-        "tags_featured": [
-          "3 apartmány + 4 pokoje",
-          "24 osob"
-        ],
-        "area_title": "Pernink",
-        "area_slug": "pernink",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3647744444,
-          "lon": 12.7849152778
-        },
-        "rating": 96,
-        "reviews": 31
       }
     },
     {
@@ -14530,41 +15524,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Chata PAM",
-      "location": "Nové Město u Jáchymova, Krušné hory",
-      "url": "https://www.e-chalupy.cz/pronajem-chata-pam-nove-mesto-o11339",
-      "capacity": 36,
-      "bedrooms": null,
-      "price": 350.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "pro děti",
-        "mazlíčci vítáni",
-        "u lesa",
-        "snídaně",
-        "polopenze"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/chata-pam-nove-mesto-u-jachymova-6b9c-f170-637508.jpg",
-      "raw_extra": {
-        "id": 11339,
-        "tags_featured": [
-          "9 pokojů",
-          "36 osob"
-        ],
-        "area_title": "Nové Město u Jáchymova",
-        "area_slug": "nove-mesto-u-jachymova",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3694219444,
-          "lon": 12.90273
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Chata Alžběta",
       "location": "Mariánská, Krušné hory",
       "url": "https://www.e-chalupy.cz/ubytovani-marianska-chata-alzbeta-o9209",
@@ -14872,38 +15831,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Kemp Nechranice",
-      "location": "Vikletice, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-vikletice-kemp-nechranice-o18885",
-      "capacity": 65,
-      "bedrooms": null,
-      "price": 1350.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "pro děti",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/bungalovy-vasco-de-gama-c563-eba8-926831.jpg",
-      "raw_extra": {
-        "id": 18885,
-        "tags_featured": [
-          "1 apartmán + 14 objektů",
-          "65 osob"
-        ],
-        "area_title": "Vikletice",
-        "area_slug": "vikletice",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3480614,
-          "lon": 13.4087164
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": " Apartmány - Zámecká restaurace",
       "location": "Jindřichovice, Krušné hory",
       "url": "https://www.e-chalupy.cz/apartmany-zamecky-restaurant-jindrichovice-ubytovani-o17017",
@@ -14929,71 +15856,6 @@
         },
         "rating": 0,
         "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Lucie",
-      "location": "Horní Blatná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-lucie-horni-blatna-ubytovani-o10345",
-      "capacity": 8,
-      "bedrooms": null,
-      "price": 1500.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [],
-      "image_url": "https://e-chalupy.cz/foto/vstup-do-objektu-apartmany-lucie-horni-blatna-6563-9705-807760.jpg",
-      "raw_extra": {
-        "id": 10345,
-        "tags_featured": [
-          "2 apartmány",
-          "8 osob"
-        ],
-        "area_title": "Horní Blatná",
-        "area_slug": "horni-blatna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3912367,
-          "lon": 12.7735561
-        },
-        "rating": 99,
-        "reviews": 6
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Hájovna",
-      "location": "Svahová, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-hajovna-svahova-ubytovani-o11550",
-      "capacity": 8,
-      "bedrooms": null,
-      "price": 625.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "sauna",
-        "mazlíčci vítáni",
-        "koupací sud",
-        "u lesa",
-        "u vody",
-        "snídaně"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/letni-hajovna-svahova-efcd-31da-642790.jpg",
-      "raw_extra": {
-        "id": 11550,
-        "tags_featured": [
-          "2 apartmány",
-          "8 osob"
-        ],
-        "area_title": "Svahová",
-        "area_slug": "svahova",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.5547722222,
-          "lon": 13.4078669444
-        },
-        "rating": 96,
-        "reviews": 16
       }
     },
     {
@@ -15031,103 +15893,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Apartmány",
-      "location": "Potůčky, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-potucky-apartmany-o7303",
-      "capacity": 8,
-      "bedrooms": null,
-      "price": 1690.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "sauna",
-        "mazlíčci vítáni",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-potucky-c4bb-7698-559336.jpg",
-      "raw_extra": {
-        "id": 7303,
-        "tags_featured": [
-          "2 apartmány",
-          "8 osob"
-        ],
-        "area_title": "Potůčky",
-        "area_slug": "potucky",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4272308333,
-          "lon": 12.7425594444
-        },
-        "rating": 99,
-        "reviews": 34
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány U Radka",
-      "location": "Chodov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-chodov-apartmany-u-radka-o21067",
-      "capacity": 7,
-      "bedrooms": null,
-      "price": 1500.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-u-radka-0d99-1eb1-1063205.jpg",
-      "raw_extra": {
-        "id": 21067,
-        "tags_featured": [
-          "2 pokoje",
-          "7 osob"
-        ],
-        "area_title": "Chodov",
-        "area_slug": "chodov-sokolov",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.2330591667,
-          "lon": 12.7493369444
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Atlantis",
-      "location": "Klášterec nad Ohří, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-klasterec-nad-ohri-apartmany-atlantis-o5851",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 600.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "bazén",
-        "pro děti",
-        "oploceno",
-        "krb",
-        "u vody"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-atlantis-klasterec-nad-ohri-e39b-9bd8-957153.jpg",
-      "raw_extra": {
-        "id": 5851,
-        "tags_featured": [
-          "3 apartmány",
-          "10 osob"
-        ],
-        "area_title": "Klášterec nad Ohří",
-        "area_slug": "klasterec-nad-ohri",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3860108,
-          "lon": 13.1723211
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Depandance Vítkova Hora",
       "location": "Olšová Vrata, Krušné hory",
       "url": "https://www.e-chalupy.cz/karlovy-vary-ubytovani-olsova-vrata-apartmanovy-dum-vitkova-hora-o12907",
@@ -15153,69 +15918,6 @@
         },
         "rating": 100,
         "reviews": 1
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Ubytování Gerhard",
-      "location": "Rašov, Krušné hory",
-      "url": "https://www.e-chalupy.cz/rasov-ubytovani-gerhard-o4251",
-      "capacity": 10,
-      "bedrooms": null,
-      "price": 1200.0,
-      "price_unit": "pokoj za noc",
-      "amenities": [
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/ubytovani-gerhard-kliny-aca3-96a9-1138615.jpg",
-      "raw_extra": {
-        "id": 4251,
-        "tags_featured": [
-          "1 apartmán + 2 pokoje",
-          "10 osob"
-        ],
-        "area_title": "Rašov",
-        "area_slug": "rasov",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.6285180556,
-          "lon": 13.5643113889
-        },
-        "rating": 100,
-        "reviews": 5
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Twins",
-      "location": "Abertamy, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartmany-twins-abertamy-ubytovani-o17365",
-      "capacity": 8,
-      "bedrooms": null,
-      "price": 1400.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "mazlíčci vítáni",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-twins-abertamy-f8fe-927b-857095.jpg",
-      "raw_extra": {
-        "id": 17365,
-        "tags_featured": [
-          "2 apartmány",
-          "8 osob"
-        ],
-        "area_title": "Abertamy",
-        "area_slug": "abertamy",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3685583,
-          "lon": 12.8201881
-        },
-        "rating": 99,
-        "reviews": 5
       }
     },
     {
@@ -15251,38 +15953,6 @@
     },
     {
       "source": "e-chalupy.cz",
-      "title": "Horallka - ubytování v soukromí",
-      "location": "Abertamy, Krušné hory",
-      "url": "https://www.e-chalupy.cz/apartman-abertamy-ubytovani-horallka-o4045",
-      "capacity": 15,
-      "bedrooms": null,
-      "price": 649.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "oploceno",
-        "krb"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/horallka-81e1-13b6-480113.jpg",
-      "raw_extra": {
-        "id": 4045,
-        "tags_featured": [
-          "2 apartmány + 2 pokoje",
-          "15 osob"
-        ],
-        "area_title": "Abertamy",
-        "area_slug": "abertamy",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.367805,
-          "lon": 12.8157758333
-        },
-        "rating": 100,
-        "reviews": 1
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
       "title": "Apartmány Blatouch",
       "location": "Mariánská, Krušné hory",
       "url": "https://www.e-chalupy.cz/ubytovani-marianska-apartmany-blatouch-o2032",
@@ -15310,74 +15980,6 @@
         },
         "rating": 100,
         "reviews": 10
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Apartmány Stráň",
-      "location": "Stráň, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-potucky-apartmany-stran-o21656",
-      "capacity": 16,
-      "bedrooms": null,
-      "price": 1200.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "vířivka",
-        "sauna",
-        "oploceno",
-        "mazlíčci vítáni",
-        "na samotě",
-        "krb",
-        "u lesa"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/apartmany-stran-33d7-5cb4-1090151.jpg",
-      "raw_extra": {
-        "id": 21656,
-        "tags_featured": [
-          "3 apartmány + 2 pokoje",
-          "16 osob"
-        ],
-        "area_title": "Stráň",
-        "area_slug": "stran-potucky",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4182566667,
-          "lon": 12.7369230556
-        },
-        "rating": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Penzion Jajka",
-      "location": "Loučná, Krušné hory",
-      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-penzion-jajka-o9379",
-      "capacity": 12,
-      "bedrooms": null,
-      "price": 2500.0,
-      "price_unit": "apartmán za noc",
-      "amenities": [
-        "sauna"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/penzion-jajka-a32b-ccaf-987981.jpg",
-      "raw_extra": {
-        "id": 9379,
-        "tags_featured": [
-          "3 apartmány",
-          "12 osob"
-        ],
-        "area_title": "Loučná",
-        "area_slug": "loucna",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.4171608333,
-          "lon": 12.9776863889
-        },
-        "rating": 0,
-        "reviews": 0
       }
     },
     {
@@ -15410,41 +16012,6 @@
         },
         "rating": 0,
         "reviews": 0
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Penzion U Dvou pánů",
-      "location": "Pernink, Krušné hory",
-      "url": "https://www.e-chalupy.cz/penzion-u-dvou-panu-pernink-ubytovani-o11258",
-      "capacity": 19,
-      "bedrooms": null,
-      "price": 740.0,
-      "price_unit": "osoba za noc",
-      "amenities": [
-        "oploceno",
-        "u lesa",
-        "u vody",
-        "snídaně",
-        "polopenze"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/u-dvou-panu-bc8f-201c-635211.jpg",
-      "raw_extra": {
-        "id": 11258,
-        "tags_featured": [
-          "7 pokojů",
-          "19 osob"
-        ],
-        "area_title": "Pernink",
-        "area_slug": "pernink",
-        "area2_title": "Krušné hory",
-        "area2_slug": "krusne-hory",
-        "gps": {
-          "lat": 50.3601586111,
-          "lon": 12.7883263889
-        },
-        "rating": 98,
-        "reviews": 14
       }
     }
   ]
