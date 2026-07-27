@@ -104,6 +104,7 @@ function renderCards(listings) {
         <span class="card-source">${escHtml(l.source)}</span>
         <h2 class="card-title">${escHtml(l.title)}</h2>
         <p class="card-location">${escHtml(l.location)}</p>
+        ${l.likely_apartment ? `<p class="card-warning">⚠️ Možná jen apartmán, ne celá chalupa</p>` : ""}
         ${stats ? `<div class="card-stats">${stats}</div>` : ""}
         ${amenityTags ? `<div class="card-amenities">${amenityTags}</div>` : ""}
       </div>
@@ -134,9 +135,10 @@ function getFilters() {
   const bedroomsMax  = parseInt(document.getElementById("f-bedrooms-max").value) || null;
   const maxPrice     = parseFloat(document.getElementById("f-maxprice").value)   || null;
   const entireProperty = document.getElementById("f-entire-property").checked;
+  const hideApartments = document.getElementById("f-hide-apartments").checked;
   const amenities    = [...document.querySelectorAll(".amenity-group .amenity-check input:checked")]
     .map((cb) => cb.value.toLowerCase());
-  return { location, capacity, capacityMax, bedrooms, bedroomsMax, maxPrice, entireProperty, amenities };
+  return { location, capacity, capacityMax, bedrooms, bedroomsMax, maxPrice, entireProperty, hideApartments, amenities };
 }
 
 function applyFilters() {
@@ -163,6 +165,7 @@ function applyFilters() {
     if (f.entireProperty && l.entire_property != null) {
       if (!l.entire_property) return false;
     }
+    if (f.hideApartments && l.likely_apartment) return false;
     if (f.amenities.length) {
       // Substring match (not exact) - e.g. "bazén" also matches a future
       // "bazén - venkovní"/"bazén - vnitřní" tag variant, should the portál
@@ -193,6 +196,7 @@ function resetFilters() {
   updateBedroomsRange();
   document.getElementById("f-maxprice").value      = "";
   document.getElementById("f-entire-property").checked = false;
+  document.getElementById("f-hide-apartments").checked = false;
   document.querySelectorAll(".amenity-group .amenity-check input").forEach((cb) => (cb.checked = false));
   renderCards(allListings);
 }
