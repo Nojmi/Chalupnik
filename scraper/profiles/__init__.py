@@ -8,4 +8,6 @@
 #   from scraper.profiles import chatacentrum
 #   ALL_PROFILES = [chatacentrum.search]
 
-ALL_PROFILES: list = []
+from scraper.profiles import e_chalupy
+
+ALL_PROFILES: list = [e_chalupy.search]
