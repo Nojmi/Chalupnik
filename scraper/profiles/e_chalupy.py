@@ -75,9 +75,9 @@ Poznámky k portálu:
       (100 %), u lesa (42) skoro přesně (93 %).
   Filter ID nejsou pole na položce v odpovědi (žádné "amenityIds" v
   items[] není) - jde jen o query parametr (filters=<id>), který
-  vrátí množinu ID nabídek. Pro každé z těchto 8 vybavení proto
-  stahujeme ID-množinu zvlášť (stránkovaně, stejně jako hlavní dotaz)
-  a sjednocujeme ji s textovými tagy při stavbě amenities.
+  vrátí množinu ID nabídek. Pro každé z těchto vybavení proto
+  stahujeme ID-množinu zvlášť (stránkovaně) a sjednocujeme ji
+  s textovými tagy při stavbě amenities.
   "Parkování" nemá na portálu žádné odpovídající filtr ID vůbec -
   zůstává čistě textové. "entire_property" (filters=84, "Pouze celé
   objekty") jsme cíleně NEpoužili navzdory dostupnosti - namátková
@@ -85,6 +85,16 @@ Poznámky k portálu:
   část" (jasně NE celý objekt), kterou filters=84 přesto zahrnuje,
   takže sémantika toho filtru na webu neodpovídá tomu, co název
   napovídá - units pole zůstává spolehlivější zdroj pravdy.
+- Dalších 8 vybavení (myčka nádobí, lednička, klimatizace, televize,
+  wifi, pískoviště, ohniště, gril) je stejně jako "se psem" čistě
+  ID-only - 0% textové pokrytí na celém Šumava vzorku (1200 nabídek).
+  Taky obohacujeme přes filters=<id>.
+- ID-obohacovací fetch (_fetch_filter_id_set) používá vlastní vyšší
+  limit (ENRICH_LIMIT=1000, ne PAGE_SIZE=200 jako hlavní dotaz) -
+  změřeno na Jižní Čechy (16 vybavení, největší pozorovaný region):
+  s limit=200 by to bylo ~100 dodatečných requestů (~70s), s limit=1000
+  jen 44 requestů (~33s). Hlavní dotaz na listingy zůstává na
+  PAGE_SIZE=200 beze změny (tam limit=1000 nebyl testován/potřeba).
 """
 
 import json
@@ -112,6 +122,7 @@ BEDROOMS_RE = re.compile(r"(\d+)\s*lo[žz]nic")
 PRICE_RE = re.compile(r"([\d\s]+)\s*K[čc]")
 
 PAGE_SIZE = 200
+ENRICH_LIMIT = 1000
 MAX_LISTINGS = 5000
 
 DESTINATION_RE = re.compile(r"window\.dataSearchBoxSelectedData\s*=\s*(\{.*?\});")
@@ -128,6 +139,14 @@ AMENITY_FILTER_IDS: dict[str, tuple[int, ...]] = {
     "u lesa": (42,),
     "se psem": (72,),
     "společenská místnost": (10,),
+    "myčka nádobí": (19,),
+    "lednička": (21,),
+    "klimatizace": (18,),
+    "televize": (9,),
+    "wifi": (8,),
+    "pískoviště": (67,),
+    "ohniště": (31,),
+    "gril": (29,),
 }
 
 
@@ -257,15 +276,15 @@ def _fetch_filter_id_set(base_params: dict, filter_id: int) -> set[int]:
         response = requests.get(
             API_URL,
             headers=HEADERS,
-            params={**base_params, "filters": filter_id, "limit": PAGE_SIZE, "offset": offset},
-            timeout=20,
+            params={**base_params, "filters": filter_id, "limit": ENRICH_LIMIT, "offset": offset},
+            timeout=30,
         )
         response.raise_for_status()
         items = response.json().get("items") or []
         if not items:
             break
         ids.update(item["id"] for item in items if item.get("id") is not None)
-        offset += PAGE_SIZE
+        offset += ENRICH_LIMIT
     return ids
 
 
