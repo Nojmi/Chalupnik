@@ -18,6 +18,7 @@ class Listing:
     amenities: list[str] = field(default_factory=list)
     image_url: Optional[str] = None
     entire_property: Optional[bool] = None    # True = pronajímá se celé, False = po částech, None = neznámo
+    likely_apartment: bool = False            # nabídka v "chaty a chalupy" typu, ale patrně jen apartmán
     raw_extra: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
@@ -33,5 +34,6 @@ class Listing:
             "amenities": self.amenities,
             "image_url": self.image_url,
             "entire_property": self.entire_property,
+            "likely_apartment": self.likely_apartment,
             "raw_extra": self.raw_extra,
         }

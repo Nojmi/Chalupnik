@@ -95,6 +95,15 @@ Poznámky k portálu:
   s limit=200 by to bylo ~100 dodatečných requestů (~70s), s limit=1000
   jen 44 requestů (~33s). Hlavní dotaz na listingy zůstává na
   PAGE_SIZE=200 beze změny (tam limit=1000 nebyl testován/potřeba).
+- likely_apartment: portálová kategorie "type" (id item['type']['id'])
+  není spolehlivý indikátor - i uvnitř filters=4 ("Chaty a chalupy")
+  jsme našli položky s item['type']['title']=="Apartmán". Signál proto
+  skládáme ze tří nezávislých textových zdrojů (title, tagsFeatured/
+  units.items podtituly, priceLabel) - ověřeno na Šumavě: 598/1200
+  (50 %) matchne aspoň jednu podmínku, není to okrajový jev.
+  Pozn.: "osob(a/u)" v priceLabel samo o sobě nemusí nutně znamenat
+  rozparcelovaný objekt - i legitimní celé chalupy občas cenují za
+  osobu místo za objekt - je to nejslabší ze tří signálů.
 """
 
 import json
@@ -224,6 +233,35 @@ def _extract_entire_property(units: dict | None) -> tuple[bool | None, str]:
     return None, header_text
 
 
+def _extract_likely_apartment(item: dict) -> bool:
+    """
+    Nabídka spadající pod typ "Chaty a chalupy", ale ve skutečnosti
+    patrně jen apartmán/pokoj (ne celý objekt) - ověřeno na Šumavě,
+    50 % (598/1200) nabídek matchne aspoň jednu z těchto tří podmínek:
+      - název obsahuje "apartmán"
+      - tagsFeatured nebo units.items podtituly obsahují "apartmán"
+      - priceLabel je "apartmán"/"osob(a/u)" místo "objekt"
+    """
+    title = (item.get("title") or "").lower()
+    if "apartmán" in title:
+        return True
+
+    tags_featured = item.get("tagsFeatured") or []
+    if any("apartmán" in t.lower() for t in tags_featured):
+        return True
+
+    units_items = (item.get("units") or {}).get("items")
+    if isinstance(units_items, list):
+        if any("apartmán" in (u.get("title") or "").lower() for u in units_items):
+            return True
+
+    price_label = (item.get("priceLabel") or "").lower()
+    if "apartmán" in price_label or "osob" in price_label:
+        return True
+
+    return False
+
+
 def _parse_item(item: dict) -> Listing:
     slug = item.get("slug", "")
     item_id = item.get("id")
@@ -253,6 +291,7 @@ def _parse_item(item: dict) -> Listing:
         amenities=list(item.get("tags") or []),
         image_url=image_url,
         entire_property=entire_property,
+        likely_apartment=_extract_likely_apartment(item),
         raw_extra={
             "id": item_id,
             "tags_featured": item.get("tagsFeatured") or [],
