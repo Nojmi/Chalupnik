@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T12:07:05.552214+00:00",
+  "generated_at": "2026-07-27T12:27:46.246831+00:00",
   "criteria": {
     "location": "krusne-hory",
     "min_capacity": "5",
@@ -9,13 +9,2850 @@
     "date_from": null,
     "date_to": null
   },
-  "total_found": 0,
-  "total_matched": 0,
-  "errors": [
+  "total_found": 119,
+  "total_matched": 105,
+  "errors": [],
+  "listings": [
     {
-      "profile": "scraper.profiles.e_chalupy",
-      "error": "403 Client Error: Forbidden for url: https://www.e-chalupy.cz/krusne-hory?persons=5&bedrooms=2"
+      "source": "e-chalupy.cz",
+      "title": "Chalupa TAMA",
+      "location": "Hřebečná",
+      "url": "https://www.e-chalupy.cz/ubytovani-hrebecna-chalupa-tama-pronajmuti-o3988",
+      "capacity": 33,
+      "bedrooms": null,
+      "price": 690.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "9 pokojů",
+        "bazén",
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "9 pokojů",
+          "33 osob",
+          "bazén",
+          "sauna",
+          "pro děti",
+          "oploceno",
+          "mazlíčci vítáni",
+          "u lesa",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská vila Meluzína",
+      "location": "Háj",
+      "url": "https://www.e-chalupy.cz/horska-vila-meluzina-haj-u-loucne-pod-klinovcem-o14190",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 450.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány + 1 pokoj",
+        "mazlíčci vítáni",
+        "krb",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány + 1 pokoj",
+          "20 osob",
+          "mazlíčci vítáni",
+          "krb",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Hofman",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/ubytovani-bublava-chata-hofman-o8440",
+      "capacity": 13,
+      "bedrooms": null,
+      "price": 2500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "13 osob",
+          "sauna",
+          "pro děti",
+          "oploceno",
+          "mazlíčci vítáni",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenka na zelené",
+      "location": "Přebuz",
+      "url": "https://www.e-chalupy.cz/roubenka-na-zelene-prebuz-ubytovani-o15323",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 2500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "sauna",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 5 osob",
+          "2 ložnice",
+          "sauna",
+          "na samotě",
+          "krb",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány U Medvěda",
+      "location": "Horní Blatná",
+      "url": "https://www.e-chalupy.cz/apartmany-u-medveda-horni-blatna-ubytovani-o16085",
+      "capacity": 18,
+      "bedrooms": null,
+      "price": 1000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány + 1 pokoj",
+        "luxusní",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány + 1 pokoj",
+          "18 osob",
+          "luxusní",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata v Olšinkách",
+      "location": "Vojkovice",
+      "url": "https://www.e-chalupy.cz/chata-v-olsinkach-ubytovani-vojkovice-nad-ohri-o16015",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1429.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "oploceno",
+          "mazlíčci vítáni"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Slanda",
+      "location": "Měděnec",
+      "url": "https://www.e-chalupy.cz/ubytovani-medenec-apartmany-slanda-o9254",
+      "capacity": 18,
+      "bedrooms": null,
+      "price": 2000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány",
+        "oploceno",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány",
+          "18 osob",
+          "oploceno",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Na Kozím plácku",
+      "location": "Loučná pod Klínovcem",
+      "url": "https://www.e-chalupy.cz/apartmany-na-kozim-placku-loucna-pod-klinovcem-o11199",
+      "capacity": 24,
+      "bedrooms": null,
+      "price": 300.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "7 apartmánů + 1 pokoj",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "7 apartmánů + 1 pokoj",
+          "24 osob",
+          "mazlíčci vítáni",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány U Muzea",
+      "location": "Horní Blatná",
+      "url": "https://www.e-chalupy.cz/apartmany-u-muzea-horni-blatna-pronajem-o13497",
+      "capacity": 28,
+      "bedrooms": null,
+      "price": 1400.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "6 apartmánů",
+        "pro děti",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "6 apartmánů",
+          "28 osob",
+          "pro děti",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská Chata Arnika",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/ubytovani-marianska-horska-chata-arnika-o2872",
+      "capacity": 41,
+      "bedrooms": null,
+      "price": 350.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "6 apartmánů + 2 pokoje",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "6 apartmánů + 2 pokoje",
+          "41 osob",
+          "oploceno",
+          "mazlíčci vítáni",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Lesní",
+      "location": "Rašov",
+      "url": "https://www.e-chalupy.cz/ubytovani-rasov-chata-lesni-pronajem-o1193",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1557.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "krb",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata u Páva",
+      "location": "Petrovice",
+      "url": "https://www.e-chalupy.cz/ubytovani-petrovice-naklerov-chata-u-pava-k-pronajmu-o22860",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 4500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "na samotě",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "na samotě",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmánky Hřebečná 203",
+      "location": "Hřebečná",
+      "url": "https://www.e-chalupy.cz/ubytovani-hrebecna-apartmanky-203-o21778",
+      "capacity": 16,
+      "bedrooms": null,
+      "price": 450.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány",
+        "pro děti",
+        "mazlíčci vítáni",
+        "na samotě",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány",
+          "16 osob",
+          "pro děti",
+          "mazlíčci vítáni",
+          "na samotě",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Mlýn Byňov",
+      "location": "Byňov",
+      "url": "https://www.e-chalupy.cz/mlyn-bynov-ubytovani-o12083",
+      "capacity": 17,
+      "bedrooms": null,
+      "price": 2600.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "4 apartmány",
+        "pro děti",
+        "oploceno",
+        "krb",
+        "u lesa",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "4 apartmány",
+          "17 osob",
+          "pro děti",
+          "oploceno",
+          "krb",
+          "u lesa",
+          "u vody",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Za Královskou mincovnou",
+      "location": "Jáchymov",
+      "url": "https://www.e-chalupy.cz/apartmany-za-kralovskou-mincovnou-jachymov-ubytovani-o12607",
+      "capacity": 30,
+      "bedrooms": null,
+      "price": 1800.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány + 1 objekt",
+        "pro děti",
+        "mazlíčci vítáni",
+        "luxusní",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány + 1 objekt",
+          "30 osob",
+          "pro děti",
+          "mazlíčci vítáni",
+          "luxusní",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pension Mikuláš",
+      "location": "Mikulov",
+      "url": "https://www.e-chalupy.cz/ubytovani-mikulov-v-krusnych-horach-pension-mikulas-o6897",
+      "capacity": 48,
+      "bedrooms": null,
+      "price": 550.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "18 pokojů",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "18 pokojů",
+          "48 osob",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Ruprechtov",
+      "location": "Ruprechtov",
+      "url": "https://www.e-chalupy.cz/ubytovani-ruprechtov-apartmany-o1661",
+      "capacity": 13,
+      "bedrooms": null,
+      "price": 1800.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány",
+          "13 osob",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány nad Šlikovkou",
+      "location": "Nové Město u Jáchymova",
+      "url": "https://www.e-chalupy.cz/ubytovani-nove-mesto-apartmany-nad-slikovkou-o6473",
+      "capacity": 15,
+      "bedrooms": null,
+      "price": 1800.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány",
+          "15 osob"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Duha",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/ubytovani-marianska-pronajmuti-chata-duha-o1180",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1357.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "pro děti",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán u Potůčku",
+      "location": "Kovářská",
+      "url": "https://www.e-chalupy.cz/apartman-u-potucku-kovarska-o14140",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 2750.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "bazén",
+          "pro děti",
+          "oploceno",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Na Vršku",
+      "location": "Pernink",
+      "url": "https://www.e-chalupy.cz/ubytovani-pernink-chalupa-na-vrsku-k-pronajmu-o9742",
+      "capacity": 11,
+      "bedrooms": null,
+      "price": 520.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "11 osob",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Áďa",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/apartman-ada-abertamy-o3339",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1700.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "oploceno",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pronájem apartmánu",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/apartman-bublava-ubytovani-o3274",
+      "capacity": 11,
+      "bedrooms": null,
+      "price": 1800.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "11 osob",
+          "mazlíčci vítáni",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Krušnohorský Poutník",
+      "location": "Kovářská",
+      "url": "https://www.e-chalupy.cz/ubytovani-kovarska-krusnohorsky-poutnik-pronajem-o21011",
+      "capacity": 40,
+      "bedrooms": null,
+      "price": 11500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "7 pokojů + 1 objekt",
+        "pro děti",
+        "mazlíčci vítáni"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "7 pokojů + 1 objekt",
+          "40 osob",
+          "pro děti",
+          "mazlíčci vítáni"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Pomněnka",
+      "location": "Jáchymov",
+      "url": "https://www.e-chalupy.cz/chalupa-pomnenka-pronajem-jachymov-ubytovani-o3505",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 2500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "oploceno",
+          "mazlíčci vítáni",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán na Plešivci",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/abertamy-apartman-na-plesivci-o13985",
+      "capacity": 11,
+      "bedrooms": null,
+      "price": 1700.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "u lesa",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "11 osob",
+          "u lesa",
+          "u vody",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Javor",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/apartmany-javor-bublava-o6007",
+      "capacity": 32,
+      "bedrooms": null,
+      "price": 1100.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "8 apartmánů",
+        "sauna",
+        "pro děti",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "8 apartmánů",
+          "32 osob",
+          "sauna",
+          "pro děti",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Luční",
+      "location": "Rašov",
+      "url": "https://www.e-chalupy.cz/ubytovani-rasov-chata-lucni-pronajem-o931",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1557.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "mazlíčci vítáni",
+          "na samotě",
+          "krb",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Villa Ilona",
+      "location": "Mezirolí",
+      "url": "https://www.e-chalupy.cz/nova-role-ubytovani-meziroli-villa-ilona-pronajem-o17707",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 2900.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "rekreační dům 5 osob",
+          "2 ložnice",
+          "oploceno"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "MAX Klínovec",
+      "location": "Loučná pod Klínovcem",
+      "url": "https://www.e-chalupy.cz/penzion-loucna-pod-klinovcem-haj-ubytovani-max-o2932",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 730.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "5 pokojů",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "5 pokojů",
+          "20 osob",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Pod komínem",
+      "location": "Skalná",
+      "url": "https://www.e-chalupy.cz/ubytovani-skalna-apartman-pod-kominem-o5011",
+      "capacity": 14,
+      "bedrooms": null,
+      "price": 1080.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "4 pokoje",
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "4 pokoje",
+          "14 osob",
+          "bazén",
+          "pro děti",
+          "oploceno",
+          "mazlíčci vítáni",
+          "u lesa",
+          "u vody",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Engadin",
+      "location": "Boží Dar",
+      "url": "https://www.e-chalupy.cz/ubytovani-bozi-dar-apartmany-engadin-o5401",
+      "capacity": 64,
+      "bedrooms": null,
+      "price": 2100.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "17 apartmánů",
+        "bazén",
+        "vířivka",
+        "sauna",
+        "mazlíčci vítáni",
+        "krb",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "17 apartmánů",
+          "64 osob",
+          "bazén",
+          "vířivka",
+          "sauna",
+          "mazlíčci vítáni",
+          "krb",
+          "u vody",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chaloupka Slaměnka",
+      "location": "Loučná pod Klínovcem",
+      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-haj-chalupa-slamenka-pronajem-o9541",
+      "capacity": 33,
+      "bedrooms": null,
+      "price": 350.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "7 apartmánů",
+        "pro děti",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "7 apartmánů",
+          "33 osob",
+          "pro děti",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Penzion Florian",
+      "location": "Moldava",
+      "url": "https://www.e-chalupy.cz/ubytovani-moldava-penzion-florian-o9864",
+      "capacity": 36,
+      "bedrooms": null,
+      "price": null,
+      "price_unit": null,
+      "amenities": [
+        "2 apartmány + 9 pokojů",
+        "mazlíčci vítáni",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány + 9 pokojů",
+          "36 osob",
+          "mazlíčci vítáni",
+          "u lesa",
+          "snídaně",
+          "polopenze"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Plešivec - Tree",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-apartman-plesivec-tree-o8453",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1700.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Lukas",
+      "location": "Loučná pod Klínovcem",
+      "url": "https://www.e-chalupy.cz/chata-loucna-pod-klinovcem-o8355",
+      "capacity": 15,
+      "bedrooms": null,
+      "price": 1286.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "15 osob",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata u Nechranické přehrady",
+      "location": "Vikletice",
+      "url": "https://www.e-chalupy.cz/chata-u-nechranicke-prehrady-o2672",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1400.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chatka 5 osob",
+          "2 ložnice",
+          "mazlíčci vítáni",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány 86",
+      "location": "Potůčky",
+      "url": "https://www.e-chalupy.cz/ubytovani-potucky-apartmany-86-o21851",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "mazlíčci vítáni",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Fara Stříbrná",
+      "location": "Stříbrná",
+      "url": "https://www.e-chalupy.cz/ubytovani-stribrna-fara-o18850",
+      "capacity": 27,
+      "bedrooms": null,
+      "price": 2714.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "4 pokoje + 1 objekt",
+        "oploceno",
+        "mazlíčci vítáni"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "4 pokoje + 1 objekt",
+          "27 osob",
+          "oploceno",
+          "mazlíčci vítáni"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "U Erbenky",
+      "location": "Mikulovice",
+      "url": "https://www.e-chalupy.cz/nova-ves-v-horach-ubytovani-mikulovice-apartman-u-erbenky-o19917",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 2100.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata u Ohře",
+      "location": "Klášterec nad Ohří",
+      "url": "https://www.e-chalupy.cz/ubytovani-klasterec-nad-ohri-chata-u-ohre-o18670",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1643.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "krb",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "krb",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Andělská",
+      "location": "Pernink",
+      "url": "https://www.e-chalupy.cz/ubytovani-pernink-apartman-andelska-pronajem-o1313",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 250.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "pro děti",
+          "oploceno"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Happy Klínovec",
+      "location": "Háj",
+      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-apartmany-happy-klinovec-o5610",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 2200.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "pro děti",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "10 osob",
+          "pro děti",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská chata Akademie",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/horska-chata-akademie-marianska-ubytovani-o2772",
+      "capacity": 36,
+      "bedrooms": null,
+      "price": 400.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány + 3 pokoje",
+        "oploceno",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány + 3 pokoje",
+          "36 osob",
+          "oploceno",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Krušné Apartmány",
+      "location": "Háj",
+      "url": "https://www.e-chalupy.cz/loucna-pod-klinovcem-ubytovani-haj-krusne-apartmany-o14210",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 1800.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "10 osob",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány VOLF",
+      "location": "Boží Dar",
+      "url": "https://www.e-chalupy.cz/apartmany-volf-bozi-dar-ubytovani-o15547",
+      "capacity": 20,
+      "bedrooms": null,
+      "price": 1250.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány + 1 pokoj",
+        "sauna",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány + 1 pokoj",
+          "20 osob",
+          "sauna",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "SportCentrum Klínovec",
+      "location": "Loučná pod Klínovcem",
+      "url": "https://www.e-chalupy.cz/loucna-pod-klinovcem-ubytovani-penzion-sportcentrum-klinovec-o755",
+      "capacity": 23,
+      "bedrooms": null,
+      "price": 690.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "5 pokojů",
+        "u lesa",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "5 pokojů",
+          "23 osob",
+          "u lesa",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata U lanovky",
+      "location": "Horní Krupka",
+      "url": "https://www.e-chalupy.cz/ubytovani-horni-krupka-chata-u-lanovky-pronajem-o21855",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1143.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "oploceno",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Moulis",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-apartman-moulis-o18734",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1690.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "mazlíčci vítáni"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Pernink 341",
+      "location": "Pernink",
+      "url": "https://www.e-chalupy.cz/pernink-apartmany-341-ubytovani-o158",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 1600.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "pro děti",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "10 osob",
+          "pro děti",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán k pronájmu",
+      "location": "Boží Dar",
+      "url": "https://www.e-chalupy.cz/ubytovani-bozi-dar-apartman-o8997",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1857.0,
+      "price_unit": "za noc",
+      "amenities": [],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Penzion Studánka",
+      "location": "Klíny",
+      "url": "https://www.e-chalupy.cz/ubytovani-kliny-penzion-studanka-o1920",
+      "capacity": 25,
+      "bedrooms": null,
+      "price": 1685.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "1 apartmán + 5 pokojů",
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "koupací sud",
+        "u lesa",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "1 apartmán + 5 pokojů",
+          "25 osob",
+          "sauna",
+          "pro děti",
+          "oploceno",
+          "koupací sud",
+          "u lesa",
+          "u vody",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata na louce",
+      "location": "Boleboř",
+      "url": "https://www.e-chalupy.cz/bolebor-chata-na-louce-pronajem-o205",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 1300.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 5 osob",
+          "2 ložnice",
+          "oploceno"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Kutloch u Trpoše",
+      "location": "Pernink",
+      "url": "https://www.e-chalupy.cz/apartmany-kutloch-u-trpose-pernink-ubytovani-o1183",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 350.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "10 osob",
+          "oploceno",
+          "mazlíčci vítáni",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán k pronájmu",
+      "location": "Nové Hamry",
+      "url": "https://www.e-chalupy.cz/ubytovani-nove-hamry-apartman-o5330",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 2000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "na samotě",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "na samotě",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán v Tisé",
+      "location": "Tisá",
+      "url": "https://www.e-chalupy.cz/ubytovani-tisa-apartman-o19738",
+      "capacity": 5,
+      "bedrooms": 2,
+      "price": 450.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 5 osob",
+          "2 ložnice",
+          "mazlíčci vítáni"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenky vedle sebe",
+      "location": "Český Jiřetín",
+      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-chalupa-pronajem-roubenka-zuzana-o1259",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 1700.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 objekty",
+        "sauna",
+        "pro děti",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 objekty",
+          "12 osob",
+          "sauna",
+          "pro děti",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenka Maruška a Růženka",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/roubenky-bublava-ubytovani-pronajem-o1081",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 1986.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 objekty",
+        "sauna",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 objekty",
+          "12 osob",
+          "sauna",
+          "mazlíčci vítáni",
+          "na samotě",
+          "krb",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenka Janka a Natálka",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/chata-bublava-ubytovani-roubenka-janka-o3569",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 1986.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 objekty",
+        "sauna",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 objekty",
+          "12 osob",
+          "sauna",
+          "mazlíčci vítáni",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenka Háj",
+      "location": "Háj u Jindřichovic",
+      "url": "https://www.e-chalupy.cz/ubytovani-haj-u-jindrichovic-roubenka-o6456",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 3300.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "3 ložnice",
+          "pro děti",
+          "oploceno",
+          "mazlíčci vítáni",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenky Slunný vrch",
+      "location": "Český Jiřetín",
+      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-roubenky-slunny-vrch-o4049",
+      "capacity": 19,
+      "bedrooms": null,
+      "price": 1857.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 objekty",
+        "pro děti",
+        "krb",
+        "v lese"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 objekty",
+          "19 osob",
+          "pro děti",
+          "krb",
+          "v lese"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata na vyhlídce",
+      "location": "Okounov",
+      "url": "https://www.e-chalupy.cz/ubytovani-okounov-chata-na-vyhlidce-k-pronajmu-o6614",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 3141.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "bazén",
+        "sauna",
+        "oploceno",
+        "na samotě",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "3 ložnice",
+          "bazén",
+          "sauna",
+          "oploceno",
+          "na samotě",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Trampská bouda",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-penzion-trampska-bouda-o21507",
+      "capacity": 21,
+      "bedrooms": null,
+      "price": 600.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "6 apartmánů",
+        "sauna",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody",
+        "snídaně"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "6 apartmánů",
+          "21 osob",
+          "sauna",
+          "oploceno",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa",
+          "u vody",
+          "snídaně"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata v Údolí s vířivkou",
+      "location": "Místo",
+      "url": "https://www.e-chalupy.cz/uboci-chata-pronajem-v-udoli-o253",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 2986.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "bazén",
+        "vířivka",
+        "krb",
+        "v lese",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "3 ložnice",
+          "bazén",
+          "vířivka",
+          "krb",
+          "v lese",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Úsvit",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/ubytovani-marianska-chata-pronajmuti-o1136",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "sauna",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "sauna",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Borůvka",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/chata-boruvka-marianska-ubytovani-apartmany-o5331",
+      "capacity": 10,
+      "bedrooms": null,
+      "price": 1900.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 pokoje",
+        "vířivka",
+        "mazlíčci vítáni",
+        "krb",
+        "koupací sud",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 pokoje",
+          "10 osob",
+          "vířivka",
+          "mazlíčci vítáni",
+          "krb",
+          "koupací sud",
+          "u lesa",
+          "snídaně",
+          "polopenze"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Barbora",
+      "location": "Český Jiřetín",
+      "url": "https://www.e-chalupy.cz/chata-barbora-cesky-jiretin-ubytovani-o9626",
+      "capacity": 48,
+      "bedrooms": null,
+      "price": 700.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "5 pokojů + 1 objekt",
+        "pro děti",
+        "krb",
+        "u lesa",
+        "snídaně",
+        "polopenze"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "5 pokojů + 1 objekt",
+          "48 osob",
+          "pro děti",
+          "krb",
+          "u lesa",
+          "snídaně",
+          "polopenze"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata u sjezdovky",
+      "location": "Klíny",
+      "url": "https://www.e-chalupy.cz/chata-u-sjezdovky-kliny-ubytovani-o245",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2100.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Relax",
+      "location": "Bernov",
+      "url": "https://www.e-chalupy.cz/nejdek-ubytovani-bernov-chata-relax-pronajem-o21031",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 1429.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "na samotě",
+        "krb",
+        "v lese",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "3 ložnice",
+          "na samotě",
+          "krb",
+          "v lese",
+          "u vody",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Slunovrat",
+      "location": "Hroznětín",
+      "url": "https://www.e-chalupy.cz/ubytovani-hroznetin-pronajem-chalupa-slunovrat-o2701",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 7000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "bazén",
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "krb",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "12 osob",
+          "bazén",
+          "sauna",
+          "pro děti",
+          "oploceno",
+          "krb",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Malá roubenka",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/pronajem-roubenka-abertamy-o15502",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 3000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "pro děti"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Pod Kopcem",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/apartmany-pod-kopcem-bublava-ubytovani-o16454",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 2000.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "u vody",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "12 osob",
+          "u vody",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horská chata u Kameníčka",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/ubytovani-marianska-horska-chata-u-kamenicka-pronajmuti-o4258",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 3143.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "sauna",
+        "mazlíčci vítáni",
+        "na samotě",
+        "krb",
+        "v lese"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "sauna",
+          "mazlíčci vítáni",
+          "na samotě",
+          "krb",
+          "v lese"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Ubytování v soukromí „Harmonie“",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/apartmany-harmonie-marianska-ubytovani-o11268",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 600.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány",
+        "pro děti",
+        "na samotě",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány",
+          "12 osob",
+          "pro děti",
+          "na samotě",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Miluška",
+      "location": "Loučná pod Klínovcem",
+      "url": "https://www.e-chalupy.cz/miluska-apartman-loucna-pod-klinovcem-o13780",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1471.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "sauna",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 6 osob",
+          "2 ložnice",
+          "sauna",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Bollehaus",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/apartmany-bollehaus-marianska-o13653",
+      "capacity": 22,
+      "bedrooms": null,
+      "price": 400.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "3 apartmány",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "3 apartmány",
+          "22 osob",
+          "mazlíčci vítáni",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Hacienda",
+      "location": "Boží Dar",
+      "url": "https://www.e-chalupy.cz/apartmany-hacienda-bozi-dar-ubytovani-o11410",
+      "capacity": 18,
+      "bedrooms": null,
+      "price": 1300.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "4 apartmány",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "4 apartmány",
+          "18 osob",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Na Handě",
+      "location": "Boží Dar",
+      "url": "https://www.e-chalupy.cz/apartmany-na-hande-bozi-dar-o12619",
+      "capacity": 33,
+      "bedrooms": null,
+      "price": 1600.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "6 apartmánů",
+        "sauna",
+        "mazlíčci vítáni",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "6 apartmánů",
+          "33 osob",
+          "sauna",
+          "mazlíčci vítáni",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa na horské louce",
+      "location": "Mariánská",
+      "url": "https://www.e-chalupy.cz/pronajem-chalupa-na-horske-louce-marianska-o12418",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 2571.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "sauna",
+        "na samotě",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "3 ložnice",
+          "sauna",
+          "na samotě",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Schwaderbach",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/ubytovani-bublava-apartman-schwaderbach-o8658",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1900.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 6 osob",
+          "2 ložnice",
+          "pro děti",
+          "mazlíčci vítáni",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Jana Brandov",
+      "location": "Brandov",
+      "url": "https://www.e-chalupy.cz/ubytovani-brandov-chalupa-jana-k-pronajmuti-o2538",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1429.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "2 ložnice",
+          "bazén",
+          "pro děti",
+          "oploceno",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pronájem chalupy",
+      "location": "Bublava",
+      "url": "https://www.e-chalupy.cz/chalupa-bublava-o9849",
+      "capacity": 16,
+      "bedrooms": null,
+      "price": 550.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "1 apartmán + 3 pokoje",
+        "bazén",
+        "pro děti",
+        "oploceno",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "1 apartmán + 3 pokoje",
+          "16 osob",
+          "bazén",
+          "pro děti",
+          "oploceno",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Bike&Ski Plešivec",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/ubytovani-abertamy-apartman-bike-a-ski-plesivec-o21735",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 800.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 6 osob",
+          "2 ložnice",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Linda",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/apartman-linda-abertamy-ubytovani-o15116",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1400.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 6 osob",
+          "2 ložnice",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Klínka",
+      "location": "Klíny",
+      "url": "https://www.e-chalupy.cz/chalupa-kliny-ubytovani-klinka-pronajem-o7161",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 2543.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "na samotě",
+        "krb",
+        "v lese"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "3 ložnice",
+          "na samotě",
+          "krb",
+          "v lese"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata U Korešů",
+      "location": "Háj",
+      "url": "https://www.e-chalupy.cz/pronajem-chata-u-koresu-haj-ubytovani-o6205",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1571.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "pro děti",
+          "oploceno",
+          "mazlíčci vítáni",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata k pronájmu",
+      "location": "Nové Město u Jáchymova",
+      "url": "https://www.e-chalupy.cz/ubytovani-jachymov-nove-mesto-chata-pronajmuti-o2256",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 786.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "3 ložnice",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Jakubov",
+      "location": "Jakubov",
+      "url": "https://www.e-chalupy.cz/ubytovani-jakubov-apartmany-o14137",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 3071.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "vířivka",
+        "pro děti",
+        "oploceno",
+        "na samotě",
+        "krb",
+        "u lesa",
+        "luxusní"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "12 osob",
+          "vířivka",
+          "pro děti",
+          "oploceno",
+          "na samotě",
+          "krb",
+          "u lesa",
+          "luxusní"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Luční chata",
+      "location": "Horní Blatná",
+      "url": "https://www.e-chalupy.cz/lucni-chata-pronajem-horni-blatna-ubytovani-o3373",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 1357.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "3 ložnice",
+          "mazlíčci vítáni"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata k pronájmu",
+      "location": "Mezirolí",
+      "url": "https://www.e-chalupy.cz/ubytovani-meziroli-chata-pronajmuti-o4490",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2300.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "oploceno",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmány Marie",
+      "location": "Jáchymov",
+      "url": "https://www.e-chalupy.cz/apartmany-marie-jachymov-ubytovani-o11841",
+      "capacity": 12,
+      "bedrooms": null,
+      "price": 1500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "2 apartmány",
+        "mazlíčci vítáni",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "2 apartmány",
+          "12 osob",
+          "mazlíčci vítáni",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa Pod Skalami",
+      "location": "Tisá",
+      "url": "https://www.e-chalupy.cz/ubytovani-tisa-chalupa-pod-skalami-k-pronajmu-o23400",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 3571.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "2 ložnice",
+          "pro děti",
+          "oploceno",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán Dako",
+      "location": "Abertamy",
+      "url": "https://www.e-chalupy.cz/ubytovani-abetamy-apartman-dako-o8568",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2400.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "oploceno",
+        "krb"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 6 osob",
+          "2 ložnice",
+          "pro děti",
+          "oploceno",
+          "krb"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Zelenka v Krušných horách",
+      "location": "Nové Město",
+      "url": "https://www.e-chalupy.cz/ubytovani-moldava-nove-mesto-chata-zelenka-pronajem-o23035",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1714.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Prázdninový dům Wildstein ve Skalné",
+      "location": "Skalná",
+      "url": "https://www.e-chalupy.cz/skalna-ubytovani-chalupa-ferienhaus-wildstein-o775",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1290.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "bazén",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "rekreační dům 6 osob",
+          "2 ložnice",
+          "bazén",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Naproti Klínovci",
+      "location": "Nové Město u Jáchymova",
+      "url": "https://www.e-chalupy.cz/naproti-klinovci-chalupa-nove-mesto-pronajem-o14201",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 1286.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "3 ložnice",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Líza",
+      "location": "Háj",
+      "url": "https://www.e-chalupy.cz/ubytovani-haj-chata-liza-pronajem-o565",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1114.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Roubenka Pod Lesem",
+      "location": "Český Jiřetín",
+      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-roubenka-pod-lesem-k-pronajmu-o19700",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2071.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "vířivka",
+        "sauna",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "2 ložnice",
+          "vířivka",
+          "sauna",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Pronájem chaty",
+      "location": "Nové Hamry",
+      "url": "https://www.e-chalupy.cz/pronajem-chata-nove-hamry-o12728",
+      "capacity": 6,
+      "bedrooms": 3,
+      "price": 1500.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "mazlíčci vítáni",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "3 ložnice",
+          "mazlíčci vítáni",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Český Jiřetín",
+      "location": "Český Jiřetín",
+      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-chata-pronajmuti-o4774",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1286.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "krb",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Horský domek pod přehradou u sjezdovky",
+      "location": "Český Jiřetín",
+      "url": "https://www.e-chalupy.cz/ubytovani-cesky-jiretin-horsky-domek-pod-prehradou-u-sjezdovky-o21542",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2571.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "pro děti",
+        "mazlíčci vítáni",
+        "krb",
+        "v lese",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "rekreační dům 6 osob",
+          "2 ložnice",
+          "pro děti",
+          "mazlíčci vítáni",
+          "krb",
+          "v lese",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chalupa k pronájmu",
+      "location": "Tisová",
+      "url": "https://www.e-chalupy.cz/ubytovani-tisova-chalupa-pronajem-o3483",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1714.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chalupa 6 osob",
+          "2 ložnice",
+          "oploceno",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chaloupka u Lenky",
+      "location": "Kovářská",
+      "url": "https://www.e-chalupy.cz/ubytovani-kovarska-chata-lenka-pronajmuti-o6142",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 2429.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "oploceno",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Apartmán 82",
+      "location": "Loučná",
+      "url": "https://www.e-chalupy.cz/ubytovani-loucna-pod-klinovcem-apartman-82-o15457",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": null,
+      "price_unit": null,
+      "amenities": [
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "apartmán 6 osob",
+          "2 ložnice",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
+      "title": "Chata Zvonek",
+      "location": "Lípa",
+      "url": "https://www.e-chalupy.cz/ubytovani-lipa-chata-zvonek-pronajem-o7539",
+      "capacity": 6,
+      "bedrooms": 2,
+      "price": 1714.0,
+      "price_unit": "za noc",
+      "amenities": [
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "u lesa",
+        "u vody"
+      ],
+      "image_url": null,
+      "raw_extra": {
+        "tags": [
+          "chata 6 osob",
+          "2 ložnice",
+          "oploceno",
+          "mazlíčci vítáni",
+          "krb",
+          "u lesa",
+          "u vody"
+        ],
+        "location_prefiltered": true
+      }
     }
-  ],
-  "listings": []
+  ]
 }
