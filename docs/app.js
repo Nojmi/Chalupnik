@@ -123,13 +123,15 @@ function renderCards(listings) {
 
 // ── Client-side filtering ──────────────────────────────────────
 function getFilters() {
-  const location  = document.getElementById("f-location").value.trim().toLowerCase();
-  const capacity  = parseInt(document.getElementById("f-capacity").value)  || null;
-  const bedrooms  = parseInt(document.getElementById("f-bedrooms").value)  || null;
-  const maxPrice  = parseFloat(document.getElementById("f-maxprice").value) || null;
-  const amenities = [...document.querySelectorAll(".amenity-check input:checked")]
+  const location     = document.getElementById("f-location").value.trim().toLowerCase();
+  const capacity     = parseInt(document.getElementById("f-capacity").value)     || null;
+  const capacityMax  = parseInt(document.getElementById("f-capacity-max").value) || null;
+  const bedrooms     = parseInt(document.getElementById("f-bedrooms").value)     || null;
+  const bedroomsMax  = parseInt(document.getElementById("f-bedrooms-max").value) || null;
+  const maxPrice     = parseFloat(document.getElementById("f-maxprice").value)   || null;
+  const amenities    = [...document.querySelectorAll(".amenity-check input:checked")]
     .map((cb) => cb.value.toLowerCase());
-  return { location, capacity, bedrooms, maxPrice, amenities };
+  return { location, capacity, capacityMax, bedrooms, bedroomsMax, maxPrice, amenities };
 }
 
 function applyFilters() {
@@ -141,8 +143,14 @@ function applyFilters() {
     if (f.capacity != null && l.capacity != null) {
       if (l.capacity < f.capacity) return false;
     }
+    if (f.capacityMax != null && l.capacity != null) {
+      if (l.capacity > f.capacityMax) return false;
+    }
     if (f.bedrooms != null && l.bedrooms != null) {
       if (l.bedrooms < f.bedrooms) return false;
+    }
+    if (f.bedroomsMax != null && l.bedrooms != null) {
+      if (l.bedrooms > f.bedroomsMax) return false;
     }
     if (f.maxPrice != null && l.price != null) {
       if (l.price > f.maxPrice) return false;
@@ -160,10 +168,12 @@ function applyFilters() {
 }
 
 function resetFilters() {
-  document.getElementById("f-location").value  = "";
-  document.getElementById("f-capacity").value  = "";
-  document.getElementById("f-bedrooms").value  = "";
-  document.getElementById("f-maxprice").value  = "";
+  document.getElementById("f-location").value      = "";
+  document.getElementById("f-capacity").value      = "";
+  document.getElementById("f-capacity-max").value  = "";
+  document.getElementById("f-bedrooms").value      = "";
+  document.getElementById("f-bedrooms-max").value  = "";
+  document.getElementById("f-maxprice").value      = "";
   document.querySelectorAll(".amenity-check input").forEach((cb) => (cb.checked = false));
   renderCards(allListings);
 }
