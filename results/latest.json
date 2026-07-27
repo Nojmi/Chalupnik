@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-27T11:54:45.442271+00:00",
+  "generated_at": "2026-07-27T11:57:10.834046+00:00",
   "criteria": {
-    "location": null,
-    "min_capacity": "4",
+    "location": "krusne-hory",
+    "min_capacity": "5",
     "min_bedrooms": "2",
     "max_price": null,
     "amenities": [],
@@ -14,7 +14,7 @@
   "errors": [
     {
       "profile": "scraper.profiles.e_chalupy",
-      "error": "403 Client Error: Forbidden for url: https://www.e-chalupy.cz/vyhledavani?persons=4&bedrooms=2"
+      "error": "403 Client Error: Forbidden for url: https://www.e-chalupy.cz/krusne-hory?persons=5&bedrooms=2"
     }
   ],
   "listings": []
