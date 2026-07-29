@@ -137,6 +137,41 @@ MAX_LISTINGS = 5000
 
 DESTINATION_RE = re.compile(r"window\.dataSearchBoxSelectedData\s*=\s*(\{.*?\});")
 
+# Předresolvované slug -> area_XXXXX pro portálem nabízených 11 "oblíbených
+# destinací" (hlavní navigace na e-chalupy.cz homepage, submenu2/items).
+# DŮVOD: `e-chalupy.cz/<slug>` (HTML stránka použitá v _resolve_area_id())
+# dostává z GitHub Actions runnerů 403 Forbidden - stejná blokace jako
+# u hlavního API popsaná v shrnutí sekce 4, ale zjištěno, že se týká JEN
+# tohohle HTML resolvování, ne `api-pub.e-chalupy.cz` (ten 403 nedává,
+# funguje z Actions bez problému). Bez fungujícího area kódu search()
+# tiše spadne na celostátní dotaz (MAX_LISTINGS strop, viz search()) a
+# location matching pak zbytečně zahodí většinu výsledků (ověřeno na
+# Actions run 30470703299 - 5138 nalezeno / jen 434 po filtru misto
+# ~1000+ při správně scopovaném dotazu).
+# Tahle tabulka se používá PŘEDNOSTNĚ (viz _resolve_area_id) - obchází
+# blokovaný endpoint úplně pro těchto 11 regionů, jak lokálně, tak na
+# Actions. Pro cokoliv mimo tenhle seznam zůstává živé HTML resolvování
+# jako fallback (funguje lokálně, na Actions degraduje na celostátní
+# hledání + diagnostický log - viz _resolve_area_id).
+# Resolvováno ručně z domácí sítě 29. 7. 2026 - pokud se area kódy na
+# portálu časem změní, tahle tabulka zestárne tiše (fallback na živé
+# resolvování se ale pořád uplatní, jen o resolvovaný region přijde
+# přednost). Revalidovat, pokud počty pro tyhle regiony začnou vypadat
+# podezřele nízké/nulové.
+STATIC_AREA_IDS: dict[str, str] = {
+    "sumava": "area_19647",
+    "jeseniky": "area_19651",
+    "beskydy": "area_19652",
+    "krkonose": "area_19643",
+    "jizni-morava": "area_19653",
+    "cesky-raj": "area_19644",
+    "jizerske-hory": "area_19642",
+    "jizni-cechy": "area_19646",
+    "krusne-hory": "area_19640",
+    "vysocina": "area_19649",
+    "orlicke-hory": "area_19650",
+}
+
 # Kanonický název vybavení -> ID filtru/filtrů na portálu (viz docstring
 # modulu). "krb" má dvě ID (vnitřní + venkovní), protože náš text-tag je
 # slučuje do jednoho tagu a nechceme o tuhle informaci přijít.
@@ -168,16 +203,22 @@ def _slugify(text: str) -> str:
 
 
 def _resolve_area_id(location: str) -> str | None:
-    """Best-effort text -> area_XXXXX lookup via the region's HTML page.
+    """Text -> area_XXXXX. Nejdřív STATIC_AREA_IDS (obchází endpoint
+    blokovaný na GitHub Actions, viz komentář u té konstanty), teprve
+    pak best-effort živé HTML resolvování.
 
-    Diagnostický print na stderr při selhání - žádný krok tu není povinný
-    (search() má fallback na celostátní dotaz bez destinations), takže
-    selhání samo o sobě nezpůsobí [ERROR] v main.py a bez logu by bylo
-    neviditelné. Viz shrnutí sekce 4 - historicky 403 z GitHub Actions,
-    zjišťujeme, jestli/proč se to ještě děje."""
+    Diagnostický print na stderr při selhání živého resolvování -
+    žádný krok tu není povinný (search() má fallback na celostátní
+    dotaz bez destinations), takže selhání samo o sobě nezpůsobí
+    [ERROR] v main.py a bez logu by bylo neviditelné. Viz shrnutí
+    sekce 4 - historicky 403 z GitHub Actions, potvrzeno, že se to
+    pořád děje (jen na tomhle konkrétním HTML endpointu)."""
     slug = _slugify(location)
     if not slug:
         return None
+
+    if slug in STATIC_AREA_IDS:
+        return STATIC_AREA_IDS[slug]
 
     try:
         response = requests.get(f"{BASE_URL}/{slug}", headers=HEADERS, timeout=20)
