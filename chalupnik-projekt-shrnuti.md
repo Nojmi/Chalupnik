@@ -1081,6 +1081,50 @@ sbírají do listu a ukládají do výsledného JSON).
     vedle sebe by s původní 2px tloušťkou působilo přetíženě). **`docs/
     map.js` se touhle změnou vůbec nedotkl** — pracuje čistě přes
     `data-region`/`#f-location`, na tvaru podkladu pod tím mu nezáleží.
+  - **Aktualizace 29. 7. 2026 (třetí verze téhož dne)**: klikací
+    oblasti přestaly být trojice koleček (`<circle class="hill">`) a
+    staly se jedním organickým nepravidelným tvarem na region
+    (`<path class="region-patch">`) — protáhlé podél hřebene u
+    pásmových oblastí (Krušné hory, Krkonoše, Beskydy), kulatější u
+    plošších oblastí (Vysočina, Jižní Čechy, Jižní Morava). **Pokus
+    získat oficiální hranice CHKO/NP od AOPK ČR ztroskotal** - jejich
+    GIS server blokuje automatizovaný přístup - tvary jsou proto
+    ilustrační odhad reálného průběhu pohoří/oblasti, ne právně přesné
+    hranice chráněných území. `docs/style.css`: `.hill` →
+    `.map-region .region-patch` (poloprůhledné mechové vybarvení,
+    `fill-opacity: .55`, hover/aktivní stav → jantarová), popisek
+    (`.map-region-label`) dostal `paint-order: stroke` + obrys v barvě
+    papíru, aby zůstal čitelný i přes vybarvenou plochu. **`docs/
+    map.js` opět beze změny** - stejně jako u kraj-hranic v předchozí
+    aktualizaci mu na tvaru klikací plochy nezáleží.
+    - **Ověření bez prohlížeče (žádný nebyl po ruce ani tentokrát) —
+      geometrická kontrola místo vizuální**: naivní kontrola "leží
+      střed plochy uvnitř bounding boxu kraje" ukázala, že 3 z 11
+      nových organických tvarů (Krušné hory, Krkonoše, Orlické hory -
+      všechny tři severní pohraniční pásma) mají těžiště mimo
+      jakýkoli kraj. Přesnější kontrola (rozvinutí skutečných
+      kubických Bézierových křivek na mnohoúhelník + vzorkování
+      plochy, ne jen jeden bod) potvrdila, že jde o reálný problém, ne
+      artefakt měření: tyhle 3 tvary měly jen 3,7–29 % plochy uvnitř
+      libovolného kraje (zbytek trčel do prázdného prostoru nad
+      hranicí ČR), zatímco zbylých 8 mělo rozumných 57–100 %.
+      Opraveno posunem (translace, tvar zachován) na cíl 55–90 % (jako
+      u ostatních regionů, ne 100 % - mírný přesah přes hranici je u
+      pohraničních pásem záměrný/reálný): Krušné hory 69,3 %, Krkonoše
+      70,8 %. Popisky (`<text>`) posunuty o stejné dx/dy, ať zůstanou
+      u vybarvené plochy. **Orlické hory - jedna nuance**: automatický
+      posun cílený čistě na "55-90 % v libovolném kraji" našel
+      matematicky vyhovující, ale geograficky ŠPATNÉ řešení (posun tak
+      daleko, že plocha sklouzla pryč z Královéhradeckého kraje do
+      Olomouckého, přes celou Moravu) - zahozeno. Použit místo toho
+      posun cílený konkrétně na Královéhradecký kraj (70 % pokrytí
+      TOHOTO kraje specificky), který ale díky reálné poloze Orlických
+      hor na hranici Královéhradeckého/Pardubického kraje vychází na
+      100 % pokrytí "libovolným krajem" (rozděleno 297:125 mezi
+      oběma) - ponecháno, protože je to geograficky správně (Orlické
+      hory leží na hranici těchto dvou krajů), i když to formálně
+      nesedí do cílového pásma 55-90 %. Zkontrolováno i, že se žádné
+      dva ze všech 11 tvarů po posunu vzájemně nepřekrývají.
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho
