@@ -3,10 +3,11 @@
 const DATA_URL =
   "https://raw.githubusercontent.com/Nojmi/Chalupnik/main/results/latest.json";
 
-const grid        = document.getElementById("results-grid");
-const metaEl      = document.getElementById("results-meta");
-const emptyEl     = document.getElementById("empty-state");
-const statsEl     = document.getElementById("header-stats");
+const grid          = document.getElementById("results-grid");
+const metaEl        = document.getElementById("results-meta");
+const emptyEl       = document.getElementById("empty-state");
+const statsEl       = document.getElementById("header-stats");
+const sourceTagsEl  = document.getElementById("source-filter-tags");
 
 let allListings = [];
 let updateCapacityRange, updateBedroomsRange;
@@ -94,6 +95,29 @@ function renderSourceStats(listings) {
     </div>`;
 }
 
+// ── Přehled zdrojů ve VYFILTROVANÉ sadě (malé pilulky pod meta řádkem) ──
+// Na rozdíl od renderSourceStats() (celkové počty z posledního scrapu,
+// header nahoře) se tohle přepočítává při každé změně zobrazené sady -
+// volá se z renderCards(), stejně jako "Zobrazeno: N".
+function renderFilteredSourceTags(listings) {
+  if (!listings.length) {
+    sourceTagsEl.innerHTML = "";
+    return;
+  }
+
+  const counts = new Map();
+  listings.forEach((l) => {
+    const src = l.source || "neznámý zdroj";
+    counts.set(src, (counts.get(src) || 0) + 1);
+  });
+
+  const sources = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+
+  sourceTagsEl.innerHTML = sources
+    .map(([src, count]) => `<span class="source-filter-tag">${escHtml(src)} <strong>${count}</strong></span>`)
+    .join("");
+}
+
 // ── Ridge SVG (randomised mountain silhouette) ─────────────────
 function buildRidgeSVG() {
   const W = 400, H = 48;
@@ -137,6 +161,7 @@ function formatPrice(price, unit) {
 
 function renderCards(listings) {
   grid.innerHTML = "";
+  renderFilteredSourceTags(listings);
 
   if (!listings.length) {
     emptyEl.classList.remove("hidden");

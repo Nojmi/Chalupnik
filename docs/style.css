@@ -419,6 +419,35 @@ body {
   font-family: var(--font-mono);
 }
 
+/* Přehled zdrojů ve VYFILTROVANÉ sadě - odlišné od .header-stats nahoře
+   (ten zobrazuje celkové počty z posledního scrapu, tenhle se
+   přepočítává při každé změně filtru, viz renderFilteredSourceTags()
+   v app.js). Styl vědomě sdílí vzhled s .amenity-tag na kartách -
+   malé, kompaktní pilulky, ne další velký blok. */
+.source-filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: -.4rem 0 1rem;
+}
+.source-filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  background: rgba(116,132,90,.13);
+  color: var(--moss);
+  border: 1px solid rgba(116,132,90,.3);
+  border-radius: 20px;
+  font-size: .72rem;
+  font-weight: 500;
+  padding: .22rem .6rem;
+}
+.source-filter-tag strong {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--forest);
+}
+
 .results-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
