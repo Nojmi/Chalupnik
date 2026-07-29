@@ -480,32 +480,81 @@ místností, poplatky (rekreační poplatek, kauce, parkovné), vzdálenosti
 k restauraci/obchodu/lyžování/koupání, popis lokality a výletů v okolí —
 hodně strukturovaných dat, vhodné do `raw_extra`.
 
-### TODO ověřit doma (než se začne psát kód)
-1. **Ověřit, jestli `Autocomplete/<text>` funguje i BEZ cookies/session**
-   (čistý `requests.get` bez prohlížeče) — request headers ukazovaly jen
-   běžné cookies, žádný zjevný auth token, ale nutno otestovat naostro.
+### TODO ověřit doma — VÝSLEDKY (ověřeno 29. 7. 2026, viz i `chata_recon.py`
+v scratchpadu, ad-hoc skript, nepatří do repa)
+
+1. ~~Ověřit, jestli `Autocomplete/<text>` funguje i BEZ cookies/session~~ —
+   **VYŘEŠENO, funguje.** Čistá `requests.Session()` bez jakýchkoli cookies
+   dostala `200` a validní JSON (ověřeno na `Autocomplete/Sumava`, potvrdilo
+   se i `LocationId=49`/`LocationType=6` pro region Šumava). Žádný auth
+   token ani speciální session není potřeba.
 2. ~~Zjistit přesný formát odpovědi při stránkování `&page=N`~~ —
    **VYŘEŠENO**, viz sekce výše. `&page=N` je normální GET parametr,
    `totalitems` dává celkový počet na první stránce.
-3. **Ověřit textové pokrytí vířivka/sauna/krb na reálném vzorku dat** —
-   sidebar má čísla (dřív pozorováno např. 4/4/8 pro Žďárské vrchy), ale
-   nevíme jistě, jestli se dá vybavení spolehlivě vyčíst přímo z karty/
-   detailu, nebo je to jen server-side filtr bez odpovídajícího textového/
-   ikonového projevu (stejná past jako u e-chalupy, sekce 4 — vždy ověřit,
-   nepředpokládat).
-4. **Zjistit, jestli existuje limit na počet výsledků na jeden dotaz**
-   (analogie k Elasticsearch stropu 10 000 u e-chalupy) — objem chata.cz
-   bude pravděpodobně řádově menší, ale nutno ověřit aspoň u největšího
-   regionu/kraje.
-5. **Otestovat, jestli GitHub Actions runner dostane 403** stejně jako
-   u e-chalupy.cz (hlavní důvod, proč se tam přešlo na lokální spouštění).
+3. ~~Ověřit textové pokrytí vířivka/sauna/krb na reálném vzorku dat~~ —
+   **VYŘEŠENO: textové/ikonové pokrytí je prakticky NULOVÉ, stejná past
+   jako u e-chalupy (sekce 4).** Karta výpisu (`sec-ikonky` blok) má ikony
+   jen pro: zvíře, internet, vyžití pro děti, bazén, lyžárna/kolárna,
+   parkování, povlečení, oplocení — **vířivka/sauna/krb (vnitřní ani
+   venkovní) v `sec-ikonky` NEJSOU vůbec**. Jediné textové výskyty těchto
+   slov na kartě pocházejí z `alt` atributů fotogalerie (popisky
+   jednotlivých fotek jako "Finská sauna", "Obývací pokoj s krbem") —
+   na Šumavě (33 nabídek, sidebar: vířivka 3, sauna 8, vnitřní krb 15,
+   zahradní krb 26) to dalo jen 1/3 vířivka, 7/8 sauna, 9 objektů s "krb"
+   v textu. **Nepoužitelné jako spolehlivý signál.**
+   **Řešení (potvrzeno, přesná shoda s sidebarem): server-side query
+   parametry** `EquipmentWhirpool=true`, `EquipmentSauna=true`,
+   `EquipmentFireplaceIndoor=true`, `EquipmentFireplaceOutdoor=true`
+   (názvy viz seznam parametrů výše v sekci 5) — dotaz s každým z nich
+   vrátil `totalitems` přesně 3 / 8 / 15 / 26, tedy 100% shoda se
+   sidebarem. **Profil `chata_cz.py` musí vířivku/saunu/krb obohacovat
+   přes samostatné `Equipment*=true` dotazy, úplně stejně jako e-chalupy
+   dělá s `filters=<id>` pro ID-only vybavení (sekce 4) — ne parsováním
+   karty.** Totéž pravděpodobně platí i pro další vybavení bez ikony v
+   `sec-ikonky` (např. restaurace, klimatizace, samota) — při psaní
+   profilu ověřit každé zvlášť, nepředpokládat pokrytí.
+4. ~~Zjistit, jestli existuje limit na počet výsledků na jeden dotaz~~ —
+   **VYŘEŠENO: žádný pozorovaný strop, objem je řádově menší než u
+   e-chalupy.** Napříč všemi 80 regiony (`LocationType=6`) součet
+   `totalitems` je jen ~1158 nabídek celkem, největší jednotlivý region
+   (Jeseníky) má 89 (další v pořadí: Krkonoše 78, Slovácko 74, Jižní
+   Čechy 72, Beskydy a Valašsko 65). `PageSize=100` i `PageSize=1000` na
+   Jeseníkách vrátily korektně přesně všech 89 karet v jednom requestu
+   bez tichého ořezání, stránkování `page=N` sedí přesně (poslední
+   stránka `page=9` při `PageSize=10` = objekty 81-89 z 89).
+   **Region jako povinný vstup zůstává** — ne kvůli limitu (ten tu
+   prakticky neexistuje), ale **kvůli konzistenci s e-chalupy profilem**
+   (stejné UX, stejná struktura `search(criteria)` s lokalitou jako
+   klíčovým parametrem) a protože fulltextová varianta bez
+   `Autocomplete.LocationId` (viz výše) je nekontrolovaná.
+5. ~~Otestovat, jestli GitHub Actions runner dostane 403~~ —
+   **VYŘEŠENO: NEDOSTANE, chata.cz Actions neblokuje.** Ověřeno dočasným
+   workflow (`test-chata-cz.yml`, smazán po ověření) spuštěným naostro na
+   GitHub Actions runneru — 4 testované requesty (homepage, přímo
+   `AutocompleteRegions`, `Autocomplete/Sumava`, `vyhledavani/` s reálnými
+   parametry pro Šumavu) všechny vrátily `200`. **Na rozdíl od
+   e-chalupy.cz (sekce 4, 403 Forbidden) chata.cz profil MŮŽE běžet přímo
+   v GitHub Actions přes `workflow_dispatch`, lokální spouštění není
+   potřeba.** Zatím netestováno: jestli 200 vydrží i při vyšší frekvenci/
+   objemu requestů (celý region s obohacením vybavení = víc requestů za
+   sebou) — ověřit při prvním ostrém běhu profilu.
 6. **HTML jedné karty přes DevTools Copy outerHTML** (ne jen fetch/
    screenshot) — pro přesné CSS selektory k `sec-hodnoceni`/`sec-rooms`/
    `sec-ikonky` blokům, obzvlášť variantu s hodnocením (zatím vidět jen
-   z jednoho konkrétního příkladu).
+   z jednoho konkrétního příkladu). *(Stále otevřené — dnešní recon
+   ověřoval `sec-ikonky` skriptem/regexem, ne ručním DevTools výpisem.)*
 7. Ověřit `LocationType` hodnoty systematicky (víme jistě: 6=region,
    4=obec/část obce, 3=okres — chybí případně kraj, pokud existuje
-   samostatně).
+   samostatně). *(Stále otevřené.)*
+
+**Vedlejší objev cestou**: `combined_ca.pem` (Avast SSL interception bundle,
+viz sekce 3) byl zastaralý — Avast si mezitím otočil root certifikát a starý
+bundle přestal fungovat i pro e-chalupy.cz. Přegenerován z aktuálních Avast
+root certů (bylo jich v cert store 5, různé thumbprinty, všechny platné do
+2040 — přidány všechny) + certifi. Pokud se `SSLCertVerificationError`
+objeví znovu i po nastavení `REQUESTS_CA_BUNDLE`, nejdřív zkontrolovat, jestli
+bundle sám není zastaralý (test na známém funkčním hostu jako e-chalupy.cz),
+ne rovnou hledat chybu jinde.
 
 ## 6. Obecné technické konvence napříč projektem
 
