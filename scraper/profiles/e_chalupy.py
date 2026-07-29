@@ -108,6 +108,7 @@ Poznámky k portálu:
 
 import json
 import re
+import sys
 import unicodedata
 
 import requests
@@ -167,22 +168,36 @@ def _slugify(text: str) -> str:
 
 
 def _resolve_area_id(location: str) -> str | None:
-    """Best-effort text -> area_XXXXX lookup via the region's HTML page."""
+    """Best-effort text -> area_XXXXX lookup via the region's HTML page.
+
+    Diagnostický print na stderr při selhání - žádný krok tu není povinný
+    (search() má fallback na celostátní dotaz bez destinations), takže
+    selhání samo o sobě nezpůsobí [ERROR] v main.py a bez logu by bylo
+    neviditelné. Viz shrnutí sekce 4 - historicky 403 z GitHub Actions,
+    zjišťujeme, jestli/proč se to ještě děje."""
     slug = _slugify(location)
     if not slug:
         return None
 
-    response = requests.get(f"{BASE_URL}/{slug}", headers=HEADERS, timeout=20)
+    try:
+        response = requests.get(f"{BASE_URL}/{slug}", headers=HEADERS, timeout=20)
+    except requests.RequestException as exc:
+        print(f"[e-chalupy.cz] area lookup pro '{slug}' selhal (request exception): {exc}", file=sys.stderr)
+        return None
+
     if response.status_code != 200:
+        print(f"[e-chalupy.cz] area lookup pro '{slug}' selhal (HTTP {response.status_code})", file=sys.stderr)
         return None
 
     match = DESTINATION_RE.search(response.text)
     if not match:
+        print(f"[e-chalupy.cz] area lookup pro '{slug}': dataSearchBoxSelectedData nenalezeno v HTML (délka {len(response.text)} znaků)", file=sys.stderr)
         return None
 
     try:
         data = json.loads(match.group(1))
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as exc:
+        print(f"[e-chalupy.cz] area lookup pro '{slug}': JSON parse selhal: {exc}", file=sys.stderr)
         return None
 
     destinations = data.get("destinations") or []
@@ -191,6 +206,8 @@ def _resolve_area_id(location: str) -> str | None:
             return dest["id"]
     if destinations and destinations[0].get("id"):
         return destinations[0]["id"]
+
+    print(f"[e-chalupy.cz] area lookup pro '{slug}': destinations pole prázdné/bez id", file=sys.stderr)
     return None
 
 
@@ -357,6 +374,8 @@ def search(criteria: dict) -> list[Listing]:
         area_id = _resolve_area_id(location)
         if area_id:
             params["destinations"] = area_id
+        else:
+            print(f"[e-chalupy.cz] '{location}' se nepodařilo přeložit na area kód - hledám bez destinations (celostátně, viz MAX_LISTINGS strop)", file=sys.stderr)
 
     # min_capacity/min_bedrooms/max_price se záměrně neposílají do API -
     # stahujeme kompletní data pro lokalitu a tahle kritéria filtrujeme
