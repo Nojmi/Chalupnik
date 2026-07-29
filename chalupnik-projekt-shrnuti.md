@@ -202,12 +202,13 @@ git -c http.sslVerify=false push
 (Claude Code zná celý postup včetně vygenerování combined_ca.pem, stačí mu
 zadat úkol přirozeným jazykem.)
 
-## 5. chata.cz — profil (ROZPRACOVÁNO, sbírání podkladů, kód zatím NEPSÁN)
+## 5. chata.cz — profil (HOTOVO, `scraper/profiles/chata_cz.py` napsán a
+otestován lokálně na Šumavě a Krkonoších)
 
-Na rozdíl od e-chalupy.cz je celý reconnaissance zatím udělaný jen
-prohlížením webu a Network tabu (žádné psaní kódu) — Nojmi sbíral podklady
-z práce, kde nemůže programovat. Než se začne psát `scraper/profiles/chata_cz.py`,
-zbývá ověřit pár věcí přímo doma (viz "TODO ověřit doma" na konci sekce).
+Reconnaissance začal jen prohlížením webu a Network tabu (žádné psaní kódu)
+— Nojmi sbíral podklady z práce, kde nemůže programovat. Poznámky níže jsou
+z tyhle fáze; implementační detaily/odchylky zjištěné až při psaní
+`scraper/profiles/chata_cz.py` jsou označené **IMPLEMENTACE:**.
 
 ### Žádné centrální JSON API jako u e-chalupy — je to hybrid
 Hlavní výpis nabídek (`/ubytovani/<region>/` i `/vyhledavani/?...`) je
@@ -257,9 +258,19 @@ page=N                          # STRÁNKOVÁNÍ — viz níže
 
 **Cena se zobrazí jen s vyplněným `FromDate`/`ToDate`+`Adults`** — bez
 termínu je na kartě jen tlačítko "ZJISTIT CENU", žádná číselná hodnota.
-Scraper proto musí vždy poslat nějaký defaultní termín (např. nejbližší
-volný víkend), jinak zůstane `Listing.price` prázdné pole u všech nabídek
-(v souladu s principem "chybějící pole neblokuje", sekce 6).
+Scraper proto musí vždy poslat nějaký defaultní termín, jinak zůstane
+`Listing.price` prázdné pole u všech nabídek (v souladu s principem
+"chybějící pole neblokuje", sekce 6).
+
+**IMPLEMENTACE: defaultní termín je celý týden od nejbližší soboty, NE
+jen víkend.** Zkoušeli jsme nejdřív jednonoční víkendový dotaz (SO-NE) —
+na Šumavě (33 nabídek) to vrátilo **0 reálných cen**, protože velká část
+objektů má v sezóně restrikci `min. nocí: 2-7` a/nebo `pobyty jen SO-SO`,
+kterou jedna noc nesplní (karta pak ukáže "UPRAVIT TERMÍN", ne cenu).
+Týdenní dotaz (SO→SO, `DEFAULT_STAY_NIGHTS=7` v `chata_cz.py`) dal 4 reálné
+ceny z 31 (zbytek "Termín je obsazen" — to je reálná dostupnost, ne bug).
+Cena na kartě je navíc **celková za pobyt, ne za noc** — `price_unit` se
+proto ukládá jako `"pobyt N nocí"`.
 
 ### Překlad název lokality → LocationId (dva JSON AJAX endpointy)
 1. **`GET chata.cz/AutocompleteRegions/`** (bez query parametrů) — vrátí
@@ -369,6 +380,14 @@ v sidebaru, ale nebylo vidět ve zdrojovém formuláři vybavení — možná
 patří pod jiný název parametru, nebo je vázané na konkrétní kategorii.
 Nutno ověřit, pokud bude potřeba filtrovat právě podle něj.
 
+**IMPLEMENTACE: `AccType=2|3|6|7|8|11|18|25|27` ("Chaty a chalupy") se
+posílá NAPEVNO v `chata_cz.py`, není odvozené od `criteria`.** Portál
+kromě chat/chalup nabízí i apartmány/penziony/hotely/ATC, což je mimo
+scope projektu (viz sekce 1 — projekt cílí jen na chaty/chalupy) — bez
+tohohle filtru by se do výsledků míchaly i jiné typy ubytování. Stejný
+princip jako u e-chalupy, kde tohle omezení dělá už samotný portál (celý
+web je jen chaty/chalupy, žádný extra filtr nebyl potřeba).
+
 ### `distributePersons`/`hasPrice` — spolehlivý signál typu ceny (lepší než heuristika)
 Na detailu nabídky jsou hidden inputy:
 ```html
@@ -385,6 +404,17 @@ rezervaci je potřeba vybrat konkrétní pokoj(e)."
 signál pro `Listing.entire_property`/typ ceny, místo textové heuristiky
 (analogie k `units`-based heuristice u e-chalupy, ale tady je to čistá
 booleovská hodnota přímo v HTML).
+
+**IMPLEMENTACE: `distributePersons`/`hasPrice` existují VÝHRADNĚ na
+detailu nabídky, ne na kartě výpisu** — ověřeno prohledáním celé stránky
+výpisu (33 karet, Šumava): nula výskytů. Karta samotná tenhle signál
+nemá vůbec. `chata_cz.py` proto pro `entire_property` dotahuje detail
+stránku KAŽDÉ jednotlivé nabídky zvlášť (přes `detail_objekt_url_*`
+hidden input, viz níže) — o(N) requestů navíc oproti hlavnímu dotazu.
+Přijatelné vzhledem k malým objemům na chata.cz (desítky nabídek na
+region, ne stovky/tisíce jako u e-chalupy), ale je to jiný nákladový
+profil než enrichment vybavení (ten je o(počet druhů vybavení), ne
+o(počet nabídek)).
 
 ### Odznaky (badges) — kompletní přehled CSS tříd
 - `indicator-green` — AKCE (zvýhodněná cena při menším obsazení, nebo
@@ -628,12 +658,18 @@ změnil (`git diff --staged --quiet || git commit ...`).
 
 ## 7. Co zbývá udělat
 
-- [ ] Dokončit chata.cz: doladit "TODO ověřit doma" ze sekce 5, pak
+- [x] Dokončit chata.cz: doladit "TODO ověřit doma" ze sekce 5, pak
       napsat `scraper/profiles/chata_cz.py` a otestovat end-to-end.
+      (Hotovo, otestováno lokálně na Šumavě a Krkonoších.)
+- [ ] chata.cz — implementovat `likely_apartment` heuristiku (analogicky
+      k e-chalupy), zatím vždy `False`; narazili jsme na apartmánové
+      objekty schované v kategorii Chaty a chalupy, stejně jako u
+      e-chalupy.
 - [ ] hauzi.com, chatyachalupy-chatar.cz, alkatravel.cz, zars.cz
 - [ ] Rozhodnutí o proxy službě pro e-chalupy.cz na GitHub Actions
       (odloženo, čeká na zjištění, jestli mají stejný 403 problém i
-      další portály — u chata.cz zatím netestováno)
+      další portály — chata.cz NEMÁ tenhle problém, viz sekce 5, takže
+      proxy je potřeba jen pro e-chalupy.cz)
 - [ ] Případně: tlačítko na frontendu pro přímé spuštění GitHub Actions
       bez nutnosti přecházet na GitHub (odloženo, nice-to-have)
 - [ ] Zvážit vlastní ikonu/favicon (icons8-cabin-64) — Nojmi měl soubor
