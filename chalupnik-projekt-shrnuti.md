@@ -1058,12 +1058,29 @@ sbírají do listu a ukládají do výsledného JSON).
   a `.layout` (celá šířka stránky — postranní panel s filtry je jen
   280px, na čitelnou mapu příliš úzký). SVG s 11 klikatelnými
   `<g class="map-region" data-region="...">` (ilustrativní "shluky
-  kopečků", ne geograficky přesné hranice — stejný rukopis jako
-  hřebenové linky na kartách). Pokrývá přesně těch **11 regionů
-  sdílených napříč všemi třemi portály** — shodný seznam s
-  `STATIC_AREA_IDS` v `scraper/profiles/e_chalupy.py` (sekce 4): Šumava,
-  Jeseníky, Beskydy, Krkonoše, Jižní Morava, Český ráj, Jizerské hory,
-  Jižní Čechy, Krušné hory, Vysočina, Orlické hory.
+  kopečků" nad mapou, ne skutečné hranice regionů). Pokrývá přesně
+  těch **11 regionů sdílených napříč všemi třemi portály** — shodný
+  seznam s `STATIC_AREA_IDS` v `scraper/profiles/e_chalupy.py` (sekce
+  4): Šumava, Jeseníky, Beskydy, Krkonoše, Jižní Morava, Český ráj,
+  Jizerské hory, Jižní Čechy, Krušné hory, Vysočina, Orlické hory.
+  - **Aktualizace 29. 7. 2026 (týž den, druhá verze)**: podkladová
+    silueta ČR (`<path class="cr-outline">`, jeden zjednodušený
+    "mrak" tvar) nahrazena geograficky přesnými hranicemi 14 krajů
+    (`<g class="kraj-boundaries">`, 14× `<path class="kraj"
+    data-kraj="...">` — 13 krajů + Praha). Souřadnice pocházejí ze
+    skutečných hraničních dat (Natural Earth přes
+    `@highcharts/map-collection`, použity jen samotné geometrické
+    souřadnice hranic, žádný text/branding/kód navíc). Souřadnice 11
+    klikacích oblastí (kroužky + popisek) byly přepočítané, aby seděly
+    na reálná místa vůči novým hranicím (např. Šumava do jihozápadního
+    rohu Jihočeského/Plzeňského kraje, Krkonoše na severní hranici
+    Královéhradeckého kraje) — ověřeno i programově (bounding box
+    každého kraje vs. střed každé klikací oblasti), sedí na
+    odpovídající kraj podle skutečné geografie. `docs/style.css`:
+    `.cr-outline` → `.kraj-boundaries .kraj` (14 tenčích 1px hranic
+    vedle sebe by s původní 2px tloušťkou působilo přetíženě). **`docs/
+    map.js` se touhle změnou vůbec nedotkl** — pracuje čistě přes
+    `data-region`/`#f-location`, na tvaru podkladu pod tím mu nezáleží.
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho

@@ -219,11 +219,11 @@ body {
   height: auto;
 }
 
-.cr-outline {
+.kraj-boundaries .kraj {
   fill: var(--moss-light);
   fill-opacity: .18;
   stroke: var(--moss);
-  stroke-width: 2;
+  stroke-width: 1;
   stroke-linejoin: round;
 }
 
