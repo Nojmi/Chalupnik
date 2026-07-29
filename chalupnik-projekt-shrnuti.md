@@ -261,6 +261,12 @@ zvlášť. Nelze s jistotou říct, jestli se blokace časem zmírnila, nebo
 jsme ji jen teď lépe izolovali na správnou příčinu — do budoucna sledovat,
 jestli se 403 neobjeví i na `api-pub.e-chalupy.cz` (zatím ne).
 
+**Ověřeno i na druhém regionu (Krkonoše, 29. 7. 2026)**: čerstvý
+`workflow_dispatch` běh (`30472565045`) s `CRIT_LOCATION=Krkonoše` proběhl
+bez 403, `Wrote 1293 listings` ze všech tří portálů, žádný lokální zásah.
+Potvrzuje to, že oprava funguje spolehlivě napříč regiony z tabulky
+`STATIC_AREA_IDS`, ne jen na Šumavě, kde se testovala poprvé.
+
 ### Jak spustit e-chalupy.cz (a celý scraper) — lokálně i na Actions
 Pro 11 pokrytých regionů (viz `STATIC_AREA_IDS` výše) stačí spustit
 workflow `Run scraper` (`workflow_dispatch`) přímo na GitHub, žádný
@@ -1038,6 +1044,15 @@ sbírají do listu a ukládají do výsledného JSON).
   proto raw GitHub URL s permissivním CORS). Veškeré filtrování na
   klientovi (substring match pro vybavení, rozsahy pro kapacitu/ložnice/
   cenu, booly pro entire_property/likely_apartment).
+- **Štítky se statistikou podle zdroje** (přidáno 29. 7. 2026): pod
+  hlavním řádkem statistiky (Poslední aktualizace/Lokalita/Nalezeno
+  celkem/Zobrazeno) se zobrazují malé pilulky — jedna na každý zdrojový
+  portál (`e-chalupy.cz`, `chata.cz`, `cs-chalupy.cz`) s počtem nabídek
+  **z aktuálně filtrované sady** (ne z celkového nefiltrovaného datasetu
+  — ten zobrazuje progress bar úplně nahoře, ten se touhle změnou
+  nedotkl). Počty se přepočítávají live při každé změně filtru, stejně
+  jako "Zobrazeno: N". Vizuálně stejný styl jako amenity tagy na
+  kartách, používá existující design tokeny z `docs/style.css`.
 - `docs/style.css` — vlastní design tokeny (CSS custom properties), viz
   barvy v sekci 2 výše. Signature vizuální prvek: náhodně generovaná SVG
   "hřebenová" linka (siluetа hor) nad každou kartou výsledku.
@@ -1092,15 +1107,24 @@ změnil (`git diff --staged --quiet || git commit ...`).
       price_unit", ten byl na datech 94% šum). Ověřeno na Šumava +
       Krkonoše: 7/79 (9 %). Viz sekce 5, IMPLEMENTACE u `sec-rooms`/
       `sec-price`.
-- [ ] cs-chalupy.cz — recon dokončen (sekce 6), zbývá: doladit otevřené
-      TODO otázky doma (typ objektu mechanismus, PageSize, GitHub
-      Actions test), pak napsat `scraper/profiles/cs_chalupy.py` a
-      otestovat end-to-end (analogicky k chata.cz workflow).
+- [x] cs-chalupy.cz — napsán `scraper/profiles/cs_chalupy.py`, otestován
+      end-to-end na Šumavě (129→116 nabídek po typovém filtru) i na
+      GitHub Actions. Viz sekce 6.
+- [x] e-chalupy.cz na GitHub Actions bez 403 — vyřešeno přes
+      `STATIC_AREA_IDS` tabulku (11 pokrytých regionů), ověřeno na dvou
+      různých regionech (Šumava, Krkonoše). Proxy služba už není
+      potřeba pro tyhle regiony. Viz sekce 4. Pro lokality mimo tabulku
+      zůstává tichý fallback na celostátní hledání (nižší relevance,
+      ne chyba) — rozšíření tabulky o další region zůstává na TODO,
+      pokud se ukáže potřeba.
+- [x] Frontend — štítky se statistikou nabídek podle zdroje ve
+      filtrovaném výsledku (live přepočet). Viz sekce 7, Frontend
+      struktura.
 - [ ] hauzi.com, chatyachalupy-chatar.cz, alkatravel.cz, zars.cz
-- [ ] Rozhodnutí o proxy službě pro e-chalupy.cz na GitHub Actions
-      (odloženo, čeká na zjištění, jestli mají stejný 403 problém i
-      další portály — chata.cz NEMÁ tenhle problém, viz sekce 5, cs-chalupy.cz
-      zatím netestováno, viz sekce 6 TODO)
+- [ ] Zvážit rozšíření `STATIC_AREA_IDS` o další regiony, pokud se běžně
+      používají lokality mimo současných 11 pokrytých (Šumava, Jeseníky,
+      Beskydy, Krkonoše, Jižní Morava, Český ráj, Jizerské hory, Jižní
+      Čechy, Krušné hory, Vysočina, Orlické hory).
 - [ ] Případně: tlačítko na frontendu pro přímé spuštění GitHub Actions
       bez nutnosti přecházet na GitHub (odloženo, nice-to-have)
 - [ ] Zvážit vlastní ikonu/favicon (icons8-cabin-64) — Nojmi měl soubor
