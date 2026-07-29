@@ -64,6 +64,16 @@ sekce 5):
   NEPOSÍLAJÍ do dotazu - filtrování necháváme na filters.py/frontendu.
   Adults pro cenový dotaz je proto fixní (2), nezávislé na
   min_capacity criteria (to by nechtěně omezovalo dostupnost pokojů).
+- `likely_apartment` (tři signály přes OR, viz _extract_likely_apartment):
+  "apartmán" v title, víc než 1 sec-price blok, "apartmán" v názvu
+  pokoje. Ověřeno na Šumava+Krkonoše (79 nabídek): OR všech tří 7/79
+  (9 %, výrazně méně než e-chalupy 50 %, protože AccType filtr už
+  kontaminaci apartmány předfiltruje na portálu). Signály 2 a 3 se
+  MUSÍ počítat z BEZTERMÍNOVÉHO fetche (_fetch_structural_rooms), ne
+  z hlavního date-scoped fetche - s vyplněným FromDate/ToDate portál
+  sec-price bloky mění podle dostupnosti/restrikcí pro dané období
+  (ověřeno na dvou protipříkladech, viz docstring
+  _extract_likely_apartment) a signál by se znáhodnil podle termínu.
 """
 
 import re
@@ -287,6 +297,60 @@ def _extract_rooms(card) -> list[dict]:
     return rooms
 
 
+def _extract_likely_apartment(title: str, rooms: list[dict]) -> bool:
+    """
+    Nabídka spadající pod AccType "Chaty a chalupy", ale ve skutečnosti
+    patrně jen apartmán/pokoj (ne celý objekt) - tři signály přes OR,
+    analogie k e-chalupy (sekce 4 shrnutí), ale s jedním upraveným
+    signálem po ověření na reálném vzorku (Šumava+Krkonoše, 79 nabídek):
+
+    DŮLEŽITÉ: `rooms` musí pocházet z BEZTERMÍNOVÉHO fetche (viz
+    _fetch_structural_rooms), ne z hlavního date-scoped fetche v
+    search(). S vyplněným FromDate/ToDate portál sec-price bloky mění
+    podle dostupnosti/restrikcí pro to konkrétní období - ověřeno na
+    dvou reálných protipříkladech: (1) "Chata Zadov" má bez termínu 4
+    samostatné rezervovatelné jednotky (Apartmán Churáňov/Zadov/Stachy +
+    Celá chata), ale s výchozím týdenním termínem se to celé zabalí do
+    jednoho řádku "Termín je obsazen." (objekt vypadá jednotkově, i když
+    není); (2) "Chalupa Cista 76" je bez termínu jeden řádek ("Chalupa
+    pro 11 osob" - celý objekt), ale s termínem přesahujícím hranici
+    dvou různých restrikčních období (jiné "min. nocí" v první a druhé
+    části pobytu) se vykreslí jako 2 "restricted" bloky - objekt
+    vypadá vícejednotkově, i když je to jen rozdělení podle termínu.
+    Použití date-scoped rooms by tedy signál S2/S3 znáhodnilo podle
+    toho, jaký termín se zrovna poslal - proto se počítá zvlášť.
+      - "apartmán" v title: 0/79 zásahů na vzorku - chata.cz na rozdíl
+        od e-chalupy nedává "apartmán" do názvu karty. Ponecháno pro
+        konzistenci/budoucí regiony, i když zatím nic nechytá.
+      - víc než 1 sec-price blok (víc rezervovatelných jednotek na
+        objekt): 6/79 - reálný signál, např. "Chata Jawa" (Apartmán/
+        Chata/Celý objekt jako 3 volby), "Chalupa 101" (3 apartmány).
+      - název pokoje (nazevj) obsahuje "apartmán": 4/79 - funkční
+        analogie k e-chalupy units.items podtitulům.
+      PŮVODNĚ navržený třetí signál ("osoba" v názvu pokoje/price_unit,
+      analogie k e-chalupy priceLabel "za osobu") se ukázal jako ŠUM:
+      74/79 (94 %) - "Chalupa pro N osob" je běžný název i pro CELÝ
+      objekt (popis kapacity, ne rozparcelování), na chata.cz navíc
+      price_unit není portálové pole jako u e-chalupy, ale synteticky
+      dopočítané "pobyt N nocí" (viz _parse_card). Nahrazeno "apartmán"
+      v názvu pokoje - viz výše.
+      OR všech tří na vzorku: 7/79 (9 %) - výrazně méně než e-chalupy
+      50 %, protože AccType filtr (jen "Chaty a chalupy") už kontaminaci
+      apartmány předfiltruje na portálu, e-chalupy takový filtr nemělo.
+    """
+    if "apartmán" in title.lower():
+        return True
+
+    if len(rooms) > 1:
+        return True
+
+    room_names = [r.get("name") or "" for r in rooms]
+    if any("apartmán" in name.lower() for name in room_names):
+        return True
+
+    return False
+
+
 def _extract_icon_amenities(card) -> tuple[list[str], dict]:
     amenities: list[str] = []
     tooltips: dict = {}
@@ -381,7 +445,7 @@ def _parse_card(card, nights: int) -> Listing:
         amenities=icon_amenities,
         image_url=_extract_image_url(card),
         entire_property=None,  # doplněno v _apply_entire_property (detail stránka)
-        likely_apartment=False,
+        likely_apartment=False,  # doplněno v _apply_likely_apartment (bezterminovy fetch)
         raw_extra={
             "code": code,
             "rooms": rooms,
@@ -438,6 +502,27 @@ def _apply_entire_property(listings: list[Listing]) -> None:
         listing.entire_property = _fetch_entire_property(listing.url)
 
 
+def _fetch_structural_rooms(base_params: dict) -> dict[str, list[dict]]:
+    """Stejný dotaz jako hlavní fetch, ale BEZ FromDate/ToDate - stabilní
+    pohled na skutečnou strukturu sec-price bloků, viz docstring
+    _extract_likely_apartment."""
+    structural_params = {k: v for k, v in base_params.items() if k not in ("FromDate", "ToDate")}
+    rooms_by_code: dict[str, list[dict]] = {}
+    for card in _fetch_all_cards(structural_params):
+        code, _ = _extract_code_title(card)
+        if code:
+            rooms_by_code[code] = _extract_rooms(card)
+    return rooms_by_code
+
+
+def _apply_likely_apartment(listings: list[Listing], base_params: dict) -> None:
+    structural_rooms = _fetch_structural_rooms(base_params)
+    for listing in listings:
+        code = listing.raw_extra.get("code")
+        rooms = structural_rooms.get(code, [])
+        listing.likely_apartment = _extract_likely_apartment(listing.title, rooms)
+
+
 def search(criteria: dict) -> list[Listing]:
     location = (criteria.get("location") or "").strip()
 
@@ -477,5 +562,6 @@ def search(criteria: dict) -> list[Listing]:
     # filtrování necháváme na filters.py/frontendu (stejně jako e-chalupy).
     _enrich_amenities(listings, params)
     _apply_entire_property(listings)
+    _apply_likely_apartment(listings, params)
 
     return listings

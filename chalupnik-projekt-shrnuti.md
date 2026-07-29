@@ -472,9 +472,34 @@ Stačí přečíst hodnotu tohoto inputu, žádné hádání prefixu.
 - **Cena a jednotky (`sec-rooms`/`sec-price`)** — analogie k `units` u
   e-chalupy: jeden objekt může mít VÍC bloků `sec-price`, každý s vlastním
   `roomID`, názvem typu pokoje/apartmánu (`Rodinný byt`, `Zelený apartmán
-  pro 3-4 osoby`...), cenou a dostupností (`X volný`/`X volné`). Možný
-  zdroj pro budoucí `likely_apartment` heuristiku (viz e-chalupy, sekce 4).
-  Cena bez termínu chybí (viz výše).
+  pro 3-4 osoby`...), cenou a dostupností (`X volný`/`X volné`). Zdroj pro
+  `likely_apartment` heuristiku (viz e-chalupy, sekce 4 a IMPLEMENTACE
+  níže). Cena bez termínu chybí (viz výše).
+
+  **IMPLEMENTACE — KRITICKÁ PAST: počet/obsah `sec-price` bloků NENÍ
+  stabilní strukturální vlastnost objektu, mění se podle FromDate/ToDate
+  v dotazu.** S vyplněným termínem portál bloky přeskládá podle
+  dostupnosti/restrikcí PRO TO KONKRÉTNÍ OBDOBÍ, ne podle skutečné
+  struktury objektu:
+  - Objekt se 4 samostatně rezervovatelnými jednotkami (např. "Chata
+    Jawa": Apartmán/Chata/Celý objekt) se s výchozím týdenním termínem,
+    kdy je obsazený, zabalí do JEDNOHO řádku `"Termín je obsazen."` —
+    vypadá jako single-unit objekt, i když není.
+  - Naopak skutečně jednotkový objekt (jeden `sec-price` blok bez
+    termínu, např. "Chalupa Cista 76" — "Chalupa pro 11 osob") se může
+    s termínem přesahujícím hranici dvou různých restrikčních období
+    (jiné "min. nocí" v první a druhé části pobytu) rozštěpit na 2
+    `"restricted"` bloky — vypadá jako vícejednotkový, i když je to jen
+    artefakt zvoleného data.
+  - **Důsledek: `likely_apartment`/jakýkoli signál založený na počtu
+    nebo obsahu `sec-price` bloků SE MUSÍ počítat z dotazu BEZ
+    `FromDate`/`ToDate`** (samostatný, "strukturální" fetch stejných
+    parametrů location/AccType bez termínu — viz
+    `_fetch_structural_rooms`/`_apply_likely_apartment` v
+    `chata_cz.py`), NIKDY z hlavního date-scoped fetche použitého pro
+    cenu/dostupnost. Při jakékoli budoucí úpravě (refaktoring,
+    optimalizace requestů) tenhle rozdíl NEMAZAT — bez něj se signál
+    náhodně mění podle toho, jaký termín se zrovna poslal.
 - **Hodnocení — DVĚ varianty stejného bloku** (`sec-hodnoceni`):
   - Bez recenzí: `<div class="no_text">Dosud nehodnoceno</div>`
   - S recenzemi: `<div class="modry_box"><span>9,5</span></div>` +
@@ -661,10 +686,13 @@ změnil (`git diff --staged --quiet || git commit ...`).
 - [x] Dokončit chata.cz: doladit "TODO ověřit doma" ze sekce 5, pak
       napsat `scraper/profiles/chata_cz.py` a otestovat end-to-end.
       (Hotovo, otestováno lokálně na Šumavě a Krkonoších.)
-- [ ] chata.cz — implementovat `likely_apartment` heuristiku (analogicky
-      k e-chalupy), zatím vždy `False`; narazili jsme na apartmánové
-      objekty schované v kategorii Chaty a chalupy, stejně jako u
-      e-chalupy.
+- [x] chata.cz — implementovat `likely_apartment` heuristiku (analogicky
+      k e-chalupy). Hotovo: tři signály přes OR (title obsahuje
+      "apartmán", >1 `sec-price` blok, název pokoje obsahuje "apartmán"
+      — třetí signál upraven oproti původnímu návrhu "osoba v
+      price_unit", ten byl na datech 94% šum). Ověřeno na Šumava +
+      Krkonoše: 7/79 (9 %). Viz sekce 5, IMPLEMENTACE u `sec-rooms`/
+      `sec-price`.
 - [ ] hauzi.com, chatyachalupy-chatar.cz, alkatravel.cz, zars.cz
 - [ ] Rozhodnutí o proxy službě pro e-chalupy.cz na GitHub Actions
       (odloženo, čeká na zjištění, jestli mají stejný 403 problém i
