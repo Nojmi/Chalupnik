@@ -3,12 +3,24 @@
 const DATA_URL =
   "https://raw.githubusercontent.com/Nojmi/Chalupnik/main/results/latest.json";
 
-const grid      = document.getElementById("results-grid");
-const metaEl    = document.getElementById("results-meta");
-const emptyEl   = document.getElementById("empty-state");
+const grid        = document.getElementById("results-grid");
+const metaEl      = document.getElementById("results-meta");
+const emptyEl     = document.getElementById("empty-state");
+const statsEl     = document.getElementById("header-stats");
 
 let allListings = [];
 let updateCapacityRange, updateBedroomsRange;
+
+// Barvy zdrojů (validováno proti --forest hlavičce přes dataviz skill -
+// terakota/teal, CVD-bezpečné, odlišné od jantarového akcentu). Nový
+// portál bez záznamu tady dostane FALLBACK_SOURCE_COLOR - nic nespadne,
+// ale barvu je potřeba doplnit a validovat (node scripts/validate_palette.js
+// z dataviz skillu, --surface #1E362B --mode dark).
+const SOURCE_COLORS = {
+  "e-chalupy.cz": "#D9702F",
+  "chata.cz": "#1B9DB0",
+};
+const FALLBACK_SOURCE_COLOR = "#8B8B7A";
 
 // ── Fetch ──────────────────────────────────────────────────────
 async function loadData() {
@@ -27,11 +39,59 @@ async function loadData() {
     metaEl.textContent =
       `Poslední aktualizce: ${ts}  |  Lokalita: ${displayLocation || "nezadána"}  |  Nalezeno celkem: ${data.total_found ?? allListings.length}`;
 
+    renderSourceStats(allListings);
     renderCards(allListings);
   } catch (err) {
     metaEl.textContent = "Nepodařilo se načíst výsledky.";
+    statsEl.innerHTML = `<span class="header-stats-loading">Přehled zdrojů se nepodařilo načíst.</span>`;
     console.error(err);
   }
+}
+
+// ── Přehled zdrojů (hero číslo + segmentovaný pruh + legenda) ──
+function renderSourceStats(listings) {
+  if (!listings.length) {
+    statsEl.innerHTML = `<span class="header-stats-loading">Zatím žádná data — spusťte nové hledání.</span>`;
+    return;
+  }
+
+  const counts = new Map();
+  listings.forEach((l) => {
+    const src = l.source || "neznámý zdroj";
+    counts.set(src, (counts.get(src) || 0) + 1);
+  });
+
+  const total = listings.length;
+  const sources = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+
+  const segments = sources
+    .map(([src, count]) => {
+      const pct = (count / total) * 100;
+      const color = SOURCE_COLORS[src] || FALLBACK_SOURCE_COLOR;
+      return `<span class="source-bar-segment" style="width:${pct}%;background:${color}" title="${escAttr(src)}: ${count}"></span>`;
+    })
+    .join("");
+
+  const legend = sources
+    .map(([src, count]) => {
+      const color = SOURCE_COLORS[src] || FALLBACK_SOURCE_COLOR;
+      const pct = Math.round((count / total) * 100);
+      return `<span class="source-legend-item">
+        <span class="source-dot" style="background:${color}"></span>
+        ${escHtml(src)} <strong>${count}</strong><span class="source-legend-pct">${pct}&nbsp;%</span>
+      </span>`;
+    })
+    .join("");
+
+  statsEl.innerHTML = `
+    <div class="stats-hero">
+      <span class="stats-hero-number">${total.toLocaleString("cs-CZ")}</span>
+      <span class="stats-hero-label">nabídek nalezeno</span>
+    </div>
+    <div class="stats-breakdown">
+      <div class="source-bar">${segments}</div>
+      <div class="source-legend">${legend}</div>
+    </div>`;
 }
 
 // ── Ridge SVG (randomised mountain silhouette) ─────────────────

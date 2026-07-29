@@ -86,6 +86,98 @@ body {
 }
 .btn-run-workflow:hover { background: #a87230; transform: translateY(-1px); }
 
+/* ── Header stats (přehled zdrojů) ──────────────────────────────
+   Barvy zdrojů viz SOURCE_COLORS v app.js - validováno dataviz
+   skillem proti téhle --forest hlavičce (node validate_palette.js,
+   --surface #1E362B --mode dark): terakota + teal, CVD-bezpečné,
+   odlišené od jantarového akcentu použitého jinde v UI. */
+.header-stats {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: .85rem;
+}
+
+.header-stats-loading {
+  font-size: .8rem;
+  color: rgba(255,255,255,.5);
+}
+
+.stats-hero {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  flex-shrink: 0;
+}
+.stats-hero-number {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1;
+}
+.stats-hero-label {
+  font-size: .75rem;
+  color: rgba(255,255,255,.55);
+}
+
+.stats-breakdown {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.source-bar {
+  display: flex;
+  gap: 2px;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,.1);
+}
+.source-bar-segment {
+  height: 100%;
+  min-width: 3px;
+  transition: width .3s;
+}
+
+.source-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem 1.1rem;
+}
+.source-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .78rem;
+  color: rgba(255,255,255,.8);
+  white-space: nowrap;
+}
+.source-legend-item strong {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: #fff;
+}
+.source-legend-pct {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  color: rgba(255,255,255,.45);
+}
+.source-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 2px rgba(255,255,255,.12);
+}
+
 /* ── Layout ──────────────────────────────────────────────────── */
 .layout {
   flex: 1;
@@ -484,4 +576,7 @@ body {
   .results-area { padding-left: 0; margin-top: .5rem; }
   .header-inner { flex-wrap: wrap; gap: .6rem; }
   .site-title { font-size: 1.3rem; }
+  .header-stats { flex-direction: column; align-items: stretch; gap: .7rem; }
+  .stats-hero { gap: .4rem; }
+  .stats-hero-number { font-size: 1.6rem; }
 }
