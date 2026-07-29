@@ -181,36 +181,99 @@ to spíš apartmán/jednotka v resortu)
   (odděleně od `.amenity-group`, aby ho neomylem nesebral selektor pro
   vybavení — stejná past jako u entire-property checkboxu).
 
-### GitHub Actions — 403 Forbidden (BLOKOVÁNO, řeší se lokálním spuštěním)
+### GitHub Actions — 403 Forbidden (stav k 27.–28. 7. 2026: BLOKOVÁNO,
+### řešeno lokálním spuštěním; stav k 29. 7. 2026: PŘESNĚJI
+### DIAGNOSTIKOVÁNO A OBEJITO, viz aktualizace níže)
 - Portál e-chalupy.cz **blokuje požadavky z GitHub Actions runnerů**
   (403 Forbidden) — i po vylepšení HTTP hlaviček na realistický Chrome
   User-Agent + Accept/Accept-Language/Accept-Encoding. Lokálně (domácí IP)
   identický požadavek funguje bez problémů.
-- **Diagnóza**: pravděpodobně IP-based blokace (GitHub Actions běží na
-  známých Azure/Microsoft cloudových IP adresách, které anti-bot systémy
-  často blokují plošně, bez ohledu na hlavičky).
-- **Řešení zatím zvolené**: spouštět e-chalupy.cz **lokálně** (na domácím
+- **Diagnóza (tehdejší)**: pravděpodobně IP-based blokace (GitHub Actions
+  běží na známých Azure/Microsoft cloudových IP adresách, které anti-bot
+  systémy často blokují plošně, bez ohledu na hlavičky).
+- **Řešení tehdy zvolené**: spouštět e-chalupy.cz **lokálně** (na domácím
   PC Nojmiho), ne přes GitHub Actions. Postup zdokumentován v README.
-- **Zvažovaná, ale zatím NEIMPLEMENTOVANÁ alternativa**: rezidenční proxy
-  služba (aby GitHub Actions vypadal jako domácí IP). Cena odhadem
-  $1-5/měsíc při nízkém objemu (pay-as-you-go, např. DataImpulse od
-  $1/GB) + možný minimální vklad $5-25. Nojmi chtěl nejdřív zkusit další
-  portály, jestli mají stejný problém, než investuje do proxy — **chata.cz
-  problém NEMÁ (viz sekce 5), takže proxy je potřeba jen pro
-  e-chalupy.cz**.
+- Zvažovaná, ale nikdy neimplementovaná alternativa: rezidenční proxy
+  služba (aby GitHub Actions vypadal jako domácí IP), $1-5/měsíc. Ukázalo
+  se zbytečné, viz aktualizace níže — proxy nakonec nebyla potřeba.
 - Bonus objev cestou: `Accept-Encoding: br` (Brotli) v hlavičkách vyžaduje
   mít nainstalovaný balíček `brotli` (přidán do `requirements.txt`), jinak
   `requests` tiše vrátí porušený/nedekódovaný obsah (status 200, ale 0
   nalezených karet — TICHÁ chyba, žádná exception).
 
-### Jak spustit e-chalupy.cz lokálně (shrnutí, detaily v README)
+**AKTUALIZACE 29. 7. 2026 — přesnější diagnóza, 403 obejito pro
+nejčastější lokality:**
+
+Při vyšetřování jednoho konkrétního Actions běhu (run `30466427760`),
+kde e-chalupy.cz vrátilo podezřele málo nabídek (434 místo očekávaných
+~1000+ pro Šumavu) navzdory 0 chybám v logu, jsme nejdřív mylně
+podezírali poškozené kódování `CRIT_LOCATION` (diakritika v env
+proměnné). **Tahle domněnka se ukázala jako mylná** — ověřeno na
+úrovni syrových bajtů v commitnutém `results/latest.json` i v
+Actions logu (`CRIT_LOCATION: Šumava` se zobrazovalo správně) — šlo
+jen o artefakt nespolehlivého zobrazování non-ASCII znaků v lokálním
+bash terminálu při diagnostice, ne o skutečnou chybu v datech.
+
+**Skutečná příčina**: 403 blokace pořád reálně existuje, ale je
+**užší, než jsme si mysleli** — týká se jen `e-chalupy.cz/<slug>` HTML
+stránky, kterou `_resolve_area_id()` používá k překladu textu lokality
+na interní `area_XXXXX` kód (viz sekce výše). **Hlavní datové API
+(`api-pub.e-chalupy.cz/properties`) 403 nedostává a z Actions funguje
+bez problémů** — proto v tom podezřelém běhu žádná výjimka nespadla:
+`search()` má už z dřívějška vestavěný tichý fallback (žádný area kód
+→ hledej celostátně bez `destinations` filtru), takže se to neprojevilo
+jako chyba, jen jako neúměrně málo výsledků po client-side location
+filtru (nabídky ze všech krajů ČR, ne jen ze Šumavy). Přidali jsme
+diagnostický log (`scraper/profiles/e_chalupy.py`, `_resolve_area_id`)
+na stderr pro tenhle konkrétní selhávající krok, což tohle přesně
+potvrdilo (`[e-chalupy.cz] area lookup pro 'sumava' selhal (HTTP 403)`).
+
+**Řešení: `STATIC_AREA_IDS`** — v `e_chalupy.py` přidána
+předresolvovaná tabulka slug → area_id pro 11 "oblíbených destinací"
+z hlavní navigace portálu (Šumava, Jeseníky, Beskydy, Krkonoše, Jižní
+Morava, Český ráj, Jizerské hory, Jižní Čechy, Krušné hory, Vysočina,
+Orlické hory) — resolvováno ručně z domácí sítě, kde blokace neplatí.
+`_resolve_area_id()` tuhle tabulku zkontroluje PŘED živým HTML
+dotazem, takže pro těchto 11 regionů se blokovaný endpoint vůbec
+nevolá — funguje to jak lokálně (rychlejší, o 1 request méně), tak na
+Actions (obchází 403 úplně). Pro lokality mimo seznam zůstává živé
+resolvování jako fallback (na Actions dál degraduje na celostátní
+hledání + diagnostický log, lokálně funguje normálně).
+
+**Ověřeno end-to-end na živém Actions běhu** (`30471567220`, po
+nasazení opravy): žádný 403 v logu, `Wrote 1047 listings` — **přesná
+shoda s lokálním referenčním během** (909 e-chalupy.cz + 22 chata.cz +
+116 cs-chalupy.cz). **Závěr: e-chalupy.cz teď může běžet plně
+automatizovaně přes GitHub Actions `workflow_dispatch` bez lokálního
+zásahu — ale JEN pro těch 11 pokrytých regionů.** Lokalita mimo tenhle
+seznam se na Actions pořád tiše degraduje na celostátní fallback (nižší
+relevance, ne chyba/pád) — při zadávání nové/neobvyklé lokality přes
+workflow_dispatch je lepší běh zkontrolovat (stderr log v Actions) nebo
+tabulku rozšířit o další resolvovaný region.
+
+**Historický kontext zůstává platný**: 403 blokace v době prvního
+zjištění (červenec 2026) byla reálná a plošná (blokovala tehdy
+testované requesty vůbec, ne jen tenhle jeden HTML endpoint) — možné
+vysvětlení rozdílu je, že šlo o dočasnou/IP-rozsahovou blokaci, která
+se od července nějak zúžila/změnila, nebo že tehdejší testy cílily
+právě na tenhle konkrétní HTML endpoint a hlavní API se tehdy netestovalo
+zvlášť. Nelze s jistotou říct, jestli se blokace časem zmírnila, nebo
+jsme ji jen teď lépe izolovali na správnou příčinu — do budoucna sledovat,
+jestli se 403 neobjeví i na `api-pub.e-chalupy.cz` (zatím ne).
+
+### Jak spustit e-chalupy.cz (a celý scraper) — lokálně i na Actions
+Pro 11 pokrytých regionů (viz `STATIC_AREA_IDS` výše) stačí spustit
+workflow `Run scraper` (`workflow_dispatch`) přímo na GitHub, žádný
+lokální zásah není potřeba. Lokální spuštění (všech tří profilů
+najednou) zůstává užitečné pro netypické lokality nebo rychlejší
+iteraci při vývoji:
 ```powershell
 cd C:\Users\N-noj\Chalupnik
 $env:REQUESTS_CA_BUNDLE="C:\Users\N-noj\AppData\Local\Temp\combined_ca.pem"  # nebo aktuální cesta
-$env:CRIT_LOCATION="sumava"
+$env:CRIT_LOCATION="Šumava"
 python -m scraper.main
 git add results/latest.json
-git commit -m "chore: naostro běh e-chalupy.cz - <lokalita>"
+git commit -m "chore: naostro běh e-chalupy.cz + chata.cz + cs-chalupy.cz - <lokalita>"
 git -c http.sslVerify=false push
 ```
 (Claude Code zná celý postup včetně vygenerování combined_ca.pem, stačí mu
