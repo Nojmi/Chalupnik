@@ -100,9 +100,14 @@ DEFAULT_STAY_NIGHTS = 7
 # CSS třída ikony v sec-ikonky (bez _disabled sufixu = "ano") -> název vybavení.
 # POZOR: vířivka/sauna/krb tu záměrně NEJSOU - na kartě nemají žádnou
 # ikonu vůbec (viz docstring modulu), řeší se přes EQUIPMENT_QUERY_PARAMS.
+# Názvy sjednocené s e-chalupy.cz vokabulářem (AMENITY_FILTER_IDS v
+# e_chalupy.py), protože filters.py i docs/app.js dělají PŘESNÉ porovnání
+# řetězců napříč zdroji - "internet"/"pes" by tiše vyřadilo VŠECHNY
+# nabídky chata.cz z filtrů "wifi"/"se psem" (zjištěno při prvním
+# společném běhu obou profilů).
 ICON_AMENITIES: dict[str, str] = {
-    "zvire": "pes",
-    "wifi": "internet",
+    "zvire": "se psem",
+    "wifi": "wifi",
     "vyziti-deti": "vyžití pro děti",
     "bazen": "bazén",
     "lyzarna-kolarna": "lyžárna/kolárna",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T07:12:21.044262+00:00",
+  "generated_at": "2026-07-29T07:17:31.144105+00:00",
   "criteria": {
     "location": "Šumava",
     "min_capacity": null,
@@ -38893,8 +38893,8 @@
       "price": 33355.0,
       "price_unit": "pobyt 7 nocí",
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -38928,7 +38928,7 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "na dotaz",
+          "se psem": "na dotaz",
           "parkování": "Pět parkovacích míst přímo před chalupou, další na parkovišti cca 50 m od chalupy.",
           "povlečení": "zdarma",
           "oplocení": "částečně oplocen Od silnice oplocen, směrem do sjezdovky neoplocen, možnost přijet na lyžích až do chalupy."
@@ -38946,8 +38946,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "lyžárna/kolárna",
         "parkování",
         "povlečení",
@@ -38980,7 +38980,7 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "malá a střední rasa",
+          "se psem": "malá a střední rasa",
           "lyžárna/kolárna": "stodůlka",
           "parkování": "u objektu",
           "povlečení": "zdarma",
@@ -38999,8 +38999,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39057,8 +39057,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "parkování",
         "povlečení",
@@ -39107,8 +39107,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "bazén",
         "lyžárna/kolárna",
@@ -39161,8 +39161,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39188,7 +39188,7 @@
         },
         "badges": [],
         "equipment_tooltips": {
-          "pes": "po dohodě, pouze malá rasa",
+          "se psem": "po dohodě, pouze malá rasa",
           "parkování": "vedle objektu",
           "povlečení": "zdarma",
           "oplocení": "částečně oplocen"
@@ -39206,8 +39206,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "bazén",
         "lyžárna/kolárna",
@@ -39259,8 +39259,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "bazén",
         "lyžárna/kolárna",
         "parkování",
@@ -39304,7 +39304,7 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "Pes - malá a střední rasa povolena",
+          "se psem": "Pes - malá a střední rasa povolena",
           "bazén": "Venkovní bazén: 8,00(d)x4,00(š)x1,50(h)",
           "lyžárna/kolárna": "omezená v objektu na chodbě, v letním období pak v kotelně.",
           "parkování": "před domem na vlastním pozemku,",
@@ -39323,8 +39323,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "parkování",
         "povlečení",
@@ -39350,7 +39350,7 @@
         },
         "badges": [],
         "equipment_tooltips": {
-          "pes": "na dotaz",
+          "se psem": "na dotaz",
           "parkování": "Parkování je možné hned u chalupy",
           "povlečení": "zdarma",
           "oplocení": "zcela oplocen"
@@ -39368,8 +39368,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "bazén",
         "lyžárna/kolárna",
@@ -39409,8 +39409,8 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "na dotaz",
-          "internet": "WIFI",
+          "se psem": "na dotaz",
+          "wifi": "WIFI",
           "bazén": "Venkovní bazén: 7,50(d)x2,75(š)x1,25(h)",
           "lyžárna/kolárna": "uzamykatelný  zahradní domek",
           "parkování": "zpevněné plochy vedle chaty",
@@ -39430,8 +39430,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "parkování",
         "povlečení",
@@ -39482,8 +39482,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39513,7 +39513,7 @@
           }
         ],
         "equipment_tooltips": {
-          "internet": "Wifi - pouze v části hlavní chalupy",
+          "wifi": "Wifi - pouze v části hlavní chalupy",
           "parkování": "přímo před objektem",
           "povlečení": "zdarma",
           "oplocení": "zcela oplocen"
@@ -39531,8 +39531,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "lyžárna/kolárna",
         "parkování",
         "povlečení",
@@ -39568,7 +39568,7 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "pouze 1 pes",
+          "se psem": "pouze 1 pes",
           "lyžárna/kolárna": "zahradní domek na pozemku",
           "parkování": "v létě u objektu, v zimním období u hlavní silnice nad objektem",
           "povlečení": "zdarma"
@@ -39586,8 +39586,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "bazén",
         "parkování",
@@ -39614,7 +39614,7 @@
         },
         "badges": [],
         "equipment_tooltips": {
-          "pes": "na dotaz (malá rasa)",
+          "se psem": "na dotaz (malá rasa)",
           "bazén": "Venkovní bazén: 4,00(d)x3,00(š)x1,50(h)",
           "parkování": "neoplocený zatravněný pozemek u objektu",
           "povlečení": "za poplatek"
@@ -39632,7 +39632,7 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
+        "se psem",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39677,8 +39677,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39716,8 +39716,8 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "max. 1",
-          "internet": "WiFi - zdarma",
+          "se psem": "max. 1",
+          "wifi": "WiFi - zdarma",
           "lyžárna/kolárna": "uzamykatelný zahradní domek",
           "parkování": "3 auta před objektem na pozemku, 1 auto na prostor před pozemkem",
           "povlečení": "zdarma",
@@ -39736,8 +39736,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39775,8 +39775,8 @@
           }
         ],
         "equipment_tooltips": {
-          "pes": "max 1",
-          "internet": "WiFi - zdarma",
+          "se psem": "max 1",
+          "wifi": "WiFi - zdarma",
           "parkování": "u objektu",
           "povlečení": "zdarma",
           "oplocení": "zcela oplocen"
@@ -39794,8 +39794,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39822,8 +39822,8 @@
         },
         "badges": [],
         "equipment_tooltips": {
-          "pes": "max 1",
-          "internet": "WiFi - zdarma",
+          "se psem": "max 1",
+          "wifi": "WiFi - zdarma",
           "lyžárna/kolárna": "Na zahradě je zahradní domek pod uzamčením",
           "parkování": "cca 150 - 250 m od chalupy",
           "povlečení": "zdarma",
@@ -39842,7 +39842,7 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "internet",
+        "wifi",
         "lyžárna/kolárna",
         "parkování",
         "oplocení",
@@ -39883,8 +39883,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39911,8 +39911,8 @@
         },
         "badges": [],
         "equipment_tooltips": {
-          "pes": "max. 1",
-          "internet": "WiFi - zdarma",
+          "se psem": "max. 1",
+          "wifi": "WiFi - zdarma",
           "lyžárna/kolárna": "Na zahradě je zahradní domek pod uzamčením",
           "parkování": "cca 150 - 250 m od chalupy",
           "povlečení": "zdarma",
@@ -39931,8 +39931,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "vyžití pro děti",
         "lyžárna/kolárna",
         "parkování",
@@ -39963,7 +39963,7 @@
         },
         "badges": [],
         "equipment_tooltips": {
-          "pes": "na dotaz",
+          "se psem": "na dotaz",
           "lyžárna/kolárna": "samostatná uzamykatelná místnost + uzamykatelná kolna",
           "parkování": "na vlastním pozemku u objektu",
           "povlečení": "zdarma",
@@ -39982,8 +39982,8 @@
       "price": null,
       "price_unit": null,
       "amenities": [
-        "pes",
-        "internet",
+        "se psem",
+        "wifi",
         "parkování",
         "povlečení",
         "krb"
