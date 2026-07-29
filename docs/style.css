@@ -178,6 +178,104 @@ body {
   box-shadow: 0 0 0 2px rgba(255,255,255,.12);
 }
 
+/* ── Map section (klikací mapa lokalit) ─────────────────────────
+   Umístěno hned pod hlavičku, přes celou šířku — postranní panel
+   (280px) je na čitelnou mapu příliš úzký. Regiony jsou schválně
+   ilustrativní "shluky kopečků", ne geograficky přesné hranice —
+   drží stejný rukopis jako hřebenové linky na kartách nabídek. */
+.map-section {
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
+}
+
+.map-section-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.6rem 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.map-section-head { margin-bottom: .6rem; }
+
+.map-title {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.map-subtitle {
+  font-size: .82rem;
+  color: var(--ink-soft);
+  margin-top: .2rem;
+}
+
+.cr-map {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+}
+
+.cr-outline {
+  fill: var(--moss-light);
+  fill-opacity: .18;
+  stroke: var(--moss);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.map-region { cursor: pointer; outline: none; }
+
+.map-region .hill {
+  fill: var(--moss);
+  stroke: var(--forest);
+  stroke-width: 1.2;
+  transition: fill .15s, transform .15s;
+  transform-origin: center;
+}
+
+.map-region-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--ink-soft);
+  pointer-events: none;
+  transition: fill .15s;
+}
+
+.map-region:hover .hill,
+.map-region:focus-visible .hill {
+  fill: var(--amber);
+}
+
+.map-region:hover .map-region-label,
+.map-region:focus-visible .map-region-label {
+  fill: var(--forest);
+}
+
+.map-region.active .hill {
+  fill: var(--amber);
+  transform: scale(1.08);
+}
+
+.map-region.active .map-region-label {
+  fill: var(--forest);
+  font-weight: 700;
+}
+
+.map-region:focus-visible .hill { stroke: var(--forest); stroke-width: 2; }
+
+.map-selected {
+  margin-top: .7rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--forest);
+  min-height: 1.2em;
+}
+
 /* ── Layout ──────────────────────────────────────────────────── */
 .layout {
   flex: 1;
@@ -608,4 +706,7 @@ body {
   .header-stats { flex-direction: column; align-items: stretch; gap: .7rem; }
   .stats-hero { gap: .4rem; }
   .stats-hero-number { font-size: 1.6rem; }
+  .map-section-inner { padding: 1.2rem 1rem .9rem; }
+  .map-title { font-size: 1.1rem; }
+  .map-region-label { font-size: 14px; }
 }

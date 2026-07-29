@@ -1053,6 +1053,40 @@ sbírají do listu a ukládají do výsledného JSON).
   nedotkl). Počty se přepočítávají live při každé změně filtru, stejně
   jako "Zobrazeno: N". Vizuálně stejný styl jako amenity tagy na
   kartách, používá existující design tokeny z `docs/style.css`.
+- **Klikací mapa ČR pro výběr lokality** (`docs/map.js`, přidáno
+  29. 7. 2026): `<section class="map-section">` vložená mezi `</header>`
+  a `.layout` (celá šířka stránky — postranní panel s filtry je jen
+  280px, na čitelnou mapu příliš úzký). SVG s 11 klikatelnými
+  `<g class="map-region" data-region="...">` (ilustrativní "shluky
+  kopečků", ne geograficky přesné hranice — stejný rukopis jako
+  hřebenové linky na kartách). Pokrývá přesně těch **11 regionů
+  sdílených napříč všemi třemi portály** — shodný seznam s
+  `STATIC_AREA_IDS` v `scraper/profiles/e_chalupy.py` (sekce 4): Šumava,
+  Jeseníky, Beskydy, Krkonoše, Jižní Morava, Český ráj, Jizerské hory,
+  Jižní Čechy, Krušné hory, Vysočina, Orlické hory.
+  - **Princip: `#f-location` textové pole zůstává jediný zdroj
+    pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
+    mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho
+    (jantarová). Psaní do pole přepočítává, jestli text přesně
+    (case-insensitive) odpovídá některé z 11 oblastí — pokud ne,
+    zvýraznění zmizí. Filtrování samo (substring match nad
+    `l.location`, `app.js`) zůstává **beze změny** — mapa jen
+    předvyplňuje totéž textové pole, které se tam dalo psát i předtím.
+  - `<script src="map.js">` musí být PŘED `<script src="app.js">` v
+    `index.html` — ne kvůli závislosti při načtení (oba skripty běží
+    nezabalené na konci `<body>`, DOM už existuje), ale kvůli pořadí
+    registrace `click` listenerů na `#btn-reset` (viz bug níže).
+  - **Bug objevený a opravený při code review (žádný prohlížeč po
+    ruce, ověřeno jen trasováním kódu)**: `map.js` i `app.js` mají na
+    stejném `#btn-reset` tlačítku každý svůj vlastní `click` listener.
+    `map.js` se registruje první (načítá se dřív), takže by při kliku
+    přečetl `#f-location` hodnotu JEŠTĚ PŘED tím, než ji `app.js`
+    (`resetFilters()`) stihne vyprázdnit — nápovědný text pod mapou by
+    zůstal zaseknutý na "Vlastní lokalita: <stará hodnota>" místo
+    "Zatím nic nevybráno.". Oprava: `map.js`ův reset handler přehodí
+    přes `setTimeout(…, 0)`, aby se přepočet spustil AŽ po doběhnutí
+    všech synchronních listenerů na tom kliknutí (tedy i po
+    `resetFilters()`).
 - `docs/style.css` — vlastní design tokeny (CSS custom properties), viz
   barvy v sekci 2 výše. Signature vizuální prvek: náhodně generovaná SVG
   "hřebenová" linka (siluetа hor) nad každou kartou výsledku.
