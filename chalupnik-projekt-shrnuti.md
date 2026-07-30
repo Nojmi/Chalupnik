@@ -1146,6 +1146,32 @@ sbírají do listu a ukládají do výsledného JSON).
     programově (Node skript): žádný z 11 `d` atributů není prázdný ani
     neobsahuje NaN, všechny souřadnice leží uvnitř `viewBox="0 0 700
     400"`, všechny cesty jsou uzavřené (`Z`).
+  - **Aktualizace 30. 7. 2026 (pátá verze) — oprava 2 problémů nahlášených
+    uživatelem se screenshoty**: (1) Šumava a Beskydy byly po nafouknutí
+    pásu (čtvrtá verze) nereálně objemné — na ostrých zákrutech hranice
+    nafouknutí čáry přirozeně vytvoří kulatý "balonek". U Šumavy opraveno
+    vyhlazením linie hranice před nafouknutím (odstranění drobných
+    zákrutů). U Beskyd šlo o špičku východního výběžku u trojmezí
+    ČR-PL-SK, kterou nešlo vyhladit bez ztráty tvaru — místo toho je z
+    pásu úplně vynechaná, takže Beskydy jsou teď **dvě oddělené
+    subcesty v jednom `d`** (`M... Z M... Z`) s mezerou přesně v místě
+    té špičky. (2) Jižní Čechy zvětšeny (byly vizuálně malé vůči
+    ostatním oblastem). Vedlejší efekt rozdělení Beskyd: v mezeře mezi
+    oběma kusy SVG nezaregistruje klik (jen na vybarvené ploše) — přidán
+    `<path class="region-hit">` jako první potomek `<g data-region=
+    "Beskydy">`, kopírující původní nezmenšený (celistvý) tvar,
+    `fill: transparent; pointer-events: auto` (`docs/style.css`), takže
+    klik funguje i v té vizuálně prázdné mezeře. **`docs/map.js` se
+    touhle změnou vůbec nedotkl** — klik listener visí na `.map-region`
+    (rodič), na počet/tvar potomků mu nezáleží. Ověřeno bez prohlížeče
+    (žádný po ruce ani tentokrát): geometricky (Node skript — 11×
+    `region-patch` + 1× `region-hit`, žádné prázdné/NaN `d`, všechny
+    souřadnice ve `viewBox`, všechny podcesty uzavřené `Z`, Beskydy
+    `region-patch` má potvrzeno přesně 2 subcesty) a funkčně (jsdom +
+    reálný `map.js` běžící nad vygenerovaným DOM, simulace kliků): klik
+    na `region-hit` (mezera) i na `region-patch` (viditelné kusy Beskyd)
+    obojí správně vyplní pole a zvýrazní region, přepnutí na jiný region
+    ho korektně odaktivuje, reset maže vše.
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho

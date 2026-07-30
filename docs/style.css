@@ -229,6 +229,12 @@ body {
 
 .map-region { cursor: pointer; outline: none; }
 
+.map-region .region-hit {
+  fill: transparent;
+  stroke: none;
+  pointer-events: auto;
+}
+
 .map-region .region-patch {
   fill: var(--moss);
   fill-opacity: .55;
