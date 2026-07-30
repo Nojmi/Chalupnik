@@ -1172,6 +1172,28 @@ sbírají do listu a ukládají do výsledného JSON).
     na `region-hit` (mezera) i na `region-patch` (viditelné kusy Beskyd)
     obojí správně vyplní pole a zvýrazní region, přepnutí na jiný region
     ho korektně odaktivuje, reset maže vše.
+  - **Aktualizace 30. 7. 2026 (šestá verze) — oprava podle referenčních
+    obrázků skutečné podoby Šumavy/Beskyd od uživatele**: (1) rozdělení
+    Beskyd na 2 subcesty + `region-hit` záplata (pátá verze výše) bylo
+    přehnané řešení problému se "špičkou" a je **kompletně zrušené** —
+    Beskydy jsou zase jeden celistvý `<path class="region-patch">`
+    (jedno `M...Z`), navíc zmenšený a kompaktnější (blob místo pásu
+    podél celé hranice; bounding-box úhlopříčka klesla z ~190 na ~137).
+    Třída `.region-hit` odstraněna z `docs/style.css` (nikde se dál
+    nepoužívá — potvrzeno grepem přes `docs/`). (2) Šumava zkrácena —
+    už se netáhne přes celou jihozápadní hranici, jen soustředěnější
+    úsek (bounding-box úhlopříčka klesla z ~247 na ~162). (3) Jižní
+    Čechy tentokrát **skutečně** zvětšeny (v páté verzi se omylem
+    zmenšily místo zvětšily — plocha nyní ~4657 vs. ~3556 předtím, o
+    ~31 % větší). **`docs/map.js` se touhle změnou vůbec nedotkl.**
+    Ověřeno bez prohlížeče: geometricky (Node skript nad oběma verzemi
+    souboru — potvrzeno přesně 1 subcesta na všech 11
+    `region-patch`, `region-hit` už se nikde nevyskytuje, žádné
+    prázdné/NaN `d`, všechny souřadnice ve `viewBox`, bounding-box
+    srovnání starý/nový potvrzuje zmenšení Beskyd a Šumavy i zvětšení
+    Jižních Čech) a funkčně (jsdom + reálný `map.js` nad vygenerovaným
+    DOM): klik na všech 11 oblastí správně vyplní pole, zvýrazní
+    region a nastaví nápovědný text, reset korektně smaže vše.
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho
