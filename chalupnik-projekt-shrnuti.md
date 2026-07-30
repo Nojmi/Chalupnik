@@ -1125,6 +1125,27 @@ sbírají do listu a ukládají do výsledného JSON).
       hory leží na hranici těchto dvou krajů), i když to formálně
       nesedí do cílového pásma 55-90 %. Zkontrolováno i, že se žádné
       dva ze všech 11 tvarů po posunu vzájemně nepřekrývají.
+  - **Aktualizace 30. 7. 2026 (čtvrtá verze)**: ilustrační odhady tvarů
+    (třetí verze výše) nahrazeny tvary odvozenými přímo z reálné
+    geometrie státní hranice ČR — stejná zdrojová data jako hranice
+    krajů (druhá verze). Metoda (Python, `shapely`): u 7 pohraničních
+    oblastí (Krušné hory, Jizerské hory, Krkonoše, Orlické hory,
+    Jeseníky, Beskydy, Šumava) se vezme příslušný úsek skutečné hranice
+    ČR, "nafoukne" do pásu (`buffer`) a ořízne přesným průnikem
+    (`intersection`) s obrysem republiky — výsledný tvar tak kopíruje
+    reálný klikatý průběh hranice a vizuální přesah za hranici ČR není
+    fyzicky možný (je to matematický průnik, ne odhad). U 4
+    vnitrozemských oblastí (Vysočina, Jižní Čechy, Jižní Morava, Český
+    ráj) zůstávají organické kompaktní plochy jako ve třetí verzi;
+    Jižní Morava byla výrazně zvětšena (~4× plocha), aby odpovídala
+    velikosti, kterou reálně zabírá v Jihomoravském kraji. **`docs/
+    style.css` ani `docs/map.js` se touhle změnou vůbec nedotkly** —
+    třídy (`.region-patch`, `.map-region-label`, hover/aktivní stavy)
+    i JS logika (čistě přes `data-region`) zůstávají stejné, mění se
+    jen souřadnice (`d`) 11 `<path class="region-patch">`. Ověřeno
+    programově (Node skript): žádný z 11 `d` atributů není prázdný ani
+    neobsahuje NaN, všechny souřadnice leží uvnitř `viewBox="0 0 700
+    400"`, všechny cesty jsou uzavřené (`Z`).
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho
