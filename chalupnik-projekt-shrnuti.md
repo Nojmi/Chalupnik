@@ -1220,8 +1220,11 @@ sbírají do listu a ukládají do výsledného JSON).
 - **Gating tlačítka "Spustit nové hledání" podle vybrané lokality +
   kopírování do schránky** (přidáno 31. 7. 2026, čistě UX vrstva —
   backend řešící spuštění bez GitHub účtu viz níže): tlačítko
-  `<a id="btn-run-workflow" class="btn-run-workflow">` v hlavičce má
-  výchozí stav `is-disabled` (prošedlé, `pointer-events: none`,
+  `<a id="btn-run-workflow" class="btn-run-workflow">` je umístěné v
+  `.map-section` hned pod `<p id="map-selected-hint">`, obalené v
+  `<div class="map-run-row">` spolu s `#run-btn-copied-hint` (viz
+  "Aktualizace" níže — původně bylo v hlavičce, přesunuto tentýž den).
+  Výchozí stav `is-disabled` (prošedlé, `pointer-events: none`,
   `aria-disabled="true"`, `title` s nápovědou "Nejprve vyberte oblast
   na mapě..."), pořád ale míří na stejnou GitHub Actions URL
   (`target="_blank"`) — gating nic nemění na tom, KAM tlačítko vede,
@@ -1260,6 +1263,36 @@ sbírají do listu a ukládají do výsledného JSON).
     zkopíruje text do schránky A zobrazí hint → myší klik na neaktivní
     tlačítko nenaviguje (pointer-events) → klávesnicový `Enter` na
     neaktivním tlačítku po opravě taky nenaviguje.
+  - **Aktualizace 31. 7. 2026 (týž den, druhá verze) — přesun
+    tlačítka z hlavičky pod mapu**: `<a id="btn-run-workflow">` a
+    `<span id="run-btn-copied-hint">` se přesunuly z `.header-inner`
+    do `.map-section`, hned za `<p id="map-selected-hint">`, obalené
+    novým `<div class="map-run-row">` (flex, vystředěné, `margin-top:
+    .9rem`) — tlačítko teď sedí přímo pod textem "Vybráno:
+    `<lokalita>`", blíž k akci, která ho aktivuje. Hlavička
+    (`.header-inner`) teď obsahuje jen `.header-brand` (logo + název +
+    tagline) — `justify-content: space-between` se s jediným potomkem
+    chová neutrálně (žádná rozbitá mezera, ověřeno screenshotem).
+    Barvy `.is-disabled`/`.run-btn-copied-hint` přebarveny z bílé na
+    tmavém headeru (`rgba(255,255,255,…)`) na `--forest`
+    (`rgba(30,54,43,…)`) na světlém `--paper` pozadí mapové sekce —
+    jinak by prošedlé tlačítko na světlém podkladu bylo prakticky
+    neviditelné. **`docs/map.js` se touhle změnou vůbec nedotkl**
+    (potvrzeno `git diff` — 0 řádků), gating logika (`syncRunButton()`
+    volaná z `updateHint()`, `preventDefault()` na `Enter` u
+    neaktivního tlačítka z předchozí opravy) běží beze změny nad
+    přesunutým DOM uzlem. Ověřeno znovu celé přes Playwright
+    (headless Chromium): neaktivní stav čitelně prošedlý i na papíru
+    (ne neviditelný), aktivace klikem na mapu/ručním psaním, deaktivace
+    resetem, klik na aktivní tlačítko pořád otevírá GitHub Actions v
+    novém okně a kopíruje do schránky, `Enter` na neaktivním tlačítku
+    pořád nenaviguje. Vypočtený kontrast nového `.is-disabled` textu
+    proti kompozitnímu pozadí vyšel ~2.1:1 (dřívější varianta na tmavém
+    headeru měla ~3.4:1) — obojí je pod WCAG AA prahem pro běžný text,
+    ale u neaktivních/`aria-disabled` prvků WCAG 1.4.3 kontrast
+    nevyžaduje; vizuálně (screenshot) je text čitelný, jen výrazně
+    tlumenější než aktivní jantarový stav, což odpovídá zadání
+    ("čitelně prošedlé, ne neviditelné").
   - **Backend (přístup ke spuštění bez GitHub účtu) zatím odložený**:
     tohle je jen UX vrstva nad stávajícím tlačítkem, které pořád vede
     na GitHub Actions stránku workflow. Zvažovaný Cloudflare Worker +

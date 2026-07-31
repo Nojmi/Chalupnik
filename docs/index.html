@@ -19,18 +19,6 @@
           <p class="site-tagline">Hledač chat, chalup, srubů a roubenek k pronájmu v Česku</p>
         </div>
       </div>
-      <a
-        class="btn-run-workflow is-disabled"
-        id="btn-run-workflow"
-        href="https://github.com/Nojmi/Chalupnik/actions/workflows/scrape.yml"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-disabled="true"
-        title="Nejprve vyberte oblast na mapě nebo ji napište do pole Lokalita"
-      >
-        Spustit nové hledání ↗
-      </a>
-      <span class="run-btn-copied-hint" id="run-btn-copied-hint" aria-live="polite"></span>
     </div>
     <div class="header-stats" id="header-stats">
       <span class="header-stats-loading">Načítám přehled zdrojů…</span>
@@ -118,6 +106,21 @@
       </svg>
 
       <p class="map-selected" id="map-selected-hint">Zatím nic nevybráno.</p>
+
+      <div class="map-run-row">
+        <a
+          class="btn-run-workflow is-disabled"
+          id="btn-run-workflow"
+          href="https://github.com/Nojmi/Chalupnik/actions/workflows/scrape.yml"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-disabled="true"
+          title="Nejprve vyberte oblast na mapě nebo ji napište do pole Lokalita"
+        >
+          Spustit nové hledání ↗
+        </a>
+        <span class="run-btn-copied-hint" id="run-btn-copied-hint" aria-live="polite"></span>
+      </div>
     </div>
   </section>
 
