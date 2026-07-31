@@ -7,8 +7,54 @@
   const locationInput = document.getElementById("f-location");
   const selectedHint = document.getElementById("map-selected-hint");
   const resetBtn = document.getElementById("btn-reset");
+  const runBtn = document.getElementById("btn-run-workflow");
+  const copiedHint = document.getElementById("run-btn-copied-hint");
 
   if (!regions.length || !locationInput) return;
+
+  // Tlačítko "Spustit nové hledání" je neaktivní, dokud není vybraná
+  // lokalita (z mapy nebo ručně napsaná). Jakmile je, tlačítko se
+  // aktivuje a jeho text ukáže přesně, pro jakou lokalitu se hledání
+  // spustí - dokud nemáme backend (viz diskuze o Cloudflare Workeru
+  // pro přístup bez GitHubu), pořád jen odkazuje na GitHub Actions, ale
+  // aspoň je jasné, co se vyplní, a při kliku se to zkopíruje do schránky.
+  function syncRunButton() {
+    if (!runBtn) return;
+    const val = locationInput.value.trim();
+    if (val) {
+      runBtn.classList.remove("is-disabled");
+      runBtn.removeAttribute("aria-disabled");
+      runBtn.removeAttribute("title");
+      runBtn.textContent = `Spustit hledání: ${val} ↗`;
+    } else {
+      runBtn.classList.add("is-disabled");
+      runBtn.setAttribute("aria-disabled", "true");
+      runBtn.setAttribute("title", "Nejprve vyberte oblast na mapě nebo ji napište do pole Lokalita");
+      runBtn.textContent = "Spustit nové hledání ↗";
+    }
+  }
+
+  if (runBtn) {
+    runBtn.addEventListener("click", (e) => {
+      const val = locationInput.value.trim();
+      if (!val) {
+        // pointer-events:none blokuje myš, ale ne klávesovou aktivaci
+        // (Enter na fokusovaném odkazu) - bez tohohle by klávesnicoví
+        // uživatelé mohli gating obejít a otevřít GitHub Actions
+        // bez vybrané lokality.
+        e.preventDefault();
+        return;
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(val).then(() => {
+          if (!copiedHint) return;
+          copiedHint.textContent = `„${val}“ zkopírováno – vložte na GitHubu do pole Location`;
+          copiedHint.classList.add("visible");
+          setTimeout(() => copiedHint.classList.remove("visible"), 4000);
+        }).catch(() => {});
+      }
+    });
+  }
 
   // Nastaví aktivní stav podle textu; vrací true, pokud nějaká oblast sedí.
   function syncActiveWithText() {
@@ -32,6 +78,7 @@
     } else {
       selectedHint.textContent = "Zatím nic nevybráno.";
     }
+    syncRunButton();
   }
 
   function selectRegion(el) {

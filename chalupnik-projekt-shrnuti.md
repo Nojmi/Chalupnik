@@ -1217,6 +1217,55 @@ sbírají do listu a ukládají do výsledného JSON).
     přes `setTimeout(…, 0)`, aby se přepočet spustil AŽ po doběhnutí
     všech synchronních listenerů na tom kliknutí (tedy i po
     `resetFilters()`).
+- **Gating tlačítka "Spustit nové hledání" podle vybrané lokality +
+  kopírování do schránky** (přidáno 31. 7. 2026, čistě UX vrstva —
+  backend řešící spuštění bez GitHub účtu viz níže): tlačítko
+  `<a id="btn-run-workflow" class="btn-run-workflow">` v hlavičce má
+  výchozí stav `is-disabled` (prošedlé, `pointer-events: none`,
+  `aria-disabled="true"`, `title` s nápovědou "Nejprve vyberte oblast
+  na mapě..."), pořád ale míří na stejnou GitHub Actions URL
+  (`target="_blank"`) — gating nic nemění na tom, KAM tlačítko vede,
+  jen KDY je aktivní. `docs/map.js`: nová funkce `syncRunButton()`,
+  volaná z `updateHint()` (tedy automaticky při výběru z mapy, ručním
+  psaní do `#f-location` i po resetu — stejný "single source of
+  truth" princip jako zbytek mapové integrace, viz níže). Dokud je
+  `#f-location` prázdné, tlačítko zůstává `is-disabled` s výchozím
+  textem; jakmile má hodnotu, třída/`aria-disabled`/`title` se
+  odstraní a text se změní na "Spustit hledání: `<lokalita>` ↗". Klik
+  na aktivní tlačítko navíc zkopíruje lokalitu do schránky
+  (`navigator.clipboard.writeText`) a na 4 s zobrazí potvrzující
+  jantarovou bublinu (`<span id="run-btn-copied-hint">`,
+  `.run-btn-copied-hint.visible`) — tady, ne přes GitHub UI, protože
+  GitHub Actions formulář pole Location nijak nepředvyplní, uživatel
+  ho musí vložit ručně.
+  - **Bug nalezený a opravený při code review (Playwright, reálný
+    headless Chromium, ne jsdom — `getBBox`/skutečná navigace šly
+    ověřit jen takhle)**: `pointer-events: none` blokuje aktivaci
+    myší, ale ne klávesnicí — fokusovaný `<a href>` s `is-disabled`
+    pořád spustí navigaci na `Enter`, protože `click` listener v
+    `map.js` nikdy nevolal `preventDefault()`. Ověřeno: s prázdným
+    `#f-location`, fokus na `#btn-run-workflow` + `Enter` otevřel
+    GitHub Actions stránku, přestože tlačítko vypadalo (vizuálně i
+    pro screen reader) jako neaktivní. Oprava: click handler teď při
+    prázdné hodnotě zavolá `e.preventDefault()` a vrátí se — pro
+    aktivní stav (hodnota vyplněná) se chování nezměnilo, navigace na
+    `target="_blank"` proběhne normálně vedle zkopírování do
+    schránky.
+  - Ověřeno funkčně přes Playwright (headless Chromium, ne jsdom —
+    potřeba reálné `getBBox`/`getComputedStyle`/clipboard permissions/
+    skutečná navigace): počáteční stav neaktivní → klik na oblast mapy
+    aktivuje a mění text → "Zrušit filtry" vrací na neaktivní → ruční
+    psaní do pole taky aktivuje → klik na aktivní tlačítko otevře
+    GitHub Actions v novém okně (`target="_blank"`, URL beze změny) A
+    zkopíruje text do schránky A zobrazí hint → myší klik na neaktivní
+    tlačítko nenaviguje (pointer-events) → klávesnicový `Enter` na
+    neaktivním tlačítku po opravě taky nenaviguje.
+  - **Backend (přístup ke spuštění bez GitHub účtu) zatím odložený**:
+    tohle je jen UX vrstva nad stávajícím tlačítkem, které pořád vede
+    na GitHub Actions stránku workflow. Zvažovaný Cloudflare Worker +
+    token pro spuštění `workflow_dispatch` bez nutnosti mít GitHub
+    účet je samostatný krok, viz sekce 8 (Co zbývá udělat) — vědomě
+    neřešeno v rámci týhle změny.
 - `docs/style.css` — vlastní design tokeny (CSS custom properties), viz
   barvy v sekci 2 výše. Signature vizuální prvek: náhodně generovaná SVG
   "hřebenová" linka (siluetа hor) nad každou kartou výsledku.
@@ -1289,8 +1338,16 @@ změnil (`git diff --staged --quiet || git commit ...`).
       používají lokality mimo současných 11 pokrytých (Šumava, Jeseníky,
       Beskydy, Krkonoše, Jižní Morava, Český ráj, Jizerské hory, Jižní
       Čechy, Krušné hory, Vysočina, Orlické hory).
-- [ ] Případně: tlačítko na frontendu pro přímé spuštění GitHub Actions
-      bez nutnosti přecházet na GitHub (odloženo, nice-to-have)
+- [x] UX vrstva: tlačítko "Spustit nové hledání" je gatované podle
+      vybrané lokality (neaktivní dokud `#f-location` nemá hodnotu) a
+      klik na aktivní tlačítko zkopíruje lokalitu do schránky. Pořád
+      ale jen odkazuje na GitHub Actions stránku — nespouští workflow
+      přímo. Viz sekce 7, Frontend struktura.
+- [ ] Backend pro přímé spuštění GitHub Actions bez nutnosti mít/
+      používat GitHub účet — zvažovaný Cloudflare Worker s uloženým
+      tokenem, který by zavolal `workflow_dispatch` API místo
+      přesměrování na GitHub (odloženo, nice-to-have, samostatný krok
+      nezávislý na UX gatingu výše)
 - [ ] Zvážit vlastní ikonu/favicon (icons8-cabin-64) — Nojmi měl soubor
       ve Windows Downloads, cesta nebyla dosud ověřena/dokončena (STAV
       NEJASNÝ — možná už hotovo, možná ne, zkontrolovat).
