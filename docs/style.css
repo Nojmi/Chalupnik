@@ -246,6 +246,46 @@ body {
   height: auto;
 }
 
+/* Dva mapové sloupce vedle sebe (oblasti / kraje) — zalamují se pod
+   sebe na užší obrazovce, každý sloupec má vlastní menší nadpis.
+   .cr-map uvnitř .map-col je užší než samostatná mapa, ať se oba
+   vejdou vedle sebe na desktopu. */
+.maps-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: .4rem;
+}
+
+.map-col {
+  flex: 1 1 420px;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-col-title {
+  font-family: var(--font-body);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: .5rem;
+}
+
+.map-col .cr-map { max-width: 520px; }
+
+/* Praha je na mapě krajů drobná enkláva uvnitř Středočeského kraje —
+   plný popisek by přetekl přes hranice, proto menší a tučnější řez. */
+.map-region.map-region--tiny .map-region-label {
+  font-size: 9px;
+}
+
 .kraj-boundaries .kraj {
   fill: var(--moss-light);
   fill-opacity: .18;

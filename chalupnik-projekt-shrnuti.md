@@ -1194,6 +1194,55 @@ sbírají do listu a ukládají do výsledného JSON).
     Jižních Čech) a funkčně (jsdom + reálný `map.js` nad vygenerovaným
     DOM): klik na všech 11 oblastí správně vyplní pole, zvýrazní
     region a nastaví nápovědný text, reset korektně smaže vše.
+  - **Aktualizace 31. 7. 2026 (čtvrtá verze) — přidána druhá klikací
+    mapa, "Kraje ČR", vedle mapy oblíbených oblastí**: `.map-section`
+    má nově `<div class="maps-row">` se dvěma `<div class="map-col">`
+    sloupci (`docs/style.css`: `flex-wrap: wrap`, na užší obrazovce se
+    zalomí pod sebe) — vlevo beze změny obsahu přesunutá původní mapa
+    (nadpis "Oblíbené oblasti"), vpravo nové SVG s nadpisem "Kraje ČR"
+    a 14 klikacími `<g class="map-region" data-region="...">` (13 krajů
+    + Praha). Souřadnice `<path class="region-patch">` u každého kraje
+    jsou **totožné** s odpovídajícím `<path class="kraj" data-kraj=
+    "...">` z `.kraj-boundaries` v mapě oblastí (skutečné hranice, ne
+    ilustrační tvar) — všech 14 tvarů dohromady tak vyplní celou
+    plochu ČR a slouží samo o sobě jako vizuální podklad, žádná
+    samostatná `.kraj-boundaries` vrstva navíc není potřeba (existující
+    `.region-patch` styl už má viditelný `stroke`, takže sousední kraje
+    jsou od sebe opticky oddělené). Praha má navíc třídu
+    `map-region--tiny` (`.map-region-label` 9px místo 12px) — je to
+    malá enkláva uvnitř Středočeského kraje, plná velikost popisku by
+    přetekla mimo její malou plochu.
+    **`docs/map.js` se touhle změnou vůbec nedotkl** — `querySelectorAll(
+    ".map-region")` sebere všech 25 `<g>` (11 oblastí + 14 krajů) najednou,
+    klik/klávesnice/gating tlačítka (`syncRunButton()` z minulé
+    aktualizace) fungují nad novými kraji automaticky, bez jediného
+    řádku nového JS. Ověřeno přes Playwright (headless Chromium):
+    25 `.map-region` prvků celkem, žádné duplicitní `data-region`
+    (kraj "Vysočina" je schválně pojmenovaný "Kraj Vysočina", aby
+    nekolidoval s oblastí "Vysočina"), klik na kraj i na oblast každý
+    zvlášť správně vyplní `#f-location`, aktualizuje
+    `#map-selected-hint` i text/stav tlačítka "Spustit nové hledání",
+    klik na "Zrušit filtry" odznačí aktivní prvek v obou mapách a
+    tlačítko vrátí do neaktivního stavu, klik na drobnou Prahu funguje
+    stejně jako na běžný kraj.
+    - **Bug nalezený a opravený při code review**: popisky "Ústecký
+      kraj" a "Liberecký kraj" se v mapě krajů překrývaly (potvrzeno
+      `getBBox()` přes Playwright, na desktopu i při šířce 420px) —
+      oba kraje leží těsně vedle sebe na severu a jejich labely byly
+      moc blízko u sebe. Oprava: přepočítané souřadnice obou `<text>`
+      (Ústecký kraj posunut níž a víc doleva k vlastnímu tvaru,
+      Liberecký kraj výš a víc doprava), ověřeno znovu stejnou
+      `getBBox()` kontrolou — 0 překryvů, 0 oříznutí viewBoxem v obou
+      mapách na obou šířkách. Navíc programově zkontrolováno u všech
+      14 krajů, že bounding box popisku nepřesahuje bounding box
+      vlastního tvaru kraje (proxy pro "popisek nepřetéká mimo
+      oblast") — jediný nález (Liberecký kraj, ~2.7 jednotky doleva)
+      je zanedbatelný artefakt nepravidelného mnohoúhelníku vs. jeho
+      obdélníkový bounding box, vizuálně (přiblížený screenshot) text
+      celý leží uvnitř zeleně vybarvené plochy kraje.
+    - Responzivita ověřena i vizuálně (screenshot při šířce 420px):
+      sloupce se zalomí pod sebe, žádná mapa ani popisek se neořízne,
+      obě mapy zůstávají čitelné.
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho
