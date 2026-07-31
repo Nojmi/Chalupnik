@@ -1243,6 +1243,23 @@ sbírají do listu a ukládají do výsledného JSON).
     - Responzivita ověřena i vizuálně (screenshot při šířce 420px):
       sloupce se zalomí pod sebe, žádná mapa ani popisek se neořízne,
       obě mapy zůstávají čitelné.
+  - **Aktualizace 31. 7. 2026 (pátá verze) — přepočet pozic 6
+    přeplněných popisků krajů**: severočeský shluk (Středočeský,
+    Liberecký, Královéhradecký) a východomoravský shluk (Pardubický,
+    Jihomoravský, Moravskoslezský) měly popisky moc blízko sebe/svých
+    sousedů — přepočítané souřadnice `<text>` u všech 6. Dvě ze zadaných
+    hodnot ale při ověření (`getBBox()` přes Playwright) samy vytvořily
+    nové kolize: "Středočeský kraj" splýval s "Plzeňský kraj" (stejný
+    řádek, popisky se dotýkaly) a "Moravskoslezský kraj" přesahoval
+    mimo pravý okraj viewBoxu (~12 jednotek useknuto). U obou byla
+    upravena jen souřadnice `x` (Středočeský posunut o +40 doprava,
+    Moravskoslezský o 23.5 doleva), `y` zůstalo podle zadání beze
+    změny; zbylé 4 kraje (Liberecký, Královéhradecký, Pardubický,
+    Jihomoravský) použity přesně podle zadaných souřadnic. Ověřeno
+    znovu stejnou `getBBox()` kontrolou na desktopu i při 420px — 0
+    překryvů, 0 oříznutí viewBoxem v obou mapách na obou šířkách,
+    gating (klik na kraj → vyplnění pole/aktivace tlačítka → reset)
+    funguje beze změny.
   - **Princip: `#f-location` textové pole zůstává jediný zdroj
     pravdy.** Mapa ho jen ovládá obousměrně, nezavádí žádný nový stav
     mimo něj. Klik na region vyplní přesný název do pole a zvýrazní ho
