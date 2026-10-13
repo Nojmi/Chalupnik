@@ -6,6 +6,7 @@ from pathlib import Path
 
 from scraper.filters import filter_listings
 from scraper.profiles import ALL_PROFILES
+from scraper.store import update_database
 
 
 def read_criteria() -> dict:
@@ -52,6 +53,10 @@ def main() -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {len(matched)} listings to {out_path}")
+
+    # Regionální databáze (data/<region>.json): běh se do ní sloučí, nic se nepřepisuje od nuly.
+    # Běhy s filtry nebo bez lokality se přeskočí; chyba databáze nikdy neshodí celý běh.
+    update_database(out_path, out_path.parent.parent / "data")
 
 
 if __name__ == "__main__":

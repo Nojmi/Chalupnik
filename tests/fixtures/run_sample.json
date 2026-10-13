@@ -1,0 +1,439 @@
+{
+ "generated_at": "2026-07-29T16:55:21.185979+00:00",
+ "criteria": {
+  "location": "Krkonoše",
+  "min_capacity": null,
+  "min_bedrooms": null,
+  "max_price": null,
+  "amenities": [],
+  "date_from": null,
+  "date_to": null
+ },
+ "total_found": 6,
+ "total_matched": 6,
+ "errors": [],
+ "listings": [
+  {
+   "source": "e-chalupy.cz",
+   "title": "Roubenka Jílové",
+   "location": "Jílové u Držkova, Krkonoše",
+   "url": "https://www.e-chalupy.cz/jilove-u-drzkova-ubytovani-chalupa-pronajmuti-roubenka-o542",
+   "capacity": 25,
+   "bedrooms": null,
+   "price": 3429.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "vířivka",
+    "sauna",
+    "pro děti",
+    "mazlíčci vítáni",
+    "krb",
+    "u lesa",
+    "luxusní",
+    "bazén",
+    "se psem",
+    "myčka nádobí",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/roubenka-cp-145-4-loznice-15-luzek-parni-sauna-celorocni-virivka-8f15-3d90-1163401.jpg",
+   "entire_property": false,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 542,
+    "tags_featured": [
+     "2 objekty",
+     "25 osob"
+    ],
+    "area_title": "Jílové u Držkova",
+    "area_slug": "jilove-u-drzkova",
+    "area2_title": "Krkonoše",
+    "area2_slug": "krkonose",
+    "gps": {
+     "lat": 50.6704164,
+     "lon": 15.2873283
+    },
+    "rating": 100,
+    "reviews": 8,
+    "units_header": ""
+   }
+  },
+  {
+   "source": "e-chalupy.cz",
+   "title": "Wellness chata - roubenka",
+   "location": "Rudník, Krkonoše",
+   "url": "https://www.e-chalupy.cz/ubytovani-rudnik-chata-k-pronajmuti-o4257",
+   "capacity": 12,
+   "bedrooms": 4,
+   "price": 4900.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "bazén",
+    "vířivka",
+    "sauna",
+    "pro děti",
+    "oploceno",
+    "mazlíčci vítáni",
+    "krb",
+    "se psem",
+    "společenská místnost",
+    "myčka nádobí",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/wellness-chata-roubenka-6975-4a13-1012808.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {}
+  },
+  {
+   "source": "chata.cz",
+   "title": "Chalupa Chaloupka Harrachov",
+   "location": "Harrachov, Krkonoše",
+   "url": "https://www.chata.cz/chalupa/krkonose/harrachov/chalupa-chaloupka-harrachov-CZ8633/?FromDate=01.08.2026&ToDate=08.08.2026&Kids=&Adults=2&KidsCount=0&GuestsType=TwoAdults&RoomAmountType=More",
+   "capacity": 9,
+   "bedrooms": 3,
+   "price": 38500.0,
+   "price_unit": "pobyt 7 nocí",
+   "amenities": [
+    "se psem",
+    "wifi",
+    "vyžití pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8633-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8633",
+    "rooms": [
+     {
+      "name": "Chalupa pro 9 osob",
+      "status": "available",
+      "price": 38500.0,
+      "room_id": 64098,
+      "availability": "1 volný"
+     }
+    ],
+    "rating": {
+     "value": "9,3",
+     "word": "Fantastické",
+     "count_text": "dle 1 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "wifi": "wifi zdarma",
+     "lyžárna/kolárna": "uzamykatelná kůlna",
+     "parkování": "vlastní parkovací plocha přímo před domem",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "location_prefiltered": true
+   }
+  },
+  {
+   "source": "chata.cz",
+   "title": "Chalupa Máca",
+   "location": "Vrchlabí, Krkonoše",
+   "url": "https://www.chata.cz/chalupa/krkonose/vrchlabi/chalupa-maca-CZ6516/?FromDate=01.08.2026&ToDate=08.08.2026&Kids=&Adults=2&KidsCount=0&GuestsType=TwoAdults&RoomAmountType=More",
+   "capacity": 12,
+   "bedrooms": 4,
+   "price": 33243.0,
+   "price_unit": "pobyt 7 nocí",
+   "amenities": [
+    "vyžití pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6516-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6516",
+    "rooms": [
+     {
+      "name": "Chalupa pro 12 osob",
+      "status": "available",
+      "price": 33243.0,
+      "room_id": 9360,
+      "availability": "1 volný"
+     }
+    ],
+    "rating": {
+     "value": "9,6",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 12 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "u objektu na vlastním neoploceném parkovišti (zámková dlažba)",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "location_prefiltered": true
+   }
+  },
+  {
+   "source": "cs-chalupy.cz",
+   "title": "Dvě chalupy se saunou - Paseky - Krkonoše",
+   "location": "Krkonoše",
+   "url": "https://www.cs-chalupy.cz/dve-chalupy-se-saunou-paseky-krkonose.5C-010.html",
+   "capacity": 24,
+   "bedrooms": 12,
+   "price": 10000.0,
+   "price_unit": "objekt / víkend",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "společenská místnost",
+    "dětská postýlka",
+    "dětská stolička",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "el. bojler pro ohřev vody",
+    "sušička prádla",
+    "koupelna s wc společné",
+    "koupelna se sprchovým koutem",
+    "samostatné wc",
+    "sauna",
+    "televize",
+    "zahradní nábytek",
+    "terasa",
+    "zahrada",
+    "pískoviště",
+    "dětské hřiště",
+    "víceúčelové hřiště",
+    "gril",
+    "krb",
+    "sklad pro kola/ lyže",
+    "volné prostranství (neoplocený objekt)"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/138-132414/dve-chalupy-se-saunou-paseky-krkonose.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "5C-010",
+    "bathrooms": 6,
+    "wc": 8,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "chalupa",
+    "cenik": [
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "24 000 Kč",
+      "cena_hodnota": 24000.0,
+      "typ": "Objekt / týden",
+      "poznamka": "Min. nocí: 7, cena za 1 chalupu"
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "10 000 Kč",
+      "cena_hodnota": 10000.0,
+      "typ": "Objekt / víkend",
+      "poznamka": "Min. nocí: 2, cena za 1 chalupu"
+     },
+     {
+      "sezona": "Sezóna ZIMA",
+      "cena": "33 000 Kč",
+      "cena_hodnota": 33000.0,
+      "typ": "Objekt / týden",
+      "poznamka": "Min. nocí: 7, cena za 1 chalupu"
+     },
+     {
+      "sezona": "Vánoce",
+      "cena": "24 000 Kč",
+      "cena_hodnota": 24000.0,
+      "typ": "Objekt / týden",
+      "poznamka": "Min. nocí: 7, cena za 1 chalupu"
+     },
+     {
+      "sezona": "SILVESTR",
+      "cena": "48 000 Kč",
+      "cena_hodnota": 48000.0,
+      "typ": "Objekt / týden",
+      "poznamka": "Min. nocí: 7, cena za 1 chalupu"
+     }
+    ],
+    "domaci_zvire": "ANO - je povolené, Pouze po dohodě (pouze malé rasy)",
+    "popis_detaily": {
+     "Rozložení ložnic": "12 ložnic: 12x 2",
+     "WC": "8",
+     "Koupelny": "6",
+     "Objekt k pronájmu (využití)": "Celoročně, Letní sezóna, Zimní sezóna, Mimosezóna, Víkendové pobyty, Silvestr, Vánoce, Velikonoce",
+     "Ubytování možno domluvit jazykem": "česky, anglicky",
+     "Domácí zvíře": "ANO - je povolené, Pouze po dohodě (pouze malé rasy)",
+     "Možnost stravování": "vlastní stravování",
+     "Bezbariérový objekt": "NE",
+     "Kouření v objektu": "NE není možné",
+     "Vytápění objektu": "ústřední topení, podlahové topení, tepelné čerpadlo",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (200 m), zastávka vlak (3000 m), obchod (2000 m), restaurace (200 m), les (250 m), koupání (500 m), lyžařský vlek (600 m)",
+     "Aktivity v okolí (do 15 km)": "turistika, cykloturistika, wellness, houbaření, jeskyně, lyžování"
+    },
+    "address": {
+     "street": "Sklenařice",
+     "locality": "Sklenařice",
+     "region": "Semily",
+     "postal_code": "512 43"
+    },
+    "gps": {
+     "lat": "50.7032403",
+     "lng": "15.3891769"
+    },
+    "telephone": "+420 608 882 289",
+    "jsonld_rating": null
+   }
+  },
+  {
+   "source": "cs-chalupy.cz",
+   "title": "Chalupa Krkonoše - sauna a kachlová kamna",
+   "location": "Krkonoše",
+   "url": "https://www.cs-chalupy.cz/chalupa-krkonose-sauna-a-kachlova-kamna.5C-016.html",
+   "capacity": 14,
+   "bedrooms": 4,
+   "price": 25000.0,
+   "price_unit": "objekt / pobyt",
+   "amenities": [
+    "wifi",
+    "společenská místnost",
+    "kachlová kamna",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "kávovar",
+    "pračka",
+    "koupelna se sprchovým koutem",
+    "samostatné wc",
+    "sauna",
+    "televize",
+    "SAT",
+    "zahradní nábytek",
+    "terasa",
+    "bazén",
+    "dětské hřiště",
+    "sklad pro kola/ lyže",
+    "oplocený objekt",
+    "se psem"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/191-5139/chalupa-krkonose-sauna-a-kachlova-kamna.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "5C-016",
+    "bathrooms": 2,
+    "wc": 2,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "chalupa",
+    "cenik": [
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "65 000 Kč",
+      "cena_hodnota": 65000.0,
+      "typ": "Objekt / týden",
+      "poznamka": ""
+     },
+     {
+      "sezona": "Sezóna ZIMA",
+      "cena": "65 000 Kč",
+      "cena_hodnota": 65000.0,
+      "typ": "Objekt / týden",
+      "poznamka": ""
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "55 000 Kč",
+      "cena_hodnota": 55000.0,
+      "typ": "Objekt / týden",
+      "poznamka": ""
+     },
+     {
+      "sezona": "SILVESTR",
+      "cena": "100 000 Kč",
+      "cena_hodnota": 100000.0,
+      "typ": "Objekt / týden",
+      "poznamka": ""
+     },
+     {
+      "sezona": "Vánoce",
+      "cena": "100 000 Kč",
+      "cena_hodnota": 100000.0,
+      "typ": "Objekt / týden",
+      "poznamka": ""
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "25 000 Kč",
+      "cena_hodnota": 25000.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Min. nocí: 2, objekt na 2 noci"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "30 000 Kč",
+      "cena_hodnota": 30000.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Min. nocí: 3, objekt na 3 noci"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "35 000 Kč",
+      "cena_hodnota": 35000.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Min. nocí: 4, objekt na 4 noci"
+     }
+    ],
+    "domaci_zvire": "ANO - je povolené, NE - není povolené",
+    "popis_detaily": {
+     "Rozložení ložnic": "4 ložnice: 2x 5, 2x 2",
+     "WC": "2",
+     "Koupelny": "2",
+     "Objekt k pronájmu (využití)": "Celoročně, Letní sezóna, Zimní sezóna, Mimosezóna, Víkendové pobyty, Silvestr, Vánoce, Velikonoce",
+     "Ubytování možno domluvit jazykem": "česky, anglicky, německy, polsky",
+     "Domácí zvíře": "ANO - je povolené, NE - není povolené",
+     "Možnost stravování": "vlastní stravování",
+     "Bezbariérový objekt": "NE",
+     "Kouření v objektu": "NE není možné",
+     "Vytápění objektu": "kamna / krb na tuhá paliva, podlahové topení, elektrické topení",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (300 m), zastávka vlak (9000 m), obchod (300 m), restaurace (300 m), les (300 m), koupání (10000 m), lyžařský vlek (300 m)",
+     "Aktivity v okolí (do 15 km)": "turistika, cykloturistika, wellness, fitnes, houbaření, lyžování"
+    },
+    "address": {
+     "street": "Černý Důl",
+     "locality": "Černý Důl",
+     "region": "Trutnov",
+     "postal_code": "543 44"
+    },
+    "gps": {
+     "lat": "50.634318786",
+     "lng": "15.7101752809"
+    },
+    "telephone": "+420 732 570 543",
+    "jsonld_rating": null
+   }
+  }
+ ]
+}
