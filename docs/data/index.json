@@ -146,6 +146,24 @@
    }
   },
   {
+   "region": "orlicke-hory",
+   "region_label": "Orlické hory",
+   "file": "orlicke-hory.json",
+   "listing_count": 963,
+   "active_count": 963,
+   "last_updated": "2026-10-14T12:36:19.602476+00:00",
+   "sources_updated": {
+    "e-chalupy.cz": "2026-10-14T12:36:19.602476+00:00",
+    "chata.cz": "2026-10-14T12:36:19.602476+00:00",
+    "cs-chalupy.cz": "2026-10-14T12:36:19.602476+00:00"
+   },
+   "kraje": {
+    "Královéhradecký": 471,
+    "Olomoucký": 14,
+    "Pardubický": 446
+   }
+  },
+  {
    "region": "sumava",
    "region_label": "Šumava",
    "file": "sumava.json",
