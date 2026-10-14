@@ -96,12 +96,17 @@ def load_store(path: Path) -> Optional[dict]:
         return json.load(f)
 
 
+def kraj_of(x: dict) -> Optional[str]:
+    """Kraj nabídky: z GPS, jinak z nápovědy portálu (chata.cz GPS nemá, kraj zná z vlastního hledání po krajích)."""
+    return kraj_for(x.get("gps")) or (x.get("raw_extra") or {}).get("kraj_hint") or None
+
+
 def save_store(path: Path, store: dict) -> None:
     """Atomický zápis (dočasný soubor + přejmenování), stabilní pořadí pro čisté git diffy."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     for x in store["listings"]:      # kraj dopočítáme i u starších záznamů
-        x["kraj"] = kraj_for(x.get("gps"))
+        x["kraj"] = kraj_of(x)
     store["listings"] = sorted(store["listings"], key=lambda x: x["id"])
     tmp = path.with_suffix(path.suffix + ".tmp")
     with tmp.open("w", encoding="utf-8", newline="\n") as f:
@@ -271,7 +276,7 @@ def _count_kraje(listings: list) -> dict:
     """Počty nabídek podle kraje (bez kraje se nepočítají) – pro mapu „Podle krajů"."""
     out: dict = {}
     for x in listings:
-        k = x.get("kraj") or kraj_for(x.get("gps"))
+        k = x.get("kraj") or kraj_of(x)
         if k:
             out[k] = out.get(k, 0) + 1
     return dict(sorted(out.items()))

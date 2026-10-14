@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       location:
-        description: "Lokalita, i víc oblastí najednou oddělených středníkem (např. Šumava; Český ráj). PRÁZDNÉ = všechny oblasti"
+        description: "Lokalita, i víc oblastí najednou oddělených středníkem (např. Šumava; Český ráj). PRÁZDNÉ = všechny oblasti, KRAJE = jen chata.cz po krajích (doplnění kraje a chybějících nabídek)"
         required: false
         default: ""
       min_capacity:
@@ -94,12 +94,19 @@ jobs:
           }
 
           # Prázdné pole Lokalita = všechny oblasti ze seznamu (docs/data/mapa-cr.json)
-          if [ -z "$(echo "$CRIT_LOCATION_ALL" | xargs)" ]; then
+          ONLY_KRAJE=0
+          if [ "$(echo "$CRIT_LOCATION_ALL" | xargs | tr '[:upper:]' '[:lower:]')" = "kraje" ]; then
+            ONLY_KRAJE=1
+            CRIT_LOCATION_ALL=""
+            LOCS=()
+          elif [ -z "$(echo "$CRIT_LOCATION_ALL" | xargs)" ]; then
             CRIT_LOCATION_ALL="$(python -m scraper.regions)"
             echo "Lokalita nezadána -> všechny oblasti: $CRIT_LOCATION_ALL"
           fi
-          IFS=';' read -ra LOCS <<< "$CRIT_LOCATION_ALL"
-          [ ${#LOCS[@]} -eq 0 ] && LOCS=("")
+          if [ "$ONLY_KRAJE" = 0 ]; then
+            IFS=';' read -ra LOCS <<< "$CRIT_LOCATION_ALL"
+            [ ${#LOCS[@]} -eq 0 ] && LOCS=("")
+          fi
           fail=0
           for loc in "${LOCS[@]}"; do
             loc="$(echo "$loc" | xargs)"
@@ -108,4 +115,9 @@ jobs:
             save "${loc:-bez lokality}" || { echo "::error::Uložení pro '$loc' selhalo"; fail=1; }
             echo "::endgroup::"
           done
+          # chata.cz po krajích: přidělí kraj nabídkám chata.cz (karta nemá GPS) a doplní ty, které žádná oblast nepokrývá
+          echo "::group::chata.cz po krajích"
+          python -m scraper.chata_kraje || { echo "::error::chata.cz po krajích skončilo chybou"; fail=1; }
+          save "chata.cz po krajích" || { echo "::error::Uložení po krajích selhalo"; fail=1; }
+          echo "::endgroup::"
           exit $fail

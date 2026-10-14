@@ -605,7 +605,79 @@ def search(criteria: dict) -> list[Listing]:
     return listings
 
 
-def _search_one(criteria: dict, strict: bool = False) -> list[Listing]:
+# Kraje, jak je zná chata.cz (LocationType 2, v hledání "kraj Plzeňský"). Klíč = krátký název
+# kraje shodný s scraper/kraj.py; hodnota = varianty názvu, které se v Autocomplete přijmou.
+KRAJE: dict[str, list[str]] = {
+    "Praha": ["Praha", "Hlavní město Praha", "kraj Praha"],
+    "Středočeský": ["kraj Středočeský", "Středočeský kraj"],
+    "Jihočeský": ["kraj Jihočeský", "Jihočeský kraj"],
+    "Plzeňský": ["kraj Plzeňský", "Plzeňský kraj"],
+    "Karlovarský": ["kraj Karlovarský", "Karlovarský kraj"],
+    "Ústecký": ["kraj Ústecký", "Ústecký kraj"],
+    "Liberecký": ["kraj Liberecký", "Liberecký kraj"],
+    "Královéhradecký": ["kraj Královéhradecký", "Královéhradecký kraj"],
+    "Pardubický": ["kraj Pardubický", "Pardubický kraj"],
+    "Vysočina": ["kraj Vysočina", "Vysočina kraj", "Kraj Vysočina"],
+    "Jihomoravský": ["kraj Jihomoravský", "Jihomoravský kraj"],
+    "Olomoucký": ["kraj Olomoucký", "Olomoucký kraj"],
+    "Zlínský": ["kraj Zlínský", "Zlínský kraj"],
+    "Moravskoslezský": ["kraj Moravskoslezský", "Moravskoslezský kraj"],
+}
+KRAJ_LOCATION_TYPE = 2
+
+
+def resolve_kraj(short: str) -> tuple[int, int, str] | None:
+    """(LocationId, LocationType, text do pole Where) pro kraj, jen přesná shoda názvu u typu 2.
+
+    Když se kraj nenajde, vypíše do logu, co Autocomplete vrátil (ať je vidět proč), a vrátí None.
+    """
+    wanted = {_slug(n) for n in KRAJE[short]}
+    seen_items: list = []
+    for query in (KRAJE[short][0], short):
+        url = f"{BASE_URL}/Autocomplete/{quote(query)}"
+        try:
+            response = requests.get(url, headers=AJAX_HEADERS, timeout=15)
+            response.raise_for_status()
+            results = response.json()
+        except (requests.RequestException, ValueError):
+            continue
+        for item in results or []:
+            seen_items.append(item)
+            if item.get("LocationType") != KRAJ_LOCATION_TYPE or item.get("LocationId") is None:
+                continue
+            for value in item.values():
+                if isinstance(value, str) and _slug(value) in wanted:
+                    return item["LocationId"], item["LocationType"], value.strip()
+    brief = [{k: v for k, v in it.items() if isinstance(v, (str, int))} for it in seen_items[:8]]
+    print(f"[chata.cz] kraj '{short}': přesná shoda (typ {KRAJ_LOCATION_TYPE}) nenalezena; Autocomplete vrátil: {brief}")
+    return None
+
+
+def _kraj_params(resolved: tuple[int, int, str]) -> dict:
+    return {
+        "Where": resolved[2], "Distance": 0, "Adults": 2, "GuestsType": "TwoAdults",
+        "RoomAmountType": "More", "SortingType": "Regio", "AccType": ACC_TYPE_CHATY_CHALUPY,
+        "Autocomplete.LocationId": resolved[0], "Autocomplete.LocationType": resolved[1],
+    }
+
+
+def fetch_kraj_codes(short: str) -> dict | None:
+    """Rychlý přehled kraje bez detailů: {"resolved", "codes", "total"}; None když se kraj nepodařilo určit."""
+    resolved = resolve_kraj(short)
+    if not resolved:
+        return None
+    params = _kraj_params(resolved)
+    cards = _fetch_all_cards(params)
+    codes = {c for c, _ in (_extract_code_title(card) for card in cards) if c}
+    return {"resolved": resolved, "codes": codes, "total": _total_for(params)}
+
+
+def search_kraj(short: str, resolved: tuple[int, int, str], criteria: dict | None = None) -> list[Listing]:
+    """Plný průchod (ceny, vybavení, celý objekt) pro kraj; stejné kroky jako u oblasti."""
+    return _search_one({**(criteria or {}), "location": resolved[2]}, resolved_override=(resolved[0], resolved[1]))
+
+
+def _search_one(criteria: dict, strict: bool = False, resolved_override: tuple[int, int] | None = None) -> list[Listing]:
     location = (criteria.get("location") or "").strip()
 
     params: dict = {
@@ -619,7 +691,10 @@ def _search_one(criteria: dict, strict: bool = False) -> list[Listing]:
     }
 
     location_resolved = False
-    if location:
+    if resolved_override:
+        params["Autocomplete.LocationId"], params["Autocomplete.LocationType"] = resolved_override
+        location_resolved = True
+    elif location:
         resolved = _resolve_region_strict(location) if strict else _resolve_location(location)
         if strict and not resolved:
             return []
