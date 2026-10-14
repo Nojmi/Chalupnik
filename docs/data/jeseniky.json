@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "jeseniky",
  "region_label": "Jeseníky",
- "last_updated": "2026-10-14T09:44:35.578185+00:00",
+ "last_updated": "2026-10-14T17:37:19.696064+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T09:44:35.578185+00:00",
-  "chata.cz": "2026-10-14T09:44:35.578185+00:00",
-  "cs-chalupy.cz": "2026-10-14T09:44:35.578185+00:00"
+  "e-chalupy.cz": "2026-10-14T17:37:19.696064+00:00",
+  "chata.cz": "2026-10-14T17:37:19.696064+00:00",
+  "cs-chalupy.cz": "2026-10-14T17:37:19.696064+00:00"
  },
  "listings": [
   {
@@ -334,6 +334,77 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ0991",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Hynčická pekárna",
+   "location": "Chrastice, Jeseníky",
+   "url": "https://www.chata.cz/chalupa/jeseniky/chrastice-64/chata-hyncicka-pekarna-CZ0991/",
+   "capacity": 16,
+   "bedrooms": 4,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "sauna",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ0991-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ0991",
+    "rooms": [
+     {
+      "name": "Chata pro 16 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "wifi": "wifi",
+     "parkování": "parkování přímo u chaty",
+     "povlečení": "za poplatek"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "sauna",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -714,6 +785,75 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ1726",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata U Výra",
+   "location": "Holčovice, Jeseníky",
+   "url": "https://www.chata.cz/chalupa/jeseniky/holcovice/chata-u-vyra-CZ1726/",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "pro děti",
+    "parkování",
+    "povlečení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ1726-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ1726",
+    "rooms": [
+     {
+      "name": "Chata pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,1",
+     "word": "Fantastické",
+     "count_text": "dle 15 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "povoleno 1 zvíře",
+     "parkování": "vlastní parkovací místo u objektu, další parkování níže (100 m pod obj.)",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "vyžití pro děti",
+     "parkování",
+     "povlečení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -3609,6 +3749,89 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ8175",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa U Jezu",
+   "location": "Bělá pod Pradědem, Jeseníky",
+   "url": "https://www.chata.cz/chalupa/jeseniky/bela-pod-pradedem/chalupa-u-jezu-CZ8175/",
+   "capacity": 18,
+   "bedrooms": null,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8175-letni.jpg",
+   "entire_property": false,
+   "likely_apartment": true,
+   "raw_extra": {
+    "code": "CZ8175",
+    "rooms": [
+     {
+      "name": "Apartmán 1",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     },
+     {
+      "name": "Apartmán 2",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "10,0",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 1 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Při obsazení objektu menším počtem osob, než je celková kapacita, platí zvýhodněná cena.\r\n",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "malá plemena",
+     "lyžárna/kolárna": "uzamykatelná kolárna/lyžárna",
+     "parkování": "u chlalupy",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ8208",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -3852,6 +4075,92 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8313",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Marova Chalupa",
+   "location": "Jindřichov, Jeseníky",
+   "url": "https://www.chata.cz/chalupa/jeseniky/jindrichov-64/chalupa-marova-chalupa-CZ8313/",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "sauna",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8313-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8313",
+    "rooms": [
+     {
+      "name": "Chalupa pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,7",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 2 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "zákaz pobytu v lůžkovinách/pohovkách",
+     "lyžárna/kolárna": "Možné uložení v předsíni.",
+     "parkování": "Přímo u chalupy",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "sauna",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -4820,6 +5129,81 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8718",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Nad Dvorem",
+   "location": "Slezské Pavlovice, Jeseníky",
+   "url": "https://www.chata.cz/chalupa/jeseniky/slezske-pavlovice/chalupa-nad-dvorem-CZ8718/",
+   "capacity": 9,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8718-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8718",
+    "rooms": [
+     {
+      "name": "Chalupa pro 9 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [
+     {
+      "text": "NEW",
+      "title": "Novinka",
+      "class": "indicator indicator-darkgreen"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "wifi": "Internet lze napojit na Přemyslovský dvůr hned vedle.",
+     "parkování": "Parkovat lze před i za domem.",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -46698,7 +47082,7 @@
      "lon": 17.125180556
     },
     "rating": 99,
-    "reviews": 44,
+    "reviews": 45,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "pro děti",
@@ -65030,7 +65414,7 @@
      "lon": 17.261921667
     },
     "rating": 99,
-    "reviews": 44,
+    "reviews": 45,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "sauna",
@@ -67068,7 +67452,7 @@
      "lon": 17.01189
     },
     "rating": 100,
-    "reviews": 3,
+    "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "myčka nádobí",
@@ -83078,7 +83462,7 @@
    "url": "https://www.e-chalupy.cz/domek-pisarov-ubytovani-o21171",
    "capacity": 14,
    "bedrooms": 6,
-   "price": 5000.0,
+   "price": 6214.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "vířivka",
@@ -83140,8 +83524,8 @@
     "lat": 50.005440833,
     "lon": 16.799588611
    },
-   "price_per_night_from": 5000,
-   "price_per_night_to": 5000,
+   "price_per_night_from": 6214,
+   "price_per_night_to": 6214,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -91276,7 +91660,7 @@
      "lon": 17.063590556
     },
     "rating": 99,
-    "reviews": 6,
+    "reviews": 7,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "vířivka",
@@ -94038,7 +94422,7 @@
      "lon": 16.773161111
     },
     "rating": 100,
-    "reviews": 1,
+    "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "bazén",
@@ -118762,7 +119146,7 @@
      "lon": 17.321956944
     },
     "rating": 98,
-    "reviews": 8,
+    "reviews": 9,
     "units_header": "",
     "amenities_original": [
      "vířivka",
@@ -120878,7 +121262,7 @@
    "url": "https://www.e-chalupy.cz/ubytovani-branna-horska-vila-u-petinka-o6991",
    "capacity": 12,
    "bedrooms": 3,
-   "price": 5000.0,
+   "price": 4500.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "bazén",
@@ -120937,8 +121321,8 @@
     "lat": 50.152728333,
     "lon": 17.012263056
    },
-   "price_per_night_from": 5000,
-   "price_per_night_to": 5000,
+   "price_per_night_from": 4500,
+   "price_per_night_to": 4500,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
