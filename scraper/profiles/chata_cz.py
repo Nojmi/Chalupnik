@@ -523,6 +523,28 @@ def _apply_likely_apartment(listings: list[Listing], base_params: dict) -> None:
         listing.likely_apartment = _extract_likely_apartment(listing.title, rooms)
 
 
+def _total_for(params: dict) -> int | None:
+    """Počet nabídek, který portál hlásí (#totalitems) pro danou variantu dotazu."""
+    try:
+        _, total = _fetch_page({**params, "PageSize": 1, "page": 1})
+        return total
+    except requests.RequestException:
+        return None
+
+
+def _log_coverage(params: dict, scraped: int) -> None:
+    """Diagnostika pokrytí: kolik nabídek portál ukazuje při různých variantách
+    dotazu vs. kolik jsme stáhli. Jen výpis do logu, nic nemění."""
+    variants = {
+        "s_terminem": params,
+        "bez_terminu": {k: v for k, v in params.items() if k not in ("FromDate", "ToDate")},
+        "bez_typu": {k: v for k, v in params.items() if k != "AccType"},
+        "bez_terminu_a_typu": {k: v for k, v in params.items() if k not in ("FromDate", "ToDate", "AccType")},
+    }
+    parts = [f"{name}={_total_for(p)}" for name, p in variants.items()]
+    print(f"[COVERAGE] chata.cz: stazeno={scraped} | portal hlasi: " + ", ".join(parts))
+
+
 def search(criteria: dict) -> list[Listing]:
     location = (criteria.get("location") or "").strip()
 
@@ -554,6 +576,7 @@ def search(criteria: dict) -> list[Listing]:
         nights = DEFAULT_STAY_NIGHTS
 
     cards = _fetch_all_cards(params)
+    _log_coverage(params, len(cards))
     listings = [_parse_card(card, nights) for card in cards]
     for listing in listings:
         listing.raw_extra["location_prefiltered"] = location_resolved
