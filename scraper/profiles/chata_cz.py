@@ -515,8 +515,11 @@ def _fetch_structural_rooms(base_params: dict) -> dict[str, list[dict]]:
     return rooms_by_code
 
 
-def _apply_likely_apartment(listings: list[Listing], base_params: dict) -> None:
-    structural_rooms = _fetch_structural_rooms(base_params)
+def _apply_likely_apartment(
+    listings: list[Listing], base_params: dict, structural_rooms: dict[str, list[dict]] | None = None
+) -> None:
+    if structural_rooms is None:
+        structural_rooms = _fetch_structural_rooms(base_params)
     for listing in listings:
         code = listing.raw_extra.get("code")
         rooms = structural_rooms.get(code, [])
@@ -578,13 +581,37 @@ def search(criteria: dict) -> list[Listing]:
     cards = _fetch_all_cards(params)
     _log_coverage(params, len(cards))
     listings = [_parse_card(card, nights) for card in cards]
+
+    # Dotaz s termínem schová objekty obsazené v tom týdnu (portál je nevypíše
+    # vůbec). Nabídka ale nepřestala existovat - bez doplnění by zmizela z dat
+    # a příští běh by ji označil jako "zmizelou". Proto stáhneme i bezterminový
+    # pohled a přidáme objekty, které v termínovém chybí (bez ceny, cena je
+    # závislá na termínu).
+    structural_params = {k: v for k, v in params.items() if k not in ("FromDate", "ToDate")}
+    nodate_cards = _fetch_all_cards(structural_params)
+    structural_rooms: dict[str, list[dict]] = {}
+    seen_codes = {l.raw_extra.get("code") for l in listings}
+    added = 0
+    for card in nodate_cards:
+        code, _ = _extract_code_title(card)
+        if not code:
+            continue
+        structural_rooms[code] = _extract_rooms(card)
+        if code not in seen_codes:
+            extra = _parse_card(card, nights)
+            extra.raw_extra["bez_terminu"] = True
+            listings.append(extra)
+            seen_codes.add(code)
+            added += 1
+    print(f"[COVERAGE] chata.cz: doplneno {added} nabidek skrytych terminem (celkem {len(listings)})")
     for listing in listings:
         listing.raw_extra["location_prefiltered"] = location_resolved
 
     # min_capacity/min_bedrooms/max_price se záměrně neposílají do dotazu -
     # filtrování necháváme na filters.py/frontendu (stejně jako e-chalupy).
-    _enrich_amenities(listings, params)
+    # bez termínu, ať vybavení dostanou i objekty skryté termínovým dotazem
+    _enrich_amenities(listings, structural_params)
     _apply_entire_property(listings)
-    _apply_likely_apartment(listings, params)
+    _apply_likely_apartment(listings, params, structural_rooms)
 
     return listings
