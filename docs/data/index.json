@@ -20,6 +20,24 @@
    }
   },
   {
+   "region": "ceske-svycarsko",
+   "region_label": "České Švýcarsko",
+   "file": "ceske-svycarsko.json",
+   "listing_count": 628,
+   "active_count": 628,
+   "last_updated": "2026-10-14T18:56:05.904753+00:00",
+   "sources_updated": {
+    "e-chalupy.cz": "2026-10-14T18:56:05.904753+00:00",
+    "chata.cz": "2026-10-14T18:56:05.904753+00:00",
+    "cs-chalupy.cz": "2026-10-14T18:56:05.904753+00:00"
+   },
+   "kraje": {
+    "Jihočeský": 1,
+    "Liberecký": 189,
+    "Ústecký": 430
+   }
+  },
+  {
    "region": "cesky-raj",
    "region_label": "Český ráj",
    "file": "cesky-raj.json",
