@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "jizni-morava",
  "region_label": "Jižní Morava",
- "last_updated": "2026-10-14T16:37:53.203272+00:00",
+ "last_updated": "2026-10-14T17:21:16.681358+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T16:37:53.203272+00:00",
-  "chata.cz": "2026-10-14T16:37:53.203272+00:00",
-  "cs-chalupy.cz": "2026-10-14T16:37:53.203272+00:00"
+  "e-chalupy.cz": "2026-10-14T17:21:16.681358+00:00",
+  "chata.cz": "2026-10-14T17:21:16.681358+00:00",
+  "cs-chalupy.cz": "2026-10-14T17:21:16.681358+00:00"
  },
  "listings": [
   {
@@ -3612,7 +3612,7 @@
     },
     "badges": [],
     "equipment_tooltips": {
-     "se psem": "do 10 kg, max. 1 zvíře",
+     "se psem": "na dotaz",
      "lyžárna/kolárna": "V areálu uzamykatelná kolárna/lyžárna.",
      "parkování": "u objektu, oploceno",
      "povlečení": "zdarma",
@@ -8470,8 +8470,8 @@
    "url": "https://www.chata.cz/chalupa/zdarske-vrchy/javorek/chata-u-vcelky-liby-CZ7552/",
    "capacity": 6,
    "bedrooms": 2,
-   "price": null,
-   "price_unit": null,
+   "price": 11767.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "wifi",
     "pro děti",
@@ -8487,9 +8487,11 @@
     "code": "CZ7552",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chata pro 6 osob",
+      "status": "available",
+      "price": 11767.0,
+      "room_id": 9944,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -8521,11 +8523,11 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 1681,
+   "price_per_night_to": 1681,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-10-14",
    "price_term": {
     "from": "2026-10-17",
     "to": "2026-10-24"
@@ -12632,7 +12634,7 @@
      }
     ],
     "equipment_tooltips": {
-     "se psem": "do 10 kg, max. 3 zvířata",
+     "se psem": "na dotaz",
      "parkování": "v areálu za bránou",
      "povlečení": "zdarma",
      "oplocení": "částečně oplocen plot z fošen"
@@ -12645,6 +12647,77 @@
      "parkování",
      "povlečení",
      "oplocení",
+     "vířivka",
+     "sauna",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": {
+    "from": "2026-10-17",
+    "to": "2026-10-24"
+   },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8704",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Roubenka Maliná",
+   "location": "Ruprechtov, Moravský kras",
+   "url": "https://www.chata.cz/chalupa/moravsky-kras/ruprechtov/chalupa-roubenka-malina-CZ8704/",
+   "capacity": 9,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "pro děti",
+    "parkování",
+    "povlečení",
+    "vířivka",
+    "sauna",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8704-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8704",
+    "rooms": [
+     {
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
+     }
+    ],
+    "rating": null,
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "na dotaz",
+     "parkování": "u objektu",
+     "povlečení": "zdarma"
+    },
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "vyžití pro děti",
+     "parkování",
+     "povlečení",
      "vířivka",
      "sauna",
      "krb"
@@ -16092,6 +16165,124 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Zlínský"
+  },
+  {
+   "id": "cs-chalupy.cz:1M-075",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům Podyjí - přehrada Znojmo - Morava",
+   "location": "Dyje, Jižní a střední Morava",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-podyji-prehrada-znojmo-morava.1M-075.html",
+   "capacity": 26,
+   "bedrooms": 6,
+   "price": 0.0,
+   "price_unit": "osoba / noc",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "společenská místnost",
+    "krb",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "kávovar",
+    "toustovač",
+    "el. bojler pro ohřev vody",
+    "koupelna se sprchovým koutem",
+    "zahradní nábytek",
+    "terasa",
+    "zastřešené posezení",
+    "zahrada",
+    "bazén",
+    "pískoviště",
+    "dětské hřiště",
+    "pro děti",
+    "travnatá plocha",
+    "gril",
+    "lyžárna/kolárna",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/970-31489/rekreacni-dum-podyji-prehrada-znojmo-morava.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "1M-075",
+    "bathrooms": 6,
+    "wc": 6,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Celoročně",
+      "cena": "0 Kč",
+      "cena_hodnota": 0.0,
+      "typ": "Osoba / noc",
+      "poznamka": "Cenu zašleme dle individuální kalkulace obratem"
+     }
+    ],
+    "domaci_zvire": "Pouze po dohodě (Pobyt psa je možný za poplatek a pouze při skupinovém pronájmu celého objektu.)",
+    "popis_detaily": {
+     "Rozložení ložnic": "6 ložnic: 1x 7, 1x 5, 3x 4, 1x 2",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (900 m), zastávka vlak (900 m), obchod (1000 m), restaurace (150 m), les (500 m), koupání (20 m)"
+    },
+    "address": {
+     "street": "Dyje",
+     "locality": "Dyje",
+     "region": "Znojmo",
+     "postal_code": "669 02"
+    },
+    "gps": {
+     "lat": "48.8474883",
+     "lng": "16.1127606"
+    },
+    "amenities_original": [
+     "wifi",
+     "se psem",
+     "společenská místnost",
+     "krb",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "myčka nádobí",
+     "kávovar",
+     "toustovač",
+     "el. bojler pro ohřev vody",
+     "koupelna se sprchovým koutem",
+     "zahradní nábytek",
+     "terasa",
+     "zastřešené posezení",
+     "zahrada",
+     "bazén",
+     "pískoviště",
+     "dětské hřiště",
+     "travnatá plocha",
+     "gril",
+     "sklad pro kola/ lyže",
+     "oplocený objekt"
+    ]
+   },
+   "okres": "Znojmo",
+   "gps": {
+    "lat": 48.8474883,
+    "lon": 16.1127606
+   },
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": "Jihomoravský"
   },
   {
    "id": "cs-chalupy.cz:1M-076",
@@ -25411,6 +25602,148 @@
    "kraj": "Jihomoravský"
   },
   {
+   "id": "cs-chalupy.cz:1M-247",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům s bazénem - Velké Pavlovice",
+   "location": "Bořetice, Jižní a střední Morava",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-s-bazenem-velke-pavlovice.1M-247.html",
+   "capacity": 14,
+   "bedrooms": 5,
+   "price": 15000.0,
+   "price_unit": "objekt / víkend",
+   "amenities": [
+    "wifi",
+    "společenská místnost",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "klimatizace",
+    "televize",
+    "zahradní nábytek",
+    "terasa",
+    "zastřešené posezení",
+    "zahrada",
+    "bazén",
+    "trampolína",
+    "pískoviště",
+    "gril",
+    "krb",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/3072-149743/rekreacni-dum-s-bazenem-velke-pavlovice.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "1M-247",
+    "bathrooms": 2,
+    "wc": 3,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "6 000 Kč",
+      "cena_hodnota": 6000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2, cena do 10 osob"
+     },
+     {
+      "sezona": "Sezóna ZIMA",
+      "cena": "6 500 Kč",
+      "cena_hodnota": 6500.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2, cena do 10 osob"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "15 000 Kč",
+      "cena_hodnota": 15000.0,
+      "typ": "Objekt / víkend",
+      "poznamka": "Min. nocí: 2, cena do 10 osob"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "500 Kč",
+      "cena_hodnota": 500.0,
+      "typ": "Osoba / noc",
+      "poznamka": "Min. nocí: 2, 11.-14. osoba v objektu"
+     },
+     {
+      "sezona": "Vánoce",
+      "cena": "8 000 Kč",
+      "cena_hodnota": 8000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 4, cena do 10 osob"
+     },
+     {
+      "sezona": "SILVESTR",
+      "cena": "8 000 Kč",
+      "cena_hodnota": 8000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 4, cena do 10 osob"
+     }
+    ],
+    "domaci_zvire": "NE - není povolené",
+    "popis_detaily": {
+     "Rozložení ložnic": "5 ložnic: 1x 4, 1x 3, 2x 2, 1x 0+3",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (350 m), zastávka vlak (700 m), obchod (100 m), restaurace (1000 m), les (2000 m), koupání (10 m)"
+    },
+    "address": {
+     "street": "Bořetice",
+     "locality": "Bořetice",
+     "region": "Břeclav",
+     "postal_code": "691 08"
+    },
+    "gps": {
+     "lat": "48.9128175",
+     "lng": "16.8566539"
+    },
+    "amenities_original": [
+     "wifi",
+     "společenská místnost",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "myčka nádobí",
+     "klimatizace",
+     "televize",
+     "zahradní nábytek",
+     "terasa",
+     "zastřešené posezení",
+     "zahrada",
+     "bazén",
+     "trampolína",
+     "pískoviště",
+     "gril",
+     "krb",
+     "oplocený objekt"
+    ]
+   },
+   "okres": "Břeclav",
+   "gps": {
+    "lat": 48.9128175,
+    "lon": 16.8566539
+   },
+   "price_per_night_from": 6000,
+   "price_per_night_to": 8000,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Jihomoravský"
+  },
+  {
    "id": "cs-chalupy.cz:1M-248",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -27128,6 +27461,163 @@
    },
    "price_per_night_from": 3000,
    "price_per_night_to": 3000,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Jihomoravský"
+  },
+  {
+   "id": "cs-chalupy.cz:1M-266",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Apartmány Pálava - Nové Mlýny - Levandulová farma",
+   "location": "Starovičky, Jižní a střední Morava",
+   "url": "https://www.cs-chalupy.cz/apartmany-palava-nove-mlyny-levandulova-farma.1M-266.html",
+   "capacity": 40,
+   "bedrooms": 8,
+   "price": 2300.0,
+   "price_unit": "apartmán / noc",
+   "amenities": [
+    "wifi",
+    "společenská místnost",
+    "dětská postýlka",
+    "dětská stolička",
+    "dětský kout (hračky)",
+    "pro děti",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "kávovar",
+    "vinný sklep",
+    "el. bojler pro ohřev vody",
+    "koupelna se sprchovým koutem",
+    "klimatizace",
+    "televize",
+    "zahradní nábytek",
+    "terasa",
+    "zastřešené posezení",
+    "zahrada",
+    "pískoviště",
+    "dětské hřiště",
+    "víceúčelové hřiště",
+    "travnatá plocha",
+    "gril",
+    "lyžárna/kolárna",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/3279-137273/apartmany-palava-nove-mlyny-levandulova-farma.jpg",
+   "entire_property": null,
+   "likely_apartment": true,
+   "raw_extra": {
+    "code": "1M-266",
+    "bathrooms": 8,
+    "wc": 8,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Celoročně",
+      "cena": "2 300 Kč",
+      "cena_hodnota": 2300.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, 1 apartmán do 2 osob"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "2 800 Kč",
+      "cena_hodnota": 2800.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, 1 apartmán do 3 osob"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "3 300 Kč",
+      "cena_hodnota": 3300.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, 1 apartmán do 4 osob"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "3 800 Kč",
+      "cena_hodnota": 3800.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, 1 apartmán do 5 osob"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "26 000 Kč",
+      "cena_hodnota": 26000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2, Cena za celý objekt (8x apartmán / do 40 osob)"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "128 000 Kč",
+      "cena_hodnota": 128000.0,
+      "typ": "Objekt / týden",
+      "poznamka": "Min. nocí: 7, Cena za celý objekt na týden SO-SO"
+     }
+    ],
+    "domaci_zvire": "NE - není povolené",
+    "popis_detaily": {
+     "Rozložení ložnic": "8 ložnic: 8x 3+2",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (200 m), zastávka vlak (3000 m), obchod (200 m), restaurace (200 m), koupání (5000 m)"
+    },
+    "address": {
+     "street": "Starovičky",
+     "locality": "Starovičky",
+     "region": "Břeclav",
+     "postal_code": "69168"
+    },
+    "gps": {
+     "lat": "48.9105775",
+     "lng": "16.7714569"
+    },
+    "amenities_original": [
+     "wifi",
+     "společenská místnost",
+     "dětská postýlka",
+     "dětská stolička",
+     "dětský kout (hračky)",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "kávovar",
+     "vinný sklep",
+     "el. bojler pro ohřev vody",
+     "koupelna se sprchovým koutem",
+     "klimatizace",
+     "televize",
+     "zahradní nábytek",
+     "terasa",
+     "zastřešené posezení",
+     "zahrada",
+     "pískoviště",
+     "dětské hřiště",
+     "víceúčelové hřiště",
+     "travnatá plocha",
+     "gril",
+     "sklad pro kola/ lyže",
+     "oplocený objekt"
+    ]
+   },
+   "okres": "Břeclav",
+   "gps": {
+    "lat": 48.9105775,
+    "lon": 16.7714569
+   },
+   "price_per_night_from": 18286,
+   "price_per_night_to": 26000,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -34882,6 +35372,166 @@
    "kraj": "Jihomoravský"
   },
   {
+   "id": "cs-chalupy.cz:1M-352",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům s bazénem - Mikulov - Pálava",
+   "location": "Pavlov, Jižní a střední Morava",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-s-bazenem-mikulov-palava.1M-352.html",
+   "capacity": 19,
+   "bedrooms": 5,
+   "price": 12000.0,
+   "price_unit": "objekt / noc",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "společenská místnost",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "topinkovač",
+    "koupelna s vanou",
+    "koupelna s wc společné",
+    "koupelna se sprchovým koutem",
+    "televize",
+    "společenské hry",
+    "zahradní nábytek",
+    "terasa",
+    "zahrada",
+    "bazén",
+    "travnatá plocha",
+    "gril",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/4069-178972/rekreacni-dum-s-bazenem-mikulov-palava.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "1M-352",
+    "bathrooms": 2,
+    "wc": 2,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Hlavní sezóna",
+      "cena": "12 000 Kč",
+      "cena_hodnota": 12000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 1"
+     },
+     {
+      "sezona": "Hlavní sezóna",
+      "cena": "24 000 Kč",
+      "cena_hodnota": 24000.0,
+      "typ": "Objekt / víkend",
+      "poznamka": "Min. nocí: 2"
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "12 000 Kč",
+      "cena_hodnota": 12000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 1"
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "20 000 Kč",
+      "cena_hodnota": 20000.0,
+      "typ": "Objekt / víkend",
+      "poznamka": "Min. nocí: 2"
+     },
+     {
+      "sezona": "Jarní prázdniny",
+      "cena": "15 000 Kč",
+      "cena_hodnota": 15000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 3"
+     },
+     {
+      "sezona": "Velikonoce",
+      "cena": "15 000 Kč",
+      "cena_hodnota": 15000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 3"
+     },
+     {
+      "sezona": "Vánoce",
+      "cena": "15 000 Kč",
+      "cena_hodnota": 15000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 3"
+     },
+     {
+      "sezona": "SILVESTR",
+      "cena": "20 000 Kč",
+      "cena_hodnota": 20000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 3"
+     }
+    ],
+    "domaci_zvire": "ANO - je povolené",
+    "popis_detaily": {
+     "Rozložení ložnic": "5 ložnic: 3x 4, 1x 3, 1x 2+2",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (180 m), zastávka vlak (12 000 m), obchod (180 m), restaurace (600 m), les (2 000 m), koupání (1 000 m)"
+    },
+    "address": {
+     "street": "Přehradní",
+     "locality": "Pavlov",
+     "region": "Břeclav",
+     "postal_code": "692 01"
+    },
+    "gps": {
+     "lat": "48.8744678",
+     "lng": "16.6760836"
+    },
+    "amenities_original": [
+     "wifi",
+     "se psem",
+     "společenská místnost",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "myčka nádobí",
+     "topinkovač",
+     "koupelna s vanou",
+     "koupelna s wc společné",
+     "koupelna se sprchovým koutem",
+     "televize",
+     "společenské hry",
+     "zahradní nábytek",
+     "terasa",
+     "zahrada",
+     "bazén",
+     "travnatá plocha",
+     "gril",
+     "oplocený objekt"
+    ]
+   },
+   "okres": "Břeclav",
+   "gps": {
+    "lat": 48.8744678,
+    "lon": 16.6760836
+   },
+   "price_per_night_from": 10000,
+   "price_per_night_to": 20000,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Jihomoravský"
+  },
+  {
    "id": "cs-chalupy.cz:1M-353",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -35718,6 +36368,142 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Zlínský"
+  },
+  {
+   "id": "cs-chalupy.cz:1M-554",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům - Velký Kosíř - Drahanská vrchovina",
+   "location": "Smržice, Jižní a střední Morava",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-velky-kosir-drahanska-vrchovina.1M-554.html",
+   "capacity": 4,
+   "bedrooms": 1,
+   "price": 990.0,
+   "price_unit": "objekt / noc",
+   "amenities": [
+    "wifi",
+    "společenská místnost",
+    "krb",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "pračka",
+    "vířivka",
+    "televize",
+    "lyžárna/kolárna"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/4157-183444/rekreacni-dum-velky-kosir-drahanska-vrchovina.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "1M-554",
+    "bathrooms": 1,
+    "wc": 1,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "1 300 Kč",
+      "cena_hodnota": 1300.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2"
+     },
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "2 600 Kč",
+      "cena_hodnota": 2600.0,
+      "typ": "Objekt / víkend",
+      "poznamka": ""
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "990 Kč",
+      "cena_hodnota": 990.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2"
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "1 980 Kč",
+      "cena_hodnota": 1980.0,
+      "typ": "Objekt / víkend",
+      "poznamka": ""
+     },
+     {
+      "sezona": "Vánoce",
+      "cena": "4 500 Kč",
+      "cena_hodnota": 4500.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Pobyt na 4 noci"
+     },
+     {
+      "sezona": "SILVESTR",
+      "cena": "3 500 Kč",
+      "cena_hodnota": 3500.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Pobyt na 3 noci"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "200 Kč",
+      "cena_hodnota": 200.0,
+      "typ": "Přistýlka / noc",
+      "poznamka": ""
+     }
+    ],
+    "domaci_zvire": "NE - není povolené",
+    "popis_detaily": {
+     "Rozložení ložnic": "1 ložnice: 1x 2+2",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (650 m), zastávka vlak (1500 m), obchod (650 m), restaurace (600 m), les (4500 m), koupání (7500 m)"
+    },
+    "address": {
+     "street": "Podhájí",
+     "locality": "Smržice",
+     "region": "Prostějov",
+     "postal_code": "798 17"
+    },
+    "gps": {
+     "lat": "49.505916472395",
+     "lng": "17.109860593501"
+    },
+    "amenities_original": [
+     "wifi",
+     "společenská místnost",
+     "krb",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "myčka nádobí",
+     "pračka",
+     "vířivka",
+     "televize",
+     "sklad pro kola/ lyže",
+     "volné prostranství (neoplocený objekt)"
+    ]
+   },
+   "okres": "Prostějov",
+   "gps": {
+    "lat": 49.505916472395,
+    "lon": 17.109860593501
+   },
+   "price_per_night_from": 990,
+   "price_per_night_to": 1300,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Olomoucký"
   },
   {
    "id": "cs-chalupy.cz:1M-556",
