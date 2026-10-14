@@ -2,13 +2,86 @@
  "schema_version": 1,
  "region": "jizni-morava",
  "region_label": "Jižní Morava",
- "last_updated": "2026-10-14T13:11:33.024819+00:00",
+ "last_updated": "2026-10-14T16:37:53.203272+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T13:11:33.024819+00:00",
-  "chata.cz": "2026-10-14T13:11:33.024819+00:00",
-  "cs-chalupy.cz": "2026-10-14T13:11:33.024819+00:00"
+  "e-chalupy.cz": "2026-10-14T16:37:53.203272+00:00",
+  "chata.cz": "2026-10-14T16:37:53.203272+00:00",
+  "cs-chalupy.cz": "2026-10-14T16:37:53.203272+00:00"
  },
  "listings": [
+  {
+   "id": "chata.cz:CZ0033",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Brněnská přehrada",
+   "location": "Brno, Brněnsko",
+   "url": "https://www.chata.cz/chalupa/brnensko/brno/chata-brnenska-prehrada-CZ0033/",
+   "capacity": 5,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ0033-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ0033",
+    "rooms": [
+     {
+      "name": "Chata pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,6",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 22 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Chata není vhodná k pořádání oslav a jsou na ní zakázány.&nbsp;\r\n",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "kůlna",
+     "parkování": "parkování u objektu",
+     "povlečení": "za poplatek"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
   {
    "id": "chata.cz:CZ0153",
    "first_seen": "2026-10-14",
@@ -81,6 +154,68 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ0257",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Jadran",
+   "location": "Podhradí nad Dyjí, Podyjí",
+   "url": "https://www.chata.cz/chalupa/podyji/podhradi-nad-dyji/chata-jadran-CZ0257/",
+   "capacity": 8,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "parkování"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ0257-letni.jpg",
+   "entire_property": false,
+   "likely_apartment": true,
+   "raw_extra": {
+    "code": "CZ0257",
+    "rooms": [
+     {
+      "name": "Chata A pro 4 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     },
+     {
+      "name": "Chata B pro 4 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,3",
+     "word": "Fantastické",
+     "count_text": "dle 2 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "u objektu"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "parkování"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -596,6 +731,76 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ0585",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Sport Vysočina",
+   "location": "Nové Město na Moravě, Žďárské vrchy",
+   "url": "https://www.chata.cz/chalupa/zdarske-vrchy/nove-mesto-na-morave/chata-sport-vysocina-CZ0585/",
+   "capacity": 6,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "parkování",
+    "povlečení",
+    "vířivka",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ0585-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ0585",
+    "rooms": [
+     {
+      "name": "Chata pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,7",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 11 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "parkování": "zpevněná plocha u chaty",
+     "povlečení": "za poplatek"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "parkování",
+     "povlečení",
+     "vířivka",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -1479,6 +1684,79 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ1421",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Hájenka Kančí obora",
+   "location": "Břeclav, Pálava",
+   "url": "https://www.chata.cz/chalupa/palava/breclav/chalupa-hajenka-kanci-obora-CZ1421/",
+   "capacity": 10,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ1421-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ1421",
+    "rooms": [
+     {
+      "name": "Chalupa pro 10 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,8",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 13 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     }
+    ],
+    "equipment_tooltips": {
+     "parkování": "Pro 5 vozidel v areálu objektu.",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ1478",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -1638,6 +1916,160 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ1542",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Vinný sklep Inka",
+   "location": "Starý Poddvorov, Slovácko",
+   "url": "https://www.chata.cz/ubytovani/slovacko/stary-poddvorov/vinny-sklep-inka-CZ1542/",
+   "capacity": 5,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "bazén",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ1542-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ1542",
+    "rooms": [
+     {
+      "name": "Vinný sklep pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,3",
+     "word": "Fantastické",
+     "count_text": "dle 20 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Při obsazení objektu menším počtem osob, než je celková kapacita, platí zvýhodněná cena.\r\n",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "bazén": "Venkovní bazén: 5,00(d)x3,00(š)x1,20(h)",
+     "parkování": "před objektem",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "bazén",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ1652",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Vinný sklep Eliška",
+   "location": "Drnholec, Pálava",
+   "url": "https://www.chata.cz/ubytovani/palava/drnholec/vinny-sklep-eliska-CZ1652/",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ1652-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ1652",
+    "rooms": [
+     {
+      "name": "Vinný sklep pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,1",
+     "word": "Fantastické",
+     "count_text": "dle 36 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "u objektu",
+     "parkování": "přímo u objektu ze silnice",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ1701",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -1719,6 +2151,76 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ1735",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Pod Mikulčákem",
+   "location": "Vápenice, Bílé Karpaty",
+   "url": "https://www.chata.cz/chalupa/bile-karpaty/vapenice/chata-pod-mikulcakem-CZ1735/",
+   "capacity": 9,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ1735-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ1735",
+    "rooms": [
+     {
+      "name": "Chata pro 9 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,6",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 12 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     }
+    ],
+    "equipment_tooltips": {
+     "parkování": "na zatravněném pozemku u chaty (neoplocený)",
+     "povlečení": "za poplatek"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -2022,6 +2524,78 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ2865",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Vinný sklep Sklep u hřiště",
+   "location": "Šardice, Slovácko",
+   "url": "https://www.chata.cz/ubytovani/slovacko/sardice/vinny-sklep-sklep-u-hriste-CZ2865/",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ2865-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ2865",
+    "rooms": [
+     {
+      "name": "Vinný sklep pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "8,5",
+     "word": "Velmi dobré",
+     "count_text": "dle 5 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "vstupní místnost",
+     "parkování": "U objektu na zatravněném parkovišti.",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ2996",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -2162,6 +2736,85 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ3121",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Rekreační dům Boskovice",
+   "location": "Boskovice, Moravský kras",
+   "url": "https://www.chata.cz/ubytovani/moravsky-kras/boskovice/rekreacni-dum-boskovice-CZ3121/",
+   "capacity": 4,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ3121-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ3121",
+    "rooms": [
+     {
+      "name": "Rekreační dům pro 4 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,6",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 25 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "uzamykatelná technická místnost",
+     "parkování": "na vlastním oploceném pozemku",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -2392,6 +3045,136 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ3420",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Vinný sklep Vinařství Holakovský",
+   "location": "Vlkoš, Slovácko",
+   "url": "https://www.chata.cz/ubytovani/slovacko/vlkos-15/vinny-sklep-vinarstvi-holakovsky-CZ3420/",
+   "capacity": 16,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ3420-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ3420",
+    "rooms": [
+     {
+      "name": "Vinný sklep pro 16 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Při obsazení objektu menším počtem osob, než je celková kapacita, platí zvýhodněná cena.",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "Kola i lyže lze uschovat, avšak spíše menší počet (do 8 ks).",
+     "parkování": "travnatá plocha",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ3430",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Bobina",
+   "location": "Čeložnice, Chřiby",
+   "url": "https://www.chata.cz/chalupa/chriby/celoznice/chata-bobina-CZ3430/",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "pro děti",
+    "bazén",
+    "parkování",
+    "povlečení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ3430-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ3430",
+    "rooms": [
+     {
+      "name": "Chata pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,3",
+     "word": "Fantastické",
+     "count_text": "dle 8 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "bazén": "Venkovní bazén: 3,60(p)x0,90(h)",
+     "parkování": "na centrálním parkovišti (150 m)",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "vyžití pro děti",
+     "bazén",
+     "parkování",
+     "povlečení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -3178,6 +3961,87 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ5036",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Na Sklepní",
+   "location": "Dolní Dunajovice, Pálava",
+   "url": "https://www.chata.cz/chalupa/palava/dolni-dunajovice/chalupa-na-sklepni-CZ5036/",
+   "capacity": 8,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ5036-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ5036",
+    "rooms": [
+     {
+      "name": "Chalupa pro 8 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,5",
+     "word": "Fantastické",
+     "count_text": "dle 63 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "na dotaz, pouze malá rasa",
+     "parkování": "u objektu na příjezdové silnici",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ5260",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -3848,6 +4712,167 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ5525",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata U Bukovanského mlýna",
+   "location": "Bukovany, Slovácko",
+   "url": "https://www.chata.cz/chalupa/slovacko/bukovany-15/chata-u-bukovanskeho-mlyna-CZ5525/",
+   "capacity": 4,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "bazén",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ5525-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ5525",
+    "rooms": [
+     {
+      "name": "Chata pro 4 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,5",
+     "word": "Fantastické",
+     "count_text": "dle 36 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "bazén": "Venkovní bazén: 9,00(d)x4,50(š)x1,20(h)",
+     "parkování": "Parkování zajištěno v areálu Bukovanského mlýna s možností vyložení zavazadel cca 8 metrů od chaty. Příjezd k samotné chatě není doporučován z důvodu polní cesty.",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "bazén",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ5551",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Jandova chalupa",
+   "location": "Petrovice, Českomoravská Vysočina",
+   "url": "https://www.chata.cz/chalupa/ceskomoravska-vysocina/petrovice-69/chalupa-jandova-chalupa-CZ5551/",
+   "capacity": 8,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "bazén",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ5551-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ5551",
+    "rooms": [
+     {
+      "name": "Chalupa pro 8 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,9",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 15 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "bazén": "Venkovní bazén: 3,00(p)x0,60(h)",
+     "parkování": "v objektu",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen chalupa má velký uzavřený dvůr"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "bazén",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ5565",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -4426,6 +5451,89 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ6041",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Zahradní domek Relax",
+   "location": "Bulhary, Pálava",
+   "url": "https://www.chata.cz/ubytovani/palava/bulhary-7/zahradni-domek-relax-CZ6041/",
+   "capacity": 2,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "bazén",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6041-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6041",
+    "rooms": [
+     {
+      "name": "Zahradní domek pro 2 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,7",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 34 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "wifi": "Internetové připojení v objektu\r\n",
+     "bazén": "Venkovní bazén: 5,50(d)x3,50(š)x1,20(h)",
+     "lyžárna/kolárna": "uzamykatelný prostor pro kola - garáž",
+     "parkování": "Po dohodě přímo u domu, nebo na obecním parkovišti",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "bazén",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ6121",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -4650,6 +5758,78 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ6293",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Vinný sklep U Kovárny",
+   "location": "Starovice, Pálava",
+   "url": "https://www.chata.cz/ubytovani/palava/starovice/vinny-sklep-u-kovarny-CZ6293/",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6293-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6293",
+    "rooms": [
+     {
+      "name": "Vinný sklep pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,2",
+     "word": "Fantastické",
+     "count_text": "dle 37 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "parkování": "v objektu na zatravněném a oploceném pozemku",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -5057,6 +6237,147 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ6451",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Ve vinném sklepě",
+   "location": "Dolní Věstonice, Pálava",
+   "url": "https://www.chata.cz/chalupa/palava/dolni-vestonice/chalupa-ve-vinnem-sklepe-CZ6451/",
+   "capacity": 8,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6451-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6451",
+    "rooms": [
+     {
+      "name": "Chalupa pro 8 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,7",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 12 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "před objektem nebo v garáži u objektu",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ6490",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Na samotě u lesa a řeky",
+   "location": "Tasov, Českomoravská Vysočina",
+   "url": "https://www.chata.cz/chalupa/ceskomoravska-vysocina/tasov-69/chata-na-samote-u-lesa-reky-CZ6490/",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6490-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6490",
+    "rooms": [
+     {
+      "name": "Chata pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,8",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 21 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "max. 1",
+     "lyžárna/kolárna": "sklep",
+     "parkování": "Parkování je zdarma přímo u objektu"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -5626,6 +6947,76 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ6817",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Hermína",
+   "location": "Koryčany, Chřiby",
+   "url": "https://www.chata.cz/chalupa/chriby/korycany/chata-hermina-CZ6817/",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6817-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6817",
+    "rooms": [
+     {
+      "name": "Chata pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,7",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 18 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "se psem": "malá rasa",
+     "parkování": "u objektu na zatravněném a oploceném pozemku",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -6999,6 +8390,76 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ7551",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata U Nového rybníka",
+   "location": "Čáslavice, Českomoravská Vysočina",
+   "url": "https://www.chata.cz/chalupa/ceskomoravska-vysocina/caslavice/chata-u-noveho-rybnika-CZ7551/",
+   "capacity": 7,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ7551-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ7551",
+    "rooms": [
+     {
+      "name": "Chata pro 7 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,7",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 4 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "se psem": "malá rasa",
+     "parkování": "otevřená odstavná plocha u objektu",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen živý plot a keře"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ7552",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -8030,6 +9491,94 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ8124",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Vinný sklep U Vitisa",
+   "location": "Bukovany, Slovácko",
+   "url": "https://www.chata.cz/ubytovani/slovacko/bukovany-15/vinny-sklep-u-vitisa-CZ8124/",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "wifi",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "vířivka",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8124-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8124",
+    "rooms": [
+     {
+      "name": "Vinný sklep pro 5 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,8",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 29 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Na vyžádání je možné celkovou kapacitu vinného sklepa rozšířit o 2 přistýlky formou výsuvného plnohodnotného lůžka (za poplatek).\r\n",
+      "class": "indicator indicator-green"
+     },
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "zahradní domek",
+     "parkování": "1 auto na vlastním parkovišti u objektu vedle příjezdové cesty",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "wifi",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "vířivka",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ8141",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -8167,6 +9716,82 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8151",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Glamping Příroda mezi vinicemi",
+   "location": "Čejkovice, Slovácko",
+   "url": "https://www.chata.cz/ubytovani/slovacko/cejkovice-15/glamping-priroda-mezi-vinicemi-CZ8151/",
+   "capacity": 4,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8151-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8151",
+    "rooms": [
+     {
+      "name": "Glamping pro 4 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,0",
+     "word": "Skvělé",
+     "count_text": "dle 2 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "na terase stanu",
+     "parkování": "150 m od stanu",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -8862,6 +10487,73 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ8330",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Glamping Moravské Toskánsko",
+   "location": "Šardice, Slovácko",
+   "url": "https://www.chata.cz/ubytovani/slovacko/sardice/glamping-moravske-toskansko-CZ8330/",
+   "capacity": 4,
+   "bedrooms": 1,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8330-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8330",
+    "rooms": [
+     {
+      "name": "Glamping pro 4 osoby",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "lyžárna/kolárna": "na terase stanu",
+     "parkování": "u stanu",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ8350",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -9183,6 +10875,84 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8425",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Osada Havranů",
+   "location": "Hnanice, Podyjí",
+   "url": "https://www.chata.cz/chalupa/podyji/hnanice/chata-osada-havranu-CZ8425/",
+   "capacity": 14,
+   "bedrooms": 4,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8425-letni.jpg",
+   "entire_property": false,
+   "likely_apartment": true,
+   "raw_extra": {
+    "code": "CZ8425",
+    "rooms": [
+     {
+      "name": "Chata A pro 7 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     },
+     {
+      "name": "Chata B pro 7 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Při obsazení objektu menším počtem osob, než je celková kapacita, platí zvýhodněná cena.\r\n",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "wifi": "wifi",
+     "lyžárna/kolárna": "Úschovna kol v uzamykatelné kóji u penzionu.",
+     "parkování": "u objektu",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -9813,6 +11583,82 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ8539",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Rekreační dům Dolní Libochová",
+   "location": "Dolní Libochová, Českomoravská Vysočina",
+   "url": "https://www.chata.cz/ubytovani/ceskomoravska-vysocina/dolni-libochova/rekreacni-dum-dolni-libochova-CZ8539/",
+   "capacity": 7,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "bazén",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8539-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8539",
+    "rooms": [
+     {
+      "name": "Rekreační dům pro 7 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "10,0",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 3 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "se psem": "malá rasa do 5 kg a jen jeden",
+     "wifi": "Wi-Fi",
+     "bazén": "Venkovní bazén: 3,00(p)x0,80(h)",
+     "parkování": "Jedno parkovací místo na pozemku chaty, druhé před chatou.",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "bazén",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ8553",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -10247,6 +12093,60 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8641",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Pláž",
+   "location": "Štítary, Podyjí",
+   "url": "https://www.chata.cz/chalupa/podyji/stitary/chata-plaz-CZ8641/",
+   "capacity": 8,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "parkování",
+    "oplocení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8641-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8641",
+    "rooms": [
+     {
+      "name": "Chata pro 8 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "u objektu",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "parkování",
+     "oplocení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -26190,8 +28090,8 @@
    "likely_apartment": false,
    "raw_extra": {
     "code": "1M-283",
-    "bathrooms": 1,
-    "wc": 1,
+    "bathrooms": 2,
+    "wc": 2,
     "rating": {
      "value": "10",
      "count_text": "1 hodnocení"
@@ -79897,8 +81797,8 @@
    "url": "https://www.e-chalupy.cz/sklep-u-havliku-mutenice-ubytovani-o17490",
    "capacity": 6,
    "bedrooms": 1,
-   "price": null,
-   "price_unit": null,
+   "price": 3250.0,
+   "price_unit": "objekt za noc",
    "amenities": [
     "společenská místnost",
     "lednička",
@@ -79939,11 +81839,11 @@
     "lat": 48.912803056,
     "lon": 17.025826111
    },
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 3250,
+   "price_per_night_to": 3250,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Jihomoravský"
   },
@@ -90666,7 +92566,7 @@
      "lon": 16.73183
     },
     "rating": 96,
-    "reviews": 2,
+    "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "vířivka",
@@ -93825,7 +95725,7 @@
      "lon": 17.564335556
     },
     "rating": 99,
-    "reviews": 22,
+    "reviews": 23,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "mazlíčci vítáni",
@@ -116898,7 +118798,7 @@
    "url": "https://www.e-chalupy.cz/ubytovani-znojmo-chata-v-zahrade-pronajem-o24162",
    "capacity": 3,
    "bedrooms": 1,
-   "price": 2100.0,
+   "price": 2200.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "vířivka",
@@ -116953,8 +118853,8 @@
     "lat": 48.8708778,
     "lon": 16.0226531
    },
-   "price_per_night_from": 2100,
-   "price_per_night_to": 2100,
+   "price_per_night_from": 2200,
+   "price_per_night_to": 2200,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -126531,8 +128431,8 @@
      "lat": 48.973850556,
      "lon": 17.882749722
     },
-    "rating": 93,
-    "reviews": 5,
+    "rating": 94,
+    "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "mazlíčci vítáni",
