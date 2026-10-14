@@ -112,7 +112,13 @@ function agesFor(info) {
   return PORTALS.map(p => ({ name: p, d: daysSince(su[p]) }));
 }
 
+// Anonymní statistika (GoatCounter, bez cookies): počítá se, které oblasti a kraje se otevírají.
+function track(path, title) {
+  try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title, event: true }); } catch (e) { /* statistika nikdy nesmí rozbít web */ }
+}
 async function open(view) {
+  if (view.t === 'region') track('oblast/' + view.id, 'Oblast: ' + (oblast(view.id)?.name || view.id));
+  else if (view.t === 'kraj') track('kraj/' + view.id, 'Kraj: ' + view.id);
   S.view = view; S.f = freshFilters(); S.shown = PAGE; S.sheet = false; S.dlg = null;
   S.load = 'nacita'; S.err = ''; S.items = []; S.meta = null;
   render(); window.scrollTo(0, 0);
@@ -496,7 +502,7 @@ document.addEventListener('click', e => {
     case 'more': S.shown += PAGE; updateResults(); break;
     case 'filters': S.sheet = true; S.opener = 'filters'; render(); break;
     case 'close': closeOverlay(); break;
-    case 'update': S.dlg = { region: id }; S.opener = 'update'; render(); break;
+    case 'update': track('aktualizace/' + id, 'Dialog aktualizace: ' + id); S.dlg = { region: id }; S.opener = 'update'; render(); break;
     case 'run-update': {
       const hook = window.Chalupnik && window.Chalupnik.onUpdate;
       if (typeof hook === 'function') { try { hook(id); } catch (err) { console.error(err); } closeOverlay(); }
