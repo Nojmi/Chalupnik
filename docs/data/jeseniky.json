@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "jeseniky",
  "region_label": "Jeseníky",
- "last_updated": "2026-10-14T17:37:19.696064+00:00",
+ "last_updated": "2026-10-14T18:18:21.199320+00:00",
  "sources_updated": {
   "e-chalupy.cz": "2026-10-14T17:37:19.696064+00:00",
-  "chata.cz": "2026-10-14T17:37:19.696064+00:00",
-  "cs-chalupy.cz": "2026-10-14T17:37:19.696064+00:00"
+  "chata.cz": "2026-10-14T18:18:21.199320+00:00",
+  "cs-chalupy.cz": "2026-10-14T18:18:21.199320+00:00"
  },
  "listings": [
   {
