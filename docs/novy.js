@@ -178,16 +178,16 @@ function judge(l) {
   return unk;
 }
 function compute() {
-  const clear = [], unknown = [], reasons = new Set();
+  const all = [];
   S.items.forEach(l => {
     const j = judge(l);
     if (j === null) return;
-    if (j.length) { unknown.push(l); j.forEach(r => reasons.add(r)); } else clear.push(l);
+    l._unk = j;                       // údaje, které portál neuvádí a podle kterých filtrujeme (jen poznámka na kartě)
+    all.push(l);
   });
   const weak = l => (l.likely_apartment === true ? 1 : 0) + (l._ent === 'ne' ? 1 : 0);   // pravděpodobné apartmány až za celé objekty
-  const ord = (a, b) => (b._avail - a._avail) || (weak(a) - weak(b)) || ((a.price_per_night_from ?? 1e12) - (b.price_per_night_from ?? 1e12)) || (a.id < b.id ? -1 : 1);
-  clear.sort(ord); unknown.sort(ord);
-  return { clear, unknown, reasons: [...reasons], shown: clear.length + unknown.length, total: S.items.length };
+  all.sort((a, b) => (b._avail - a._avail) || (weak(a) - weak(b)) || ((a.price_per_night_from ?? 1e12) - (b.price_per_night_from ?? 1e12)) || (a.id < b.id ? -1 : 1));
+  return { all, shown: all.length, total: S.items.length };
 }
 function chipList() {
   const f = S.f, c = [];
@@ -324,6 +324,11 @@ function priceHTML(l) {
   const meta = [l.price_as_of ? `k${NB}${shortDate(l.price_as_of)}` : '', termText(l.price_term), l.price_estimated ? 'přepočteno z ceny za osobu' : ''].filter(Boolean).join(' · ');
   return `<div class="price"><div class="v">${v}</div>${meta ? `<div class="m">${esc(meta)}</div>` : ''}${l.price_note ? `<div class="pn">${esc(l.price_note)}</div>` : ''}</div>`;
 }
+function unkText(r) {
+  const zda = r.includes('zda jde o celý objekt'), parts = r.filter(x => x !== 'zda jde o celý objekt');
+  if (!parts.length) return 'Portál neuvádí, zda jde o celý objekt.';
+  return `Portál neuvádí ${parts.join(', ')}${zda ? ' ani to, zda jde o celý objekt' : ''}.`;
+}
 function cardHTML(l) {
   const cap = l.capacity != null ? `<span>${l.capacity} ${plural(l.capacity, 'osoba', 'osoby', 'osob')}</span>` : `<em>kapacita neuvedena</em>`;
   const bed = l.bedrooms != null ? `<span>${l.bedrooms} ${plural(l.bedrooms, 'ložnice', 'ložnice', 'ložnic')}</span>` : `<em>ložnice neuvedeny</em>`;
@@ -334,7 +339,7 @@ function cardHTML(l) {
   return `<article class="card${l._avail ? '' : ' unavail'}">
     <div class="photo"><div class="ph"><span>fotka objektu</span></div>${img}<span class="src ${l._src}">${esc(l.source)}</span>${l._avail ? '' : '<div class="gone"><i aria-hidden="true">?</i>možná už není k dispozici</div>'}</div>
     <div class="cbody"><h3>${esc(l.title)}</h3><div class="place">${esc(l._place)}</div><div class="cap">${cap}${bed}</div>
-    ${priceHTML(l)}${l.likely_apartment ? '<div class="warn"><span aria-hidden="true">⚠</span><span>možná jen apartmán, ne celá chalupa</span></div>' : ''}
+    ${priceHTML(l)}${l._unk && l._unk.length ? `<div class="unk">${esc(unkText(l._unk))} Ověřte na portálu.</div>` : ''}${l.likely_apartment ? '<div class="warn"><span aria-hidden="true">⚠</span><span>možná jen apartmán, ne celá chalupa</span></div>' : ''}
     ${am.length ? `<div class="tags">${tags}${more}</div>` : ''}
     <a class="btn block" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Zobrazit na portálu <span aria-hidden="true">↗</span></a></div></article>`;
 }
@@ -345,7 +350,7 @@ function resultsHTML() {
   const where = S.view.t === 'region' ? `v ${esc(locative(m.title))}` : esc(krajWhere(S.view.id));
   const bar = `<div class="bar"><div class="sum"><b class="num" role="status">Zobrazeno ${fmt(c.shown)} z ${fmt(c.total)}</b><span>nabídek ${where}</span></div>
     <button class="fbtn" data-act="filters" aria-haspopup="dialog">Filtry ${chips.length ? `<span class="badge">${chips.length}</span>` : ''}</button></div>`;
-  const cnt = {}; [...c.clear, ...c.unknown].forEach(l => { cnt[l.source] = (cnt[l.source] || 0) + 1; });
+  const cnt = {}; c.all.forEach(l => { cnt[l.source] = (cnt[l.source] || 0) + 1; });
   const pills = `<div class="pills">${PORTALS.map(p => `<span class="pill"><i style="background:${PORTAL_COLOR[SRC[p]]}"></i>${p} <b class="num">${fmt(cnt[p] || 0)}</b></span>`).join('')}</div>`;
   const chipsH = chips.length ? `<div class="chips">${chips.map(x => `<button class="chip" data-act="drop" data-id="${esc(x.key)}">${esc(x.text)} <span aria-hidden="true">×</span><span class="sr-only">zrušit filtr</span></button>`).join('')}</div>` : '';
   if (!c.shown) {
@@ -353,16 +358,7 @@ function resultsHTML() {
       <div class="chips" style="padding:0">${chips.map(x => `<button class="chip" data-act="drop" data-id="${esc(x.key)}">${esc(x.text)} <span aria-hidden="true">×</span></button>`).join('')}</div>
       <div class="acts"><button class="btn solid" data-act="clear">Zrušit všechny filtry</button></div></div>`;
   }
-  let left = S.shown, html = '';
-  const take = arr => { const part = arr.slice(0, Math.max(0, left)); left -= part.length; return part.map(cardHTML).join(''); };
-  const a = take(c.clear);
-  html += `<div class="cards">${a}</div>`;
-  if (c.unknown.length && left > 0) {
-    const what = c.reasons.slice(0, 3).join(' nebo ');
-    const title = `Neuvádějí ${esc(what)} (${c.unknown.length})`;
-    const sub = c.reasons.length === 1 ? 'Portál tento údaj nezveřejňuje, takže nevíme, jestli filtru odpovídají. Ověřte na portálu.' : 'Portál tyto údaje nezveřejňuje, takže nevíme, jestli filtrům odpovídají. Ověřte na portálu.';
-    html += `<div class="sepbox"><b>${title}</b><span>${sub}</span></div><div class="cards">${take(c.unknown)}</div>`;
-  }
+  let html = `<div class="cards">${c.all.slice(0, S.shown).map(cardHTML).join('')}</div>`;
   const rest = c.shown - S.shown;
   if (rest > 0) html += `<div class="more"><button class="btn big" data-act="more">Zobrazit dalších ${Math.min(PAGE, rest)} <span class="nowrap">(zbývá ${fmt(rest)})</span></button></div>`;
   return bar + pills + chipsH + html;
