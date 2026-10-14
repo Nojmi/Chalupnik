@@ -1,0 +1,30 @@
+name: Discover areas
+
+# Jen čte: najde všechny oblasti portálů a porovná je s naší databází.
+# Nic nestahuje, nic necommituje. Výsledek je v "Summary" běhu.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scraper/requirements.txt
+      - run: pip install -r scraper/requirements.txt
+      - name: Discover
+        run: python -m scraper.discover
