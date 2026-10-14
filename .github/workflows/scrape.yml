@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       location:
-        description: "Lokalita (např. Šumava, Krkonoše)"
+        description: "Lokalita, i víc oblastí najednou oddělených středníkem (např. Šumava; Český ráj; Beskydy)"
         required: false
         default: ""
       min_capacity:
@@ -43,10 +43,14 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 300
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Čerstvý stav větve v okamžiku startu (ne stav z doby spuštění ve frontě)
+          ref: ${{ github.ref_name }}
 
       - name: Setup Python 3.12
         uses: actions/setup-python@v5
@@ -58,22 +62,45 @@ jobs:
       - name: Install dependencies
         run: pip install -r scraper/requirements.txt
 
-      - name: Run scraper
+      - name: Scrape and save (one region after another)
         env:
-          CRIT_LOCATION: ${{ github.event.inputs.location }}
+          CRIT_LOCATION_ALL: ${{ github.event.inputs.location }}
           CRIT_MIN_CAPACITY: ${{ github.event.inputs.min_capacity }}
           CRIT_MIN_BEDROOMS: ${{ github.event.inputs.min_bedrooms }}
           CRIT_MAX_PRICE: ${{ github.event.inputs.max_price }}
           CRIT_AMENITIES: ${{ github.event.inputs.amenities }}
           CRIT_DATE_FROM: ${{ github.event.inputs.date_from }}
           CRIT_DATE_TO: ${{ github.event.inputs.date_to }}
-        run: python -m scraper.main
-
-      - name: Commit and push results
         run: |
+          set +e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data
-          git diff --staged --quiet || git commit -m "chore: update data [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
-          git pull --rebase
-          git push
+
+          # Uloží výsledek jedné oblasti. index.json je odvozený soubor: necommituje se
+          # z běhu, ale po načtení nejnovějšího stavu se vždy přegeneruje (žádné konflikty).
+          save() {
+            git add docs/data ':!docs/data/index.json'
+            git checkout -- docs/data/index.json 2>/dev/null
+            git diff --staged --quiet || git commit -q -m "chore: update data ($1) [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+            for i in 1 2 3 4; do
+              git pull -q --rebase \
+                && python -m scraper.store index \
+                && git add docs/data/index.json \
+                && { git diff --staged --quiet || git commit -q -m "chore: update index"; } \
+                && git push -q && return 0
+              echo "Uložení se nepodařilo (pokus $i), zkouším znovu"; git rebase --abort 2>/dev/null; sleep 8
+            done
+            return 1
+          }
+
+          IFS=';' read -ra LOCS <<< "$CRIT_LOCATION_ALL"
+          [ ${#LOCS[@]} -eq 0 ] && LOCS=("")
+          fail=0
+          for loc in "${LOCS[@]}"; do
+            loc="$(echo "$loc" | xargs)"
+            echo "::group::${loc:-bez lokality}"
+            CRIT_LOCATION="$loc" python -m scraper.main || { echo "::error::Scraper pro '$loc' skončil chybou"; fail=1; }
+            save "${loc:-bez lokality}" || { echo "::error::Uložení pro '$loc' selhalo"; fail=1; }
+            echo "::endgroup::"
+          done
+          exit $fail
