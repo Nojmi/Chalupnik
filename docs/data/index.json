@@ -192,6 +192,30 @@
    }
   },
   {
+   "region": "stredni-cechy",
+   "region_label": "Střední Čechy",
+   "file": "stredni-cechy.json",
+   "listing_count": 896,
+   "active_count": 896,
+   "last_updated": "2026-10-14T18:59:47.728161+00:00",
+   "sources_updated": {
+    "e-chalupy.cz": "2026-10-14T18:59:47.728161+00:00",
+    "chata.cz": "2026-10-14T18:59:47.728161+00:00",
+    "cs-chalupy.cz": "2026-10-14T18:59:47.728161+00:00"
+   },
+   "kraje": {
+    "Jihočeský": 25,
+    "Královéhradecký": 12,
+    "Liberecký": 3,
+    "Pardubický": 18,
+    "Plzeňský": 17,
+    "Praha": 22,
+    "Středočeský": 693,
+    "Vysočina": 14,
+    "Ústecký": 42
+   }
+  },
+  {
    "region": "sumava",
    "region_label": "Šumava",
    "file": "sumava.json",
