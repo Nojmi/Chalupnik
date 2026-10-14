@@ -95,20 +95,21 @@
    "region": "jizni-morava",
    "region_label": "Jižní Morava",
    "file": "jizni-morava.json",
-   "listing_count": 2295,
-   "active_count": 2295,
-   "last_updated": "2026-10-14T17:21:16.681358+00:00",
+   "listing_count": 2370,
+   "active_count": 2369,
+   "last_updated": "2026-10-14T18:29:36.195484+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T17:21:16.681358+00:00",
-    "chata.cz": "2026-10-14T17:21:16.681358+00:00",
-    "cs-chalupy.cz": "2026-10-14T17:21:16.681358+00:00"
+    "e-chalupy.cz": "2026-10-14T18:29:36.195484+00:00",
+    "chata.cz": "2026-10-14T18:29:36.195484+00:00",
+    "cs-chalupy.cz": "2026-10-14T18:29:36.195484+00:00"
    },
    "kraje": {
-    "Jihomoravský": 1816,
+    "Jihomoravský": 1825,
     "Jihočeský": 1,
-    "Olomoucký": 32,
-    "Vysočina": 4,
-    "Zlínský": 263
+    "Olomoucký": 34,
+    "Plzeňský": 1,
+    "Vysočina": 15,
+    "Zlínský": 315
    }
   },
   {
