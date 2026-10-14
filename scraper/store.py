@@ -284,8 +284,8 @@ def build_index(data_dir: Path) -> dict:
         if p.name == "index.json":
             continue
         s = load_store(p)
-        if not s:
-            continue
+        if not isinstance(s, dict) or "region" not in s or "listings" not in s:
+            continue        # jiný JSON ve složce (např. mapa-cr.json) není databáze oblasti
         regions.append({
             "region": s["region"],
             "region_label": s.get("region_label") or s["region"],

@@ -14,3 +14,16 @@ def test_outside_or_missing():
     assert kraj_for(None) is None
     assert kraj_for({"lat": 48.2, "lon": 16.37}) is None                     # Vídeň
     assert kraj_for({"lat": "x", "lon": 1}) is None
+
+
+def test_index_ignores_foreign_json(tmp_path):
+    """Ve složce docs/data leží i mapa-cr.json – index se z ní nesmí pokusit číst oblast."""
+    import json
+    from scraper.store import build_index
+    (tmp_path / "mapa-cr.json").write_text(json.dumps({"w": 600, "kraje": []}), encoding="utf-8")
+    (tmp_path / "krkonose.json").write_text(json.dumps({
+        "region": "krkonose", "region_label": "Krkonoše", "listings": [
+            {"id": "a", "gps": {"lat": 50.6104, "lon": 15.6096}, "seen_in_last_run": True}]}), encoding="utf-8")
+    idx = build_index(tmp_path)
+    assert [r["region"] for r in idx["regions"]] == ["krkonose"]
+    assert sum(idx["regions"][0]["kraje"].values()) == 1
