@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "krkonose",
  "region_label": "Krkonoše",
- "last_updated": "2026-10-14T09:32:30.959211+00:00",
+ "last_updated": "2026-10-14T17:32:11.001837+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T09:32:30.959211+00:00",
-  "chata.cz": "2026-10-14T09:32:30.959211+00:00",
-  "cs-chalupy.cz": "2026-10-14T09:32:30.959211+00:00"
+  "e-chalupy.cz": "2026-10-14T17:32:11.001837+00:00",
+  "chata.cz": "2026-10-14T17:32:11.001837+00:00",
+  "cs-chalupy.cz": "2026-10-14T17:32:11.001837+00:00"
  },
  "listings": [
   {
@@ -1044,6 +1044,100 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ5904",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata Aurora",
+   "location": "Pec pod Sněžkou, Krkonoše",
+   "url": "https://www.chata.cz/chalupa/krkonose/pec-pod-snezkou/chata-aurora-CZ5904/",
+   "capacity": 16,
+   "bedrooms": null,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ5904-letni.jpg",
+   "entire_property": false,
+   "likely_apartment": true,
+   "raw_extra": {
+    "code": "CZ5904",
+    "rooms": [
+     {
+      "name": "2 l. pokoj bez přísl. s možn. 1 přistýlky",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     },
+     {
+      "name": "4 l. pokoj bez příslušenství",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     },
+     {
+      "name": "3 l. pokoj  s možn. 1 přistýlky",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     },
+     {
+      "name": "2 l. pokoj bez příslušenství",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,5",
+     "word": "Fantastické",
+     "count_text": "dle 9 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "AKCE",
+      "title": "Při obsazení objektu menším počtem osob, než je celková kapacita, platí zvýhodněná cena.\r\n",
+      "class": "indicator indicator-green"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "na dotaz",
+     "parkování": "vlastní parkoviště u silnice",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ6087",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -1423,6 +1517,83 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ6547",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Poniklá - Jablonec nad Jizerou",
+   "location": "Poniklá, Krkonoše",
+   "url": "https://www.chata.cz/chalupa/krkonose/ponikla/chalupa-ponikla-jablonec-nad-jizerou-CZ6547/",
+   "capacity": 12,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6547-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6547",
+    "rooms": [
+     {
+      "name": "Chalupa pro 12 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,6",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 13 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "na dotaz",
+     "lyžárna/kolárna": "V objektu",
+     "parkování": "Na uzamykatelném dvoře.",
+     "povlečení": "zdarma",
+     "oplocení": "zcela oplocen"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -20568,6 +20739,133 @@
    "kraj": "Královéhradecký"
   },
   {
+   "id": "cs-chalupy.cz:5C-238",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům se zahradou - Pec pod Sněžkou",
+   "location": "Pec pod Sněžkou, Krkonoše",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-se-zahradou-pec-pod-snezkou.5C-238.html",
+   "capacity": 16,
+   "bedrooms": 6,
+   "price": 600.0,
+   "price_unit": "osoba / noc",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "dětská postýlka",
+    "dětská stolička",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "kávovar",
+    "topinkovač",
+    "toustovač",
+    "koupelna se sprchovým koutem",
+    "televize",
+    "zahradní nábytek",
+    "terasa",
+    "zahrada",
+    "dětské hřiště",
+    "pro děti",
+    "víceúčelové hřiště",
+    "travnatá plocha",
+    "gril",
+    "lyžárna/kolárna"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/2194-176011/rekreacni-dum-se-zahradou-pec-pod-snezkou.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "5C-238",
+    "bathrooms": 5,
+    "wc": 5,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "650 Kč",
+      "cena_hodnota": 650.0,
+      "typ": "Osoba / noc",
+      "poznamka": "Min. nocí: 3, Ceny od 650 Kč / os / noc dle počtu nocí"
+     },
+     {
+      "sezona": "Sezóna ZIMA",
+      "cena": "700 Kč",
+      "cena_hodnota": 700.0,
+      "typ": "Osoba / noc",
+      "poznamka": "Min. nocí: 4, Ceny od 700 Kč / os / noc dle počtu nocí a termínu"
+     },
+     {
+      "sezona": "Mimosezóna",
+      "cena": "600 Kč",
+      "cena_hodnota": 600.0,
+      "typ": "Osoba / noc",
+      "poznamka": "Min. nocí: 3, Ceny od 600 Kč / os / noc dle počtu nocí"
+     }
+    ],
+    "domaci_zvire": "Pouze po dohodě",
+    "popis_detaily": {
+     "Rozložení ložnic": "6 ložnic: 4x 3, 2x 2",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (400 m), obchod (500 m), restaurace (250 m), les (100 m), koupání (5km m), lyžařský vlek (100 m)"
+    },
+    "address": {
+     "street": "Malá pláň",
+     "locality": "Pec pod Sněžkou",
+     "region": "Trutnov",
+     "postal_code": "542 21"
+    },
+    "gps": {
+     "lat": "50.6951942",
+     "lng": "15.7300306"
+    },
+    "amenities_original": [
+     "wifi",
+     "se psem",
+     "dětská postýlka",
+     "dětská stolička",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "kávovar",
+     "topinkovač",
+     "toustovač",
+     "koupelna se sprchovým koutem",
+     "televize",
+     "zahradní nábytek",
+     "terasa",
+     "zahrada",
+     "dětské hřiště",
+     "víceúčelové hřiště",
+     "travnatá plocha",
+     "gril",
+     "sklad pro kola/ lyže",
+     "volné prostranství (neoplocený objekt)"
+    ]
+   },
+   "okres": "Trutnov",
+   "gps": {
+    "lat": 50.6951942,
+    "lon": 15.7300306
+   },
+   "price_per_night_from": 9600,
+   "price_per_night_to": 11200,
+   "price_estimated": true,
+   "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Královéhradecký"
+  },
+  {
    "id": "cs-chalupy.cz:5C-240",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -33408,6 +33706,133 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Liberecký"
+  },
+  {
+   "id": "cs-chalupy.cz:5C-383",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům s bazénem - Rtyně v Podkrkonoší",
+   "location": "Batňovice, Krkonoše",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-s-bazenem-rtyne-v-podkrkonosi.5C-383.html",
+   "capacity": 10,
+   "bedrooms": 3,
+   "price": 1700.0,
+   "price_unit": "apartmán / noc",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "společenská místnost",
+    "dětská postýlka",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "pračka",
+    "koupelna s wc společné",
+    "koupelna se sprchovým koutem",
+    "televize",
+    "zahradní nábytek",
+    "zastřešené posezení",
+    "zahrada",
+    "bazén",
+    "pískoviště",
+    "travnatá plocha",
+    "gril",
+    "krb",
+    "lyžárna/kolárna",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/3973-174242/rekreacni-dum-s-bazenem-rtyne-v-podkrkonosi.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "5C-383",
+    "bathrooms": 2,
+    "wc": 2,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Celoročně",
+      "cena": "1 700 Kč",
+      "cena_hodnota": 1700.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, Cena za apartmán A pro 4 osoby."
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "2 200 Kč",
+      "cena_hodnota": 2200.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, Cena za apartmán B pro 6 osob."
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "1 700 Kč",
+      "cena_hodnota": 1700.0,
+      "typ": "Apartmán / noc",
+      "poznamka": "Min. nocí: 2, Cena za apartmán B do 4 osoby."
+     }
+    ],
+    "domaci_zvire": "Pouze po dohodě",
+    "popis_detaily": {
+     "Rozložení ložnic": "3 ložnice: 2x 4, 1x 2",
+     "Vzdálenosti": "parkování (10 m), zastávka autobus (140 m), zastávka vlak (2 900 m), obchod (640 m), restaurace (110 m), les (470 m), koupání (8 000 m), lyžařský vlek (7 800 m)"
+    },
+    "address": {
+     "street": "Batňovice",
+     "locality": "Batňovice",
+     "region": "Trutnov",
+     "postal_code": "542 37"
+    },
+    "gps": {
+     "lat": "50.5152108",
+     "lng": "16.0484811"
+    },
+    "amenities_original": [
+     "wifi",
+     "se psem",
+     "společenská místnost",
+     "dětská postýlka",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "pračka",
+     "koupelna s wc společné",
+     "koupelna se sprchovým koutem",
+     "televize",
+     "zahradní nábytek",
+     "zastřešené posezení",
+     "zahrada",
+     "bazén",
+     "pískoviště",
+     "travnatá plocha",
+     "gril",
+     "krb",
+     "sklad pro kola/ lyže",
+     "oplocený objekt"
+    ]
+   },
+   "okres": "Trutnov",
+   "gps": {
+    "lat": 50.5152108,
+    "lon": 16.0484811
+   },
+   "price_per_night_from": 1700,
+   "price_per_night_to": 2200,
+   "price_estimated": false,
+   "price_note": "cena za apartmán, ne za celý objekt",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Královéhradecký"
   },
   {
    "id": "cs-chalupy.cz:5C-384",
@@ -58738,7 +59163,7 @@
      "lon": 15.537498611
     },
     "rating": 99,
-    "reviews": 58,
+    "reviews": 59,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "pro děti",
@@ -78172,7 +78597,7 @@
    "url": "https://www.e-chalupy.cz/ubytovani-trutnov-bojiste-apartman-135-o21939",
    "capacity": 9,
    "bedrooms": 3,
-   "price": 2143.0,
+   "price": 3143.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "pro děti",
@@ -78220,8 +78645,8 @@
     "lat": 50.547571389,
     "lon": 15.898883056
    },
-   "price_per_night_from": 2143,
-   "price_per_night_to": 2143,
+   "price_per_night_from": 3143,
+   "price_per_night_to": 3143,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -82944,7 +83369,7 @@
    "id": "e-chalupy.cz:23207",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
-   "seen_in_last_run": true,
+   "seen_in_last_run": false,
    "source": "e-chalupy.cz",
    "title": "Pension Matula",
    "location": "Horní Rokytnice, Krkonoše",
@@ -114067,7 +114492,7 @@
     "ohniště",
     "gril"
    ],
-   "image_url": "https://e-chalupy.cz/foto/pohled-od-lesa-215f-d9fd-1205477.jpg",
+   "image_url": "https://e-chalupy.cz/foto/pohled-v-noci-90f7-9f09-959622.jpg",
    "entire_property": false,
    "likely_apartment": true,
    "raw_extra": {
