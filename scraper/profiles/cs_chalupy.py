@@ -141,7 +141,7 @@ MAX_LISTINGS = 2000  # bezpečnostní strop, největší region má řádově st
 # Breadcrumb "<typ> č. <kód>" - jen tyto typy chceme (whitelist, ne
 # blacklist - viz docstring modulu). Odpovídá portálovému sidebar
 # seskupení "Chaty a chalupy" (chata/chalupa) + "Sruby a roubenky".
-TARGET_TYPES = {"chata", "chalupa", "srub", "roubenka"}
+TARGET_TYPES = {"chata", "chalupa", "srub", "roubenka", "rekreační dům"}
 
 # Typy cenových řádků, které NIKDY nejsou hlavní cena za pobyt (vedlejší/
 # doplňkové sazby) - viz docstring modulu, past s "Celoročně"/Přistýlka.
