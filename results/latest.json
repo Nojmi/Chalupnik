@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T06:59:28.087274+00:00",
+  "generated_at": "2026-10-14T07:08:13.847486+00:00",
   "criteria": {
     "location": "Krkonoše",
     "min_capacity": null,
@@ -34976,6 +34976,54 @@
     },
     {
       "source": "e-chalupy.cz",
+      "title": "Chalupa Kamil",
+      "location": "Bobr, Krkonoše",
+      "url": "https://www.e-chalupy.cz/ubytovani-bobr-zacler-chalupa-kamil-o3917",
+      "capacity": 8,
+      "bedrooms": 3,
+      "price": 2286.0,
+      "price_unit": "objekt za noc",
+      "amenities": [
+        "bazén",
+        "sauna",
+        "pro děti",
+        "oploceno",
+        "mazlíčci vítáni",
+        "krb",
+        "se psem",
+        "společenská místnost",
+        "myčka nádobí",
+        "lednička",
+        "televize",
+        "wifi",
+        "pískoviště",
+        "ohniště",
+        "gril"
+      ],
+      "image_url": "https://e-chalupy.cz/foto/pohled-na-slunecnou-terasu-s-bazenem-3993-6dfa-1188025.jpg",
+      "entire_property": true,
+      "likely_apartment": false,
+      "raw_extra": {
+        "id": 3917,
+        "tags_featured": [
+          "chalupa 8 osob",
+          "3 ložnice"
+        ],
+        "area_title": "Bobr",
+        "area_slug": "bobr",
+        "area2_title": "Krkonoše",
+        "area2_slug": "krkonose",
+        "gps": {
+          "lat": 50.667239444,
+          "lon": 15.897731667
+        },
+        "rating": 96,
+        "reviews": 24,
+        "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe"
+      }
+    },
+    {
+      "source": "e-chalupy.cz",
       "title": "Chalupa a Pension Říp",
       "location": "Velká Úpa, Krkonoše",
       "url": "https://www.e-chalupy.cz/pec-pod-snezkou-ubytovani-velka-upa-pension-rip-o14564",
@@ -36632,54 +36680,6 @@
         },
         "rating": 100,
         "reviews": 3,
-        "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe"
-      }
-    },
-    {
-      "source": "e-chalupy.cz",
-      "title": "Chalupa Kamil",
-      "location": "Bobr, Krkonoše",
-      "url": "https://www.e-chalupy.cz/ubytovani-bobr-zacler-chalupa-kamil-o3917",
-      "capacity": 8,
-      "bedrooms": 3,
-      "price": 2286.0,
-      "price_unit": "objekt za noc",
-      "amenities": [
-        "bazén",
-        "sauna",
-        "pro děti",
-        "oploceno",
-        "mazlíčci vítáni",
-        "krb",
-        "se psem",
-        "společenská místnost",
-        "myčka nádobí",
-        "lednička",
-        "televize",
-        "wifi",
-        "pískoviště",
-        "ohniště",
-        "gril"
-      ],
-      "image_url": "https://e-chalupy.cz/foto/pohled-na-slunecnou-terasu-s-bazenem-3993-6dfa-1188025.jpg",
-      "entire_property": true,
-      "likely_apartment": false,
-      "raw_extra": {
-        "id": 3917,
-        "tags_featured": [
-          "chalupa 8 osob",
-          "3 ložnice"
-        ],
-        "area_title": "Bobr",
-        "area_slug": "bobr",
-        "area2_title": "Krkonoše",
-        "area2_slug": "krkonose",
-        "gps": {
-          "lat": 50.667239444,
-          "lon": 15.897731667
-        },
-        "rating": 96,
-        "reviews": 24,
         "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe"
       }
     },
