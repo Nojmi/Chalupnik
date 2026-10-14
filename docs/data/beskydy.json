@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "beskydy",
  "region_label": "Beskydy",
- "last_updated": "2026-10-14T10:31:01.811849+00:00",
+ "last_updated": "2026-10-14T17:45:53.813637+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T10:31:01.811849+00:00",
-  "chata.cz": "2026-10-14T10:31:01.811849+00:00",
-  "cs-chalupy.cz": "2026-10-14T10:31:01.811849+00:00"
+  "e-chalupy.cz": "2026-10-14T17:45:53.813637+00:00",
+  "chata.cz": "2026-10-14T17:45:53.813637+00:00",
+  "cs-chalupy.cz": "2026-10-14T17:45:53.813637+00:00"
  },
  "listings": [
   {
@@ -154,6 +154,85 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ1577",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa U Vrchovských",
+   "location": "Valašská Polanka, Beskydy a Valašsko",
+   "url": "https://www.chata.cz/chalupa/beskydy-a-valassko/valasska-polanka/chalupa-u-vrchovskych-CZ1577/",
+   "capacity": 13,
+   "bedrooms": 4,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "pro děti",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ1577-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ1577",
+    "rooms": [
+     {
+      "name": "Chalupa pro 13 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,3",
+     "word": "Fantastické",
+     "count_text": "dle 17 hodnocení"
+    },
+    "badges": [
+     {
+      "text": "TIP",
+      "title": "Doporučujeme",
+      "class": "indicator indicator-blue"
+     },
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
+    "equipment_tooltips": {
+     "se psem": "ale ne do postele",
+     "lyžárna/kolárna": "V objektu a ve stodole",
+     "parkování": "u objektu, ve stodole",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "vyžití pro děti",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -1377,6 +1456,68 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ6232",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa Roubenka pod lesem",
+   "location": "Horní Bečva, Beskydy a Valašsko",
+   "url": "https://www.chata.cz/chalupa/beskydy-a-valassko/horni-becva/chalupa-roubenka-pod-lesem-CZ6232/",
+   "capacity": 14,
+   "bedrooms": 4,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ6232-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ6232",
+    "rooms": [
+     {
+      "name": "Chalupa pro 14 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "8,7",
+     "word": "Skvělé",
+     "count_text": "dle 16 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "u objektu na travnaté louce",
+     "povlečení": "za poplatek"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -43666,7 +43807,7 @@
      "lon": 18.323334167
     },
     "rating": 97,
-    "reviews": 19,
+    "reviews": 20,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "bazén",
@@ -44262,7 +44403,7 @@
      "lon": 18.390320556
     },
     "rating": 98,
-    "reviews": 37,
+    "reviews": 38,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "mazlíčci vítáni",
@@ -50577,7 +50718,7 @@
      "lon": 18.209075833
     },
     "rating": 98,
-    "reviews": 84,
+    "reviews": 85,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "sauna",
@@ -52793,7 +52934,7 @@
    "url": "https://www.e-chalupy.cz/ubytovani-horni-lomna-roubenka-k-pronajmu-o16644",
    "capacity": 14,
    "bedrooms": 4,
-   "price": 5000.0,
+   "price": 4500.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "vířivka",
@@ -52851,8 +52992,8 @@
     "lat": 49.523676111,
     "lon": 18.637526111
    },
-   "price_per_night_from": 5000,
-   "price_per_night_to": 5000,
+   "price_per_night_from": 4500,
+   "price_per_night_to": 4500,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -64198,8 +64339,8 @@
      "lat": 49.507130556,
      "lon": 18.230138889
     },
-    "rating": 99,
-    "reviews": 38,
+    "rating": 98,
+    "reviews": 39,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "vířivka",
@@ -75071,7 +75212,7 @@
      "lon": 18.4087539
     },
     "rating": 100,
-    "reviews": 1,
+    "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "mazlíčci vítáni",
@@ -98266,7 +98407,7 @@
     "ohniště",
     "gril"
    ],
-   "image_url": "https://e-chalupy.cz/foto/d9d6ba24-65f4-4cfe-8039-6015d50ee5fe-1618-1895-1222752.jpg",
+   "image_url": "https://e-chalupy.cz/foto/d1334d38-4865-49ca-8af5-a8d47724c983-e0a7-981f-1223279.jpg",
    "entire_property": true,
    "likely_apartment": false,
    "raw_extra": {
