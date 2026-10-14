@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "krkonose",
  "region_label": "Krkonoše",
- "last_updated": "2026-10-14T07:08:13.847486+00:00",
+ "last_updated": "2026-10-14T09:32:30.959211+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T07:08:13.847486+00:00",
-  "chata.cz": "2026-10-14T07:08:13.847486+00:00",
-  "cs-chalupy.cz": "2026-10-14T07:08:13.847486+00:00"
+  "e-chalupy.cz": "2026-10-14T09:32:30.959211+00:00",
+  "chata.cz": "2026-10-14T09:32:30.959211+00:00",
+  "cs-chalupy.cz": "2026-10-14T09:32:30.959211+00:00"
  },
  "listings": [
   {
@@ -575,8 +575,8 @@
    "url": "https://www.chata.cz/chalupa/krkonose/jablonec-nad-jizerou/chalupa-ametyst-CZ3936/",
    "capacity": 10,
    "bedrooms": 3,
-   "price": 11767.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "wifi",
     "pro děti",
@@ -593,11 +593,9 @@
     "code": "CZ3936",
     "rooms": [
      {
-      "name": "Chalupa pro 10 osob",
-      "status": "available",
-      "price": 11767.0,
-      "room_id": 14491,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
