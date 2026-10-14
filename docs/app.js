@@ -15,7 +15,7 @@ const GROUPS = [
   ['Venku a okolí', ['bazén', 'vířivka', 'krb', 'na samotě', 'u lesa', 'u vody', 'pískoviště', 'ohniště', 'gril']],
   ['Další', ['se psem', 'pro děti', 'parkování', 'lyžárna/kolárna', 'oplocení']],
 ];
-const AMENITY_LABEL = { 'myčka nádobí': 'myčka' };      // zkrácený popisek čipu (v datech je celý název)
+const AMENITY_LABEL = { 'myčka nádobí': 'myčka', 'lyžárna/kolárna': 'lyžárna / kolárna' };      // zkrácený popisek čipu (v datech je celý název)
 const amLabel = a => AMENITY_LABEL[a] || a;
 
 const $app = document.getElementById('app');
