@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# mezivýsledek posledního běhu scraperu (databáze je v docs/data)
+results/

@@ -1,7 +1,7 @@
 """Regionální databáze nabídek: slučování běhů scraperu, čerstvost, index.
 
 Princip: každý běh scraperu (`results/latest.json`) se SLOUČÍ do souboru
-`data/<region>.json`. Nabídky se nepřepisují od nuly:
+`docs/data/<region>.json`. Nabídky se nepřepisují od nuly:
   * nová nabídka se přidá,
   * známá se aktualizuje (`first_seen` zůstává),
   * zmizelá se jen označí `seen_in_last_run: false` (nemaže se),
@@ -365,17 +365,17 @@ def main(argv: Optional[list] = None) -> int:
 
     m = sub.add_parser("merge", help="sloučit běh scraperu do databáze regionu")
     m.add_argument("run_file", help="např. results/latest.json")
-    m.add_argument("--data-dir", default="data")
+    m.add_argument("--data-dir", default="docs/data")
     m.add_argument("--sources", default=",".join(ALL_SOURCES),
                    help="čárkou oddělené zdroje, které tento běh pokrývá")
     m.add_argument("--prune-days", type=int, default=PRUNE_DAYS)
     m.add_argument("--dry-run", action="store_true", help="jen vypsat, co by se stalo")
 
-    i = sub.add_parser("index", help="přegenerovat data/index.json")
-    i.add_argument("--data-dir", default="data")
+    i = sub.add_parser("index", help="přegenerovat docs/data/index.json")
+    i.add_argument("--data-dir", default="docs/data")
 
     s = sub.add_parser("status", help="vypsat čerstvost regionů")
-    s.add_argument("--data-dir", default="data")
+    s.add_argument("--data-dir", default="docs/data")
 
     args = ap.parse_args(argv)
     try:

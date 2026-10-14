@@ -7,18 +7,19 @@ Hledač chat a chalup k pronájmu z vybraných českých portálů. Výsledky se
 ## Jak to funguje
 
 ```
-Spuštění workflow
+Spuštění workflow (ručně, pro jednu oblast)
       ↓
 GitHub Actions spustí scraper (Python)
       ↓
-Výsledky se uloží do results/latest.json a commitnou do repa
+Nabídky se sloučí do databáze oblasti: docs/data/<oblast>.json (+ docs/data/index.json)
       ↓
-Frontend (docs/index.html) načte JSON a zobrazí karty
+Web (docs/index.html) načte index a data oblasti a zobrazí karty s filtry
 ```
 
-1. **Spustit hledání** — přejdi na [Actions → Scrape listings](https://github.com/Nojmi/Chalupnik/actions/workflows/scrape.yml), klikni *Run workflow* a vyplň kritéria (lokalita, kapacita, cena, vybavení, termín).
-2. **GitHub Actions** spustí `scraper/main.py`, který projde všechny registrované portály, vyfiltruje výsledky a zapíše `results/latest.json` zpátky do repozitáře.
-3. **GitHub Pages** servíruje `/docs` — stránka při načtení stáhne aktuální `latest.json` a zobrazí karty nabídek. Filtry v levém panelu pracují na klientovi nad stáhnutými daty (nevyžadují nové spuštění scraperu).
+1. **Spustit stahování** — [Actions → Scrape listings](https://github.com/Nojmi/Chalupnik/actions/workflows/scrape.yml), *Run workflow*, do pole „Lokalita" napsat oblast (např. Krkonoše, Šumava) a ostatní pole nechat prázdná.
+2. **Scraper** projde portály a sloučí výsledek do databáze oblasti. Nabídky se nepřepisují od nuly (stabilní `id`, `first_seen`/`last_seen`, ochrana proti výpadku portálu). Každá nabídka dostane `kraj` podle GPS.
+3. **GitHub Pages** servíruje `/docs`. Web nic neukládá, filtruje v prohlížeči a stáří dat počítá z `last_updated` (≤ 14 dní čerstvé, 15–30 doporučit aktualizaci, > 30 zastaralé).
+4. Tlačítko „Aktualizovat region" je zatím jen vzhled; napojení je `window.Chalupnik.onUpdate(regionId)`.
 
 ---
 
@@ -97,10 +98,7 @@ scraper/
   profiles/
     __init__.py                Registr aktivních profilů (ALL_PROFILES)
     _template.py               Šablona pro nový portál
-results/
-  latest.json                  Výsledky posledního běhu
 docs/                          GitHub Pages (statický frontend)
-  index.html
-  style.css
-  app.js
+  index.html, style.css, app.js  Web (vanilla JS, bez build kroku)
+  data/                        Databáze oblastí (index.json, <oblast>.json, mapa-cr.json)
 ```
