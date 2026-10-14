@@ -116,6 +116,7 @@ souboru živým fetchem, označeno IMPLEMENTACE):
 """
 
 import re
+import time
 import unicodedata
 
 import requests
@@ -253,7 +254,8 @@ def _fetch_region_page(slug: str, page: int, total: int | None) -> tuple[list, i
     return cards, total_found
 
 
-def _fetch_all_cards(slug: str) -> list:
+def _fetch_all_cards(slug: str) -> tuple[list, int | None]:
+    """Vrací (karty, počet hlášený portálem)."""
     cards: list = []
     page = 1
     total = None
@@ -269,7 +271,7 @@ def _fetch_all_cards(slug: str) -> list:
         page += 1
         if page > MAX_PAGES or len(cards) >= MAX_LISTINGS:
             break
-    return cards
+    return cards, total
 
 
 def _extract_code_title_url(card) -> tuple[str | None, str, str]:
@@ -501,16 +503,24 @@ def _extract_jsonld(detail_soup: BeautifulSoup) -> dict:
 def _apply_detail(listing: Listing) -> bool:
     """Fetch detailu, doplní typ/cenu/vybavení/JSON-LD data.
     Vrací False, pokud nabídka nepatří do TARGET_TYPES (má se zahodit)."""
-    try:
-        response = requests.get(listing.url, headers=HEADERS, timeout=20)
-        response.raise_for_status()
-    except requests.RequestException:
+    response = None
+    for attempt in range(3):
+        try:
+            response = requests.get(listing.url, headers=HEADERS, timeout=20)
+            response.raise_for_status()
+            break
+        except requests.RequestException:
+            response = None
+            time.sleep(1.5 * (attempt + 1))
+    if response is None:
+        listing.raw_extra["_drop"] = "chyba_stazeni"
         return False
 
     soup = BeautifulSoup(response.text, "lxml")
 
     listing_type = _extract_type(soup)
     if listing_type not in TARGET_TYPES:
+        listing.raw_extra["_drop"] = f"typ:{listing_type}"
         return False
 
     price, price_unit, cenik_rows = _extract_price(soup)
@@ -556,7 +566,7 @@ def search(criteria: dict) -> list[Listing]:
         # "povinný" vstup i u ostatních profilů (shrnutí sekce 4/5).
         return []
 
-    cards = _fetch_all_cards(slug) if slug else []
+    cards, portal_total = _fetch_all_cards(slug) if slug else ([], None)
 
     listings = [_parse_card(card) for card in cards]
     for listing in listings:
@@ -568,8 +578,16 @@ def search(criteria: dict) -> list[Listing]:
     # ostatní kritéria necháváme na filters.py/frontendu - stejně jako
     # e-chalupy.cz a chata.cz).
     kept: list[Listing] = []
+    dropped: dict[str, int] = {}
     for listing in listings:
         if _apply_detail(listing):
             kept.append(listing)
+        else:
+            reason = listing.raw_extra.get("_drop", "neznamy")
+            dropped[reason] = dropped.get(reason, 0) + 1
 
+    print(
+        f"[COVERAGE] cs-chalupy.cz: portal hlasi={portal_total} objektu, "
+        f"stazeno karet={len(cards)}, ponechano={len(kept)}, zahozeno={dropped or 0}"
+    )
     return kept
