@@ -413,7 +413,7 @@ function switchRow(key, title, hint, on) {
 function panelHTML(count, bare) {
   const f = S.f, n = chipList().length;
   const head = `<div class="fp-h"><h2>Filtry</h2><small data-bind="active">${n ? `${n} ${plural(n, 'aktivní', 'aktivní', 'aktivních')}` : ''}</small><button class="clear" data-act="clear" data-fk="clear"${n ? '' : ' hidden'}>Zrušit vše</button></div>`;
-  const groups = GROUPS.map(([t, list]) => `<div class="fg"><h3>${t}</h3><div class="cw">${list.filter(a => S.cov.tot && (hasAny(a) || f.vybaveni.includes(a))).map(a => `<button type="button" class="cb" data-act="am" data-id="${esc(a)}" data-fk="am-${esc(a)}" aria-pressed="${f.vybaveni.includes(a)}">${f.vybaveni.includes(a) ? '✓ ' : ''}${esc(amLabel(a))}</button>`).join('')}</div></div>`).join('');
+  const groups = GROUPS.map(([t, list]) => `<div class="fg"><h3>${t}</h3><div class="cw">${list.filter(a => S.cov.tot && (hasAny(a) || f.vybaveni.includes(a))).map(a => `<button type="button" class="cb" data-act="am" data-id="${esc(a)}" data-fk="am-${esc(a)}" aria-pressed="${f.vybaveni.includes(a)}">${esc(amLabel(a))}</button>`).join('')}</div></div>`).join('');
   return `<div class="fp">${bare ? '' : head}
     <div class="fg"><div class="lab">Počet osob <span>1–70</span></div><div class="pair">${stepper('osobyOd', 'od', f.osobyOd, 1, 70)}${stepper('osobyDo', 'do', f.osobyDo, 1, 70)}</div></div>
     <div class="fg"><div class="lab">Počet ložnic <span>1–15</span></div><div class="pair">${stepper('lozniceOd', 'od', f.lozniceOd, 1, 15)}${stepper('lozniceDo', 'do', f.lozniceDo, 1, 15)}</div><p class="hint">Nabídky bez uvedeného počtu ložnic zůstanou ve výsledcích, s poznámkou na kartě.</p></div>
