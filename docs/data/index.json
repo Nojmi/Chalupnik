@@ -2,6 +2,24 @@
  "schema_version": 1,
  "regions": [
   {
+   "region": "beskydy",
+   "region_label": "Beskydy",
+   "file": "beskydy.json",
+   "listing_count": 1050,
+   "active_count": 1050,
+   "last_updated": "2026-10-14T07:13:25.707278+00:00",
+   "sources_updated": {
+    "e-chalupy.cz": "2026-10-14T07:13:25.707278+00:00",
+    "chata.cz": "2026-10-14T07:13:25.707278+00:00",
+    "cs-chalupy.cz": "2026-10-14T07:13:25.707278+00:00"
+   },
+   "kraje": {
+    "Jihočeský": 552,
+    "Karlovarský": 8,
+    "Plzeňský": 444
+   }
+  },
+  {
    "region": "esk-r-j",
    "region_label": "Český ráj",
    "file": "esk-r-j.json",
