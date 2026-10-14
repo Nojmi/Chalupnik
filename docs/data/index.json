@@ -2,6 +2,24 @@
  "schema_version": 1,
  "regions": [
   {
+   "region": "beskydy",
+   "region_label": "Beskydy",
+   "file": "beskydy.json",
+   "listing_count": 1206,
+   "active_count": 1206,
+   "last_updated": "2026-10-14T10:31:01.811849+00:00",
+   "sources_updated": {
+    "e-chalupy.cz": "2026-10-14T10:31:01.811849+00:00",
+    "chata.cz": "2026-10-14T10:31:01.811849+00:00",
+    "cs-chalupy.cz": "2026-10-14T10:31:01.811849+00:00"
+   },
+   "kraje": {
+    "Moravskoslezský": 497,
+    "Olomoucký": 1,
+    "Zlínský": 627
+   }
+  },
+  {
    "region": "jeseniky",
    "region_label": "Jeseníky",
    "file": "jeseniky.json",
