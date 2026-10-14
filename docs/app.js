@@ -484,7 +484,15 @@ function setStep(k, dir) {
   if (f[lo] != null && f[hi] != null && f[lo] > f[hi]) { if (k === lo) f[hi] = f[lo]; else f[lo] = f[hi]; }
   void base;
 }
+// Anonymní analytika (Umami): jen název akce a oblast, žádné osobní údaje.
+function track(name, data) {
+  try { if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, data); } catch (_) { /* analytika nesmí rozbít web */ }
+}
 document.addEventListener('click', e => {
+  const link = e.target.closest('a.btn[href^="http"]');
+  if (link) { try { track('detail-nabidky', { portal: new URL(link.href).hostname }); } catch (_) {} }
+  const ev = e.target.closest('[data-act="open-region"],[data-act="open-kraj"],[data-act="run-update"]');
+  if (ev) track(ev.dataset.act, { id: ev.dataset.id || '' });
   const t = e.target.closest('[data-act],[data-pick]');
   if (!t) return;
   if (t.dataset.pick) {
