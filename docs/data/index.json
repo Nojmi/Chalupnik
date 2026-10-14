@@ -23,19 +23,19 @@
    "region": "cesky-raj",
    "region_label": "Český ráj",
    "file": "cesky-raj.json",
-   "listing_count": 687,
-   "active_count": 687,
-   "last_updated": "2026-10-14T11:43:07.539628+00:00",
+   "listing_count": 765,
+   "active_count": 765,
+   "last_updated": "2026-10-14T17:52:43.855544+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T11:43:07.539628+00:00",
-    "chata.cz": "2026-10-14T11:43:07.539628+00:00",
-    "cs-chalupy.cz": "2026-10-14T11:43:07.539628+00:00"
+    "e-chalupy.cz": "2026-10-14T17:52:43.855544+00:00",
+    "chata.cz": "2026-10-14T17:52:43.855544+00:00",
+    "cs-chalupy.cz": "2026-10-14T17:52:43.855544+00:00"
    },
    "kraje": {
     "Jihočeský": 1,
-    "Královéhradecký": 260,
-    "Liberecký": 356,
-    "Středočeský": 58
+    "Královéhradecký": 288,
+    "Liberecký": 397,
+    "Středočeský": 62
    }
   },
   {
