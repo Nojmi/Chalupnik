@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "sumava",
  "region_label": "Šumava",
- "last_updated": "2026-10-14T07:13:25.707278+00:00",
+ "last_updated": "2026-10-14T12:56:32.883435+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T07:13:25.707278+00:00",
-  "chata.cz": "2026-10-14T07:13:25.707278+00:00",
-  "cs-chalupy.cz": "2026-10-14T07:13:25.707278+00:00"
+  "e-chalupy.cz": "2026-10-14T12:56:32.883435+00:00",
+  "chata.cz": "2026-10-14T12:56:32.883435+00:00",
+  "cs-chalupy.cz": "2026-10-14T12:56:32.883435+00:00"
  },
  "listings": [
   {
@@ -1444,7 +1444,7 @@
    "id": "chata.cz:CZ8357",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
-   "seen_in_last_run": true,
+   "seen_in_last_run": false,
    "source": "chata.cz",
    "title": "Chalupa Šumavská chalupa u lesa",
    "location": "Rejštejn, Šumava",
@@ -28671,8 +28671,8 @@
    "title": "U nás v Bavořích",
    "location": "Bayerisch Eisenstein, Šumava",
    "url": "https://www.e-chalupy.cz/apartman-u-nas-v-bavorich-ubytovani-bavorska-ruda-o13185",
-   "capacity": 10,
-   "bedrooms": null,
+   "capacity": 5,
+   "bedrooms": 2,
    "price": 1714.0,
    "price_unit": "apartmán za noc",
    "amenities": [
@@ -28683,13 +28683,13 @@
     "ohniště"
    ],
    "image_url": "https://e-chalupy.cz/foto/prizemni-apartman-s-velkou-terasou-3049-6e82-816090.jpg",
-   "entire_property": false,
+   "entire_property": null,
    "likely_apartment": true,
    "raw_extra": {
     "id": 13185,
     "tags_featured": [
-     "1 apartmán + 1 objekt",
-     "10 osob"
+     "apartmán 5 osob",
+     "2 ložnice"
     ],
     "area_title": "Bayerisch Eisenstein",
     "area_slug": "bayerisch-eisenstein",
@@ -28932,9 +28932,9 @@
    "last_seen": "2026-10-14",
    "seen_in_last_run": true,
    "source": "e-chalupy.cz",
-   "title": "Chata na Struhadle",
+   "title": "Chata Panorama Šumavy",
    "location": "Struhadlo, Šumava",
-   "url": "https://www.e-chalupy.cz/ubytovani-struhadlo-chata-k-pronajmu-o13328",
+   "url": "https://www.e-chalupy.cz/ubytovani-struhadlo-chata-panorama-sumavy-o13328",
    "capacity": 5,
    "bedrooms": 2,
    "price": 2143.0,
@@ -58003,6 +58003,76 @@
    "kraj": "Plzeňský"
   },
   {
+   "id": "e-chalupy.cz:24160",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Prázdninový dům Bezděkovec",
+   "location": "Bezděkovec, Šumava",
+   "url": "https://www.e-chalupy.cz/ubytovani-prazdninovy-dum-bezdekovec-pronajem-o24160",
+   "capacity": 15,
+   "bedrooms": 4,
+   "price": 4357.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "oplocení",
+    "se psem",
+    "krb",
+    "u lesa",
+    "společenská místnost",
+    "myčka nádobí",
+    "lednička",
+    "wifi",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/dum-bezdekovec-z-ptaci-perspektivy-8e1a-6d47-1221428.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 24160,
+    "tags_featured": [
+     "vila 15 osob",
+     "4 ložnice"
+    ],
+    "area_title": "Bezděkovec",
+    "area_slug": "bezdekovec",
+    "area2_title": "Šumava",
+    "area2_slug": "sumava",
+    "gps": {
+     "lat": 49.461612778,
+     "lon": 13.646098889
+    },
+    "rating": 0,
+    "reviews": 0,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "amenities_original": [
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u lesa",
+     "se psem",
+     "společenská místnost",
+     "myčka nádobí",
+     "lednička",
+     "wifi",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 49.461612778,
+    "lon": 13.646098889
+   },
+   "price_per_night_from": 4357,
+   "price_per_night_to": 4357,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Plzeňský"
+  },
+  {
    "id": "e-chalupy.cz:24184",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -64133,7 +64203,7 @@
      "lon": 13.661012778
     },
     "rating": 98,
-    "reviews": 4,
+    "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
     "amenities_original": [
      "pro děti",
@@ -78119,7 +78189,7 @@
     "wifi",
     "ohniště"
    ],
-   "image_url": "https://e-chalupy.cz/foto/podzim-u-vincku-413d-1b65-401538.jpg",
+   "image_url": "https://e-chalupy.cz/foto/podzim-u-vincku-413d-5d83-401538.jpg",
    "entire_property": true,
    "likely_apartment": false,
    "raw_extra": {
