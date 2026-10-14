@@ -132,7 +132,7 @@ async function open(view) {
     S.items = items; S.cov = coverage(items);
     const days = infos.map(oldestDays).filter(d => d != null);
     S.meta = {
-      title: view.t === 'region' ? infos[0].region_label : `${view.id} kraj`,
+      title: view.t === 'region' ? infos[0].region_label : krajTitle(view.id),
       infos, region: infos.length === 1 ? infos[0].region : null,
       oldest: days.length ? Math.max(...days) : null,
       ages: view.t === 'region' ? agesFor(infos[0]) : mergeAges(infos),
@@ -342,7 +342,7 @@ function cardHTML(l) {
 /* ---------- výsledky ---------- */
 function resultsHTML() {
   const c = compute(), chips = chipList(), m = S.meta;
-  const where = S.view.t === 'region' ? `v ${esc(locative(m.title))}` : `v kraji ${esc(S.view.id)}`;
+  const where = S.view.t === 'region' ? `v ${esc(locative(m.title))}` : esc(krajWhere(S.view.id));
   const bar = `<div class="bar"><div class="sum"><b class="num" role="status">Zobrazeno ${fmt(c.shown)} z ${fmt(c.total)}</b><span>nabídek ${where}</span></div>
     <button class="fbtn" data-act="filters" aria-haspopup="dialog">Filtry ${chips.length ? `<span class="badge">${chips.length}</span>` : ''}</button></div>`;
   const cnt = {}; [...c.clear, ...c.unknown].forEach(l => { cnt[l.source] = (cnt[l.source] || 0) + 1; });
@@ -367,6 +367,8 @@ function resultsHTML() {
   if (rest > 0) html += `<div class="more"><button class="btn big" data-act="more">Zobrazit dalších ${Math.min(PAGE, rest)} <span class="nowrap">(zbývá ${fmt(rest)})</span></button></div>`;
   return bar + pills + chipsH + html;
 }
+function krajTitle(k) { return k === 'Praha' ? 'Hlavní město Praha' : k === 'Vysočina' ? 'Kraj Vysočina' : `${k} kraj`; }
+function krajWhere(k) { return k === 'Praha' ? 'v Praze' : k === 'Vysočina' ? 'na Vysočině' : `v ${k.replace(/ý$/, 'ém')} kraji`; }
 function locative(name) {
   const m = { 'Krkonoše': 'Krkonoších', 'Šumava': 'Šumavě', 'Jeseníky': 'Jeseníkách', 'Beskydy': 'Beskydech', 'Jižní Morava': 'Jižní Moravě', 'Český ráj': 'Českém ráji', 'Jizerské hory': 'Jizerských horách', 'Jižní Čechy': 'Jižních Čechách', 'Krušné hory': 'Krušných horách', 'Vysočina': 'Vysočině', 'Orlické hory': 'Orlických horách' };
   return m[name] || name;
