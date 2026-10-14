@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "krusne-hory",
  "region_label": "Krušné hory",
- "last_updated": "2026-10-14T10:38:17.284660+00:00",
+ "last_updated": "2026-10-14T17:48:44.679730+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T10:38:17.284660+00:00",
-  "chata.cz": "2026-10-14T10:38:17.284660+00:00",
-  "cs-chalupy.cz": "2026-10-14T10:38:17.284660+00:00"
+  "e-chalupy.cz": "2026-10-14T17:48:44.679730+00:00",
+  "chata.cz": "2026-10-14T17:48:44.679730+00:00",
+  "cs-chalupy.cz": "2026-10-14T17:48:44.679730+00:00"
  },
  "listings": [
   {
@@ -845,6 +845,83 @@
    "kraj": null
   },
   {
+   "id": "chata.cz:CZ8310",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chata u Ohře",
+   "location": "Perštejn, Krušné hory",
+   "url": "https://www.chata.cz/chalupa/krusne-hory/perstejn/chata-u-ohre-CZ8310/",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "pro děti",
+    "bazén",
+    "lyžárna/kolárna",
+    "parkování",
+    "povlečení",
+    "oplocení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8310-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8310",
+    "rooms": [
+     {
+      "name": "Chata pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "10,0",
+     "word": "Naprosto výjimečné",
+     "count_text": "dle 1 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "se psem": "Je možné si přivézt vychované zvíře",
+     "wifi": "wifi nižší rychlost okolo 10 mbit\\s.",
+     "bazén": "Venkovní bazén: 3,50(p)x0,60(h)",
+     "lyžárna/kolárna": "zamykatelný sklep",
+     "parkování": "2 za branou, 1 před domem",
+     "povlečení": "zdarma",
+     "oplocení": "částečně oplocen živý plot"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "vyžití pro děti",
+     "bazén",
+     "lyžárna/kolárna",
+     "parkování",
+     "povlečení",
+     "oplocení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
+  {
    "id": "chata.cz:CZ8368",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
@@ -1060,6 +1137,62 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
+   "kraj": null
+  },
+  {
+   "id": "chata.cz:CZ8591",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Chalupa RELAX",
+   "location": "Nejdek, Krušné hory",
+   "url": "https://www.chata.cz/chalupa/krusne-hory/nejdek/chalupa-relax-CZ8591/",
+   "capacity": 6,
+   "bedrooms": 3,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ8591-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ8591",
+    "rooms": [
+     {
+      "name": "Chalupa pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": null,
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "U objektu",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
    "kraj": null
   },
   {
@@ -6595,6 +6728,160 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Ústecký"
+  },
+  {
+   "id": "cs-chalupy.cz:4C-078",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Rekreační dům - Slavkovský les - Karlovy Vary",
+   "location": "Karlovy Vary, Krušné hory a České středohoří",
+   "url": "https://www.cs-chalupy.cz/rekreacni-dum-slavkovsky-les-karlovy-vary.4C-078.html",
+   "capacity": 20,
+   "bedrooms": 6,
+   "price": 10000.0,
+   "price_unit": "objekt / noc",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "společenská místnost",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mrazák",
+    "mikrovlnná trouba",
+    "myčka nádobí",
+    "kávovar",
+    "topinkovač",
+    "toustovač",
+    "vinný sklep",
+    "el. bojler pro ohřev vody",
+    "pračka",
+    "koupelna se sprchovým koutem",
+    "samostatné wc",
+    "televize",
+    "sat",
+    "rádio",
+    "společenské hry",
+    "zahradní nábytek",
+    "terasa",
+    "zahrada",
+    "travnatá plocha",
+    "ohniště",
+    "gril",
+    "lyžárna/kolárna",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/2166-153362/rekreacni-dum-slavkovsky-les-karlovy-vary.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "4C-078",
+    "bathrooms": 6,
+    "wc": 6,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Celoročně",
+      "cena": "10 000 Kč",
+      "cena_hodnota": 10000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2, Celý objekt"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "1 690 Kč",
+      "cena_hodnota": 1690.0,
+      "typ": "Pokoj / noc",
+      "poznamka": "Min. nocí: 2"
+     },
+     {
+      "sezona": "SILVESTR",
+      "cena": "16 000 Kč",
+      "cena_hodnota": 16000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2, Celý objekt"
+     },
+     {
+      "sezona": "Vánoce",
+      "cena": "12 000 Kč",
+      "cena_hodnota": 12000.0,
+      "typ": "Objekt / noc",
+      "poznamka": "Min. nocí: 2, Celý objekt"
+     },
+     {
+      "sezona": "Jarní prázdniny",
+      "cena": "1 900 Kč",
+      "cena_hodnota": 1900.0,
+      "typ": "Pokoj / noc",
+      "poznamka": "Min. nocí: 3"
+     }
+    ],
+    "domaci_zvire": "Pouze po dohodě",
+    "popis_detaily": {
+     "Rozložení ložnic": "6 ložnic: 1x 6, 2x 3, 1x 3+1, 2x 2",
+     "Vzdálenosti": "parkování (5 m), zastávka autobus (150 m), zastávka vlak (2200 m), obchod (150 m), restaurace (150 m), les (5 m), koupání (1200 m), lyžařský vlek (30000 m)"
+    },
+    "address": {
+     "street": "Tyršova",
+     "locality": "Karlovy Vary",
+     "region": "Karlovy Vary",
+     "postal_code": "360 01"
+    },
+    "gps": {
+     "lat": "50.2242547",
+     "lng": "12.8918522"
+    },
+    "amenities_original": [
+     "wifi",
+     "se psem",
+     "společenská místnost",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mrazák",
+     "mikrovlnná trouba",
+     "myčka nádobí",
+     "kávovar",
+     "topinkovač",
+     "toustovač",
+     "vinný sklep",
+     "el. bojler pro ohřev vody",
+     "pračka",
+     "koupelna se sprchovým koutem",
+     "samostatné wc",
+     "televize",
+     "SAT",
+     "rádio",
+     "společenské hry",
+     "zahradní nábytek",
+     "terasa",
+     "zahrada",
+     "travnatá plocha",
+     "ohniště",
+     "gril",
+     "sklad pro kola/ lyže",
+     "oplocený objekt",
+     "částečně oplocený objekt"
+    ]
+   },
+   "okres": "Karlovy Vary",
+   "gps": {
+    "lat": 50.2242547,
+    "lon": 12.8918522
+   },
+   "price_per_night_from": 10000,
+   "price_per_night_to": 16000,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
   },
   {
    "id": "cs-chalupy.cz:4C-080",
@@ -12864,6 +13151,7 @@
     "rating": 100,
     "reviews": 13,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -12931,6 +13219,7 @@
     "rating": 97,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -13001,6 +13290,7 @@
     "rating": 99,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -13071,6 +13361,7 @@
     "rating": 99,
     "reviews": 24,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "koupací sud",
@@ -13141,6 +13432,7 @@
     "rating": 100,
     "reviews": 28,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -13213,6 +13505,7 @@
     "rating": 93,
     "reviews": 30,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -13281,6 +13574,7 @@
     "rating": 99,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -13350,6 +13644,7 @@
     "rating": 98,
     "reviews": 3,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -13423,6 +13718,7 @@
     "rating": 99,
     "reviews": 3,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -13490,6 +13786,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -13558,6 +13855,7 @@
     "rating": 96,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "v lese",
@@ -13629,6 +13927,7 @@
     "rating": 99,
     "reviews": 112,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -13651,6 +13950,85 @@
    },
    "price_per_night_from": 1986,
    "price_per_night_to": 1986,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:10949",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chata Bart",
+   "location": "Damice, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-damice-chata-bart-pronajem-o10949",
+   "capacity": 8,
+   "bedrooms": 3,
+   "price": 2857.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "vířivka",
+    "pro děti",
+    "oplocení",
+    "se psem",
+    "krb",
+    "u vody",
+    "myčka nádobí",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/ubytovani-damice-b994-c147-825608.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 10949,
+    "tags_featured": [
+     "chata 8 osob",
+     "3 ložnice"
+    ],
+    "area_title": "Damice",
+    "area_slug": "damice",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.3264572,
+     "lon": 13.0229414
+    },
+    "rating": 98,
+    "reviews": 1,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "vířivka",
+     "pro děti",
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u vody",
+     "se psem",
+     "myčka nádobí",
+     "lednička",
+     "televize",
+     "wifi",
+     "pískoviště",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.3264572,
+    "lon": 13.0229414
+   },
+   "price_per_night_from": 2857,
+   "price_per_night_to": 2857,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -13706,6 +14084,7 @@
     "rating": 99,
     "reviews": 83,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -13785,6 +14164,7 @@
     "rating": 91,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -13865,6 +14245,7 @@
     "rating": 98,
     "reviews": 35,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -13943,6 +14324,7 @@
     "rating": 100,
     "reviews": 24,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -14015,6 +14397,7 @@
     "rating": 100,
     "reviews": 33,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "krb",
@@ -14085,6 +14468,7 @@
     "rating": 98,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -14122,7 +14506,7 @@
    "url": "https://www.e-chalupy.cz/pronajem-chalupa-maria-loucna-pod-klinovcem-haj-ubytovani-o11174",
    "capacity": 10,
    "bedrooms": 3,
-   "price": 5970.0,
+   "price": 6770.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "sauna",
@@ -14157,6 +14541,7 @@
     "rating": 96,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -14177,8 +14562,8 @@
     "lat": 50.423511389,
     "lon": 13.001498889
    },
-   "price_per_night_from": 5970,
-   "price_per_night_to": 5970,
+   "price_per_night_from": 6770,
+   "price_per_night_to": 6770,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -14231,6 +14616,7 @@
     "rating": 97,
     "reviews": 35,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -14303,6 +14689,7 @@
     "rating": 96,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -14373,6 +14760,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -14446,6 +14834,7 @@
     "rating": 74,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -14517,6 +14906,7 @@
     "rating": 98,
     "reviews": 14,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -14587,6 +14977,7 @@
     "rating": 100,
     "reviews": 22,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -14659,6 +15050,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "u lesa",
@@ -14729,6 +15121,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -14801,6 +15194,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -14872,6 +15266,7 @@
     "rating": 100,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "krb",
@@ -14939,6 +15334,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "luxusní",
      "myčka nádobí",
@@ -15005,6 +15401,7 @@
     "rating": 97,
     "reviews": 9,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -15079,6 +15476,7 @@
     "rating": 96,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -15151,6 +15549,7 @@
     "rating": 98,
     "reviews": 47,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -15222,6 +15621,7 @@
     "rating": 96,
     "reviews": 16,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -15294,6 +15694,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u vody",
@@ -15358,6 +15759,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "luxusní",
@@ -15420,6 +15822,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -15489,6 +15892,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -15563,6 +15967,7 @@
     "rating": 100,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -15633,6 +16038,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -15700,6 +16106,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -15769,6 +16176,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -15843,6 +16251,7 @@
     "rating": 94,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -15914,6 +16323,7 @@
     "rating": 98,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -15985,6 +16395,7 @@
     "rating": 99,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -16064,6 +16475,7 @@
     "rating": 99,
     "reviews": 25,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -16145,6 +16557,7 @@
     "rating": 95,
     "reviews": 9,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -16225,6 +16638,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -16302,6 +16716,7 @@
     "rating": 99,
     "reviews": 56,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -16378,6 +16793,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -16453,6 +16869,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -16524,6 +16941,7 @@
     "rating": 98,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "na samotě",
@@ -16589,6 +17007,7 @@
     "rating": 98,
     "reviews": 25,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -16652,6 +17071,7 @@
     "rating": 100,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "společenská místnost",
@@ -16717,6 +17137,7 @@
     "rating": 100,
     "reviews": 5,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -16782,6 +17203,7 @@
     "rating": 98,
     "reviews": 11,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "myčka nádobí",
@@ -16849,6 +17271,7 @@
     "rating": 97,
     "reviews": 18,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -16924,6 +17347,7 @@
     "rating": 98,
     "reviews": 31,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -16966,7 +17390,7 @@
    "url": "https://www.e-chalupy.cz/ubytovani-kovarska-chata-pronajem-o1261",
    "capacity": 12,
    "bedrooms": 3,
-   "price": 5970.0,
+   "price": 6770.0,
    "price_unit": "objekt za noc",
    "amenities": [
     "bazén",
@@ -17005,6 +17429,7 @@
     "rating": 88,
     "reviews": 13,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -17029,8 +17454,8 @@
     "lat": 50.448765556,
     "lon": 13.056503889
    },
-   "price_per_night_from": 5970,
-   "price_per_night_to": 5970,
+   "price_per_night_from": 6770,
+   "price_per_night_to": 6770,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -17079,6 +17504,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -17145,6 +17571,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -17211,6 +17638,7 @@
     "rating": 98,
     "reviews": 16,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -17275,6 +17703,7 @@
     "rating": 59,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -17348,6 +17777,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "pro děti",
@@ -17430,6 +17860,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -17504,6 +17935,7 @@
     "rating": 96,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -17577,6 +18009,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -17655,6 +18088,7 @@
     "rating": 98,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "pro děti",
@@ -17725,6 +18159,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "společenská místnost",
      "myčka nádobí",
@@ -17789,6 +18224,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -17807,6 +18243,79 @@
    },
    "price_per_night_from": 5857,
    "price_per_night_to": 5857,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:13121",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Ubytování u Hřiště",
+   "location": "Tisá, České Švýcarsko",
+   "url": "https://www.e-chalupy.cz/tisa-ubytovani-u-hriste-o13121",
+   "capacity": 20,
+   "bedrooms": 6,
+   "price": 6000.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "pro děti",
+    "se psem",
+    "u lesa",
+    "společenská místnost",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/img-6796-2433-df32-1215399.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 13121,
+    "tags_featured": [
+     "chata 20 osob",
+     "6 ložnic"
+    ],
+    "area_title": "Tisá",
+    "area_slug": "tisa",
+    "area2_title": "České Švýcarsko",
+    "area2_slug": "ceske-svycarsko",
+    "gps": {
+     "lat": 50.787509444,
+     "lon": 14.019495833
+    },
+    "rating": 99,
+    "reviews": 28,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "pro děti",
+     "mazlíčci vítáni",
+     "u lesa",
+     "se psem",
+     "společenská místnost",
+     "lednička",
+     "televize",
+     "wifi",
+     "pískoviště",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.787509444,
+    "lon": 14.019495833
+   },
+   "price_per_night_from": 6000,
+   "price_per_night_to": 6000,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -17857,6 +18366,7 @@
     "rating": 100,
     "reviews": 12,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -17930,6 +18440,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -18002,6 +18513,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -18072,6 +18584,7 @@
     "rating": 99,
     "reviews": 45,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -18145,6 +18658,7 @@
     "rating": 91,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -18215,6 +18729,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -18280,6 +18795,7 @@
     "rating": 98,
     "reviews": 11,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -18347,6 +18863,7 @@
     "rating": 98,
     "reviews": 22,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -18419,6 +18936,7 @@
     "rating": 99,
     "reviews": 24,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -18490,6 +19008,7 @@
     "rating": 99,
     "reviews": 35,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -18559,6 +19078,7 @@
     "rating": 89,
     "reviews": 11,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -18631,6 +19151,7 @@
     "rating": 98,
     "reviews": 45,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -18702,6 +19223,7 @@
     "rating": 98,
     "reviews": 71,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -18723,6 +19245,75 @@
    "price_per_night_to": 1400,
    "price_estimated": false,
    "price_note": "cena za apartmán, ne za celý objekt",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:13503",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chata Makarovo",
+   "location": "Děpoltovice, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-depoltovice-chata-makarovo-pronajem-o13503",
+   "capacity": 8,
+   "bedrooms": 3,
+   "price": 700.0,
+   "price_unit": "osoba za noc",
+   "amenities": [
+    "oplocení",
+    "se psem",
+    "krb",
+    "u lesa",
+    "u vody",
+    "společenská místnost",
+    "lednička",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/vyhled-chata-makarov-47a0-5524-820424.jpg",
+   "entire_property": true,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 13503,
+    "tags_featured": [
+     "chata 8 osob",
+     "3 ložnice"
+    ],
+    "area_title": "Děpoltovice",
+    "area_slug": "depoltovice",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.2858058,
+     "lon": 12.8218233
+    },
+    "rating": 0,
+    "reviews": 0,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u lesa",
+     "u vody",
+     "se psem",
+     "společenská místnost",
+     "lednička",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.2858058,
+    "lon": 12.8218233
+   },
+   "price_per_night_from": 5600,
+   "price_per_night_to": 5600,
+   "price_estimated": true,
+   "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Karlovarský"
@@ -18773,6 +19364,7 @@
     "rating": 94,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -18846,6 +19438,7 @@
     "rating": 90,
     "reviews": 23,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -18915,6 +19508,7 @@
     "rating": 99,
     "reviews": 21,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -18985,6 +19579,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -19054,6 +19649,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -19124,6 +19720,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -19201,6 +19798,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "oploceno",
@@ -19275,6 +19873,7 @@
     "rating": 99,
     "reviews": 29,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -19343,6 +19942,7 @@
     "rating": 100,
     "reviews": 5,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "u lesa",
@@ -19365,6 +19965,72 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:13794",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Hrázděný dvůr",
+   "location": "Krajková, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-hrazdeny-dvur-krajkova-apartman-o13794",
+   "capacity": 3,
+   "bedrooms": 1,
+   "price": 250.0,
+   "price_unit": "osoba za noc",
+   "amenities": [
+    "oplocení",
+    "krb",
+    "u lesa",
+    "lednička",
+    "televize",
+    "wifi",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/hrazdeny-dum-5342-2c49-693835.jpg",
+   "entire_property": null,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 13794,
+    "tags_featured": [
+     "apartmán 3 osoby",
+     "1 ložnice"
+    ],
+    "area_title": "Krajková",
+    "area_slug": "krajkova",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.215747778,
+     "lon": 12.537404167
+    },
+    "rating": 92,
+    "reviews": 6,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "oploceno",
+     "krb",
+     "u lesa",
+     "lednička",
+     "televize",
+     "wifi",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.215747778,
+    "lon": 12.537404167
+   },
+   "price_per_night_from": 750,
+   "price_per_night_to": 750,
+   "price_estimated": true,
+   "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
   },
   {
    "id": "e-chalupy.cz:13844",
@@ -19405,6 +20071,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -19472,6 +20139,7 @@
     "rating": 94,
     "reviews": 13,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "mazlíčci vítáni",
@@ -19545,6 +20213,7 @@
     "rating": 100,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -19614,6 +20283,7 @@
     "rating": 99,
     "reviews": 15,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -19687,6 +20357,7 @@
     "rating": 100,
     "reviews": 68,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -19765,6 +20436,7 @@
     "rating": 98,
     "reviews": 17,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "oploceno",
@@ -19844,6 +20516,7 @@
     "rating": 99,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -19919,6 +20592,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -19992,6 +20666,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "pro děti",
@@ -20068,6 +20743,7 @@
     "rating": 99,
     "reviews": 26,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -20139,6 +20815,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -20211,6 +20888,7 @@
     "rating": 97,
     "reviews": 34,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -20281,6 +20959,7 @@
     "rating": 93,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "společenská místnost",
@@ -20343,6 +21022,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "luxusní",
      "myčka nádobí",
@@ -20403,6 +21083,7 @@
     "rating": 100,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "myčka nádobí",
@@ -20473,6 +21154,7 @@
     "rating": 93,
     "reviews": 11,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -20501,6 +21183,89 @@
    "price_estimated": false,
    "price_note": "cena za apartmán, ne za celý objekt",
    "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:14275",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Resort Tisá",
+   "location": "Tisá, České Švýcarsko",
+   "url": "https://www.e-chalupy.cz/resort-tisa-o14275",
+   "capacity": 37,
+   "bedrooms": null,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "sauna",
+    "oplocení",
+    "se psem",
+    "krb",
+    "u lesa",
+    "luxusní",
+    "snídaně",
+    "bazén",
+    "společenská místnost",
+    "myčka nádobí",
+    "lednička",
+    "televize",
+    "wifi",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/resort-tisa-f06d-c37e-705396.jpg",
+   "entire_property": false,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 14275,
+    "tags_featured": [
+     "3 apartmány + 1 pokoj + 3 objekty",
+     "37 osob"
+    ],
+    "area_title": "Tisá",
+    "area_slug": "tisa",
+    "area2_title": "České Švýcarsko",
+    "area2_slug": "ceske-svycarsko",
+    "gps": {
+     "lat": 50.785632222,
+     "lon": 14.013671667
+    },
+    "rating": 100,
+    "reviews": 1,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "sauna",
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u lesa",
+     "luxusní",
+     "snídaně",
+     "bazén",
+     "se psem",
+     "společenská místnost",
+     "myčka nádobí",
+     "lednička",
+     "televize",
+     "wifi",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.785632222,
+    "lon": 14.013671667
+   },
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
    "price_term": null,
    "kraj": "Ústecký"
   },
@@ -20551,6 +21316,7 @@
     "rating": 99,
     "reviews": 20,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -20621,6 +21387,7 @@
     "rating": 99,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -20685,6 +21452,7 @@
     "rating": 100,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "lednička",
@@ -20756,6 +21524,7 @@
     "rating": 92,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -20834,6 +21603,7 @@
     "rating": 100,
     "reviews": 49,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -20905,6 +21675,7 @@
     "rating": 88,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -20973,6 +21744,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "u lesa",
@@ -21044,6 +21816,7 @@
     "rating": 99,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -21121,6 +21894,7 @@
     "rating": 99,
     "reviews": 13,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -21196,6 +21970,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -21268,6 +22043,7 @@
     "rating": 97,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -21335,6 +22111,7 @@
     "rating": 91,
     "reviews": 5,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "myčka nádobí",
@@ -21405,6 +22182,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -21484,6 +22262,7 @@
     "rating": 97,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -21552,6 +22331,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -21618,6 +22398,7 @@
     "rating": 100,
     "reviews": 54,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "na samotě",
@@ -21687,6 +22468,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -21754,6 +22536,7 @@
     "rating": 99,
     "reviews": 53,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -21824,6 +22607,7 @@
     "rating": 99,
     "reviews": 28,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "společenská místnost",
@@ -21890,6 +22674,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "luxusní",
@@ -21956,6 +22741,7 @@
     "rating": 99,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -22027,6 +22813,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "u lesa",
@@ -22097,6 +22884,7 @@
     "rating": 99,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -22168,6 +22956,7 @@
     "rating": 98,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -22236,6 +23025,7 @@
     "rating": 99,
     "reviews": 19,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -22304,6 +23094,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -22371,6 +23162,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "luxusní",
      "snídaně",
@@ -22434,6 +23226,7 @@
     "rating": 100,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -22504,6 +23297,7 @@
     "rating": 83,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "na samotě",
@@ -22573,6 +23367,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -22595,6 +23390,80 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:16120",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chalupa Vera",
+   "location": "Lítov, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-litov-chalupa-vera-pronajem-habartov-o16120",
+   "capacity": 7,
+   "bedrooms": 3,
+   "price": 2500.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "bazén",
+    "pro děti",
+    "oplocení",
+    "krb",
+    "společenská místnost",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/chalupa-vera-litov-3450-61cd-767590.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 16120,
+    "tags_featured": [
+     "chalupa 7 osob",
+     "3 ložnice"
+    ],
+    "area_title": "Lítov",
+    "area_slug": "litov",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.172883333,
+     "lon": 12.518138889
+    },
+    "rating": 95,
+    "reviews": 11,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "bazén",
+     "pro děti",
+     "oploceno",
+     "krb",
+     "společenská místnost",
+     "lednička",
+     "televize",
+     "wifi",
+     "pískoviště",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.172883333,
+    "lon": 12.518138889
+   },
+   "price_per_night_from": 2500,
+   "price_per_night_to": 2500,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
   },
   {
    "id": "e-chalupy.cz:16206",
@@ -22639,6 +23508,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "u lesa",
@@ -22714,6 +23584,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -22789,6 +23660,7 @@
     "rating": 98,
     "reviews": 11,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "na samotě",
@@ -22859,6 +23731,7 @@
     "rating": 99,
     "reviews": 49,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -22927,6 +23800,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -22991,6 +23865,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -23059,6 +23934,7 @@
     "rating": 97,
     "reviews": 3,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -23126,6 +24002,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u vody",
      "luxusní",
@@ -23193,6 +24070,7 @@
     "rating": 99,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -23263,6 +24141,7 @@
     "rating": 98,
     "reviews": 46,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -23333,6 +24212,7 @@
     "rating": 100,
     "reviews": 8,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -23406,6 +24286,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -23480,6 +24361,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -23547,6 +24429,7 @@
     "rating": 94,
     "reviews": 25,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -23613,6 +24496,7 @@
     "rating": 99,
     "reviews": 20,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -23682,6 +24566,7 @@
     "rating": 97,
     "reviews": 16,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -23748,6 +24633,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "společenská místnost",
      "myčka nádobí",
@@ -23809,6 +24695,7 @@
     "rating": 98,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -23873,6 +24760,7 @@
     "rating": 92,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -23940,6 +24828,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -24010,6 +24899,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -24077,6 +24967,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "v lese",
      "snídaně",
@@ -24146,6 +25037,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -24220,6 +25112,7 @@
     "rating": 95,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -24289,6 +25182,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -24357,6 +25251,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "na samotě",
@@ -24426,6 +25321,7 @@
     "rating": 99,
     "reviews": 8,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -24490,6 +25386,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "lednička",
@@ -24554,6 +25451,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -24620,6 +25518,7 @@
     "rating": 98,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -24686,6 +25585,7 @@
     "rating": 97,
     "reviews": 11,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -24762,6 +25662,7 @@
     "rating": 92,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -24832,6 +25733,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "lednička",
      "televize",
@@ -24897,6 +25799,7 @@
     "rating": 99,
     "reviews": 17,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -24972,6 +25875,7 @@
     "rating": 92,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -25050,6 +25954,7 @@
     "rating": 99,
     "reviews": 20,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -25126,6 +26031,7 @@
     "rating": 96,
     "reviews": 7,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -25200,6 +26106,7 @@
     "rating": 99,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -25275,6 +26182,7 @@
     "rating": 99,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -25343,6 +26251,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "lednička",
      "televize",
@@ -25407,6 +26316,7 @@
     "rating": 99,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -25479,6 +26389,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -25551,6 +26462,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -25623,6 +26535,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -25691,6 +26604,7 @@
     "rating": 99,
     "reviews": 5,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -25760,6 +26674,7 @@
     "rating": 99,
     "reviews": 13,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -25833,6 +26748,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "mazlíčci vítáni",
@@ -25905,6 +26821,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -25977,6 +26894,7 @@
     "rating": 96,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "na samotě",
@@ -26044,6 +26962,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u vody",
      "lednička",
@@ -26111,6 +27030,7 @@
     "rating": 100,
     "reviews": 9,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -26180,6 +27100,7 @@
     "rating": 97,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "společenská místnost",
@@ -26249,6 +27170,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -26324,6 +27246,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -26396,6 +27319,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -26463,6 +27387,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -26528,6 +27453,7 @@
     "rating": 99,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "myčka nádobí",
@@ -26597,6 +27523,7 @@
     "rating": 98,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -26672,6 +27599,7 @@
     "rating": 96,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -26744,6 +27672,7 @@
     "rating": 96,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -26819,6 +27748,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -26891,6 +27821,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -26957,6 +27888,7 @@
     "rating": 92,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -27019,6 +27951,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -27079,6 +28012,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "myčka nádobí",
@@ -27140,6 +28074,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -27206,6 +28141,7 @@
     "rating": 99,
     "reviews": 10,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "na samotě",
@@ -27279,6 +28215,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "krb",
@@ -27346,6 +28283,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -27414,6 +28352,7 @@
     "rating": 97,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -27491,6 +28430,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -27566,6 +28506,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "na samotě",
@@ -27635,6 +28576,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -27701,6 +28643,7 @@
     "rating": 99,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u vody",
@@ -27763,6 +28706,7 @@
     "rating": 99,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -27832,6 +28776,7 @@
     "rating": 95,
     "reviews": 26,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -27907,6 +28852,7 @@
     "rating": 88,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -27979,6 +28925,7 @@
     "rating": 98,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -28048,6 +28995,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -28121,6 +29069,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -28196,6 +29145,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -28261,6 +29211,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "u vody",
@@ -28326,6 +29277,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -28396,6 +29348,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "krb",
@@ -28471,6 +29424,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -28496,6 +29450,74 @@
    },
    "price_per_night_from": 1685,
    "price_per_night_to": 1685,
+   "price_estimated": false,
+   "price_note": "cena za pokoj, ne za celý objekt",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:19247",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chateau Franz",
+   "location": "Osek, Střední Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-osek-chateau-franz-o19247",
+   "capacity": 33,
+   "bedrooms": null,
+   "price": 2290.0,
+   "price_unit": "pokoj za noc",
+   "amenities": [
+    "vířivka",
+    "oplocení",
+    "krb",
+    "luxusní",
+    "lednička",
+    "klimatizace",
+    "televize",
+    "wifi"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/pohled-na-chateau-franz-z-prijezdove-cesty--df90-69e0-1007063.jpg",
+   "entire_property": false,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 19247,
+    "tags_featured": [
+     "12 pokojů",
+     "33 osob"
+    ],
+    "area_title": "Osek",
+    "area_slug": "osek-teplice",
+    "area2_title": "Střední Čechy",
+    "area2_slug": "stredni-cechy",
+    "gps": {
+     "lat": 50.624106667,
+     "lon": 13.690549722
+    },
+    "rating": 0,
+    "reviews": 0,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "vířivka",
+     "oploceno",
+     "krb",
+     "luxusní",
+     "lednička",
+     "klimatizace",
+     "televize",
+     "wifi"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.624106667,
+    "lon": 13.690549722
+   },
+   "price_per_night_from": 2290,
+   "price_per_night_to": 2290,
    "price_estimated": false,
    "price_note": "cena za pokoj, ne za celý objekt",
    "price_as_of": "2026-10-14",
@@ -28543,6 +29565,7 @@
     "rating": 100,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -28607,6 +29630,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -28677,6 +29701,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -28752,6 +29777,7 @@
     "rating": 100,
     "reviews": 18,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -28824,6 +29850,7 @@
     "rating": 100,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "myčka nádobí",
@@ -28846,6 +29873,67 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:19738",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Apartmán v Tisé",
+   "location": "Tisá, České Švýcarsko",
+   "url": "https://www.e-chalupy.cz/ubytovani-tisa-apartman-o19738",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": 450.0,
+   "price_unit": "osoba za noc",
+   "amenities": [
+    "se psem",
+    "lednička",
+    "televize",
+    "wifi"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/tisa-501-cd85-fafc-1045734.jpg",
+   "entire_property": null,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 19738,
+    "tags_featured": [
+     "apartmán 5 osob",
+     "2 ložnice"
+    ],
+    "area_title": "Tisá",
+    "area_slug": "tisa",
+    "area2_title": "České Švýcarsko",
+    "area2_slug": "ceske-svycarsko",
+    "gps": {
+     "lat": 50.7855719,
+     "lon": 14.0111247
+    },
+    "rating": 0,
+    "reviews": 0,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "mazlíčci vítáni",
+     "se psem",
+     "lednička",
+     "televize",
+     "wifi"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.7855719,
+    "lon": 14.0111247
+   },
+   "price_per_night_from": 2250,
+   "price_per_night_to": 2250,
+   "price_estimated": true,
+   "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Ústecký"
   },
   {
    "id": "e-chalupy.cz:19820",
@@ -28892,6 +29980,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -28959,6 +30048,7 @@
     "rating": 96,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "myčka nádobí",
@@ -29022,6 +30112,7 @@
     "rating": 100,
     "reviews": 10,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "myčka nádobí",
@@ -29088,6 +30179,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -29153,6 +30245,7 @@
     "rating": 94,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "lednička",
@@ -29223,6 +30316,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -29298,6 +30392,7 @@
     "rating": 87,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -29370,6 +30465,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -29441,6 +30537,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -29515,6 +30612,7 @@
     "rating": 92,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -29585,6 +30683,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u vody",
      "lednička",
@@ -29647,6 +30746,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u vody",
@@ -29716,6 +30816,7 @@
     "rating": 98,
     "reviews": 45,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -29787,6 +30888,7 @@
     "rating": 100,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -29854,6 +30956,7 @@
     "rating": 98,
     "reviews": 9,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "v lese",
@@ -29923,6 +31026,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -29993,6 +31097,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "u lesa",
@@ -30066,6 +31171,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -30142,6 +31248,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -30219,6 +31326,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -30293,6 +31401,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -30368,6 +31477,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "mazlíčci vítáni",
@@ -30448,6 +31558,7 @@
     "rating": 98,
     "reviews": 13,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -30522,6 +31633,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -30586,6 +31698,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -30652,6 +31765,7 @@
     "rating": 93,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -30725,6 +31839,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -30793,6 +31908,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "myčka nádobí",
@@ -30855,6 +31971,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "luxusní",
@@ -30918,6 +32035,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -30984,6 +32102,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -31056,6 +32175,7 @@
     "rating": 98,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -31128,6 +32248,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -31195,6 +32316,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -31265,6 +32387,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -31338,6 +32461,7 @@
     "rating": 98,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -31408,6 +32532,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -31478,6 +32603,7 @@
     "rating": 99,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -31546,6 +32672,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -31565,6 +32692,71 @@
    "price_per_night_to": 3150,
    "price_estimated": true,
    "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:22129",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Krušnohorská chaloupka",
+   "location": "Černava, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-cernava-krusnohorska-chaloupka-pronajem-o22129",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": 1500.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "oplocení",
+    "se psem",
+    "u lesa",
+    "lednička",
+    "televize",
+    "wifi"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/krusnohorska-chaloupka-4a90-3ae8-1121158.jpg",
+   "entire_property": false,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 22129,
+    "tags_featured": [
+     "chata 6 osob",
+     "2 ložnice"
+    ],
+    "area_title": "Černava",
+    "area_slug": "cernava",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.2912639,
+     "lon": 12.7124764
+    },
+    "rating": 96,
+    "reviews": 4,
+    "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "oploceno",
+     "mazlíčci vítáni",
+     "u lesa",
+     "se psem",
+     "lednička",
+     "televize",
+     "wifi"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.2912639,
+    "lon": 12.7124764
+   },
+   "price_per_night_from": 1500,
+   "price_per_night_to": 1500,
+   "price_estimated": false,
+   "price_note": null,
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Karlovarský"
@@ -31613,6 +32805,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -31687,6 +32880,7 @@
     "rating": 98,
     "reviews": 9,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -31757,6 +32951,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -31820,6 +33015,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "myčka nádobí",
@@ -31882,6 +33078,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "u lesa",
@@ -31944,6 +33141,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -32010,6 +33208,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "koupací sud",
@@ -32082,6 +33281,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -32152,6 +33352,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "luxusní",
@@ -32218,6 +33419,7 @@
     "rating": 98,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -32283,6 +33485,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "společenská místnost",
      "myčka nádobí",
@@ -32345,6 +33548,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "luxusní",
      "společenská místnost",
@@ -32416,6 +33620,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -32440,6 +33645,75 @@
    },
    "price_per_night_from": 5429,
    "price_per_night_to": 5429,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:22772",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Apartmán kousek od jezera Medard",
+   "location": "Svatava, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-svatava-apartman-kousek-od-jezera-medard-o22772",
+   "capacity": 3,
+   "bedrooms": 1,
+   "price": 1000.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "oplocení",
+    "se psem",
+    "u vody",
+    "společenská místnost",
+    "lednička",
+    "televize",
+    "wifi",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/apartman-kousek-od-jezera-medard-d494-25c5-1152724.jpg",
+   "entire_property": null,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 22772,
+    "tags_featured": [
+     "apartmán 3 osoby",
+     "1 ložnice"
+    ],
+    "area_title": "Svatava",
+    "area_slug": "svatava-sokolov",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.1947128,
+     "lon": 12.6171344
+    },
+    "rating": 0,
+    "reviews": 0,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "oploceno",
+     "mazlíčci vítáni",
+     "u vody",
+     "se psem",
+     "společenská místnost",
+     "lednička",
+     "televize",
+     "wifi",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.1947128,
+    "lon": 12.6171344
+   },
+   "price_per_night_from": 1000,
+   "price_per_night_to": 1000,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -32487,6 +33761,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "krb",
@@ -32552,6 +33827,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "luxusní",
@@ -32623,6 +33899,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -32694,6 +33971,7 @@
     "rating": 100,
     "reviews": 17,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -32760,6 +34038,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -32832,6 +34111,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "oploceno",
@@ -32910,6 +34190,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -32981,6 +34262,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "u lesa",
@@ -33053,6 +34335,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "pro děti",
@@ -33134,6 +34417,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "mazlíčci vítáni",
@@ -33206,6 +34490,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -33270,6 +34555,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "na samotě",
@@ -33331,6 +34617,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -33397,6 +34684,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -33472,6 +34760,7 @@
     "rating": 97,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -33546,6 +34835,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -33614,6 +34904,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -33676,6 +34967,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -33737,6 +35029,7 @@
     "rating": 98,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -33803,6 +35096,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "krb",
@@ -33873,6 +35167,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -33945,6 +35240,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -34011,6 +35307,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "lednička",
@@ -34075,6 +35372,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -34146,6 +35444,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -34219,6 +35518,7 @@
     "rating": 97,
     "reviews": 19,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "na samotě",
@@ -34287,6 +35587,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "luxusní",
@@ -34351,6 +35652,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -34415,6 +35717,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "luxusní",
      "myčka nádobí",
@@ -34482,6 +35785,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -34552,6 +35856,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "luxusní",
@@ -34621,6 +35926,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -34694,6 +36000,7 @@
     "rating": 93,
     "reviews": 41,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -34763,6 +36070,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -34827,6 +36135,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -34890,6 +36199,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "myčka nádobí",
@@ -34954,6 +36264,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -35022,6 +36333,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -35091,6 +36403,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -35158,6 +36471,7 @@
     "rating": 100,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -35180,6 +36494,81 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:2468",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Nad jezerem Medard",
+   "location": "Habartov, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-habartov-chata-nad-jezerem-medard-o2468",
+   "capacity": 12,
+   "bedrooms": null,
+   "price": 1643.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "pro děti",
+    "oplocení",
+    "se psem",
+    "krb",
+    "u lesa",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/c42010c5-8f7f-4353-87d4-5167db604ac3-1d60-e5a9-1212645.jpg",
+   "entire_property": false,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 2468,
+    "tags_featured": [
+     "2 objekty",
+     "12 osob"
+    ],
+    "area_title": "Habartov",
+    "area_slug": "habartov",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.187125,
+     "lon": 12.566806667
+    },
+    "rating": 92,
+    "reviews": 7,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "pro děti",
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u lesa",
+     "se psem",
+     "lednička",
+     "televize",
+     "wifi",
+     "pískoviště",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.187125,
+    "lon": 12.566806667
+   },
+   "price_per_night_from": 1643,
+   "price_per_night_to": 1643,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
   },
   {
    "id": "e-chalupy.cz:2487",
@@ -35227,6 +36616,7 @@
     "rating": 99,
     "reviews": 22,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -35297,6 +36687,7 @@
     "rating": 99,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -35367,6 +36758,7 @@
     "rating": 97,
     "reviews": 37,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -35439,6 +36831,7 @@
     "rating": 99,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -35507,6 +36900,7 @@
     "rating": 99,
     "reviews": 40,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -35571,6 +36965,7 @@
     "rating": 98,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u vody",
@@ -35643,6 +37038,7 @@
     "rating": 99,
     "reviews": 3,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -35718,6 +37114,7 @@
     "rating": 99,
     "reviews": 76,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -35788,6 +37185,7 @@
     "rating": 96,
     "reviews": 11,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -35857,6 +37255,7 @@
     "rating": 96,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -35931,6 +37330,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -36008,6 +37408,7 @@
     "rating": 100,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -36084,6 +37485,7 @@
     "rating": 93,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -36157,6 +37559,7 @@
     "rating": 98,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -36229,6 +37632,7 @@
     "rating": 92,
     "reviews": 9,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -36295,6 +37699,7 @@
     "rating": 62,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "televize",
@@ -36358,6 +37763,7 @@
     "rating": 96,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -36431,6 +37837,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u vody",
@@ -36502,6 +37909,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "krb",
@@ -36568,6 +37976,7 @@
     "rating": 96,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -36634,6 +38043,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -36703,6 +38113,7 @@
     "rating": 98,
     "reviews": 11,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -36774,6 +38185,7 @@
     "rating": 99,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -36843,6 +38255,7 @@
     "rating": 98,
     "reviews": 31,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -36910,6 +38323,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -36979,6 +38393,7 @@
     "rating": 99,
     "reviews": 31,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -37048,6 +38463,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -37119,6 +38535,7 @@
     "rating": 98,
     "reviews": 23,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -37190,6 +38607,7 @@
     "rating": 98,
     "reviews": 74,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -37258,6 +38676,7 @@
     "rating": 94,
     "reviews": 1,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -37328,6 +38747,7 @@
     "rating": 100,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -37403,6 +38823,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -37482,6 +38903,7 @@
     "rating": 98,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -37560,6 +38982,7 @@
     "rating": 98,
     "reviews": 48,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -37638,6 +39061,7 @@
     "rating": 99,
     "reviews": 22,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -37715,6 +39139,7 @@
     "rating": 100,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -37788,6 +39213,7 @@
     "rating": 99,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -37855,6 +39281,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -37925,6 +39352,7 @@
     "rating": 99,
     "reviews": 145,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -38002,6 +39430,7 @@
     "rating": 96,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -38076,6 +39505,7 @@
     "rating": 94,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -38141,6 +39571,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -38206,6 +39637,7 @@
     "rating": 95,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -38279,6 +39711,7 @@
     "rating": 98,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -38348,6 +39781,7 @@
     "rating": 100,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "lednička",
@@ -38417,6 +39851,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -38493,6 +39928,7 @@
     "rating": 90,
     "reviews": 30,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -38562,6 +39998,7 @@
     "rating": 96,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "krb",
@@ -38630,6 +40067,7 @@
     "rating": 98,
     "reviews": 35,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -38702,6 +40140,7 @@
     "rating": 95,
     "reviews": 32,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -38779,6 +40218,7 @@
     "rating": 97,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -38835,7 +40275,7 @@
     "wifi",
     "gril"
    ],
-   "image_url": "https://e-chalupy.cz/foto/pxl-20260725-180153277-2fdc-20ed-1207513.jpg",
+   "image_url": "https://e-chalupy.cz/foto/dsc06744-ae6e-6c63-1223232.jpg",
    "entire_property": true,
    "likely_apartment": false,
    "raw_extra": {
@@ -38855,6 +40295,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "u vody",
@@ -38924,6 +40365,7 @@
     "rating": 99,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -38999,6 +40441,7 @@
     "rating": 93,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -39075,6 +40518,7 @@
     "rating": 99,
     "reviews": 35,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -39144,6 +40588,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -39218,6 +40663,7 @@
     "rating": 95,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -39297,6 +40743,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -39374,6 +40821,7 @@
     "rating": 97,
     "reviews": 28,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -39444,6 +40892,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -39512,6 +40961,7 @@
     "rating": 96,
     "reviews": 29,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -39586,6 +41036,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "krb",
@@ -39658,6 +41109,7 @@
     "rating": 99,
     "reviews": 36,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -39727,6 +41179,7 @@
     "rating": 94,
     "reviews": 1,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "krb",
@@ -39746,6 +41199,76 @@
    "price_per_night_to": 8000,
    "price_estimated": true,
    "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:5330",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Apartmán k pronájmu",
+   "location": "Nové Hamry, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-nove-hamry-apartman-o5330",
+   "capacity": 5,
+   "bedrooms": 2,
+   "price": 2000.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "na samotě",
+    "u lesa",
+    "u vody",
+    "myčka nádobí",
+    "lednička",
+    "televize",
+    "wifi",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/apartman-nove-hamry-a4e1-38c5-511963.jpg",
+   "entire_property": null,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 5330,
+    "tags_featured": [
+     "apartmán 5 osob",
+     "2 ložnice"
+    ],
+    "area_title": "Nové Hamry",
+    "area_slug": "nove-hamry",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.357325,
+     "lon": 12.722487778
+    },
+    "rating": 100,
+    "reviews": 12,
+    "units_header": "",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "na samotě",
+     "u lesa",
+     "u vody",
+     "myčka nádobí",
+     "lednička",
+     "televize",
+     "wifi",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.357325,
+    "lon": 12.722487778
+   },
+   "price_per_night_from": 2000,
+   "price_per_night_to": 2000,
+   "price_estimated": false,
+   "price_note": null,
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Karlovarský"
@@ -39798,6 +41321,7 @@
     "rating": 96,
     "reviews": 70,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "mazlíčci vítáni",
@@ -39869,6 +41393,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -39939,6 +41464,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -40018,6 +41544,7 @@
     "rating": 91,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -40095,6 +41622,7 @@
     "rating": 97,
     "reviews": 7,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -40171,6 +41699,7 @@
     "rating": 100,
     "reviews": 25,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -40250,6 +41779,7 @@
     "rating": 99,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "vířivka",
      "sauna",
@@ -40327,6 +41857,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -40397,6 +41928,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -40464,6 +41996,7 @@
     "rating": 99,
     "reviews": 21,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -40533,6 +42066,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -40603,6 +42137,7 @@
     "rating": 99,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -40672,6 +42207,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "luxusní",
@@ -40737,6 +42273,7 @@
     "rating": 98,
     "reviews": 6,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -40804,6 +42341,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -40875,6 +42413,7 @@
     "rating": 99,
     "reviews": 7,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -40948,6 +42487,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -41021,6 +42561,7 @@
     "rating": 100,
     "reviews": 3,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -41086,6 +42627,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "lednička",
      "wifi"
@@ -41151,6 +42693,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -41225,6 +42768,7 @@
     "rating": 99,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "na samotě",
@@ -41297,6 +42841,7 @@
     "rating": 92,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -41368,6 +42913,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -41439,6 +42985,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -41511,6 +43058,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -41583,6 +43131,7 @@
     "rating": 98,
     "reviews": 7,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -41648,6 +43197,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "lednička",
@@ -41712,6 +43262,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -41780,6 +43331,7 @@
     "rating": 20,
     "reviews": 1,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "u lesa",
@@ -41845,6 +43397,7 @@
     "rating": 96,
     "reviews": 31,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "se psem",
@@ -41865,6 +43418,79 @@
    "price_per_night_to": 9600,
    "price_estimated": true,
    "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:6331",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "CHALOUPKA ZÁPADOČEŠKA",
+   "location": "Krajková, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-krajkova-chalupa-zapadoceska-pronajem-o6331",
+   "capacity": 9,
+   "bedrooms": 3,
+   "price": 1986.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "pro děti",
+    "oplocení",
+    "se psem",
+    "krb",
+    "myčka nádobí",
+    "lednička",
+    "televize",
+    "wifi",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/dum-pohled-z-boku-4634-71c5-535874.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 6331,
+    "tags_featured": [
+     "chalupa 9 osob",
+     "3 ložnice"
+    ],
+    "area_title": "Krajková",
+    "area_slug": "krajkova",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.214752222,
+     "lon": 12.535738889
+    },
+    "rating": 94,
+    "reviews": 10,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "pro děti",
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "se psem",
+     "myčka nádobí",
+     "lednička",
+     "televize",
+     "wifi",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.214752222,
+    "lon": 12.535738889
+   },
+   "price_per_night_from": 1986,
+   "price_per_night_to": 1986,
+   "price_estimated": false,
+   "price_note": null,
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Karlovarský"
@@ -41915,6 +43541,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -41984,6 +43611,7 @@
     "rating": 97,
     "reviews": 30,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -42054,6 +43682,7 @@
     "rating": 100,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -42123,8 +43752,9 @@
      "lon": 13.022904722
     },
     "rating": 96,
-    "reviews": 32,
+    "reviews": 33,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "u lesa",
@@ -42189,6 +43819,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "společenská místnost",
@@ -42258,6 +43889,7 @@
     "rating": 98,
     "reviews": 55,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -42328,6 +43960,7 @@
     "rating": 99,
     "reviews": 2,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -42393,6 +44026,7 @@
     "rating": 98,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -42466,6 +44100,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -42495,6 +44130,79 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:6569",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chalupa Lesní 22",
+   "location": "Horní Blatná, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/chalupa-lesni-22-pronajem-horni-blatna-ubytovani-o6569",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": 1800.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "oplocení",
+    "se psem",
+    "krb",
+    "u lesa",
+    "společenská místnost",
+    "lednička",
+    "televize",
+    "wifi",
+    "pískoviště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/chalupa-lesni-22-37c9-85c4-1190681.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 6569,
+    "tags_featured": [
+     "chalupa 6 osob",
+     "2 ložnice"
+    ],
+    "area_title": "Horní Blatná",
+    "area_slug": "horni-blatna",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.394105,
+     "lon": 12.766814444
+    },
+    "rating": 100,
+    "reviews": 3,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u lesa",
+     "se psem",
+     "společenská místnost",
+     "lednička",
+     "televize",
+     "wifi",
+     "pískoviště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.394105,
+    "lon": 12.766814444
+   },
+   "price_per_night_from": 1800,
+   "price_per_night_to": 1800,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
   },
   {
    "id": "e-chalupy.cz:6585",
@@ -42538,6 +44246,7 @@
     "rating": 98,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -42609,6 +44318,7 @@
     "rating": 99,
     "reviews": 46,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -42680,6 +44390,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -42747,6 +44458,7 @@
     "rating": 98,
     "reviews": 3,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -42815,6 +44527,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -42887,6 +44600,7 @@
     "rating": 100,
     "reviews": 5,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -42957,6 +44671,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -43022,6 +44737,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -43087,6 +44803,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -43109,6 +44826,72 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:6907",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chata Irena",
+   "location": "Oloví, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-olovi-chata-irena-pronajem-o6907",
+   "capacity": 4,
+   "bedrooms": 2,
+   "price": 1357.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "oplocení",
+    "na samotě",
+    "u lesa",
+    "u vody",
+    "společenská místnost",
+    "wifi",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/chata-irena-olovi-68ad-0ce1-549248.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 6907,
+    "tags_featured": [
+     "chata 4 osoby",
+     "2 ložnice"
+    ],
+    "area_title": "Oloví",
+    "area_slug": "olovi",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.256954167,
+     "lon": 12.569835833
+    },
+    "rating": 100,
+    "reviews": 1,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "oploceno",
+     "na samotě",
+     "u lesa",
+     "u vody",
+     "společenská místnost",
+     "wifi",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.256954167,
+    "lon": 12.569835833
+   },
+   "price_per_night_from": 1357,
+   "price_per_night_to": 1357,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
   },
   {
    "id": "e-chalupy.cz:6917",
@@ -43156,6 +44939,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -43232,6 +45016,7 @@
     "rating": 99,
     "reviews": 24,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -43309,6 +45094,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -43382,6 +45168,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -43455,6 +45242,7 @@
     "rating": 97,
     "reviews": 74,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -43532,6 +45320,7 @@
     "rating": 38,
     "reviews": 1,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -43605,6 +45394,7 @@
     "rating": 97,
     "reviews": 27,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "na samotě",
      "krb",
@@ -43677,6 +45467,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -43754,6 +45545,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -43832,6 +45624,7 @@
     "rating": 99,
     "reviews": 46,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -43906,6 +45699,7 @@
     "rating": 96,
     "reviews": 44,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -43974,6 +45768,7 @@
     "rating": 94,
     "reviews": 5,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "na samotě",
@@ -43993,6 +45788,81 @@
    },
    "price_per_night_from": 1857,
    "price_per_night_to": 1857,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Ústecký"
+  },
+  {
+   "id": "e-chalupy.cz:7301",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Chalupa u Penzionu Na Kovárně",
+   "location": "Tisá, České Švýcarsko",
+   "url": "https://www.e-chalupy.cz/ubytovani-tisa-chalupa-u-penzionu-na-kovarne-o7301",
+   "capacity": 22,
+   "bedrooms": 4,
+   "price": 5000.0,
+   "price_unit": "objekt za noc",
+   "amenities": [
+    "sauna",
+    "oplocení",
+    "se psem",
+    "krb",
+    "u lesa",
+    "společenská místnost",
+    "lednička",
+    "televize",
+    "wifi",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/chalupa-u-penzionu-na-kovarne-tisa-a6ad-75f8-559281.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "id": 7301,
+    "tags_featured": [
+     "chalupa 22 osob",
+     "4 ložnice"
+    ],
+    "area_title": "Tisá",
+    "area_slug": "tisa",
+    "area2_title": "České Švýcarsko",
+    "area2_slug": "ceske-svycarsko",
+    "gps": {
+     "lat": 50.786588056,
+     "lon": 14.017611389
+    },
+    "rating": 0,
+    "reviews": 0,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "sauna",
+     "oploceno",
+     "mazlíčci vítáni",
+     "krb",
+     "u lesa",
+     "se psem",
+     "společenská místnost",
+     "lednička",
+     "televize",
+     "wifi",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.786588056,
+    "lon": 14.017611389
+   },
+   "price_per_night_from": 5000,
+   "price_per_night_to": 5000,
    "price_estimated": false,
    "price_note": null,
    "price_as_of": "2026-10-14",
@@ -44041,6 +45911,7 @@
     "rating": 99,
     "reviews": 34,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "mazlíčci vítáni",
@@ -44109,6 +45980,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -44186,6 +46058,7 @@
     "rating": 95,
     "reviews": 81,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -44265,6 +46138,7 @@
     "rating": 96,
     "reviews": 8,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -44287,6 +46161,71 @@
    },
    "price_per_night_from": 4400,
    "price_per_night_to": 4400,
+   "price_estimated": true,
+   "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Karlovarský"
+  },
+  {
+   "id": "e-chalupy.cz:7431",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "e-chalupy.cz",
+   "title": "Apartmány penzion Florian",
+   "location": "Horní Blatná, Západní Čechy",
+   "url": "https://www.e-chalupy.cz/ubytovani-horni-blatna-penzion-florian-o7431",
+   "capacity": 18,
+   "bedrooms": 7,
+   "price": 450.0,
+   "price_unit": "osoba za noc",
+   "amenities": [
+    "se psem",
+    "společenská místnost",
+    "lednička",
+    "wifi",
+    "ohniště",
+    "gril"
+   ],
+   "image_url": "https://e-chalupy.cz/foto/penzion-v-lete-d572-b392-564736.jpg",
+   "entire_property": true,
+   "likely_apartment": true,
+   "raw_extra": {
+    "id": 7431,
+    "tags_featured": [
+     "penzion 18 osob",
+     "7 ložnic"
+    ],
+    "area_title": "Horní Blatná",
+    "area_slug": "horni-blatna",
+    "area2_title": "Západní Čechy",
+    "area2_slug": "zapadni-cechy",
+    "gps": {
+     "lat": 50.389166667,
+     "lon": 12.77
+    },
+    "rating": 97,
+    "reviews": 2,
+    "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
+    "amenities_original": [
+     "mazlíčci vítáni",
+     "se psem",
+     "společenská místnost",
+     "lednička",
+     "wifi",
+     "ohniště",
+     "gril"
+    ]
+   },
+   "okres": null,
+   "gps": {
+    "lat": 50.389166667,
+    "lon": 12.77
+   },
+   "price_per_night_from": 8100,
+   "price_per_night_to": 8100,
    "price_estimated": true,
    "price_note": "přepočteno z ceny za osobu při plné kapacitě (odhad)",
    "price_as_of": "2026-10-14",
@@ -44339,6 +46278,7 @@
     "rating": 98,
     "reviews": 45,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -44415,6 +46355,7 @@
     "rating": 98,
     "reviews": 80,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -44491,6 +46432,7 @@
     "rating": 96,
     "reviews": 25,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -44561,6 +46503,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "snídaně",
@@ -44626,6 +46569,7 @@
     "rating": 98,
     "reviews": 32,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -44695,6 +46639,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -44769,6 +46714,7 @@
     "rating": 99,
     "reviews": 18,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -44846,6 +46792,7 @@
     "rating": 94,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -44916,6 +46863,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "myčka nádobí",
@@ -44981,6 +46929,7 @@
     "rating": 100,
     "reviews": 28,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -45050,6 +46999,7 @@
     "rating": 99,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "mazlíčci vítáni",
@@ -45120,6 +47070,7 @@
     "rating": 97,
     "reviews": 17,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -45195,6 +47146,7 @@
     "rating": 98,
     "reviews": 55,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -45268,6 +47220,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -45335,6 +47288,7 @@
     "rating": 98,
     "reviews": 54,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -45407,6 +47361,7 @@
     "rating": 99,
     "reviews": 9,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -45479,6 +47434,7 @@
     "rating": 98,
     "reviews": 55,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -45552,6 +47508,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "oploceno",
@@ -45627,6 +47584,7 @@
     "rating": 92,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -45699,6 +47657,7 @@
     "rating": 99,
     "reviews": 46,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "u vody",
@@ -45771,6 +47730,7 @@
     "rating": 89,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "sauna",
@@ -45845,6 +47805,7 @@
     "rating": 96,
     "reviews": 30,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -45913,6 +47874,7 @@
     "rating": 85,
     "reviews": 11,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -45980,6 +47942,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -46052,6 +48015,7 @@
     "rating": 100,
     "reviews": 16,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -46123,6 +48087,7 @@
     "rating": 98,
     "reviews": 41,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -46195,6 +48160,7 @@
     "rating": 99,
     "reviews": 14,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -46266,6 +48232,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "u lesa",
      "společenská místnost",
@@ -46337,6 +48304,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -46408,6 +48376,7 @@
     "rating": 84,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -46475,6 +48444,7 @@
     "rating": 98,
     "reviews": 5,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -46550,6 +48520,7 @@
     "rating": 98,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -46624,6 +48595,7 @@
     "rating": 100,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -46694,6 +48666,7 @@
     "rating": 92,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "společenská místnost",
@@ -46762,6 +48735,7 @@
     "rating": 100,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -46830,6 +48804,7 @@
     "rating": 91,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -46907,6 +48882,7 @@
     "rating": 98,
     "reviews": 35,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -46985,6 +48961,7 @@
     "rating": 100,
     "reviews": 50,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -47060,6 +49037,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -47137,6 +49115,7 @@
     "rating": 100,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -47215,6 +49194,7 @@
     "rating": 100,
     "reviews": 1,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -47293,6 +49273,7 @@
     "rating": 98,
     "reviews": 26,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "na samotě",
@@ -47363,6 +49344,7 @@
     "rating": 94,
     "reviews": 1,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "u lesa",
@@ -47424,6 +49406,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "myčka nádobí",
      "lednička",
@@ -47488,6 +49471,7 @@
     "rating": 88,
     "reviews": 18,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -47561,6 +49545,7 @@
     "rating": 96,
     "reviews": 5,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "oploceno",
@@ -47637,6 +49622,7 @@
     "rating": 100,
     "reviews": 31,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -47708,6 +49694,7 @@
     "rating": 99,
     "reviews": 44,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -47776,6 +49763,7 @@
     "rating": 98,
     "reviews": 28,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "krb",
@@ -47848,6 +49836,7 @@
     "rating": 100,
     "reviews": 2,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -47920,6 +49909,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "na samotě",
@@ -47986,6 +49976,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "lednička",
@@ -48052,6 +50043,7 @@
     "rating": 100,
     "reviews": 15,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "oploceno",
@@ -48123,6 +50115,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -48195,6 +50188,7 @@
     "rating": 95,
     "reviews": 19,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -48267,6 +50261,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "oploceno",
      "mazlíčci vítáni",
@@ -48342,6 +50337,7 @@
     "rating": 97,
     "reviews": 10,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "vířivka",
@@ -48417,6 +50413,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "mazlíčci vítáni",
@@ -48493,6 +50490,7 @@
     "rating": 99,
     "reviews": 12,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -48565,6 +50563,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "společenská místnost",
@@ -48633,6 +50632,7 @@
     "rating": 94,
     "reviews": 93,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "pro děti",
      "krb",
@@ -48705,6 +50705,7 @@
     "rating": 98,
     "reviews": 1,
     "units_header": "<bold>Pronajímá se samostatná část</bold> – v objektu může být přítomen majitel",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -48779,6 +50780,7 @@
     "rating": 99,
     "reviews": 4,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -48848,6 +50850,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "u lesa",
@@ -48920,6 +50923,7 @@
     "rating": 100,
     "reviews": 6,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "sauna",
      "pro děti",
@@ -48991,6 +50995,7 @@
     "rating": 100,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
@@ -49058,6 +51063,7 @@
     "rating": 100,
     "reviews": 11,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "krb",
      "společenská místnost",
@@ -49130,6 +51136,7 @@
     "rating": 100,
     "reviews": 7,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "bazén",
      "pro děti",
@@ -49201,6 +51208,7 @@
     "rating": 0,
     "reviews": 0,
     "units_header": "",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "u lesa",
@@ -49270,6 +51278,7 @@
     "rating": 100,
     "reviews": 4,
     "units_header": "<bold>Objekt se pronajímá celý</bold> – budete ho mít jen pro sebe",
+    "location_prefiltered": true,
     "amenities_original": [
      "mazlíčci vítáni",
      "krb",
