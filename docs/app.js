@@ -268,7 +268,7 @@ const legendKraje = `<div class="legend"><span><i class="dot"></i>kraj s nabídk
 
 /* ---------- úvod ---------- */
 const header = back => `<header class="hdr"><button class="logo" data-act="home" aria-label="Chalupník – úvod"><i></i><b>Chalupník</b></button>
-  <span class="hdr-sub">Chaty, chalupy, sruby a roubenky z e-chalupy.cz, chata.cz a cs-chalupy.cz</span>
+  <span class="hdr-sub">Chaty, chalupy a roubenky k pronájmu na jednom místě</span>
   ${back ? `<button class="back" data-act="home"><span aria-hidden="true">‹</span> <span class="t-m">Oblasti</span><span class="t-d">Všechny oblasti</span></button>` : ''}</header>`;
 
 function oblastItem(info, ob) {
