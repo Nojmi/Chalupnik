@@ -253,8 +253,8 @@ function mapSVG(mode, compact) {
     });
   } else {
     const anchor = { 'jizerske-hory': 'l', 'cesky-raj': 'l', sumava: 'l', beskydy: 'l', 'krusne-hory': 'r' };
-    if (compact) Object.assign(anchor, { 'krusne-hory': 't', 'orlicke-hory': 'l' });
-    else Object.assign(anchor, { 'cesky-raj': 'r', vysocina: 'l' });   // desktop: štítky se nesmí potkat (Krušné hory × Český ráj, Vysočina × Beskydy)
+    if (compact) Object.assign(anchor, { 'krusne-hory': 't', 'orlicke-hory': 'l', 'jizerske-hory': 't', 'ceske-svycarsko': 'l', 'stredni-cechy': 'r' });
+    else Object.assign(anchor, { 'cesky-raj': 'r', vysocina: 'l', 'jizerske-hory': 'r', 'ceske-svycarsko': 'l', 'stredni-cechy': 'r' });   // desktop: štítky se nesmí potkat (Krušné hory × Český ráj, Vysočina × Beskydy)
     const fs = compact ? 17 : 13.5;
     d.oblasti.forEach(ob => {
       const c = countO[ob.id], has = c != null;

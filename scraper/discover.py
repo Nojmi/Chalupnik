@@ -33,8 +33,24 @@ def load_db() -> dict[str, list[dict]]:
     return out
 
 
+def _e_ids(area_id: str) -> set[str]:
+    """Všechna ID nabídek, která portál vrací pro daný area kód."""
+    ids: set[str] = set()
+    offset = 0
+    while offset < 5000:
+        r = requests.get(e_chalupy.API_URL, headers=e_chalupy.HEADERS,
+                         params={"destinations": area_id, "limit": 1000, "offset": offset}, timeout=30)
+        r.raise_for_status()
+        items = r.json().get("items") or []
+        if not items:
+            break
+        ids.update(str(i["id"]) for i in items if i.get("id") is not None)
+        offset += 1000
+    return ids
+
+
 def probe_e_chalupy() -> list[dict]:
-    """Projde area kódy a vrátí ty, které mají nabídky (název + počet)."""
+    """Projde area kódy a vrátí ty, které mají nabídky (název, počet, ID nabídek)."""
     rows = []
     for n in E_AREA_RANGE:
         area_id = f"area_{n}"
@@ -52,7 +68,11 @@ def probe_e_chalupy() -> list[dict]:
             continue
         a1 = ((items[0].get("area") or {}).get("title") or "").strip()
         a2 = ((items[0].get("area2") or {}).get("title") or "").strip()
-        rows.append({"id": area_id, "total": total, "ex_area": a1, "ex_area2": a2})
+        try:
+            ids = _e_ids(area_id)
+        except requests.RequestException:
+            ids = set()
+        rows.append({"id": area_id, "total": total, "ex_area": a1, "ex_area2": a2, "ids": ids})
     return rows
 
 
@@ -89,21 +109,29 @@ def main() -> int:
     parts = ["# Pokrytí oblastí\n"]
 
     # --- e-chalupy.cz ---
+    # Porovnáváme konkrétní ID nabídek (ne jen počty): "chybí" = nabídky, které
+    # portál pro daný kód vrací a my je v databázi nemáme.
+    code_to_region = {}
+    for region, value in e_chalupy.STATIC_AREA_IDS.items():
+        for code in ([value] if isinstance(value, str) else value):
+            code_to_region[code] = region
+    db_e_ids = {str(l["raw_extra"].get("id")) for ls in db.values() for l in ls if l["source"] == "e-chalupy.cz"}
     er = probe_e_chalupy()
-    rows, missing = [], 0
+    rows, all_missing = [], set()
     for r in er:
         if "error" in r:
             rows.append([r["id"], "chyba", r["error"], "", "", ""])
             continue
-        ours = static_ids.get(r["id"])
-        have = db_counts.get(ours, {}).get("e-chalupy.cz", 0) if ours else 0
-        status = "ano" if ours else "**CHYBÍ**"
-        if not ours:
-            missing += r["total"]
-        rows.append([r["id"], r["ex_area2"] or r["ex_area"] or "?", r["total"], ours or "-", have, status])
-    parts.append("## e-chalupy.cz (area kódy 19600–19699)\n")
-    parts.append(md_table(["kód", "oblast (z ukázkové nabídky)", "na portálu", "náš region", "u nás", "pokryto"], rows))
-    parts.append(f"\nCelkem nabídek v oblastech, které nemáme: **{missing}**\n")
+        missing = r["ids"] - db_e_ids
+        all_missing |= missing
+        region = code_to_region.get(r["id"], "-")
+        status = "ano" if not missing else f"**CHYBÍ {len(missing)}**"
+        rows.append([r["id"], r["ex_area2"] or r["ex_area"] or "?", r["total"], region,
+                     len(r["ids"] & db_e_ids), status])
+    parts.append("## e-chalupy.cz (area kódy 19600–19699, porovnání podle ID nabídek)\n")
+    parts.append(md_table(["kód", "oblast (z ukázkové nabídky)", "na portálu", "náš region", "z toho máme", "chybí"], rows))
+    parts.append(f"\nUnikátních nabídek na e-chalupy.cz, které v databázi chybí: **{len(all_missing)}** "
+                 f"(v databázi je jich {len(db_e_ids)})\n")
 
     # --- cs-chalupy.cz ---
     cr = probe_cs_chalupy()

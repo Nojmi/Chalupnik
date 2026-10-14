@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       location:
-        description: "Lokalita, i víc oblastí najednou oddělených středníkem (např. Šumava; Český ráj; Beskydy)"
+        description: "Lokalita, i víc oblastí najednou oddělených středníkem (např. Šumava; Český ráj). PRÁZDNÉ = všechny oblasti"
         required: false
         default: ""
       min_capacity:
@@ -93,6 +93,11 @@ jobs:
             return 1
           }
 
+          # Prázdné pole Lokalita = všechny oblasti ze seznamu (docs/data/mapa-cr.json)
+          if [ -z "$(echo "$CRIT_LOCATION_ALL" | xargs)" ]; then
+            CRIT_LOCATION_ALL="$(python -m scraper.regions)"
+            echo "Lokalita nezadána -> všechny oblasti: $CRIT_LOCATION_ALL"
+          fi
           IFS=';' read -ra LOCS <<< "$CRIT_LOCATION_ALL"
           [ ${#LOCS[@]} -eq 0 ] && LOCS=("")
           fail=0

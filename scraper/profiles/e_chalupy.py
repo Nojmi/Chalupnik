@@ -159,18 +159,22 @@ DESTINATION_RE = re.compile(r"window\.dataSearchBoxSelectedData\s*=\s*(\{.*?\});
 # resolvování se ale pořád uplatní, jen o resolvovaný region přijde
 # přednost). Revalidovat, pokud počty pro tyhle regiony začnou vypadat
 # podezřele nízké/nulové.
-STATIC_AREA_IDS: dict[str, str] = {
-    "sumava": "area_19647",
-    "jeseniky": "area_19651",
+STATIC_AREA_IDS: dict[str, str | tuple[str, ...]] = {
+    # Hodnota může být víc area kódů: oblast = sjednocení (stejné členění jako
+    # cs-chalupy.cz, které má 13 oblastí; e-chalupy má jemnější: 16+ kódů).
+    "sumava": ("area_19647", "area_19645"),            # + Západní Čechy
+    "jeseniky": ("area_19651", "area_19658"),          # + Severní Morava a Slezsko
     "beskydy": "area_19652",
     "krkonose": "area_19643",
     "jizni-morava": "area_19653",
-    "cesky-raj": "area_19644",
+    "cesky-raj": ("area_19644", "area_19659"),         # + Kokořínsko
     "jizerske-hory": "area_19642",
     "jizni-cechy": "area_19646",
-    "krusne-hory": "area_19640",
+    "krusne-hory": ("area_19640", "area_19654"),       # + České středohoří
     "vysocina": "area_19649",
-    "orlicke-hory": "area_19650",
+    "orlicke-hory": ("area_19650", "area_19648"),      # + Východní Čechy
+    "ceske-svycarsko": ("area_19655", "area_19641"),   # + Lužické hory
+    "stredni-cechy": ("area_19657", "area_19656"),     # + Okolí Prahy
 }
 
 # Kanonický název vybavení -> ID filtru/filtrů na portálu (viz docstring
@@ -203,6 +207,16 @@ def _slugify(text: str) -> str:
     return text.strip("-")
 
 
+def _resolve_area_ids(location: str) -> list[str]:
+    """Jako _resolve_area_id, ale vrací seznam kódů (oblast může mít víc)."""
+    slug = _slugify(location)
+    if slug in STATIC_AREA_IDS:
+        value = STATIC_AREA_IDS[slug]
+        return [value] if isinstance(value, str) else list(value)
+    live = _resolve_area_id(location)
+    return [live] if live else []
+
+
 def _resolve_area_id(location: str) -> str | None:
     """Text -> area_XXXXX. Nejdřív STATIC_AREA_IDS (obchází endpoint
     blokovaný na GitHub Actions, viz komentář u té konstanty), teprve
@@ -219,7 +233,8 @@ def _resolve_area_id(location: str) -> str | None:
         return None
 
     if slug in STATIC_AREA_IDS:
-        return STATIC_AREA_IDS[slug]
+        value = STATIC_AREA_IDS[slug]
+        return value if isinstance(value, str) else value[0]
 
     try:
         response = requests.get(f"{BASE_URL}/{slug}", headers=HEADERS, timeout=20)
@@ -408,21 +423,8 @@ def _enrich_amenities_from_filters(listings: list[Listing], base_params: dict) -
                 listing.amenities.append(amenity_name)
 
 
-def search(criteria: dict) -> list[Listing]:
-    params = {}
-
-    location = criteria.get("location")
-    if location:
-        area_id = _resolve_area_id(location)
-        if area_id:
-            params["destinations"] = area_id
-        else:
-            print(f"[e-chalupy.cz] '{location}' se nepodařilo přeložit na area kód - hledám bez destinations (celostátně, viz MAX_LISTINGS strop)", file=sys.stderr)
-
-    # min_capacity/min_bedrooms/max_price se záměrně neposílají do API -
-    # stahujeme kompletní data pro lokalitu a tahle kritéria filtrujeme
-    # až v filters.py/frontendu (viz poznámky v docstringu modulu).
-
+def _fetch_area(params: dict) -> tuple[list[Listing], int | None]:
+    """Stáhne všechny nabídky jednoho dotazu (jeden area kód, nebo celostátně)."""
     listings: list[Listing] = []
     offset = 0
     portal_total = None
@@ -443,22 +445,44 @@ def search(criteria: dict) -> list[Listing]:
 
         listings.extend(_parse_item(item) for item in items)
         offset += PAGE_SIZE
+    return listings, portal_total
 
-    # Dotaz byl scopovaný serverem (destinations=area_XXXXX): všechno, co portál
-    # vrátil, patří do téhle oblasti. Dřív filters.py porovnával přesný slug
-    # area2 a zahazoval ~10 % nabídek (např. Šumava 915 z 1194), jejichž area2
-    # je podoblast (jiný slug, stejná oblast). Proto věříme serveru.
-    if "destinations" in params:
-        for listing in listings:
-            listing.raw_extra["location_prefiltered"] = True
 
-    ids = {l.raw_extra.get("id") for l in listings}
+def search(criteria: dict) -> list[Listing]:
+    location = criteria.get("location")
+    codes: list[str] = []
+    if location:
+        codes = _resolve_area_ids(location)
+        if not codes:
+            print(f"[e-chalupy.cz] '{location}' se nepodařilo přeložit na area kód - hledám bez destinations (celostátně, viz MAX_LISTINGS strop)", file=sys.stderr)
+
+    # min_capacity/min_bedrooms/max_price se záměrně neposílají do API -
+    # stahujeme kompletní data pro lokalitu a tahle kritéria filtrujeme
+    # až v filters.py/frontendu (viz poznámky v docstringu modulu).
+
+    listings: list[Listing] = []
+    seen: set = set()
+    totals: dict[str, int | None] = {}
+    for code in (codes or [None]):
+        params = {"destinations": code} if code else {}
+        part, total = _fetch_area(params)
+        totals[code or "celostatne"] = total
+        _enrich_amenities_from_filters(part, params)
+        for listing in part:
+            lid = listing.raw_extra.get("id")
+            if lid in seen:
+                continue
+            seen.add(lid)
+            # Dotaz byl scopovaný serverem (destinations=area_XXXXX): všechno, co
+            # portál vrátil, patří do téhle oblasti. Dřív filters.py porovnával
+            # přesný slug area2 a zahazoval ~10 % nabídek (podoblasti).
+            if code:
+                listing.raw_extra["location_prefiltered"] = True
+            listings.append(listing)
+
     slugs = collections.Counter(l.raw_extra.get("area2_slug") for l in listings)
     print(
-        f"[COVERAGE] e-chalupy.cz: portal hlasi={portal_total}, stazeno={len(listings)}, "
-        f"unikatnich id={len(ids)}, area2 slugy={dict(slugs.most_common(8))}"
+        f"[COVERAGE] e-chalupy.cz: portal hlasi={totals}, stazeno unikatnich={len(listings)}, "
+        f"area2 slugy={dict(slugs.most_common(6))}"
     )
-
-    _enrich_amenities_from_filters(listings, params)
-
     return listings

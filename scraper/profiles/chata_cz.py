@@ -548,7 +548,64 @@ def _log_coverage(params: dict, scraped: int) -> None:
     print(f"[COVERAGE] chata.cz: stazeno={scraped} | portal hlasi: " + ", ".join(parts))
 
 
+# Další názvy oblastí, které u téhle oblasti hledáme navíc (stejné členění jako
+# e-chalupy.cz/cs-chalupy.cz). Bere se jen PŘESNÁ shoda s oblastí (LocationType 6) -
+# neznámý název se přeskočí (a vypíše do logu), nikdy se nehledá "něco podobného".
+EXTRA_LOCATIONS: dict[str, list[str]] = {
+    "sumava": ["Západní Čechy"],
+    "jeseniky": ["Severní Morava a Slezsko"],
+    "cesky-raj": ["Kokořínsko"],
+    "krusne-hory": ["České středohoří"],
+    "orlicke-hory": ["Východní Čechy"],
+    "ceske-svycarsko": ["Lužické hory"],
+    "stredni-cechy": ["Okolí Prahy"],
+}
+
+
+def _slug(text: str) -> str:
+    import unicodedata
+    t = unicodedata.normalize("NFKD", text or "")
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
+
+
+def _resolve_region_strict(location: str) -> tuple[int, int] | None:
+    """Jako _resolve_location, ale jen přesná shoda s oblastí (LocationType 6)."""
+    url = f"{BASE_URL}/Autocomplete/{quote(location)}"
+    try:
+        response = requests.get(url, headers=AJAX_HEADERS, timeout=15)
+        response.raise_for_status()
+        results = response.json()
+    except (requests.RequestException, ValueError):
+        print(f"[chata.cz] oblast '{location}': Autocomplete selhal, přeskakuji")
+        return None
+    want = _slug(location)
+    for item in results or []:
+        if item.get("LocationType") != 6 or item.get("LocationId") is None:
+            continue
+        texts = [_slug(str(v)) for v in item.values() if isinstance(v, str)]
+        if any(t == want for t in texts):
+            print(f"[chata.cz] oblast '{location}' -> id {item['LocationId']} (přesná shoda)")
+            return item["LocationId"], item["LocationType"]
+    print(f"[chata.cz] oblast '{location}': přesná shoda mezi {len(results or [])} výsledky nenalezena, přeskakuji")
+    return None
+
+
 def search(criteria: dict) -> list[Listing]:
+    location = (criteria.get("location") or "").strip()
+    listings = _search_one(criteria)
+    seen = {l.raw_extra.get("code") for l in listings}
+    for extra in EXTRA_LOCATIONS.get(_slug(location), []):
+        for l in _search_one({**criteria, "location": extra}, strict=True):
+            code = l.raw_extra.get("code")
+            if code in seen:
+                continue
+            seen.add(code)
+            listings.append(l)
+    return listings
+
+
+def _search_one(criteria: dict, strict: bool = False) -> list[Listing]:
     location = (criteria.get("location") or "").strip()
 
     params: dict = {
@@ -563,7 +620,9 @@ def search(criteria: dict) -> list[Listing]:
 
     location_resolved = False
     if location:
-        resolved = _resolve_location(location)
+        resolved = _resolve_region_strict(location) if strict else _resolve_location(location)
+        if strict and not resolved:
+            return []
         if resolved:
             params["Autocomplete.LocationId"], params["Autocomplete.LocationType"] = resolved
             location_resolved = True
