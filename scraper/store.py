@@ -26,6 +26,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
+from scraper.kraj import kraj_for
 from scraper.normalize import SCHEMA_VERSION, normalize_listing
 
 ALL_SOURCES = ("e-chalupy.cz", "chata.cz", "cs-chalupy.cz")
@@ -99,6 +100,8 @@ def save_store(path: Path, store: dict) -> None:
     """Atomický zápis (dočasný soubor + přejmenování), stabilní pořadí pro čisté git diffy."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
+    for x in store["listings"]:      # kraj dopočítáme i u starších záznamů
+        x["kraj"] = kraj_for(x.get("gps"))
     store["listings"] = sorted(store["listings"], key=lambda x: x["id"])
     tmp = path.with_suffix(path.suffix + ".tmp")
     with tmp.open("w", encoding="utf-8", newline="\n") as f:
@@ -264,6 +267,16 @@ def merge_run(store: dict, run: dict, sources=ALL_SOURCES, prune_days: int = PRU
 # ---------------------------------------------------------------------------
 # Index regionů (pro výběr regionu na webu)
 # ---------------------------------------------------------------------------
+def _count_kraje(listings: list) -> dict:
+    """Počty nabídek podle kraje (bez kraje se nepočítají) – pro mapu „Podle krajů"."""
+    out: dict = {}
+    for x in listings:
+        k = x.get("kraj") or kraj_for(x.get("gps"))
+        if k:
+            out[k] = out.get(k, 0) + 1
+    return dict(sorted(out.items()))
+
+
 def build_index(data_dir: Path) -> dict:
     """Stav čerstvosti se do indexu záměrně neukládá – web ho musí počítat v okamžiku zobrazení."""
     regions = []
@@ -281,6 +294,7 @@ def build_index(data_dir: Path) -> dict:
             "active_count": sum(1 for x in s["listings"] if x.get("seen_in_last_run")),
             "last_updated": s.get("last_updated"),
             "sources_updated": s.get("sources_updated", {}),
+            "kraje": _count_kraje(s["listings"]),
         })
     return {"schema_version": SCHEMA_VERSION, "regions": regions}
 
