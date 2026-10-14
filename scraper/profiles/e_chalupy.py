@@ -110,6 +110,7 @@ import json
 import collections
 import re
 import sys
+import time
 import unicodedata
 
 import requests
@@ -237,7 +238,7 @@ def _resolve_area_id(location: str) -> str | None:
         return value if isinstance(value, str) else value[0]
 
     try:
-        response = requests.get(f"{BASE_URL}/{slug}", headers=HEADERS, timeout=20)
+        response = _get(f"{BASE_URL}/{slug}", headers=HEADERS, timeout=20)
     except requests.RequestException as exc:
         print(f"[e-chalupy.cz] area lookup pro '{slug}' selhal (request exception): {exc}", file=sys.stderr)
         return None
@@ -381,12 +382,30 @@ def _parse_item(item: dict) -> Listing:
     )
 
 
+def _get(url: str, *, tries: int = 4, **kwargs) -> requests.Response:
+    """GET s opakováním: výpadek spojení / 429 / 5xx se zkusí znovu (prodleva 2, 4, 8 s) místo zahození celé oblasti."""
+    last: Exception | None = None
+    for attempt in range(tries):
+        try:
+            response = requests.get(url, **kwargs)
+            if response.status_code == 429 or response.status_code >= 500:
+                raise requests.HTTPError(f"HTTP {response.status_code}", response=response)
+            return response
+        except requests.RequestException as exc:
+            last = exc
+            if attempt < tries - 1:
+                wait = 2 * 2 ** attempt
+                print(f"[e-chalupy.cz] požadavek selhal ({exc}), pokus {attempt + 2}/{tries} za {wait} s", file=sys.stderr)
+                time.sleep(wait)
+    raise last  # type: ignore[misc]
+
+
 def _fetch_filter_id_set(base_params: dict, filter_id: int) -> set[int]:
     """Vrátí množinu ID nabídek, které portál sám řadí pod daný filtr ID."""
     ids: set[int] = set()
     offset = 0
     while offset < MAX_LISTINGS:
-        response = requests.get(
+        response = _get(
             API_URL,
             headers=HEADERS,
             params={**base_params, "filters": filter_id, "limit": ENRICH_LIMIT, "offset": offset},
@@ -429,7 +448,7 @@ def _fetch_area(params: dict) -> tuple[list[Listing], int | None]:
     offset = 0
     portal_total = None
     while offset < MAX_LISTINGS:
-        response = requests.get(
+        response = _get(
             API_URL,
             headers=HEADERS,
             params={**params, "limit": PAGE_SIZE, "offset": offset},
