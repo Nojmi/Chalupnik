@@ -2,11 +2,11 @@
  "schema_version": 1,
  "region": "jizni-morava",
  "region_label": "Jižní Morava",
- "last_updated": "2026-10-14T11:36:27.979374+00:00",
+ "last_updated": "2026-10-14T13:11:33.024819+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T11:36:27.979374+00:00",
-  "chata.cz": "2026-10-14T11:36:27.979374+00:00",
-  "cs-chalupy.cz": "2026-10-14T11:36:27.979374+00:00"
+  "e-chalupy.cz": "2026-10-14T13:11:33.024819+00:00",
+  "chata.cz": "2026-10-14T13:11:33.024819+00:00",
+  "cs-chalupy.cz": "2026-10-14T13:11:33.024819+00:00"
  },
  "listings": [
   {
