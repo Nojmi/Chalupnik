@@ -127,6 +127,26 @@
     "Karlovarský": 8,
     "Plzeňský": 444
    }
+  },
+  {
+   "region": "vysocina",
+   "region_label": "Vysočina",
+   "file": "vysocina.json",
+   "listing_count": 1091,
+   "active_count": 1091,
+   "last_updated": "2026-10-14T12:02:23.239071+00:00",
+   "sources_updated": {
+    "e-chalupy.cz": "2026-10-14T12:02:23.239071+00:00",
+    "chata.cz": "2026-10-14T12:02:23.239071+00:00",
+    "cs-chalupy.cz": "2026-10-14T12:02:23.239071+00:00"
+   },
+   "kraje": {
+    "Jihomoravský": 24,
+    "Jihočeský": 3,
+    "Pardubický": 170,
+    "Středočeský": 7,
+    "Vysočina": 861
+   }
   }
  ]
 }
