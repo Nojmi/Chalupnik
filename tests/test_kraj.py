@@ -27,3 +27,11 @@ def test_index_ignores_foreign_json(tmp_path):
     idx = build_index(tmp_path)
     assert [r["region"] for r in idx["regions"]] == ["krkonose"]
     assert sum(idx["regions"][0]["kraje"].values()) == 1
+
+
+def test_cs_chalupy_alias_jizni_morava():
+    from scraper.profiles.cs_chalupy import _resolve_region_slug
+    regs = [{"name": "Jižní a střední Morava", "slug": "jizni-a-stredni-morava"},
+            {"name": "Jižní Čechy", "slug": "jizni-cechy"}]
+    assert _resolve_region_slug("Jižní Morava", regs) == "jizni-a-stredni-morava"
+    assert _resolve_region_slug("Jižní Čechy", regs) == "jizni-cechy"

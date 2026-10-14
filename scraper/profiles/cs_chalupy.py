@@ -211,10 +211,19 @@ def _load_regions() -> list[dict]:
     return regions
 
 
+# Naše názvy oblastí, které se na portálu jmenují jinak (slug není podřetězec).
+REGION_ALIASES = {
+    "jizni-morava": "jizni-a-stredni-morava",
+    "stredni-morava": "jizni-a-stredni-morava",
+    "morava": "jizni-a-stredni-morava",
+}
+
+
 def _resolve_region_slug(location: str, regions: list[dict]) -> str | None:
     norm_loc = _slugify(location)
     if not norm_loc:
         return None
+    norm_loc = REGION_ALIASES.get(norm_loc, norm_loc)
 
     for region in regions:
         if region["slug"] == norm_loc:
