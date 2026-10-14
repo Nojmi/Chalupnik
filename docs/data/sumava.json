@@ -2,13 +2,77 @@
  "schema_version": 1,
  "region": "sumava",
  "region_label": "Šumava",
- "last_updated": "2026-10-14T12:56:32.883435+00:00",
+ "last_updated": "2026-10-14T17:27:14.735773+00:00",
  "sources_updated": {
-  "e-chalupy.cz": "2026-10-14T12:56:32.883435+00:00",
-  "chata.cz": "2026-10-14T12:56:32.883435+00:00",
-  "cs-chalupy.cz": "2026-10-14T12:56:32.883435+00:00"
+  "e-chalupy.cz": "2026-10-14T17:27:14.735773+00:00",
+  "chata.cz": "2026-10-14T17:27:14.735773+00:00",
+  "cs-chalupy.cz": "2026-10-14T17:27:14.735773+00:00"
  },
  "listings": [
+  {
+   "id": "chata.cz:CZ0470",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "chata.cz",
+   "title": "Rekreační dům Sněženka",
+   "location": "Nýrsko, Šumava",
+   "url": "https://www.chata.cz/ubytovani/sumava/nyrsko/rekreacni-dum-snezenka-CZ0470/",
+   "capacity": 6,
+   "bedrooms": 2,
+   "price": null,
+   "price_unit": null,
+   "amenities": [
+    "se psem",
+    "wifi",
+    "parkování",
+    "povlečení",
+    "krb"
+   ],
+   "image_url": "https://www.chata.cz/img_vypis_big/CZ0470-letni.jpg",
+   "entire_property": true,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "CZ0470",
+    "rooms": [
+     {
+      "name": "Rekreační dům pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
+     }
+    ],
+    "rating": {
+     "value": "9,5",
+     "word": "Fantastické",
+     "count_text": "dle 2 hodnocení"
+    },
+    "badges": [],
+    "equipment_tooltips": {
+     "parkování": "před domem",
+     "povlečení": "zdarma"
+    },
+    "bez_terminu": true,
+    "location_prefiltered": true,
+    "amenities_original": [
+     "se psem",
+     "wifi",
+     "parkování",
+     "povlečení",
+     "krb"
+    ]
+   },
+   "okres": null,
+   "gps": null,
+   "price_per_night_from": null,
+   "price_per_night_to": null,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": null,
+   "price_term": null,
+   "kraj": null
+  },
   {
    "id": "chata.cz:CZ1140",
    "first_seen": "2026-10-14",
@@ -9220,6 +9284,131 @@
    "price_as_of": "2026-10-14",
    "price_term": null,
    "kraj": "Jihočeský"
+  },
+  {
+   "id": "cs-chalupy.cz:3C-101",
+   "first_seen": "2026-10-14",
+   "last_seen": "2026-10-14",
+   "seen_in_last_run": true,
+   "source": "cs-chalupy.cz",
+   "title": "Statek Sedlečko - Nalžovské Hory - Šumava",
+   "location": "Nalžovské Hory, Šumava a západní Čechy",
+   "url": "https://www.cs-chalupy.cz/statek-sedlecko-nalzovske-hory-sumava.3C-101.html",
+   "capacity": 20,
+   "bedrooms": 10,
+   "price": 4990.0,
+   "price_unit": "pokoj / týden",
+   "amenities": [
+    "wifi",
+    "se psem",
+    "společenská místnost",
+    "vybavená kuchyně",
+    "rychlovarná konvice",
+    "varná deska",
+    "lednička",
+    "mikrovlnná trouba",
+    "televize",
+    "sat",
+    "zahradní nábytek",
+    "terasa",
+    "zastřešené posezení",
+    "zahrada",
+    "gril",
+    "oplocení"
+   ],
+   "image_url": "https://www.cs-chalupy.cz/data/katalog_chalupy/2289-88836/statek-sedlecko-nalzovske-hory-sumava.jpg",
+   "entire_property": null,
+   "likely_apartment": false,
+   "raw_extra": {
+    "code": "3C-101",
+    "bathrooms": 4,
+    "wc": 4,
+    "rating": null,
+    "location_prefiltered": true,
+    "type": "rekreační dům",
+    "cenik": [
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "9 000 Kč",
+      "cena_hodnota": 9000.0,
+      "typ": "Objekt / víkend",
+      "poznamka": "Min. nocí: 2, cena za 1 dům do 9 osob"
+     },
+     {
+      "sezona": "Sezóna LÉTO",
+      "cena": "22 000 Kč",
+      "cena_hodnota": 22000.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Min. nocí: 6, cena za 1 dům do 9 osob na 6 nocí"
+     },
+     {
+      "sezona": "Sezóna ZIMA",
+      "cena": "10 000 Kč",
+      "cena_hodnota": 10000.0,
+      "typ": "Objekt / víkend",
+      "poznamka": "Min. nocí: 2, cena za 1 dům do 9 osob"
+     },
+     {
+      "sezona": "Sezóna ZIMA",
+      "cena": "24 000 Kč",
+      "cena_hodnota": 24000.0,
+      "typ": "Objekt / pobyt",
+      "poznamka": "Min. nocí: 6, cena za 1 dům do 9 osob na 6 nocí"
+     },
+     {
+      "sezona": "Celoročně",
+      "cena": "4 990 Kč",
+      "cena_hodnota": 4990.0,
+      "typ": "Pokoj / týden",
+      "poznamka": "Min. nocí: 6, Cena za 2 osoby na 6 nocí"
+     }
+    ],
+    "domaci_zvire": "ANO - je povolené",
+    "popis_detaily": {
+     "Rozložení ložnic": "10 ložnic: 2x 3, 6x 2, 2x 0+1",
+     "Vzdálenosti": "parkování (20 m), zastávka autobus (150 m), zastávka vlak (9000 m), obchod (3500 m), restaurace (2000 m), les (200 m), koupání (50 m), lyžařský vlek (12000 m)"
+    },
+    "address": {
+     "street": "Sedlečko",
+     "locality": "Nalžovské Hory",
+     "region": "Klatovy",
+     "postal_code": "341 01"
+    },
+    "gps": {
+     "lat": "49.307177605593",
+     "lng": "13.525049519198"
+    },
+    "amenities_original": [
+     "wifi",
+     "se psem",
+     "společenská místnost",
+     "vybavená kuchyně",
+     "rychlovarná konvice",
+     "varná deska",
+     "lednička",
+     "mikrovlnná trouba",
+     "televize",
+     "SAT",
+     "zahradní nábytek",
+     "terasa",
+     "zastřešené posezení",
+     "zahrada",
+     "gril",
+     "oplocený objekt"
+    ]
+   },
+   "okres": "Klatovy",
+   "gps": {
+    "lat": 49.307177605593,
+    "lon": 13.525049519198
+   },
+   "price_per_night_from": 3667,
+   "price_per_night_to": 5000,
+   "price_estimated": false,
+   "price_note": null,
+   "price_as_of": "2026-10-14",
+   "price_term": null,
+   "kraj": "Plzeňský"
   },
   {
    "id": "cs-chalupy.cz:3C-104",
@@ -49250,8 +49439,8 @@
      "lat": 48.631008889,
      "lon": 14.166609167
     },
-    "rating": 98,
-    "reviews": 18,
+    "rating": 99,
+    "reviews": 19,
     "units_header": "",
     "amenities_original": [
      "mazlíčci vítáni",
@@ -49916,7 +50105,7 @@
      "lon": 13.464200556
     },
     "rating": 100,
-    "reviews": 10,
+    "reviews": 11,
     "units_header": "",
     "amenities_original": [
      "myčka nádobí",
@@ -75887,7 +76076,7 @@
      "lon": 13.878361111
     },
     "rating": 98,
-    "reviews": 7,
+    "reviews": 8,
     "units_header": "",
     "amenities_original": [
      "oploceno",
