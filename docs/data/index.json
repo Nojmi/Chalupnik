@@ -5,13 +5,13 @@
    "region": "beskydy",
    "region_label": "Beskydy",
    "file": "beskydy.json",
-   "listing_count": 1206,
-   "active_count": 1206,
-   "last_updated": "2026-10-14T10:31:01.811849+00:00",
+   "listing_count": 1208,
+   "active_count": 1208,
+   "last_updated": "2026-10-14T17:45:53.813637+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T10:31:01.811849+00:00",
-    "chata.cz": "2026-10-14T10:31:01.811849+00:00",
-    "cs-chalupy.cz": "2026-10-14T10:31:01.811849+00:00"
+    "e-chalupy.cz": "2026-10-14T17:45:53.813637+00:00",
+    "chata.cz": "2026-10-14T17:45:53.813637+00:00",
+    "cs-chalupy.cz": "2026-10-14T17:45:53.813637+00:00"
    },
    "kraje": {
     "Moravskoslezský": 497,
