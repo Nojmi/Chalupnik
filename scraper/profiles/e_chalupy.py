@@ -107,6 +107,7 @@ Poznámky k portálu:
 """
 
 import json
+import collections
 import re
 import sys
 import unicodedata
@@ -424,6 +425,7 @@ def search(criteria: dict) -> list[Listing]:
 
     listings: list[Listing] = []
     offset = 0
+    portal_total = None
     while offset < MAX_LISTINGS:
         response = requests.get(
             API_URL,
@@ -433,12 +435,29 @@ def search(criteria: dict) -> list[Listing]:
         )
         response.raise_for_status()
         data = response.json()
+        if portal_total is None:
+            portal_total = (data.get("total") or {}).get("value")
         items = data.get("items") or []
         if not items:
             break
 
         listings.extend(_parse_item(item) for item in items)
         offset += PAGE_SIZE
+
+    # Dotaz byl scopovaný serverem (destinations=area_XXXXX): všechno, co portál
+    # vrátil, patří do téhle oblasti. Dřív filters.py porovnával přesný slug
+    # area2 a zahazoval ~10 % nabídek (např. Šumava 915 z 1194), jejichž area2
+    # je podoblast (jiný slug, stejná oblast). Proto věříme serveru.
+    if "destinations" in params:
+        for listing in listings:
+            listing.raw_extra["location_prefiltered"] = True
+
+    ids = {l.raw_extra.get("id") for l in listings}
+    slugs = collections.Counter(l.raw_extra.get("area2_slug") for l in listings)
+    print(
+        f"[COVERAGE] e-chalupy.cz: portal hlasi={portal_total}, stazeno={len(listings)}, "
+        f"unikatnich id={len(ids)}, area2 slugy={dict(slugs.most_common(8))}"
+    )
 
     _enrich_amenities_from_filters(listings, params)
 

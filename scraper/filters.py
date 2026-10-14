@@ -21,7 +21,12 @@ def matches(listing: Listing, criteria: dict) -> bool:
     location = criteria.get("location")
     if location and listing.location is not None:
         area_slug = listing.raw_extra.get("area2_slug")
-        if area_slug:
+        if listing.raw_extra.get("location_prefiltered"):
+            # Profil nabídky už scopoval dotaz podle lokality na straně serveru
+            # (např. e-chalupy destinations=area_XXXXX) - věříme mu. Porovnání
+            # slugu area2 by zahodilo nabídky z podoblastí téže oblasti.
+            pass
+        elif area_slug:
             # Profile resolved an exact region/area code (e.g. e-chalupy.cz's
             # area2) - compare slugs precisely instead of a fuzzy substring
             # match against the human-readable location text.
