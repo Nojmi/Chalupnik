@@ -455,3 +455,18 @@ body.locked { overflow: hidden; }
   .side .cb { padding: 3px 11px; gap: 5px; }
   .side .hint { font-size: 12.5px; }
 }
+
+/* PC: nižší hlavička, menší nadpis oblasti, stáří portálů jen v tooltipu */
+.side { overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--okraj-vstupu) transparent; }
+.fresh-tip { display: inline-flex; border-radius: 999px; }
+@media (min-width: 900px) {
+  .hdr { min-height: 52px; padding: 6px 40px 0; }
+  .res-head { padding: 4px 40px 12px; align-items: center; gap: 12px 20px; }
+  .res-head .tt { flex-direction: row; align-items: center; gap: 8px 16px; flex-wrap: wrap; }
+  .res-head h1 { font-size: 30px; line-height: 1.1; letter-spacing: -.01em; }
+  .res-head .line { gap: 0; }
+  .ages { display: none; }
+  .res-head .btn.big { min-height: 40px; padding: 0 16px; }
+  .res-head .btn .two small { display: none; }
+  .layout { padding-top: 16px; }
+}
