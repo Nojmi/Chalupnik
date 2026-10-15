@@ -75,6 +75,19 @@ def test_resolve_kraj_exact_match_type_2(monkeypatch):
     assert chata_cz.resolve_kraj("Plzeňský") == (11, 2, "kraj Plzeňský")
 
 
+def test_resolve_kraj_strips_html_highlight(monkeypatch):
+    """Skutečná odpověď portálu: zvýrazněný název s <strong>."""
+    items = [{"LocationFull": "kraj <strong>Jihomoravský</strong>", "LocationId": 3, "LocationType": 2}]
+    monkeypatch.setattr(chata_cz.requests, "get", lambda *a, **k: _R(items))
+    assert chata_cz.resolve_kraj("Jihomoravský") == (3, 2, "kraj Jihomoravský")
+
+
+def test_resolve_region_strict_strips_html(monkeypatch):
+    items = [{"LocationFull": "<strong>Západní Čechy</strong>", "LocationId": 7, "LocationType": 6}]
+    monkeypatch.setattr(chata_cz.requests, "get", lambda *a, **k: _R(items))
+    assert chata_cz._resolve_region_strict("Západní Čechy") == (7, 6)
+
+
 def test_resolve_kraj_not_found_returns_none(monkeypatch, capsys):
     monkeypatch.setattr(chata_cz.requests, "get", lambda *a, **k: _R([{"LocationId": 3, "LocationType": 6, "Name": "Plzeňsko"}]))
     assert chata_cz.resolve_kraj("Plzeňský") is None

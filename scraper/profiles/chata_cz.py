@@ -562,6 +562,12 @@ EXTRA_LOCATIONS: dict[str, list[str]] = {
 }
 
 
+def _plain(text: str) -> str:
+    """Autocomplete vrací názvy se zvýrazněním shody (`kraj <strong>Plzeňský</strong>`) - značky pryč."""
+    import html
+    return html.unescape(re.sub(r"<[^>]+>", "", text or "")).strip()
+
+
 def _slug(text: str) -> str:
     import unicodedata
     t = unicodedata.normalize("NFKD", text or "")
@@ -583,7 +589,7 @@ def _resolve_region_strict(location: str) -> tuple[int, int] | None:
     for item in results or []:
         if item.get("LocationType") != 6 or item.get("LocationId") is None:
             continue
-        texts = [_slug(str(v)) for v in item.values() if isinstance(v, str)]
+        texts = [_slug(_plain(str(v))) for v in item.values() if isinstance(v, str)]
         if any(t == want for t in texts):
             print(f"[chata.cz] oblast '{location}' -> id {item['LocationId']} (přesná shoda)")
             return item["LocationId"], item["LocationType"]
@@ -646,8 +652,8 @@ def resolve_kraj(short: str) -> tuple[int, int, str] | None:
             if item.get("LocationType") != KRAJ_LOCATION_TYPE or item.get("LocationId") is None:
                 continue
             for value in item.values():
-                if isinstance(value, str) and _slug(value) in wanted:
-                    return item["LocationId"], item["LocationType"], value.strip()
+                if isinstance(value, str) and _slug(_plain(value)) in wanted:
+                    return item["LocationId"], item["LocationType"], _plain(value)
     brief = [{k: v for k, v in it.items() if isinstance(v, (str, int))} for it in seen_items[:8]]
     print(f"[chata.cz] kraj '{short}': přesná shoda (typ {KRAJ_LOCATION_TYPE}) nenalezena; Autocomplete vrátil: {brief}")
     return None
