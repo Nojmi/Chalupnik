@@ -470,14 +470,3 @@ body.locked { overflow: hidden; }
   .res-head .btn .two small { display: none; }
   .layout { padding-top: 16px; }
 }
-
-/* název aplikace je větší než nadpis oblasti */
-.logo b { font-size: 28px; }
-.logo i { width: 13px; height: 13px; }
-.res-head h1 { font-size: 26px; }
-@media (min-width: 900px) {
-  .logo b { font-size: 38px; }
-  .logo i { width: 15px; height: 15px; }
-  .hdr { min-height: 60px; }
-  .res-head h1 { font-size: 28px; }
-}
