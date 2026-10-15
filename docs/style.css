@@ -26,6 +26,7 @@
   --mapa-zeme: oklch(0.320 0.054 160);
   --mapa-kraj-data: oklch(0.45 0.075 150);
   --mapa-hranice: oklch(0.525 0.046 160);
+  --mapa-hranice-kraje: oklch(0.68 0.045 150);
   --mapa-srafa-podklad: oklch(0.285 0.035 160);
   --mapa-srafa-cara: oklch(0.435 0.038 160);
   --cerstve-bg: oklch(0.295 0.044 150);
@@ -85,6 +86,7 @@
   --mapa-zeme: oklch(0.845 0.030 125);
   --mapa-kraj-data: oklch(0.660 0.090 152);
   --mapa-hranice: oklch(0.630 0.016 95);
+  --mapa-hranice-kraje: oklch(0.36 0.055 155);
   --mapa-srafa-podklad: oklch(0.912 0.016 95);
   --mapa-srafa-cara: oklch(0.780 0.016 95);
   --cerstve-bg: oklch(0.885 0.055 150);
@@ -409,3 +411,47 @@ body.locked { overflow: hidden; }
 .unk { padding: 8px 12px; border: 1px dashed var(--nestazeno-okraj); border-radius: 10px; font-size: 13px; color: var(--text-2); }
 
 :root[data-theme="light"] .photo .ph span { background: var(--text); color: var(--pozadi); }
+
+/* ---------- PC: širší rozvržení a kompaktní filtr (jen od 900 px) ---------- */
+@media (min-width: 900px) {
+  .hdr { padding: 12px 40px 0; }
+  .intro { padding: 32px 40px 64px; }
+  .res-head { padding: 24px 40px 20px; }
+  .layout { grid-template-columns: 300px minmax(0, 1fr); gap: 32px; padding: 24px 40px 64px; }
+  .side { padding: 16px 14px 18px; border-radius: 14px; }
+  .side .fp { gap: 12px; }
+  .side .fp-h h2 { font-size: 20px; }
+  .side .fp-h .clear { min-height: 32px; font-size: 13px; }
+  .side .fg { gap: 5px; }
+  .side .fg > .lab, .side .fg h3 { font-size: 14px; }
+  .side .pair { gap: 8px; }
+  .side .pair label small { margin-bottom: 1px; }
+  .side .step { height: 36px; border-radius: 9px; }
+  .side .step button { width: 34px; height: 34px; font-size: 18px; }
+  .side .step output { font-size: 15px; }
+  .side .step output.empty { font-size: 13px; white-space: nowrap; }
+  .side .hint { font-size: 13px; line-height: 1.3; }
+  .side .money { height: 36px; border-radius: 9px; padding: 0 12px; }
+  .side .money input { height: 32px; font-size: 15px; }
+  .side .sw { min-height: 40px; gap: 10px; padding: 2px 0; }
+  .side .sw .tx b { font-size: 14px; }
+  .side .sw .trk { width: 44px; height: 26px; }
+  .side .sw .trk i { width: 18px; height: 18px; font-size: 12px; }
+  .side .sw[aria-checked="true"] .trk i { transform: translateX(18px); }
+  .side .cw { display: flex; flex-wrap: wrap; gap: 6px; }
+  .side .cb { min-height: 32px; padding: 3px 10px 3px 8px; gap: 6px; border-radius: 999px; font-size: 13px; }
+  .side .cb::before { width: 14px; height: 14px; border-radius: 4px; font-size: 10px; }
+}
+@media (min-width: 1500px) {
+  .wrap, .hdr { max-width: 1880px; margin-inline: auto; }
+}
+@media (min-width: 1700px) {
+  .cards, .skels { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 900px) {
+  .side .fp { gap: 10px; }
+  .side .cb::before { display: none; }
+  .side .cb[aria-pressed="true"]::before { display: block; width: auto; height: auto; border: 0; background: none; color: inherit; font-size: 12px; content: "✓"; }
+  .side .cb { padding: 3px 11px; gap: 5px; }
+  .side .hint { font-size: 12.5px; }
+}

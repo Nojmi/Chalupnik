@@ -282,7 +282,7 @@ function mapSVG(mode, compact) {
     const has = countK[k.short] != null;
     const fill = mode === 'oblasti' ? 'var(--mapa-zeme)' : has ? 'var(--mapa-kraj-data)' : `url(#${uid})`;
     const pick = mode === 'kraje' && has ? ` data-pick="k:${esc(k.short)}"` : '';
-    o += `<path d="${k.d}"${pick} stroke-width="1" stroke-linejoin="round" style="fill:${fill};stroke:var(--mapa-hranice)"/>`;
+    o += `<path d="${k.d}"${pick} stroke-width="${mode === 'kraje' ? 1.4 : 1}" stroke-linejoin="round" style="fill:${fill};stroke:var(${mode === 'kraje' ? '--mapa-hranice-kraje' : '--mapa-hranice'})"/>`;
   });
   if (mode === 'kraje') {
     d.kraje.forEach(k => {
