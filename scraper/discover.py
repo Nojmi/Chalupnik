@@ -150,6 +150,28 @@ def main() -> int:
     ch_db = sum(c.get("chata.cz", 0) for c in db_counts.values())
     parts.append(md_table(["dotaz", "na portálu"], [[k, v] for k, v in ch.items()] + [["u nás (součet po regionech)", ch_db]]))
 
+    # Porovnání podle konkrétních kódů: co portál pro celou ČR (chaty a chalupy) vrací a v databázi nemáme
+    db_codes = {str((l.get("raw_extra") or {}).get("code")) for ls in db.values() for l in ls if l["source"] == "chata.cz"}
+    try:
+        cards = chata_cz._fetch_all_cards({"Where": "", "Distance": 0, "Adults": 2, "GuestsType": "TwoAdults",
+                                           "RoomAmountType": "More", "SortingType": "Regio",
+                                           "AccType": chata_cz.ACC_TYPE_CHATY_CHALUPY})
+    except requests.RequestException as exc:
+        cards = []
+        parts.append(f"\nStažení celé ČR z chata.cz selhalo: {exc}\n")
+    portal = {}
+    for card in cards:
+        code, title = chata_cz._extract_code_title(card)
+        if code:
+            portal[code] = (title, chata_cz._extract_location(card))
+    missing = {c: v for c, v in portal.items() if c not in db_codes}
+    parts.append(f"\nNabídek chata.cz (celá ČR) načteno **{len(portal)}**, v databázi je máme **{len(portal) - len(missing)}**, "
+                 f"**chybí {len(missing)}**; v databázi navíc (portál je nevrátil): {len(db_codes - set(portal))}.\n")
+    if missing:
+        by_loc = collections.Counter(v[1].rsplit(",", 1)[-1].strip() or "?" for v in missing.values())
+        parts.append("Chybějící podle lokality: " + ", ".join(f"{k} ({n})" for k, n in by_loc.most_common(15)) + "\n")
+        parts.append(md_table(["kód", "název", "lokalita"], [[c, v[0], v[1]] for c, v in sorted(missing.items())[:40]]))
+
     text = "\n".join(parts)
     print(text)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
