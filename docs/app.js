@@ -135,7 +135,7 @@ async function open(view) {
       lists.flat().forEach(l => { if (l.kraj === view.id && !seen.has(l.id)) seen.set(l.id, l); });
       items = [...seen.values()];
     }
-    S.items = items; S.cov = coverage(items);
+    S.cov = coverage(items); S.items = mergeDuplicates(items);
     const days = infos.map(oldestDays).filter(d => d != null);
     S.meta = {
       title: view.t === 'region' ? infos[0].region_label : krajTitle(view.id),
@@ -154,6 +154,38 @@ function mergeAges(infos) {
     const ds = infos.map(i => daysSince((i.sources_updated || {})[p])).filter(d => d != null);
     return { name: p, d: ds.length ? Math.max(...ds) : null };
   });
+}
+
+
+/* ---------- duplicity: stejná chata na víc portálech = jedna karta ---------- */
+function buildDup(d) {                         // id -> pole id celé skupiny (pořadí: e-chalupy, cs-chalupy, chata.cz)
+  const m = new Map();
+  ((d && d.groups) || []).forEach(g => g.forEach(id => m.set(id, g)));
+  return m;
+}
+function mergeDuplicates(items) {
+  const byId = new Map(items.map(l => [l.id, l])), done = new Set(), out = [];
+  items.forEach(l => {
+    if (done.has(l.id)) return;
+    const g = S.dup && S.dup.get(l.id);
+    const mem = g ? g.map(id => byId.get(id)).filter(Boolean) : [l];
+    mem.forEach(x => done.add(x.id));
+    if (mem.length < 2) { out.push(mem[0]); return; }
+    const p = mem[0], first = k => { const x = mem.find(m => m[k] != null); return x ? x[k] : null; };
+    const priced = mem.filter(m => m.price_per_night_from != null);
+    const pool = priced.some(m => !m.price_estimated) ? priced.filter(m => !m.price_estimated) : priced;
+    const m = Object.assign({}, p, {
+      _members: mem,
+      amenities: [...new Set(mem.flatMap(x => x.amenities || []))],
+      capacity: first('capacity'), bedrooms: first('bedrooms'), image_url: p.image_url || first('image_url'),
+      price_per_night_from: pool.length ? Math.min(...pool.map(x => x.price_per_night_from)) : null,
+      _avail: mem.some(x => x._avail),
+      likely_apartment: mem.every(x => x.likely_apartment === true),
+      _ent: mem.some(x => x._ent === 'ano') ? 'ano' : mem.some(x => x._ent === 'ne') ? 'ne' : 'neznámo',
+    });
+    out.push(m);
+  });
+  return out;
 }
 
 /* ---------- filtrování: splňuje / nesplňuje / neznámo ---------- */
@@ -320,14 +352,21 @@ function introHTML() {
 }
 
 /* ---------- karta nabídky ---------- */
-function priceHTML(l) {
+function priceText(l) {
   const from = l.price_per_night_from, to = l.price_per_night_to;
-  if (from == null) return `<div class="price"><div class="v none">cena neuvedena</div></div>`;
-  let v;
-  if (l.price_estimated) v = `cca ${fmt(from)}${NB}Kč/noc (odhad)`;
-  else if (to != null && to !== from) v = `od ${fmt(from)} do ${fmt(to)}${NB}Kč/noc`;
-  else if (to == null) v = `od ${fmt(from)}${NB}Kč/noc`;
-  else v = `${fmt(from)}${NB}Kč/noc`;
+  if (from == null) return null;
+  if (l.price_estimated) return `cca ${fmt(from)}${NB}Kč/noc (odhad)`;
+  if (to != null && to !== from) return `od ${fmt(from)} do ${fmt(to)}${NB}Kč/noc`;
+  if (to == null) return `od ${fmt(from)}${NB}Kč/noc`;
+  return `${fmt(from)}${NB}Kč/noc`;
+}
+function priceHTML(l) {
+  if (l._members) {                            // sloučená karta: cena podle portálu
+    const rows = l._members.map(m => { const t = priceText(m); return `<div class="prow"><span class="pdot ${m._src}" aria-hidden="true"></span><span class="pname">${esc(m.source)}</span><b class="${t ? '' : 'none'}">${t || 'cena neuvedena'}</b></div>`; }).join('');
+    return `<div class="price multi">${rows}</div>`;
+  }
+  const v = priceText(l);
+  if (v == null) return `<div class="price"><div class="v none">cena neuvedena</div></div>`;
   const meta = [l.price_as_of ? `k${NB}${shortDate(l.price_as_of)}` : '', termText(l.price_term), l.price_estimated ? 'přepočteno z ceny za osobu' : ''].filter(Boolean).join(' · ');
   return `<div class="price"><div class="v">${v}</div>${meta ? `<div class="m">${esc(meta)}</div>` : ''}${l.price_note ? `<div class="pn">${esc(l.price_note)}</div>` : ''}</div>`;
 }
@@ -344,11 +383,12 @@ function cardHTML(l) {
   const url = /^https?:\/\//.test(l.url || '') ? l.url : '#';
   const img = /^https?:\/\//.test(l.image_url || '') ? `<img class="pimg" src="${esc(l.image_url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : '';
   return `<article class="card${l._avail ? '' : ' unavail'}">
-    <div class="photo"><div class="ph"><span>fotka objektu</span></div>${img}<span class="src ${l._src}">${esc(l.source)}</span>${l._avail ? '' : '<div class="gone"><i aria-hidden="true">?</i>možná už není k dispozici</div>'}</div>
+    <div class="photo"><div class="ph"><span>fotka objektu</span></div>${img}<span class="srcs">${(l._members || [l]).map(m => `<span class="src ${m._src}">${esc(m.source)}</span>`).join('')}</span>${l._avail ? '' : '<div class="gone"><i aria-hidden="true">?</i>možná už není k dispozici</div>'}</div>
     <div class="cbody"><h3>${esc(l.title)}</h3><div class="place">${esc(l._place)}</div><div class="cap">${cap}${bed}</div>
     ${priceHTML(l)}${l._unk && l._unk.length ? `<div class="unk">${esc(unkText(l._unk))} Ověřte na portálu.</div>` : ''}${l.likely_apartment ? '<div class="warn"><span aria-hidden="true">⚠</span><span>možná jen apartmán, ne celá chalupa</span></div>' : ''}
     ${am.length ? `<div class="tags">${tags}${more}</div>` : ''}
-    <a class="btn block" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Zobrazit na portálu <span aria-hidden="true">↗</span></a></div></article>`;
+    ${l._members ? `<div class="btns">${l._members.map(m => `<a class="btn block" href="${esc(/^https?:\/\//.test(m.url || '') ? m.url : '#')}" target="_blank" rel="noopener noreferrer">${esc(m.source)} <span aria-hidden="true">↗</span></a>`).join('')}</div>`
+      : `<a class="btn block" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Zobrazit na portálu <span aria-hidden="true">↗</span></a>`}</div></article>`;
 }
 
 /* ---------- výsledky ---------- */
@@ -357,7 +397,7 @@ function resultsHTML() {
   const where = S.view.t === 'region' ? `v ${esc(locative(m.title))}` : esc(krajWhere(S.view.id));
   const bar = `<div class="bar"><div class="sum"><b class="num" role="status">Zobrazeno ${fmt(c.shown)} z ${fmt(c.total)}</b><span>nabídek ${where}</span></div>
     <button class="fbtn" data-act="filters" aria-haspopup="dialog">Filtry ${chips.length ? `<span class="badge">${chips.length}</span>` : ''}</button></div>`;
-  const cnt = {}; c.all.forEach(l => { cnt[l.source] = (cnt[l.source] || 0) + 1; });
+  const cnt = {}; c.all.forEach(l => (l._members || [l]).forEach(m => { cnt[m.source] = (cnt[m.source] || 0) + 1; }));
   const pills = `<div class="pills">${PORTALS.map(p => `<span class="pill"><i style="background:${PORTAL_COLOR[SRC[p]]}"></i>${p} <b class="num">${fmt(cnt[p] || 0)}</b></span>`).join('')}</div>`;
   const chipsH = chips.length ? `<div class="chips">${chips.map(x => `<button class="chip" data-act="drop" data-id="${esc(x.key)}">${esc(x.text)} <span aria-hidden="true">×</span><span class="sr-only">zrušit filtr</span></button>`).join('')}</div>` : '';
   if (!c.shown) {
@@ -557,6 +597,7 @@ mq.addEventListener('change', () => { S.sheet = false; render(); });
   try {
     const [index, mapa] = await Promise.all([getJSON('data/index.json'), getJSON('data/mapa-cr.json')]);
     S.index = index; S.mapa = mapa; S.load = 'ok';
+    try { S.dup = buildDup(await getJSON('data/duplicity.json')); } catch (_) { S.dup = new Map(); }   // bez souboru se nic neslučuje
     render();
   } catch (e) {
     $app.innerHTML = `${'<header class="hdr"><span class="logo"><i></i><b>Chalupník</b></span></header>'}<main class="wrap"><div class="state"><div class="ic" aria-hidden="true">!</div><h2>Nabídky se nepodařilo načíst</h2>

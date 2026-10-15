@@ -187,7 +187,8 @@ body.locked { overflow: hidden; }
 .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .photo .ph { position: absolute; inset: 0; display: grid; place-items: center; }
 .photo .ph span { font: 500 11px/1 var(--mono); background: #000; padding: 4px 8px; color: var(--text-2); }
-.src { position: absolute; top: 10px; left: 10px; padding: 4px 8px; border-radius: 6px; font: 700 12px/1.2 var(--sans); color: #fff; }
+.srcs { position: absolute; top: 10px; left: 10px; right: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.src { padding: 4px 8px; border-radius: 6px; font: 700 12px/1.2 var(--sans); color: #fff; }
 .src.e { background: var(--portal-e); } .src.chata { background: var(--portal-chata); } .src.cs { background: var(--portal-cs); }
 .gone { position: absolute; left: 10px; right: 10px; bottom: 10px; display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 8px; background: var(--nedostupna-odznak); color: #fff; font: 600 13px/1.2 var(--sans); }
 .gone i { width: 18px; height: 18px; flex: none; border: 1.5px solid #fff; border-radius: 50%; display: grid; place-items: center; font-style: normal; font-size: 12px; font-weight: 800; }
@@ -204,6 +205,15 @@ body.locked { overflow: hidden; }
 .price .v.none { font: italic 400 15px/1.3 var(--sans); color: var(--text-2); }
 .price .m { font-size: 13px; color: var(--text-2); }
 .price .pn { font-size: 13px; color: var(--poznamka-ceny); }
+.price.multi { gap: 6px; }
+.prow { display: flex; align-items: baseline; gap: 8px; font-variant-numeric: tabular-nums; }
+.prow .pname { flex: 1; font-size: 13px; color: var(--text-2); }
+.prow b { font: 700 15px/1.3 var(--sans); text-align: right; }
+.prow b.none { font: italic 400 14px/1.3 var(--sans); color: var(--text-2); }
+.pdot { width: 9px; height: 9px; border-radius: 2px; flex: none; align-self: center; }
+.pdot.e { background: var(--portal-e); } .pdot.chata { background: var(--portal-chata); } .pdot.cs { background: var(--portal-cs); }
+.card .btns { display: flex; flex-direction: column; gap: 8px; margin-top: auto; }
+.card .btns .btn { margin-top: 0; }
 .warn { display: flex; gap: 8px; padding: 8px 12px; border-radius: 10px; background: var(--apartman-bg); color: var(--apartman-text); font: 600 14px/1.3 var(--sans); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .tag { padding: 5px 10px; border: 1px solid var(--okraj-karty); border-radius: 999px; font: 500 13px/1.2 var(--sans); color: var(--text); }

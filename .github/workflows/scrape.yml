@@ -118,6 +118,8 @@ jobs:
           # chata.cz po krajích: přidělí kraj nabídkám chata.cz (karta nemá GPS) a doplní ty, které žádná oblast nepokrývá
           echo "::group::chata.cz po krajích"
           python -m scraper.chata_kraje || { echo "::error::chata.cz po krajích skončilo chybou"; fail=1; }
-          save "chata.cz po krajích" || { echo "::error::Uložení po krajích selhalo"; fail=1; }
+          # duplicity: stejná chata na víc portálech (jen seznam skupin, data se nemění)
+          python -m scraper.dedupe || { echo "::error::hledání duplicit skončilo chybou"; fail=1; }
+          save "chata.cz po krajích a duplicity" || { echo "::error::Uložení po krajích selhalo"; fail=1; }
           echo "::endgroup::"
           exit $fail
