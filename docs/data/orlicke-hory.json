@@ -78,7 +78,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -91,7 +92,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ0490",
@@ -151,7 +152,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -164,7 +166,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ1503",
@@ -226,7 +228,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -239,7 +242,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ2155",
@@ -309,7 +312,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -322,7 +326,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ3536",
@@ -384,7 +388,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -397,7 +402,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ4890",
@@ -461,7 +466,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -474,7 +480,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5251",
@@ -537,7 +543,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -550,7 +557,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5780",
@@ -617,7 +624,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -630,7 +638,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5833",
@@ -690,7 +698,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -703,7 +712,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5891",
@@ -764,7 +773,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -777,7 +787,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ5962",
@@ -847,7 +857,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -860,7 +871,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ7064",
@@ -913,7 +924,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -923,7 +935,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ7465",
@@ -986,7 +998,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -999,7 +1012,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ7508",
@@ -1051,7 +1064,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1064,7 +1078,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ7515",
@@ -1124,7 +1138,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1137,7 +1152,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ7700",
@@ -1200,7 +1215,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1213,7 +1229,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ7739",
@@ -1278,7 +1294,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1291,7 +1308,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8025",
@@ -1343,7 +1360,8 @@
      "se psem",
      "vyžití pro děti",
      "parkování"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1356,7 +1374,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8032",
@@ -1429,7 +1447,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1442,7 +1461,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8145",
@@ -1507,7 +1526,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1517,7 +1537,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8179",
@@ -1567,7 +1587,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1580,7 +1601,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8279",
@@ -1640,7 +1661,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1653,7 +1675,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8289",
@@ -1712,7 +1734,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1725,7 +1748,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8359",
@@ -1790,7 +1813,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1803,7 +1827,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8392",
@@ -1866,7 +1890,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1879,7 +1904,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8477",
@@ -1939,7 +1964,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1952,7 +1978,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8510",
@@ -2008,7 +2034,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -2021,7 +2048,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8514",
@@ -2103,7 +2130,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -2116,7 +2144,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8537",
@@ -2176,7 +2204,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -2189,7 +2218,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8701",
@@ -2242,7 +2271,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -2255,7 +2285,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8723",
@@ -2321,7 +2351,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -2334,7 +2365,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8731",
@@ -2390,7 +2421,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -2403,7 +2435,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "cs-chalupy.cz:8C-001",

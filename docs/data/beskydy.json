@@ -72,7 +72,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -85,7 +86,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ1401",
@@ -141,7 +142,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -154,7 +156,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ1577",
@@ -223,7 +225,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -233,7 +236,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ2224",
@@ -301,7 +304,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -314,7 +318,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ2734",
@@ -365,7 +369,8 @@
      "vyžití pro děti",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -378,7 +383,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ2952",
@@ -437,7 +442,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -450,7 +456,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ3409",
@@ -509,7 +515,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -522,7 +529,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4301",
@@ -582,7 +589,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -595,7 +603,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4346",
@@ -656,7 +664,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -669,7 +678,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4347",
@@ -736,7 +745,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -749,7 +759,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4349",
@@ -820,7 +830,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -833,7 +844,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4432",
@@ -892,7 +903,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -905,7 +917,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4448",
@@ -978,7 +990,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -991,7 +1004,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4482",
@@ -1054,7 +1067,8 @@
      "parkování",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1067,7 +1081,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4535",
@@ -1134,7 +1148,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1147,7 +1162,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4853",
@@ -1212,7 +1227,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1225,7 +1241,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4932",
@@ -1287,7 +1303,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1300,7 +1317,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4958",
@@ -1353,7 +1370,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1366,7 +1384,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ5843",
@@ -1443,7 +1461,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1456,7 +1475,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6232",
@@ -1508,7 +1527,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1518,7 +1538,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6618",
@@ -1588,7 +1608,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1601,7 +1622,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ6713",
@@ -1661,7 +1682,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1674,7 +1696,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ6955",
@@ -1748,7 +1770,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1761,7 +1784,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6986",
@@ -1838,7 +1861,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1851,7 +1875,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7191",
@@ -1916,7 +1940,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1929,7 +1954,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ7233",
@@ -1993,7 +2018,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2006,7 +2032,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7373",
@@ -2070,7 +2096,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2083,7 +2110,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7424",
@@ -2146,7 +2173,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2159,7 +2187,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7469",
@@ -2223,7 +2251,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2236,7 +2265,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7706",
@@ -2299,7 +2328,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2312,7 +2342,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7981",
@@ -2374,7 +2404,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -2387,7 +2418,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8066",
@@ -2446,7 +2477,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2459,7 +2491,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8081",
@@ -2515,7 +2547,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2528,7 +2561,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8101",
@@ -2585,7 +2618,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2598,7 +2632,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8160",
@@ -2662,7 +2696,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -2675,7 +2710,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8216",
@@ -2745,7 +2780,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2758,7 +2794,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8242",
@@ -2826,7 +2862,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -2839,7 +2876,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8282",
@@ -2907,7 +2944,8 @@
      "povlečení",
      "oplocení",
      "sauna"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -2920,7 +2958,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8292",
@@ -2977,7 +3015,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -2990,7 +3029,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8333",
@@ -3046,7 +3085,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3059,7 +3099,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8338",
@@ -3129,7 +3169,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3142,7 +3183,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8460",
@@ -3209,7 +3250,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3222,7 +3264,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8465",
@@ -3291,7 +3333,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3304,7 +3347,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8468",
@@ -3367,7 +3410,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3380,7 +3424,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8499",
@@ -3441,7 +3485,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3454,7 +3499,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8501",
@@ -3505,7 +3550,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -3518,7 +3564,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8516",
@@ -3576,7 +3622,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3589,7 +3636,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8519",
@@ -3647,7 +3694,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3660,7 +3708,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8598",
@@ -3709,7 +3757,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3722,7 +3771,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "cs-chalupy.cz:3M-002",

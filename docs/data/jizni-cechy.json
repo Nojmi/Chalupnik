@@ -76,7 +76,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -89,7 +90,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ0905",
@@ -150,7 +151,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -163,7 +165,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ1186",
@@ -233,7 +235,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -243,7 +246,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ1200",
@@ -301,7 +304,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -311,7 +315,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ1930",
@@ -378,7 +382,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -391,7 +396,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ2716",
@@ -455,7 +460,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -465,7 +471,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ2816",
@@ -526,7 +532,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -536,7 +543,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ3081",
@@ -606,7 +613,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -616,7 +624,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ3387",
@@ -685,7 +693,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -698,7 +707,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ4076",
@@ -758,7 +767,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -771,7 +781,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ4836",
@@ -826,7 +836,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -839,7 +850,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ4837",
@@ -899,7 +910,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -912,7 +924,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ5597",
@@ -987,7 +999,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1000,7 +1013,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ5720",
@@ -1066,7 +1079,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1079,7 +1093,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ5887",
@@ -1144,7 +1158,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1157,7 +1172,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6063",
@@ -1212,7 +1227,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1225,7 +1241,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6370",
@@ -1281,7 +1297,8 @@
      "se psem",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1291,7 +1308,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6379",
@@ -1346,7 +1363,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1359,7 +1377,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6661",
@@ -1432,7 +1450,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1442,7 +1461,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6953",
@@ -1512,7 +1531,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1525,7 +1545,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7116",
@@ -1594,7 +1614,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1607,7 +1628,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7220",
@@ -1674,7 +1695,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1684,7 +1706,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7221",
@@ -1744,7 +1766,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1757,7 +1780,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7455",
@@ -1823,7 +1846,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1833,7 +1857,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7616",
@@ -1902,7 +1926,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1915,7 +1940,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7683",
@@ -1972,7 +1997,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -1985,7 +2011,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7857",
@@ -2044,7 +2070,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2057,7 +2084,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7881",
@@ -2142,7 +2169,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2155,7 +2183,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7913",
@@ -2225,7 +2253,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2238,7 +2267,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7915",
@@ -2312,7 +2341,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2325,7 +2355,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7916",
@@ -2395,7 +2425,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2408,7 +2439,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7931",
@@ -2476,7 +2507,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2489,7 +2521,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7932",
@@ -2549,7 +2581,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2559,7 +2592,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8134",
@@ -2621,7 +2654,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2634,7 +2668,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8153",
@@ -2696,7 +2730,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2709,7 +2744,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8342",
@@ -2774,7 +2809,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2787,7 +2823,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8402",
@@ -2853,7 +2889,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2866,7 +2903,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8436",
@@ -2932,7 +2969,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -2945,7 +2983,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8474",
@@ -3011,7 +3049,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -3024,7 +3063,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8584",
@@ -3083,7 +3122,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -3093,7 +3133,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8595",
@@ -3162,7 +3202,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -3175,7 +3216,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8615",
@@ -3233,7 +3274,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -3246,7 +3288,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8655",
@@ -3319,7 +3361,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihočeský"
    },
    "okres": null,
    "gps": null,
@@ -3332,7 +3375,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihočeský"
   },
   {
    "id": "cs-chalupy.cz:2C-002",

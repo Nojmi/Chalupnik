@@ -57,7 +57,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -70,7 +71,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ2506",
@@ -131,7 +132,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -144,7 +146,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ3021",
@@ -204,7 +206,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -217,7 +220,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ5455",
@@ -273,7 +276,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -286,7 +290,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ6791",
@@ -353,7 +357,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -366,7 +371,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ6828",
@@ -430,7 +435,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -443,7 +449,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ7458",
@@ -508,7 +514,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -521,7 +528,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ7573",
@@ -592,7 +599,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -605,7 +613,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ7601",
@@ -671,7 +679,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -684,7 +693,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ7908",
@@ -747,7 +756,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -760,7 +770,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8201",
@@ -829,7 +839,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -842,7 +853,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ8310",
@@ -909,7 +920,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -919,7 +931,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8368",
@@ -980,7 +992,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -993,7 +1006,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ8410",
@@ -1066,7 +1079,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -1079,7 +1093,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ8440",
@@ -1124,7 +1138,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -1137,7 +1152,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8591",
@@ -1183,7 +1198,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Karlovarský"
    },
    "okres": null,
    "gps": null,
@@ -1193,7 +1209,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ8606",
@@ -1245,7 +1261,8 @@
      "vyžití pro děti",
      "lyžárna/kolárna",
      "parkování"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -1258,7 +1275,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8614",
@@ -1321,7 +1338,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -1334,7 +1352,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8668",
@@ -1388,7 +1406,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -1401,7 +1420,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "cs-chalupy.cz:4C-001",
