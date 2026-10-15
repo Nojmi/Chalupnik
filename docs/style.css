@@ -135,7 +135,7 @@ body.locked { overflow: hidden; }
 /* ---------- hlavička ---------- */
 .hdr { display: flex; align-items: center; gap: 18px; min-height: 60px; padding: 8px 20px 0; }
 .logo { display: inline-flex; align-items: center; gap: 10px; background: none; border: 0; padding: 0; min-height: 44px; }
-.logo i { width: 11px; height: 11px; transform: rotate(45deg); background: var(--zlata); display: block; }
+.logo img { width: 36px; height: 36px; display: block; flex: none; }
 .logo b { font: 600 22px/1 var(--serif); letter-spacing: -.01em; }
 .hdr-sub { display: none; font-size: 14px; color: var(--text-2); }
 .back {

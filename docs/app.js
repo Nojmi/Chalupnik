@@ -321,7 +321,7 @@ const legendHTML = `<div class="legend"><span><i class="dot"></i>nabídky staže
 const legendKraje = `<div class="legend"><span><i class="dot"></i>kraj s nabídkami</span><span><i class="dot empty"></i>zatím nestaženo (šrafováno)</span></div>`;
 
 /* ---------- úvod ---------- */
-const header = back => `<header class="hdr"><button class="logo" data-act="home" aria-label="Chalupník – úvod"><i></i><b>Chalupník</b></button>
+const header = back => `<header class="hdr"><button class="logo" data-act="home" aria-label="Chalupník – úvod"><img src="ikony/icon.svg" alt="" width="36" height="36"><b>Chalupník</b></button>
   <span class="hdr-sub">Chaty, chalupy a roubenky k pronájmu na jednom místě</span>
   ${back ? `<button class="back" data-act="home"><span aria-hidden="true">‹</span> <span class="t-m">Oblasti</span><span class="t-d">Všechny oblasti</span></button>` : ''}${themeBtn()}</header>`;
 
@@ -618,7 +618,7 @@ mq.addEventListener('change', () => { S.sheet = false; render(); });
     try { S.dup = buildDup(await getJSON('data/duplicity.json')); } catch (_) { S.dup = new Map(); }   // bez souboru se nic neslučuje
     render();
   } catch (e) {
-    $app.innerHTML = `${'<header class="hdr"><span class="logo"><i></i><b>Chalupník</b></span>' + themeBtn() + '</header>'}<main class="wrap"><div class="state"><div class="ic" aria-hidden="true">!</div><h2>Nabídky se nepodařilo načíst</h2>
+    $app.innerHTML = `${'<header class="hdr"><span class="logo"><img src="ikony/icon.svg" alt="" width="36" height="36"><b>Chalupník</b></span>' + themeBtn() + '</header>'}<main class="wrap"><div class="state"><div class="ic" aria-hidden="true">!</div><h2>Nabídky se nepodařilo načíst</h2>
       <p>Zkontrolujte připojení k internetu a zkuste to znovu. Pokud se chyba opakuje, pomůže oblast aktualizovat.</p>
       <div class="acts"><button class="btn solid" onclick="location.reload()">Zkusit znovu</button></div><code>${esc(e.message || e)}</code></div></main>`;
   }
