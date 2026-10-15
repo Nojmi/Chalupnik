@@ -19,6 +19,7 @@ Web (docs/index.html) načte index a data oblasti a zobrazí karty s filtry
 1. **Spustit stahování** — [Actions → Scrape listings](https://github.com/Nojmi/Chalupnik/actions/workflows/scrape.yml), *Run workflow*, do pole „Lokalita" napsat oblast (např. Krkonoše, Šumava) a ostatní pole nechat prázdná.
 2. **Scraper** projde portály a sloučí výsledek do databáze oblasti. Nabídky se nepřepisují od nuly (stabilní `id`, `first_seen`/`last_seen`, ochrana proti výpadku portálu). Každá nabídka dostane `kraj` podle GPS.
 3. **GitHub Pages** servíruje `/docs`. Web nic neukládá, filtruje v prohlížeči a stáří dat počítá z `last_updated` (≤ 14 dní čerstvé, 15–30 doporučit aktualizaci, > 30 zastaralé).
+3a. **Režim:** výchozí je tmavý, světlý „lesní papír" se přepíná tlačítkem v hlavičce (atribut `data-theme="light"` na `<html>`, proměnné v `docs/style.css`). Volba se neukládá.
 4. Tlačítko „Aktualizovat region" je zatím jen vzhled; napojení je `window.Chalupnik.onUpdate(regionId)`.
 
 ---

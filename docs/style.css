@@ -57,6 +57,62 @@
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
 }
 
+/* Světlý režim „lesní papír“ (volitelný; výchozí je tmavý). Hodnoty z předání návrhu. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --okoli: oklch(0.780 0.022 105);
+  --pozadi: oklch(0.924 0.016 95);
+  --karta: oklch(0.935 0.016 95);
+  --panel: oklch(0.928 0.016 95);
+  --vypln-jemna: oklch(0.919 0.016 95);
+  --vypln-pruh: oklch(0.912 0.016 95);
+  --vypln-segment: oklch(0.898 0.016 95);
+  --cara: oklch(0.820 0.016 95);
+  --cara-jemna: oklch(0.850 0.016 95);
+  --okraj-karty: oklch(0.790 0.016 95);
+  --okraj-vstupu: oklch(0.730 0.016 95);
+  --text: oklch(0.210 0.020 160);
+  --text-2: oklch(0.330 0.020 160);
+  --text-3: oklch(0.390 0.020 160);
+  --placeholder: oklch(0.450 0.020 160);
+  --primarni: oklch(0.360 0.060 160);
+  --na-primarni: oklch(0.960 0.020 95);
+  --odkaz: oklch(0.360 0.070 160);
+  --zlata: oklch(0.640 0.130 68);
+  --odznak-bg: oklch(0.760 0.120 75);
+  --odznak-text: oklch(0.240 0.030 160);
+  --zelena: oklch(0.440 0.090 155);
+  --mapa-zeme: oklch(0.845 0.030 125);
+  --mapa-kraj-data: oklch(0.660 0.090 152);
+  --mapa-hranice: oklch(0.630 0.016 95);
+  --mapa-srafa-podklad: oklch(0.912 0.016 95);
+  --mapa-srafa-cara: oklch(0.780 0.016 95);
+  --cerstve-bg: oklch(0.885 0.055 150);
+  --cerstve-text: oklch(0.32 0.08 152);
+  --cerstve-ikona: oklch(0.4 0.09 152);
+  --aktualizovat-bg: oklch(0.885 0.070 88);
+  --aktualizovat-text: oklch(0.36 0.08 65);
+  --aktualizovat-ikona: oklch(0.5 0.1 70);
+  --zastarale-bg: oklch(0.875 0.055 32);
+  --zastarale-text: oklch(0.4 0.13 32);
+  --zastarale-ikona: oklch(0.48 0.15 32);
+  --nestazeno-bg: oklch(0.912 0.016 95);
+  --nestazeno-text: oklch(0.370 0.020 160);
+  --nestazeno-okraj: oklch(0.62 0.01 100);
+  --apartman-bg: oklch(0.895 0.060 88);
+  --apartman-text: oklch(0.33 0.07 65);
+  --poznamka-ceny: oklch(0.36 0.06 70);
+  --portal-e: oklch(0.44 0.08 245);
+  --portal-chata: oklch(0.46 0.09 55);
+  --portal-cs: oklch(0.44 0.08 330);
+  --nedostupna-bg: oklch(0.914 0.016 95);
+  --nedostupna-titulek: oklch(0.350 0.020 160);
+  --nedostupna-odznak: oklch(0.3 0.01 100);
+  --foto-a: oklch(0.889 0.016 95);
+  --foto-b: oklch(0.903 0.016 95);
+  --prekryv: oklch(0.2 0.02 160 / 0.55);
+}
+
 * { box-sizing: border-box; }
 html { background: var(--okoli); -webkit-text-size-adjust: 100%; }
 body {
@@ -85,6 +141,10 @@ body.locked { overflow: hidden; }
   font: 600 15px/1 var(--sans); color: var(--odkaz);
 }
 .hdr .back { margin-left: auto; }
+.theme { margin-left: auto; flex: none; width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border-radius: 12px; border: 1px solid var(--okraj-vstupu); background: transparent; color: var(--text-2); }
+.theme:hover { background: var(--vypln-segment); color: var(--text); }
+.theme svg { display: block; }
+.hdr .back ~ .theme { margin-left: 4px; }
 
 /* ---------- úvod: výběr oblasti ---------- */
 .wrap { max-width: 1440px; margin: 0 auto; }
@@ -347,3 +407,5 @@ body.locked { overflow: hidden; }
 }
 
 .unk { padding: 8px 12px; border: 1px dashed var(--nestazeno-okraj); border-radius: 10px; font-size: 13px; color: var(--text-2); }
+
+:root[data-theme="light"] .photo .ph span { background: var(--text); color: var(--pozadi); }

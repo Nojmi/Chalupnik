@@ -20,6 +20,21 @@ const amLabel = a => AMENITY_LABEL[a] || a;
 
 const $app = document.getElementById('app');
 const mq = window.matchMedia('(min-width: 900px)');
+
+/* ---------- režim: tmavý (výchozí) / světlý; volba se neukládá ---------- */
+const ICO_SUN = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3 7 7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></svg>';
+const ICO_MOON = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>';
+const isLight = () => document.documentElement.getAttribute('data-theme') === 'light';
+const themeBtn = () => { const l = isLight(), s = l ? 'Přepnout na tmavý režim' : 'Přepnout na světlý režim';
+  return `<button type="button" class="theme" data-act="theme" aria-label="${s}" title="${s}">${l ? ICO_MOON : ICO_SUN}</button>`; };
+function toggleTheme() {
+  const light = !isLight();
+  if (light) document.documentElement.setAttribute('data-theme', 'light'); else document.documentElement.removeAttribute('data-theme');
+  const cs = document.querySelector('meta[name="color-scheme"]'); if (cs) cs.content = light ? 'light' : 'dark';
+  const tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.content = light ? '#e9e6da' : '#14291e';
+  document.querySelectorAll('.theme').forEach(b => { b.outerHTML = themeBtn(); });
+  const nb = document.querySelector('.theme'); if (nb) nb.focus({ preventScroll: true });
+}
 const S = {
   index: null, mapa: null,
   view: { t: 'intro' },              // intro | region(id) | kraj(id = název)
@@ -308,7 +323,7 @@ const legendKraje = `<div class="legend"><span><i class="dot"></i>kraj s nabídk
 /* ---------- úvod ---------- */
 const header = back => `<header class="hdr"><button class="logo" data-act="home" aria-label="Chalupník – úvod"><i></i><b>Chalupník</b></button>
   <span class="hdr-sub">Chaty, chalupy a roubenky k pronájmu na jednom místě</span>
-  ${back ? `<button class="back" data-act="home"><span aria-hidden="true">‹</span> <span class="t-m">Oblasti</span><span class="t-d">Všechny oblasti</span></button>` : ''}</header>`;
+  ${back ? `<button class="back" data-act="home"><span aria-hidden="true">‹</span> <span class="t-m">Oblasti</span><span class="t-d">Všechny oblasti</span></button>` : ''}${themeBtn()}</header>`;
 
 function oblastItem(info, ob) {
   if (info && info.listing_count) {
@@ -544,6 +559,7 @@ document.addEventListener('click', e => {
   if (a === 'scrim') { if (e.target === t) closeOverlay(); return; }
   switch (a) {
     case 'home': S.view = { t: 'intro' }; S.sheet = false; S.dlg = null; render(); window.scrollTo(0, 0); break;
+    case 'theme': toggleTheme(); break;
     case 'tab': S.tab = id; render(); break;
     case 'open-region': open({ t: 'region', id }); break;
     case 'open-kraj': open({ t: 'kraj', id }); break;
@@ -600,7 +616,7 @@ mq.addEventListener('change', () => { S.sheet = false; render(); });
     try { S.dup = buildDup(await getJSON('data/duplicity.json')); } catch (_) { S.dup = new Map(); }   // bez souboru se nic neslučuje
     render();
   } catch (e) {
-    $app.innerHTML = `${'<header class="hdr"><span class="logo"><i></i><b>Chalupník</b></span></header>'}<main class="wrap"><div class="state"><div class="ic" aria-hidden="true">!</div><h2>Nabídky se nepodařilo načíst</h2>
+    $app.innerHTML = `${'<header class="hdr"><span class="logo"><i></i><b>Chalupník</b></span>' + themeBtn() + '</header>'}<main class="wrap"><div class="state"><div class="ic" aria-hidden="true">!</div><h2>Nabídky se nepodařilo načíst</h2>
       <p>Zkontrolujte připojení k internetu a zkuste to znovu. Pokud se chyba opakuje, pomůže oblast aktualizovat.</p>
       <div class="acts"><button class="btn solid" onclick="location.reload()">Zkusit znovu</button></div><code>${esc(e.message || e)}</code></div></main>`;
   }
