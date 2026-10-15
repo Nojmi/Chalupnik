@@ -433,7 +433,7 @@ function locative(name) {
 }
 function updateBtn(region) {
   if (!region) return '';
-  return `<button class="btn big" data-act="update" data-id="${esc(region)}" title="Trvá několik minut"><span aria-hidden="true">↻</span><span class="two"><span>Aktualizovat region</span><small>trvá několik minut</small></span></button>`;
+  return `<button class="btn big" data-act="update" data-id="${esc(region)}"><span aria-hidden="true">↻</span><span class="two"><span>Aktualizovat region</span><small>trvá několik minut</small></span></button>`;
 }
 function regionHTML() {
   const m = S.meta;
@@ -452,7 +452,7 @@ function regionHTML() {
       <button class="back" data-act="home">Zatím vybrat jinou oblast</button></div></main>`;
   }
   const ages = `<div class="ages">${m.ages.map(a => `<div><span>${a.name}</span>${freshPill(a.d, true)}<b class="ago">${a.d == null ? 'nestaženo' : ago(a.d)}</b></div>`).join('')}</div>`;
-  return `${header(true)}<main class="wrap"><section class="res-head"><div class="tt"><h1>${esc(m.title)}</h1><div class="line"><span class="fresh-tip" tabindex="0" title="${esc(m.ages.map(a => a.name + ': ' + (a.d == null ? 'nestaženo' : ago(a.d))).join(' · '))}">${freshPill(m.oldest)}</span>${ages}</div></div>${updateBtn(m.region)}</section>
+  return `${header(true)}<main class="wrap"><section class="res-head"><div class="tt"><h1>${esc(m.title)}</h1><div class="line">${freshPill(m.oldest)}${ages}</div></div>${updateBtn(m.region)}</section>
     <div class="layout"><aside class="side" aria-label="Filtry"><div id="fp-side">${mq.matches ? panelHTML(compute().shown) : ''}</div></aside><div class="main" id="results">${resultsHTML()}</div></div></main>`;
 }
 
