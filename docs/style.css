@@ -455,3 +455,6 @@ body.locked { overflow: hidden; }
   .side .cb { padding: 3px 11px; gap: 5px; }
   .side .hint { font-size: 12.5px; }
 }
+
+/* filtr nescrolluje stránku */
+.side { overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--okraj-vstupu) transparent; }
