@@ -410,9 +410,11 @@ function cardHTML(l) {
 function resultsHTML() {
   const c = compute(), chips = chipList(), m = S.meta;
   const where = S.view.t === 'region' ? `v ${esc(locative(m.title))}` : esc(krajWhere(S.view.id));
-  const bar = `<div class="bar"><div class="sum"><b class="num" role="status">Zobrazeno ${fmt(c.shown)} z ${fmt(c.total)}</b><span>nabídek ${where}</span></div>
-    <button class="fbtn" data-act="filters" aria-haspopup="dialog">Filtry ${chips.length ? `<span class="badge">${chips.length}</span>` : ''}</button></div>`;
   const cnt = {}; c.all.forEach(l => (l._members || [l]).forEach(m => { cnt[m.source] = (cnt[m.source] || 0) + 1; }));
+  const merged = Object.values(cnt).reduce((s, n) => s + n, 0) - c.shown;   // karty, které spojují stejnou chatu z více portálů
+  const mergedNote = merged > 0 ? ` · <span class="dupnote" tabindex="0" title="Stejná chata nabízená na více portálech se zobrazuje jako jedna karta, proto je součet portálů o ${merged} vyšší než počet nabídek.">${merged} ${plural(merged, 'sloučená duplicita', 'sloučené duplicity', 'sloučených duplicit')}</span>` : '';
+  const bar = `<div class="bar"><div class="sum"><b class="num" role="status">Zobrazeno ${fmt(c.shown)} z ${fmt(c.total)}</b><span>nabídek ${where}${mergedNote}</span></div>
+    <button class="fbtn" data-act="filters" aria-haspopup="dialog">Filtry ${chips.length ? `<span class="badge">${chips.length}</span>` : ''}</button></div>`;
   const pills = `<div class="pills">${PORTALS.map(p => `<span class="pill"><i style="background:${PORTAL_COLOR[SRC[p]]}"></i>${p} <b class="num">${fmt(cnt[p] || 0)}</b></span>`).join('')}</div>`;
   const chipsH = chips.length ? `<div class="chips">${chips.map(x => `<button class="chip" data-act="drop" data-id="${esc(x.key)}">${esc(x.text)} <span aria-hidden="true">×</span><span class="sr-only">zrušit filtr</span></button>`).join('')}</div>` : '';
   if (!c.shown) {

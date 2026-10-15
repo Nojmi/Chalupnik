@@ -458,3 +458,5 @@ body.locked { overflow: hidden; }
 
 /* filtr nescrolluje stránku */
 .side { overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--okraj-vstupu) transparent; }
+
+.dupnote { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
