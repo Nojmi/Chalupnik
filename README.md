@@ -22,6 +22,7 @@ Web (docs/index.html) načte index a data oblasti a zobrazí karty s filtry
 3. **GitHub Pages** servíruje `/docs`. Web nic neukládá, filtruje v prohlížeči a stáří dat počítá z `last_updated` (≤ 14 dní čerstvé, 15–30 doporučit aktualizaci, > 30 zastaralé).
 3a. **Režim:** výchozí je tmavý, světlý „lesní papír" se přepíná tlačítkem v hlavičce (atribut `data-theme="light"` na `<html>`, proměnné v `docs/style.css`). Volba se neukládá.
 4. Tlačítko „Aktualizovat region“ spouští workflow přes Cloudflare Worker ([`worker/`](worker/README.md), adresa v `docs/config.js`). Dokud je `worker` v `docs/config.js` prázdný, tlačítko nic nespouští (zůstává hook `window.Chalupnik.onUpdate(regionId)`).
+5. Fotky nabídek se dají načítat přes vlastní cache ([`worker-img/`](worker-img/README.md), adresa `img` v `docs/config.js`), aby se portály zatěžovaly co nejméně. Dokud je `img` prázdné, berou se fotky přímo z portálů.
 
 ---
 

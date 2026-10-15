@@ -1,0 +1,11 @@
+name = "chalupnik-img"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+
+# Žádná tajemství. Při přidání nového portálu doplň jeho host do ALLOWED_HOSTS a znovu `npx wrangler deploy`.
+[vars]
+ALLOWED_HOSTS = "e-chalupy.cz,www.cs-chalupy.cz,www.chata.cz"
+CACHE_TTL_DAYS = "30"
+NEG_TTL_MIN = "10"
+MAX_MB = "6"
+# UPSTREAM_UA = "Chalupnik/1.0 (+https://nojmi.github.io/Chalupnik/)"   # výchozí, měnit jen když by portál takový User-Agent odmítal

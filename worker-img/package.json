@@ -1,0 +1,14 @@
+{
+  "name": "chalupnik-img",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "measure": "node scripts/measure.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

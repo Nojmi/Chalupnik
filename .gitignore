@@ -224,3 +224,8 @@ results/
 worker/node_modules/
 worker/.wrangler/
 worker/.dev.vars
+
+# Cloudflare Worker s cache fotek (worker-img/)
+worker-img/node_modules/
+worker-img/.wrangler/
+worker-img/.dev.vars

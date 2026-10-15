@@ -29,6 +29,8 @@ const DEPLOY_MS = 75000;                            // po dokončení běhu poč
 const PENDING_MAX_MS = 3 * 60 * 1000;               // tak dlouho smí GitHub „zapomínat“ nově spuštěný běh
 const WAIT_MAX_MS = 90 * 60 * 1000, POLL_FAILS_MAX = 5;
 let U = null;                                       // právě sledovaná aktualizace (jen jedna): { id, name, phase, state, since, … }
+const imgBase = () => { const w = String(CFG.img || '').trim().replace(/\/+$/, ''); return /^https?:\/\//.test(w) ? w : ''; };
+const photoUrl = u => imgBase() ? `${imgBase()}/img?u=${encodeURIComponent(u)}` : u;   // fotky přes vlastní cache (worker-img/), jinak přímo z portálu
 let bustT = null;                                   // po aktualizaci: ?t= u datových souborů, aby je nedržela CDN
 
 /* ---------- režim: tmavý (výchozí) / světlý; volba se neukládá ---------- */
@@ -406,7 +408,7 @@ function cardHTML(l) {
   const am = l.amenities || [], tags = am.slice(0, 6).map(a => `<span class="tag">${esc(amLabel(a))}</span>`).join('');
   const more = am.length > 6 ? `<span class="plus">+ ${am.length - 6} další</span>` : '';
   const url = /^https?:\/\//.test(l.url || '') ? l.url : '#';
-  const img = /^https?:\/\//.test(l.image_url || '') ? `<img class="pimg" src="${esc(l.image_url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : '';
+  const img = /^https?:\/\//.test(l.image_url || '') ? `<img class="pimg" src="${esc(photoUrl(l.image_url))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : '';
   return `<article class="card${l._avail ? '' : ' unavail'}">
     <div class="photo"><div class="ph"><span>fotka objektu</span></div>${img}<span class="srcs">${(l._members || [l]).map(m => `<span class="src ${m._src}">${esc(m.source)}</span>`).join('')}</span>${l._avail ? '' : '<div class="gone"><i aria-hidden="true">?</i>možná už není k dispozici</div>'}</div>
     <div class="cbody"><h3>${esc(l.title)}</h3><div class="place">${esc(l._place)}</div><div class="cap">${cap}${bed}</div>
