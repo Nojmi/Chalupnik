@@ -4,6 +4,10 @@ name: Scrape listings
 run-name: Scrape ${{ github.event.inputs.location || 'vše' }}
 
 on:
+  # Automaticky 1. a 15. v měsíci (cca co 14 dní), vždy všechny oblasti: bez vstupů je Lokalita prázdná.
+  # Cron neumí „přesně každých 14 dní“, rozestupy jsou 14–16 dní. Čas je UTC (v Praze 5:17 nebo 4:17).
+  schedule:
+    - cron: "17 3 1,15 * *"
   workflow_dispatch:
     inputs:
       location:
