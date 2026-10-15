@@ -1,0 +1,13 @@
+name = "chalupnik-worker"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+
+# Tajemství GH_TOKEN se do tohoto souboru NEPÍŠE: `npx wrangler secret put GH_TOKEN`.
+[vars]
+GH_REPO = "Nojmi/Chalupnik"
+GH_WORKFLOW = "scrape.yml"
+GH_REF = "main"
+ALLOWED_ORIGIN = "https://nojmi.github.io"
+MAP_URL = "https://nojmi.github.io/Chalupnik/data/mapa-cr.json"
+REGION_COOLDOWN_MIN = "60"
+DAILY_LIMIT = "20"

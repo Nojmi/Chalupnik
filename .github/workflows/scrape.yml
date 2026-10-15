@@ -1,5 +1,8 @@
 name: Scrape listings
 
+# Název běhu v seznamu Actions obsahuje oblast. Podle něj ji pozná i Cloudflare Worker (worker/).
+run-name: Scrape ${{ github.event.inputs.location || 'vše' }}
+
 on:
   workflow_dispatch:
     inputs:

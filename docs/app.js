@@ -21,6 +21,16 @@ const amLabel = a => AMENITY_LABEL[a] || a;
 const $app = document.getElementById('app');
 const mq = window.matchMedia('(min-width: 900px)');
 
+/* ---------- aktualizace z webu přes Cloudflare Worker (docs/config.js, worker/) ---------- */
+const CFG = window.CHALUPNIK || {};
+const workerBase = () => { const w = String(CFG.worker || '').trim().replace(/\/+$/, ''); return /^https?:\/\//.test(w) ? w : ''; };
+const FIRST_POLL_MS = 5000, POLL_MS = 20000;        // první dotaz na stav, pak každých 20 s (Worker má stav 20 s v cache)
+const DEPLOY_MS = 75000;                            // po dokončení běhu počkat na nasazení GitHub Pages
+const PENDING_MAX_MS = 3 * 60 * 1000;               // tak dlouho smí GitHub „zapomínat“ nově spuštěný běh
+const WAIT_MAX_MS = 90 * 60 * 1000, POLL_FAILS_MAX = 5;
+let U = null;                                       // právě sledovaná aktualizace (jen jedna): { id, name, phase, state, since, … }
+let bustT = null;                                   // po aktualizaci: ?t= u datových souborů, aby je nedržela CDN
+
 /* ---------- režim: tmavý (výchozí) / světlý; volba se neukládá ---------- */
 const ICO_SUN = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3 7 7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></svg>';
 const ICO_MOON = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>';
@@ -103,7 +113,7 @@ function prep(l) {
 }
 async function loadFile(file) {
   if (!cache.has(file)) {
-    const d = await getJSON(`data/${file}`);
+    const d = await getJSON(`data/${file}${bustT ? `?t=${bustT}` : ''}`);
     cache.set(file, (d.listings || []).map(prep));
   }
   return cache.get(file);
@@ -435,7 +445,8 @@ function locative(name) {
 }
 function updateBtn(region) {
   if (!region) return '';
-  return `<button class="btn big" data-act="update" data-id="${esc(region)}"><span aria-hidden="true">↻</span><span class="two"><span>Aktualizovat region</span><small>trvá několik minut</small></span></button>`;
+  const run = U && U.active && U.id === region;
+  return `<button class="btn big" data-act="update" data-id="${esc(region)}"><span aria-hidden="true">↻</span><span class="two"><span>${run ? 'Aktualizace probíhá' : 'Aktualizovat region'}</span><small>${run ? 'klepněte pro stav' : 'trvá několik minut'}</small></span></button>`;
 }
 function regionHTML() {
   const m = S.meta;
@@ -507,13 +518,152 @@ function sheetHTML() {
     <div class="sb" id="fp-sheet">${panelHTML(count, true)}</div>
     <div class="sf"><button class="btn" data-act="clear">Zrušit vše</button><button class="btn solid" data-act="close" data-bind="count">Zobrazit ${nabAcc(count)}</button></div></div></div>`;
 }
+const dlgBar = '<div class="loadbar" aria-hidden="true"><i></i></div>';
+const dlgTime = '<div class="tm"><span aria-hidden="true">⏱</span><span>Trvá to několik minut. Stránku nechte otevřené, nabídky se pak samy obnoví.</span></div>';
+const WAIT_TEXT = {
+  pending: 'Aktualizace je spuštěná, čekám na zahájení…',
+  queued: 'Čeká ve frontě, před ní běží jiná aktualizace.',
+  running: 'Stahujeme nabídky z e-chalupy.cz, chata.cz a cs-chalupy.cz.',
+};
+const FAIL_TEXT = {
+  failed: 'Stahování skončilo chybou. Nabídky na webu mohou být aktualizované jen částečně.',
+  cancelled: 'Aktualizace byla zrušena.',
+  lost: 'Spuštěný běh se nepodařilo najít. Zkuste to za chvíli znovu.',
+  timeout: 'Aktualizace trvá neobvykle dlouho. Stránku můžete zavřít, nabídky se na webu objeví po jejím dokončení.',
+  net: 'Spojení se službou se přerušilo. Aktualizace může dál běžet, nabídky se na webu objeví po jejím dokončení.',
+  reload: 'Aktualizace doběhla, ale nové nabídky se nepodařilo načíst. Obnovte stránku.',
+};
+function dlgInner() {
+  const id = S.dlg.region, ob = oblast(id), name = ACC[id] || ob?.name || id, j = U && U.id === id ? U : null;
+  const ic = (c, t) => `<div class="ic${c ? ' ' + c : ''}" aria-hidden="true">${t}</div>`;
+  const close = label => `<button class="btn big" data-act="close">${label}</button>`;
+  if (!j) {
+    return `${ic('', '↻')}<h2 id="dl-t">Aktualizovat ${esc(name)}?</h2><p>Stáhneme aktuální nabídky ze všech tří portálů.</p>${dlgTime}
+      ${S.dlg.msg ? `<div class="msg" role="status">${esc(S.dlg.msg)}</div>` : ''}
+      <div class="acts"><button class="btn solid big" data-act="run-update" data-id="${esc(id)}">Spustit aktualizaci</button>${close('Teď ne')}</div>`;
+  }
+  const min = Math.floor((Date.now() - j.t0) / 60000);
+  switch (j.phase) {
+    case 'sending':
+      return `${ic('', '↻')}<h2 id="dl-t">Spouštím aktualizaci…</h2>${dlgBar}<div class="acts"><button class="btn solid big" disabled>Spouštím…</button>${close('Skrýt okno')}</div>`;
+    case 'wait':
+      return `${ic('', '↻')}<h2 id="dl-t">Aktualizuji ${esc(name)}</h2><div class="msg" role="status">${esc(WAIT_TEXT[j.state] || WAIT_TEXT.pending)}${min >= 1 ? ` Uplynulo ${fmt(min)}${NB}min.` : ''}</div>${dlgBar}${dlgTime}
+        <div class="acts">${close('Skrýt okno')}</div>`;
+    case 'deploy':
+      return `${ic('ok', '✓')}<h2 id="dl-t">Hotovo, nasazuji nové nabídky</h2><div class="msg" role="status">Stahování doběhlo. Nové údaje se na webu objeví asi za minutu.</div>${dlgBar}<div class="acts">${close('Skrýt okno')}</div>`;
+    case 'reload':
+      return `${ic('ok', '✓')}<h2 id="dl-t">Načítám nové nabídky…</h2>${dlgBar}`;
+    case 'done':
+      return `${ic('ok', '✓')}<h2 id="dl-t">${esc(ob?.name || id)}: nabídky jsou aktuální</h2><p>Nové nabídky jsou načtené.</p><div class="acts"><button class="btn solid big" data-act="close">Zavřít</button></div>`;
+    default: {                                       // 'fail'
+      const link = /^https:\/\/github\.com\//.test(j.url || '') ? `<p><a href="${esc(j.url)}" target="_blank" rel="noopener noreferrer">Podrobnosti na GitHubu <span aria-hidden="true">↗</span></a></p>` : '';
+      return `${ic('err', '!')}<h2 id="dl-t">Aktualizace se nezdařila</h2><div class="msg err" role="status">${esc(FAIL_TEXT[j.err] || FAIL_TEXT.net)}</div>${link}<div class="acts"><button class="btn solid big" data-act="close">Zavřít</button></div>`;
+    }
+  }
+}
 function dialogHTML() {
-  const id = S.dlg.region, ob = oblast(id), name = ACC[id] || ob?.name || id;
-  return `<div class="scrim" data-act="scrim"><div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dl-t"><div class="ic" aria-hidden="true">↻</div>
-    <h2 id="dl-t">Aktualizovat ${esc(name)}?</h2><p>Stáhneme aktuální nabídky ze všech tří portálů.</p>
-    <div class="tm"><span aria-hidden="true">⏱</span><span>Trvá to několik minut. Stránku nechte otevřenou, nabídky se pak samy obnoví.</span></div>
-    ${S.dlg.msg ? `<div class="msg" role="status">${esc(S.dlg.msg)}</div>` : ''}
-    <div class="acts"><button class="btn solid big" data-act="run-update" data-id="${esc(id)}">Spustit aktualizaci</button><button class="btn big" data-act="close">Teď ne</button></div></div></div>`;
+  return `<div class="scrim" data-act="scrim"><div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dl-t">${dlgInner()}</div></div>`;
+}
+function paintDlg() {                                // překreslí jen obsah dialogu (nic jiného na stránce)
+  const el = $app.querySelector('.dlg');
+  if (!el || !S.dlg) return;
+  const had = el.contains(document.activeElement);
+  el.innerHTML = dlgInner();
+  if (had) (el.querySelector('.btn.solid:not([disabled])') || el.querySelector('.btn:not([disabled])'))?.focus();
+}
+
+/* ---------- spuštění a sledování aktualizace ---------- */
+async function workerCall(path, init) {
+  const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 15000);
+  try {
+    const r = await fetch(workerBase() + path, { cache: 'no-store', ...init, signal: ctl.signal });
+    let body = null;
+    try { body = await r.json(); } catch (_) { /* odpověď bez JSONu */ }
+    return { status: r.status, body: body || {} };
+  } finally { clearTimeout(to); }
+}
+function fmtWhen(ms) {
+  const d = new Date(ms), t = d.toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit' });
+  return day0(d).getTime() === day0(new Date()).getTime() ? `v${NB}${t}` : `${d.getDate()}.${NB}${d.getMonth() + 1}.${NB}v${NB}${t}`;
+}
+function refuseText(status, b, name) {              // proč se aktualizace nespustila (texty pro uživatele)
+  const eta = b.retry_after_s ? `${fmtWhen(Date.now() + b.retry_after_s * 1000)}${b.retry_after_s < 5400 ? ` (asi za ${Math.ceil(b.retry_after_s / 60)}${NB}min)` : ''}` : '';
+  if (status === 429 && b.error === 'region_cooldown') return `Oblast ${name} se nedávno aktualizovala. Další pokus bude možný ${eta || 'později'}.`;
+  if (status === 429) return `Dnes už bylo spuštěno maximum aktualizací. Další pokus bude možný ${eta || 'později'}.`;
+  if (status === 409) {
+    const r = b.active && b.active.region;
+    const who = !r ? 'jiná aktualizace' : r === 'vše' ? 'aktualizace všech oblastí' : `aktualizace oblasti ${r}`;
+    return `Právě běží ${who} (nebo čeká ve frontě). Zkuste to, až skončí.`;
+  }
+  if (status === 403) return 'Tento web nemá povolení spouštět aktualizace.';
+  if (status === 400) return 'Tuto oblast nelze aktualizovat.';
+  return 'Aktualizaci se nepodařilo spustit. Zkuste to za chvíli.';
+}
+function dlgMsg(text) { if (S.dlg) { S.dlg.msg = text; paintDlg(); } }
+async function startUpdate(id) {
+  const ob = oblast(id);
+  if (!ob) return dlgMsg('Tuto oblast nelze aktualizovat.');
+  if (U && U.active) {
+    if (U.id !== id) return dlgMsg(`Právě probíhá aktualizace oblasti ${U.name}. Počkejte, až skončí.`);
+    return paintDlg();
+  }
+  const j = U = { id, name: ob.name, phase: 'sending', active: true, state: 'pending', t0: Date.now(), since: null, fails: 0, timer: null, url: null, err: null };
+  if (S.dlg) S.dlg.msg = '';
+  paintDlg();
+  let res;
+  try {
+    res = await workerCall('/run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ region: ob.name }) });
+  } catch (_) { res = { status: 0, body: {} }; }
+  if (U !== j) return;
+  const { status, body } = res, act = body.active;
+  if (status === 202 && body.dispatched_at) { j.since = body.dispatched_at; j.state = 'pending'; }
+  else if (status === 409 && act && act.region === ob.name && act.created_at) { j.since = act.created_at; j.state = act.state || 'running'; }   // tuhle oblast už někdo spustil, jen ji sledujeme
+  else { U = null; return dlgMsg(refuseText(status, body, ob.name)); }
+  j.phase = 'wait'; paintDlg(); schedule(j, FIRST_POLL_MS);
+}
+function schedule(j, ms) { clearTimeout(j.timer); j.timer = setTimeout(() => poll(j), ms); }
+async function poll(j) {
+  if (U !== j || !j.active) return;
+  try {
+    const { status, body } = await workerCall(`/status?region=${encodeURIComponent(j.name)}&since=${encodeURIComponent(j.since)}`);
+    if (U !== j) return;
+    if (status !== 200) throw new Error(`status ${status}`);
+    j.fails = 0; j.state = body.state; j.url = (body.run && body.run.url) || null;
+    if (body.state === 'success') return afterRun(j);
+    if (body.state === 'failed' || body.state === 'cancelled') return fail(j, body.state);
+    if (body.state === 'pending' && Date.now() - j.t0 > PENDING_MAX_MS) return fail(j, 'lost');
+    if (Date.now() - j.t0 > WAIT_MAX_MS) return fail(j, 'timeout');
+  } catch (_) {
+    if (U !== j) return;
+    if (++j.fails >= POLL_FAILS_MAX) return fail(j, 'net');
+  }
+  paintDlg(); schedule(j, POLL_MS);
+}
+function fail(j, err) {
+  j.phase = 'fail'; j.active = false; j.err = err; clearTimeout(j.timer);
+  if (!S.dlg && S.view.t === 'region' && S.view.id === j.id) { S.dlg = { region: j.id }; S.opener = 'update'; render(); }   // chybu je třeba ukázat i skrytému oknu
+  else paintDlg();
+}
+function afterRun(j) {                               // běh doběhl: počkat na GitHub Pages a znovu načíst data
+  j.phase = 'deploy'; paintDlg();
+  j.timer = setTimeout(() => reloadData(j), DEPLOY_MS);
+}
+async function reloadData(j) {
+  if (U !== j) return;
+  j.phase = 'reload'; paintDlg();
+  const hadDlg = !!S.dlg, keep = S.f;
+  try {
+    bustT = Date.now();                              // getJSON má no-cache, ale CDN Pages drží soubory až 10 min
+    const [index, dup] = await Promise.all([getJSON(`data/index.json?t=${bustT}`), getJSON(`data/duplicity.json?t=${bustT}`).catch(() => null)]);
+    S.index = index; if (dup) S.dup = buildDup(dup);
+    cache.clear();                                   // chata.cz po krajích mohla změnit i jiné oblasti
+    j.phase = 'done'; j.active = false;              // ještě před překreslením, aby tlačítko přestalo hlásit běh
+    if (!hadDlg) U = null;
+    if (S.view.t === 'intro') render(); else { await open(S.view); S.f = keep; render(); }   // otevření oblasti smaže filtry, uživateli je vrátíme
+  } catch (e) {
+    console.error(e); return fail(j, 'reload');
+  }
+  if (hadDlg) { S.dlg = { region: j.id }; S.opener = 'update'; render(); }
 }
 
 /* ---------- vykreslení a události ---------- */
@@ -529,6 +679,7 @@ function render() {
 }
 function closeOverlay() {
   const op = S.opener; S.sheet = false; S.dlg = null; S.opener = null;
+  if (U && !U.active) U = null;                      // hotovou nebo neúspěšnou aktualizaci už nepotřebujeme
   render();
   if (op) { const el = document.querySelector(`[data-act="${op}"]`); if (el) el.focus(); }
 }
@@ -571,6 +722,7 @@ document.addEventListener('click', e => {
     case 'close': closeOverlay(); break;
     case 'update': track('aktualizace/' + id, 'Dialog aktualizace: ' + id); S.dlg = { region: id }; S.opener = 'update'; render(); break;
     case 'run-update': {
+      if (workerBase()) { startUpdate(id); break; }
       const hook = window.Chalupnik && window.Chalupnik.onUpdate;
       if (typeof hook === 'function') { try { hook(id); } catch (err) { console.error(err); } closeOverlay(); }
       else { S.dlg.msg = 'Spouštění aktualizace přímo z webu se teprve připravuje. Zatím ji spouští majitel aplikace.'; render(); }

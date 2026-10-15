@@ -219,3 +219,8 @@ __marimo__/
 
 # mezivýsledek posledního běhu scraperu (databáze je v docs/data)
 results/
+
+# Cloudflare Worker (worker/): závislosti, lokální stav wrangleru a tajemství pro `wrangler dev`
+worker/node_modules/
+worker/.wrangler/
+worker/.dev.vars

@@ -20,7 +20,7 @@ Web (docs/index.html) načte index a data oblasti a zobrazí karty s filtry
 2. **Scraper** projde portály a sloučí výsledek do databáze oblasti. Nabídky se nepřepisují od nuly (stabilní `id`, `first_seen`/`last_seen`, ochrana proti výpadku portálu). Každá nabídka dostane `kraj` podle GPS.
 3. **GitHub Pages** servíruje `/docs`. Web nic neukládá, filtruje v prohlížeči a stáří dat počítá z `last_updated` (≤ 14 dní čerstvé, 15–30 doporučit aktualizaci, > 30 zastaralé).
 3a. **Režim:** výchozí je tmavý, světlý „lesní papír" se přepíná tlačítkem v hlavičce (atribut `data-theme="light"` na `<html>`, proměnné v `docs/style.css`). Volba se neukládá.
-4. Tlačítko „Aktualizovat region" je zatím jen vzhled; napojení je `window.Chalupnik.onUpdate(regionId)`.
+4. Tlačítko „Aktualizovat region“ spouští workflow přes Cloudflare Worker ([`worker/`](worker/README.md), adresa v `docs/config.js`). Dokud je `worker` v `docs/config.js` prázdný, tlačítko nic nespouští (zůstává hook `window.Chalupnik.onUpdate(regionId)`).
 
 ---
 

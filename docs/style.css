@@ -342,6 +342,11 @@ body.locked { overflow: hidden; }
 .dlg .tm { display: flex; gap: 10px; padding: 12px 14px; border-radius: 12px; background: var(--aktualizovat-bg); color: var(--aktualizovat-text); font-size: 14px; }
 .dlg .msg { padding: 12px 14px; border-radius: 12px; background: var(--vypln-pruh); border: 1px solid var(--cara); font-size: 14px; }
 .dlg .acts { display: flex; flex-direction: column; gap: 10px; }
+.dlg .ic.ok { background: var(--cerstve-ikona); }
+.dlg .ic.err { background: var(--zastarale-ikona); }
+.dlg .msg.err { background: var(--zastarale-bg); border-color: transparent; color: var(--zastarale-text); }
+.dlg .loadbar { max-width: none; }
+.dlg a { color: var(--odkaz); text-underline-offset: 3px; }
 
 /* stavy */
 .state { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 20px 16px 40px; max-width: 640px; }
