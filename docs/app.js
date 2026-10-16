@@ -365,6 +365,7 @@ $app.addEventListener('pointerover', e => {
   if (!mq.matches) return;
   const g = e.target.closest('.mapa-oblasti [data-id]'), svg = $app.querySelector('.mapa-oblasti'); if (!svg) return;
   const id = g ? g.dataset.id : null;
+  if (id && svg.querySelector(`.mo-plochy .je-hover[data-id="${id}"]`)) return;   // už zvýrazněno; nepřeskládávat DOM, jinak se při kliknutí ztratí událost
   svg.querySelectorAll('.je-hover').forEach(n => n.classList.remove('je-hover'));
   if (!id) return;
   svg.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.add('je-hover'));
