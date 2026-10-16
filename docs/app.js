@@ -306,7 +306,11 @@ function mapSVG(mode, compact) {
         o += `<text x="${x}" y="${y + 7}" text-anchor="middle"${pick} style="font:700 21px Public Sans,sans-serif;fill:var(--text);${halo}">${fmt(c)}</text>`;
         return;
       }
-      if (k.short === 'Praha') return;
+      if (k.short === 'Praha') {   // Praha je na mapě drobná, štítek proto leží vlevo od ní ve Středočeském kraji
+        o += `<text x="${x - 12}" y="${y - 1}" text-anchor="end"${pick} style="font:600 12.5px Public Sans,sans-serif;fill:var(--text);${halo}">Praha</text>`;
+        o += `<text x="${x - 12}" y="${y + 13}" text-anchor="end"${pick} style="font:${c != null ? 700 : 500} 11.5px Public Sans,sans-serif;fill:${c != null ? 'var(--cerstve-text)' : 'var(--text-2)'};${halo}">${c != null ? nab(c) : 'nestaženo'}</text>`;
+        return;
+      }
       o += `<text x="${x}" y="${y - 2}" text-anchor="middle"${pick} style="font:600 12.5px Public Sans,sans-serif;fill:var(--text);${halo}">${esc(k.short)}</text>`;
       o += `<text x="${x}" y="${y + 13}" text-anchor="middle"${pick} style="font:${c != null ? 700 : 500} 11.5px Public Sans,sans-serif;fill:${c != null ? 'var(--cerstve-text)' : 'var(--text-2)'};${halo}">${c != null ? nab(c) : 'nestaženo'}</text>`;
     });
@@ -329,8 +333,6 @@ function mapSVG(mode, compact) {
   }
   return `<svg viewBox="0 0 ${d.w} ${d.h}" role="img" aria-label="${mode === 'kraje' ? 'Mapa krajů České republiky' : 'Mapa oblíbených oblastí'}">${o}</svg>`;
 }
-const legendHTML = `<div class="legend"><span><i class="dot"></i>nabídky staženy</span><span><i class="dot empty"></i>zatím nestaženo</span></div>`;
-const legendKraje = `<div class="legend"><span><i class="dot"></i>kraj s nabídkami</span><span><i class="dot empty"></i>zatím nestaženo (šrafováno)</span></div>`;
 
 /* ---------- úvod ---------- */
 const header = back => `<header class="hdr"><button class="logo" data-act="home" aria-label="Chalupník – úvod"><img src="ikony/icon.svg" alt="" width="36" height="36"><b>Chalupník</b></button>
@@ -362,14 +364,14 @@ function introHTML() {
   let body;
   if (desk) {
     body = `<div class="maps2">
-      <section class="mapcard" aria-labelledby="m1"><h2 id="m1">Oblíbené oblasti</h2><div class="mapbox">${mapSVG('oblasti', false)}</div>${legendHTML}</section>
-      <section class="mapcard" aria-labelledby="m2"><h2 id="m2">Podle krajů</h2><div class="mapbox">${mapSVG('kraje', false)}</div>${legendKraje}</section></div>
+      <section class="mapcard" aria-labelledby="m1"><h2 id="m1">Oblíbené oblasti</h2><div class="mapbox">${mapSVG('oblasti', false)}</div></section>
+      <section class="mapcard" aria-labelledby="m2"><h2 id="m2">Podle krajů</h2><div class="mapbox">${mapSVG('kraje', false)}</div></section></div>
       <h2 class="sect">Všechny oblasti</h2>
       <div class="rgrid">${[...have, ...none].map(o => oblastItem(byId[o.id], o)).join('')}</div>`;
   } else {
     const kr = S.tab === 'kraje';
     body = `<div class="seg" role="group" aria-label="Způsob výběru"><button data-act="tab" data-id="oblasti" aria-pressed="${!kr}">Oblíbené oblasti</button><button data-act="tab" data-id="kraje" aria-pressed="${kr}">Podle krajů</button></div>
-      <div class="mapcard"><div class="mapbox">${mapSVG(kr ? 'kraje' : 'oblasti', true)}</div>${kr ? legendKraje : legendHTML}</div>
+      <div class="mapcard"><div class="mapbox">${mapSVG(kr ? 'kraje' : 'oblasti', true)}</div></div>
       ${kr ? `<p class="note">Kraj ukazuje jen nabídky ze stažených oblastí.</p><div class="rlist">${krajeList()}</div>`
            : `${have.length ? `<h2 class="sect">S nabídkami</h2><div class="rlist">${have.map(o => oblastItem(byId[o.id], o)).join('')}</div>` : ''}
               ${none.length ? `<h2 class="sect">Zatím nestaženo</h2><div class="rlist">${none.map(o => oblastItem(byId[o.id], o)).join('')}</div>` : ''}`}`;
