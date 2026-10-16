@@ -287,13 +287,12 @@ function mapSVG(mode, compact) {
   const regs = withData();
   const countO = {}; regs.forEach(r => { countO[r.region] = r.listing_count; });
   const countK = {}; regs.forEach(r => Object.entries(r.kraje || {}).forEach(([k, n]) => { countK[k] = (countK[k] || 0) + n; }));
-  const maxK = Math.max(1, ...Object.values(countK));
   const halo = `paint-order:stroke;stroke:var(--panel);stroke-width:${compact ? 5 : 4};stroke-linejoin:round`;
   const labelPos = { 'Středočeský': [262, 186], 'Olomoucký': [438, 198], 'Moravskoslezský': [545, 176] };
   let o = `<defs><pattern id="${uid}" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" style="fill:var(--mapa-srafa-podklad)"/><line x1="0" y1="0" x2="0" y2="7" stroke-width="2" style="stroke:var(--mapa-srafa-cara)"/></pattern></defs>`;
   d.kraje.forEach(k => {
     const has = countK[k.short] != null;
-    const fill = has ? `color-mix(in oklch, var(--mapa-kraj-max) ${Math.round(35 + 65 * countK[k.short] / maxK)}%, var(--mapa-kraj-min))` : `url(#${uid})`;
+    const fill = has ? 'var(--mapa-kraj-max)' : `url(#${uid})`;
     const pick = mode === 'kraje' && has ? ` data-pick="k:${esc(k.short)}"` : '';
     o += `<path d="${k.d}"${pick} stroke-width="1.4" stroke-linejoin="round" style="fill:${fill};stroke:var(--mapa-hranice-kraje)"/>`;
   });
