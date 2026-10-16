@@ -48,7 +48,7 @@ function toggleTheme() {
   const nb = document.querySelector('.theme'); if (nb) nb.focus({ preventScroll: true });
 }
 const S = {
-  index: null, mapa: null,
+  index: null, mapa: null, oblMapa: null, selO: null,
   view: { t: 'intro' },              // intro | region(id) | kraj(id = název)
   tab: 'oblasti',
   load: 'nacita', err: '',
@@ -287,14 +287,15 @@ function mapSVG(mode, compact) {
   const regs = withData();
   const countO = {}; regs.forEach(r => { countO[r.region] = r.listing_count; });
   const countK = {}; regs.forEach(r => Object.entries(r.kraje || {}).forEach(([k, n]) => { countK[k] = (countK[k] || 0) + n; }));
+  const maxK = Math.max(1, ...Object.values(countK));
   const halo = `paint-order:stroke;stroke:var(--panel);stroke-width:${compact ? 5 : 4};stroke-linejoin:round`;
   const labelPos = { 'Středočeský': [262, 186], 'Olomoucký': [438, 198], 'Moravskoslezský': [545, 176] };
   let o = `<defs><pattern id="${uid}" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" style="fill:var(--mapa-srafa-podklad)"/><line x1="0" y1="0" x2="0" y2="7" stroke-width="2" style="stroke:var(--mapa-srafa-cara)"/></pattern></defs>`;
   d.kraje.forEach(k => {
     const has = countK[k.short] != null;
-    const fill = mode === 'oblasti' ? 'var(--mapa-zeme)' : has ? 'var(--mapa-kraj-data)' : `url(#${uid})`;
+    const fill = has ? `color-mix(in oklch, var(--mapa-kraj-max) ${Math.round(35 + 65 * countK[k.short] / maxK)}%, var(--mapa-kraj-min))` : `url(#${uid})`;
     const pick = mode === 'kraje' && has ? ` data-pick="k:${esc(k.short)}"` : '';
-    o += `<path d="${k.d}"${pick} stroke-width="${mode === 'kraje' ? 1.4 : 1}" stroke-linejoin="round" style="fill:${fill};stroke:var(${mode === 'kraje' ? '--mapa-hranice-kraje' : '--mapa-hranice'})"/>`;
+    o += `<path d="${k.d}"${pick} stroke-width="1.4" stroke-linejoin="round" style="fill:${fill};stroke:var(--mapa-hranice-kraje)"/>`;
   });
   if (mode === 'kraje') {
     d.kraje.forEach(k => {
@@ -314,24 +315,69 @@ function mapSVG(mode, compact) {
       o += `<text x="${x}" y="${y - 2}" text-anchor="middle"${pick} style="font:600 12.5px Public Sans,sans-serif;fill:var(--text);${halo}">${esc(k.short)}</text>`;
       o += `<text x="${x}" y="${y + 13}" text-anchor="middle"${pick} style="font:${c != null ? 700 : 500} 11.5px Public Sans,sans-serif;fill:${c != null ? 'var(--cerstve-text)' : 'var(--text-2)'};${halo}">${c != null ? nab(c) : 'nestaženo'}</text>`;
     });
-  } else {
-    const anchor = { 'jizerske-hory': 'l', 'cesky-raj': 'l', sumava: 'l', beskydy: 'l', 'krusne-hory': 'r' };
-    if (compact) Object.assign(anchor, { 'krusne-hory': 't', 'orlicke-hory': 'l', 'jizerske-hory': 't', 'ceske-svycarsko': 'l', 'stredni-cechy': 'r' });
-    else Object.assign(anchor, { 'cesky-raj': 'r', vysocina: 'l', 'jizerske-hory': 'r', 'ceske-svycarsko': 'l', 'stredni-cechy': 'r' });   // desktop: štítky se nesmí potkat (Krušné hory × Český ráj, Vysočina × Beskydy)
-    const fs = compact ? 17 : 13.5;
-    d.oblasti.forEach(ob => {
-      const c = countO[ob.id], has = c != null;
-      const pick = ` data-pick="o:${ob.id}"`;
-      o += `<circle cx="${ob.x}" cy="${ob.y}" r="${compact ? 20 : 15}"${pick} style="fill:transparent"/>`;
-      o += `<circle cx="${ob.x}" cy="${ob.y}" r="${has ? (compact ? 12 : 9) : (compact ? 8 : 6)}"${pick} stroke-width="${has ? 2.5 : 2}" style="fill:${has ? 'var(--zelena)' : 'var(--panel)'};stroke:${has ? 'var(--panel)' : 'var(--placeholder)'}"/>`;
-      const a = anchor[ob.id] || 'r', off = compact ? 18 : 14;
-      const x = a === 'l' ? ob.x - off : a === 'r' ? ob.x + off : ob.x;
-      const y = a === 't' ? ob.y - off + 2 : ob.y + fs * 0.35;
-      const label = has && !compact ? `${ob.name} · ${fmt(c)}` : ob.name;
-      o += `<text x="${x}" y="${y}" text-anchor="${a === 'l' ? 'end' : a === 'r' ? 'start' : 'middle'}"${pick} style="font:${has ? 700 : 500} ${fs}px Public Sans,sans-serif;fill:${has ? 'var(--text)' : 'var(--text-2)'};${halo}">${esc(label)}</text>`;
-    });
   }
-  return `<svg viewBox="0 0 ${d.w} ${d.h}" role="img" aria-label="${mode === 'kraje' ? 'Mapa krajů České republiky' : 'Mapa oblíbených oblastí'}">${o}</svg>`;
+  const vb = mq.matches && !compact ? `0 -21 ${d.w} ${d.h + 42}` : `0 0 ${d.w} ${d.h}`;   // na PC má kraj stejně vysoké plátno jako mapa oblastí
+  return `<svg viewBox="${vb}" role="img" aria-label="Mapa krajů České republiky">${o}</svg>`;
+}
+function oblastiSVG() {
+  const dm = S.oblMapa, desk = mq.matches, regs = withData();
+  const cnt = {}; regs.forEach(r => { cnt[r.region] = r.listing_count; });
+  const stav_ = id => 'mo-oblast' + (id === S.selO ? ' je-vybrana' : '');
+  let o = `<g class="mo-podklad" data-act="desel">${S.mapa.kraje.map(k => `<path d="${k.d}"/>`).join('')}</g><g class="mo-plochy">`;
+  dm.oblasti.forEach(ob => {
+    o += `<g class="${stav_(ob.id)}" data-id="${ob.id}" data-pick="o:${ob.id}"><path d="${ob.d}" class="mo-obrys"/><path d="${ob.d}" class="mo-vypln"/></g>`;
+  });
+  o += '</g><g class="mo-popisky">';
+  dm.oblasti.forEach(ob => {
+    const p = ob.popisek[desk ? 'desktop' : 'mobil'], c = cnt[ob.id] || 0, sel = ob.id === S.selO;
+    o += `<g class="${stav_(ob.id)}" data-id="${ob.id}" data-pick="o:${ob.id}" tabindex="0" role="button" aria-label="${esc(ob.name)}, ${nab(c)}" aria-pressed="${sel}">
+      <line x1="${p.ax}" y1="${p.ay}" x2="${p.bx}" y2="${p.by}" class="mo-cara"/><circle cx="${p.ax}" cy="${p.ay}" r="${sel ? 3.2 : 2.4}" class="mo-bod"/>
+      <circle cx="${p.ax}" cy="${p.ay}" r="${desk ? 14 : 22}" class="mo-hit"/>
+      <text x="${p.x}" y="${p.y}" text-anchor="${p.anchor}" class="mo-text"><tspan class="mo-nazev">${esc(ob.name)}</tspan>${desk ? `<tspan class="mo-pocet"> · ${fmt(c)}</tspan>` : ''}</text></g>`;
+  });
+  return `<svg viewBox="${dm.viewBox[desk ? 'desktop' : 'mobil']}" class="mapa-oblasti${desk ? '' : ' mapa-oblasti--mobil'}" role="group" aria-label="Mapa oblíbených oblastí">${o}</g></svg>`;
+}
+function dalsiHTML() {
+  const byId = Object.fromEntries(S.index.regions.map(r => [r.region, r]));
+  return `<section class="dalsi" aria-labelledby="dalsi-h"><h2 class="sect" id="dalsi-h">Další oblasti</h2><div class="pills">${S.oblMapa.velke.map(v => {
+    const c = byId[v.id]?.listing_count;
+    return c ? `<button class="pill" data-act="open-region" data-id="${esc(v.id)}">${esc(v.name)} <b>${fmt(c)}</b></button>`
+             : `<button class="pill none" data-act="open-region" data-id="${esc(v.id)}">${esc(v.name)} · nestaženo</button>`;
+  }).join('')}</div></section>`;
+}
+function selCardHTML() {
+  const ob = S.oblMapa.oblasti.find(x => x.id === S.selO);
+  if (!ob) return '';
+  const info = S.index.regions.find(r => r.region === ob.id), c = info?.listing_count || 0;
+  return `<section class="selcard" aria-live="polite"><h2>${esc(ob.name)}</h2><div class="cnt">${c ? nab(c) : 'zatím nestaženo'}</div>${freshPill(c ? oldestDays(info) : null)}
+    <p class="src">${esc(ob.zdroj)}</p><button class="btn solid block" data-act="open-region" data-id="${esc(ob.id)}">Zobrazit nabídky <span aria-hidden="true">›</span></button>
+    <button class="x" data-act="desel" aria-label="Zrušit výběr">×</button></section>`;
+}
+// po vykreslení: podtržení vybraného popisku (potřebuje změřit text)
+function afterMap() {
+  const g = $app.querySelector('.mo-popisky .je-vybrana'); if (!g) return;
+  const t = g.querySelector('text'), ob = S.oblMapa.oblasti.find(x => x.id === S.selO);
+  const p = ob.popisek[mq.matches ? 'desktop' : 'mobil'], r = t.getBBox();
+  g.insertAdjacentHTML('beforeend', `<rect x="${r.x}" y="${p.y + 4}" width="${r.width}" height="${mq.matches ? 2.5 : 3.5}" rx="1" class="mo-podtrzeni"/>`);
+}
+// hover (jen PC): zvýrazní plochu i popisek a vybranou plochu vykreslí navrch
+$app.addEventListener('pointerover', e => {
+  if (!mq.matches) return;
+  const g = e.target.closest('.mapa-oblasti [data-id]'), svg = $app.querySelector('.mapa-oblasti'); if (!svg) return;
+  const id = g ? g.dataset.id : null;
+  svg.querySelectorAll('.je-hover').forEach(n => n.classList.remove('je-hover'));
+  if (!id) return;
+  svg.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.add('je-hover'));
+  const pl = svg.querySelector(`.mo-plochy [data-id="${id}"]`); pl.parentNode.appendChild(pl);
+});
+$app.addEventListener('pointerleave', () => $app.querySelectorAll('.je-hover').forEach(n => n.classList.remove('je-hover')));
+$app.addEventListener('keydown', e => {
+  const g = e.target.closest?.('.mo-popisky [data-id]');
+  if (g && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pickOblast(g.dataset.id); }
+});
+function pickOblast(id) {
+  if (mq.matches || S.selO === id) { S.selO = null; return open({ t: 'region', id }); }
+  S.selO = id; render();
 }
 
 /* ---------- úvod ---------- */
@@ -360,18 +406,21 @@ function introHTML() {
   const regs = withData();
   const desk = mq.matches;
   const byId = Object.fromEntries(S.index.regions.map(r => [r.region, r]));
-  const have = S.mapa.oblasti.filter(o => byId[o.id]?.listing_count), none = S.mapa.oblasti.filter(o => !byId[o.id]?.listing_count);
+  const oblList = desk ? [...S.oblMapa.oblasti, ...S.oblMapa.velke] : S.oblMapa.oblasti;   // na mobilu jsou velké oblasti v pásu „Další oblasti“
+  const have = oblList.filter(o => byId[o.id]?.listing_count), none = oblList.filter(o => !byId[o.id]?.listing_count);
   let body;
   if (desk) {
     body = `<div class="maps2">
-      <section class="mapcard" aria-labelledby="m1"><h2 id="m1">Oblíbené oblasti</h2><div class="mapbox">${mapSVG('oblasti', false)}</div></section>
-      <section class="mapcard" aria-labelledby="m2"><h2 id="m2">Podle krajů</h2><div class="mapbox">${mapSVG('kraje', false)}</div></section></div>
+      <section class="mapcard" aria-labelledby="m1"><div class="mhead"><h2 id="m1">Oblíbené oblasti</h2></div><div class="mapbox">${oblastiSVG()}</div></section>
+      <section class="mapcard" aria-labelledby="m2"><div class="mhead"><h2 id="m2">Podle krajů</h2><span class="hint">jen nabídky ze stažených oblastí</span></div><div class="mapbox">${mapSVG('kraje', false)}</div></section></div>
+      ${dalsiHTML()}
       <h2 class="sect">Všechny oblasti</h2>
       <div class="rgrid">${[...have, ...none].map(o => oblastItem(byId[o.id], o)).join('')}</div>`;
   } else {
     const kr = S.tab === 'kraje';
     body = `<div class="seg" role="group" aria-label="Způsob výběru"><button data-act="tab" data-id="oblasti" aria-pressed="${!kr}">Oblíbené oblasti</button><button data-act="tab" data-id="kraje" aria-pressed="${kr}">Podle krajů</button></div>
-      <div class="mapcard"><div class="mapbox">${mapSVG(kr ? 'kraje' : 'oblasti', true)}</div></div>
+      <div class="mapcard"><div class="mapbox">${kr ? mapSVG('kraje', true) : oblastiSVG()}</div></div>
+      ${kr ? '' : `${selCardHTML()}${dalsiHTML()}`}
       ${kr ? `<p class="note">Kraj ukazuje jen nabídky ze stažených oblastí.</p><div class="rlist">${krajeList()}</div>`
            : `${have.length ? `<h2 class="sect">S nabídkami</h2><div class="rlist">${have.map(o => oblastItem(byId[o.id], o)).join('')}</div>` : ''}
               ${none.length ? `<h2 class="sect">Zatím nestaženo</h2><div class="rlist">${none.map(o => oblastItem(byId[o.id], o)).join('')}</div>` : ''}`}`;
@@ -677,7 +726,7 @@ function render() {
   const keepScroll = window.scrollY;
   $app.innerHTML = html + (S.sheet ? sheetHTML() : '') + (S.dlg ? dialogHTML() : '');
   document.body.classList.toggle('locked', !!(S.sheet || S.dlg));
-  if (S.view.t === 'intro') window.scrollTo(0, keepScroll);
+  if (S.view.t === 'intro') { window.scrollTo(0, keepScroll); afterMap(); }
   const dlg = $app.querySelector('.scrim [role="dialog"]');
   if (dlg) (dlg.querySelector('.btn.solid, .xbtn') || dlg).focus();
 }
@@ -710,14 +759,15 @@ document.addEventListener('click', e => {
   if (!t) return;
   if (t.dataset.pick) {
     const [kind, id] = [t.dataset.pick.slice(0, 1), t.dataset.pick.slice(2)];
-    return open(kind === 'o' ? { t: 'region', id } : { t: 'kraj', id });
+    return kind === 'o' ? pickOblast(id) : open({ t: 'kraj', id });
   }
   const a = t.dataset.act, id = t.dataset.id;
   if (a === 'scrim') { if (e.target === t) closeOverlay(); return; }
   switch (a) {
     case 'home': S.view = { t: 'intro' }; S.sheet = false; S.dlg = null; render(); window.scrollTo(0, 0); break;
     case 'theme': toggleTheme(); break;
-    case 'tab': S.tab = id; render(); break;
+    case 'tab': S.tab = id; S.selO = null; render(); break;
+    case 'desel': if (S.selO) { S.selO = null; render(); } break;
     case 'open-region': open({ t: 'region', id }); break;
     case 'open-kraj': open({ t: 'kraj', id }); break;
     case 'retry': open(S.view); break;
@@ -769,8 +819,8 @@ mq.addEventListener('change', () => { S.sheet = false; render(); });
 /* ---------- start ---------- */
 (async function init() {
   try {
-    const [index, mapa] = await Promise.all([getJSON('data/index.json'), getJSON('data/mapa-cr.json')]);
-    S.index = index; S.mapa = mapa; S.load = 'ok';
+    const [index, mapa, oblMapa] = await Promise.all([getJSON('data/index.json'), getJSON('data/mapa-cr.json'), getJSON('data/oblasti-mapa.json')]);
+    S.index = index; S.mapa = mapa; S.oblMapa = oblMapa; S.load = 'ok';
     try { S.dup = buildDup(await getJSON('data/duplicity.json')); } catch (_) { S.dup = new Map(); }   // bez souboru se nic neslučuje
     render();
   } catch (e) {

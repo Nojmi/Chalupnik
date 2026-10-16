@@ -23,9 +23,14 @@
   --odznak-bg: oklch(0.25 0.035 160);
   --odznak-text: oklch(0.82 0.11 75);
   --zelena: oklch(0.480 0.085 155);
-  --mapa-zeme: oklch(0.320 0.054 160);
-  --mapa-kraj-data: oklch(0.45 0.075 150);
-  --mapa-hranice: oklch(0.525 0.046 160);
+  --mapa-zeme: oklch(0.325 0.022 155);
+  --mapa-kraj-min: oklch(0.360 0.040 152);
+  --mapa-kraj-max: oklch(0.500 0.080 152);
+  --mapa-hranice: oklch(0.255 0.018 160);
+  --mapa-oblast: oklch(0.45 0.075 150);
+  --mapa-oblast-hover: oklch(0.500 0.080 152);
+  --mapa-oblast-vybrana: oklch(0.660 0.110 150);
+  --pocet: oklch(0.800 0.110 76);
   --mapa-hranice-kraje: oklch(0.68 0.045 150);
   --mapa-srafa-podklad: oklch(0.285 0.035 160);
   --mapa-srafa-cara: oklch(0.435 0.038 160);
@@ -84,8 +89,13 @@
   --odznak-text: oklch(0.240 0.030 160);
   --zelena: oklch(0.440 0.090 155);
   --mapa-zeme: oklch(0.845 0.030 125);
-  --mapa-kraj-data: oklch(0.660 0.090 152);
+  --mapa-kraj-min: oklch(0.780 0.060 150);
+  --mapa-kraj-max: oklch(0.660 0.090 152);
   --mapa-hranice: oklch(0.630 0.016 95);
+  --mapa-oblast: oklch(0.720 0.075 150);
+  --mapa-oblast-hover: oklch(0.660 0.090 152);
+  --mapa-oblast-vybrana: oklch(0.440 0.090 155);
+  --pocet: oklch(0.500 0.110 62);
   --mapa-hranice-kraje: oklch(0.36 0.055 155);
   --mapa-srafa-podklad: oklch(0.912 0.016 95);
   --mapa-srafa-cara: oklch(0.780 0.016 95);
@@ -161,10 +171,6 @@ body.locked { overflow: hidden; }
 .mapbox { position: relative; width: 100%; aspect-ratio: 600/346; }
 .mapbox svg { display: block; overflow: visible; width: 100%; height: 100%; }
 .mapbox [data-pick] { cursor: pointer; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0 4px; font: 500 13px/1.3 var(--sans); color: var(--text-2); }
-.legend span { display: inline-flex; align-items: center; gap: 6px; }
-.dot { width: 11px; height: 11px; border-radius: 50%; background: var(--zelena); display: inline-block; }
-.dot.empty { width: 9px; height: 9px; background: none; border: 2px solid var(--placeholder); }
 .sect { margin: 6px 4px 0; font: 700 13px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--text-2); }
 .note { padding: 0 4px; font-size: 14px; color: var(--text-2); }
 .rlist { display: flex; flex-direction: column; gap: 8px; }
@@ -184,7 +190,51 @@ body.locked { overflow: hidden; }
 
 .desk-only { display: none; }
 .mob-only { display: flex; }
-.maps2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.maps2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+.maps2 .mapcard { height: 100%; }
+.maps2 .mapbox { flex: 1; aspect-ratio: auto; display: flex; align-items: center; }
+.mapcard .hint { padding: 0 6px; font-size: 14px; color: var(--text-2); }
+.mapcard .mhead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* ---------- mapa oblíbených oblastí (hranice) ---------- */
+.mapa-oblasti { display: block; width: 100%; height: auto; overflow: visible; font-family: var(--sans); }
+.mo-podklad path { fill: var(--mapa-zeme); stroke: var(--mapa-zeme); stroke-width: 1.2; stroke-linejoin: round; }
+.mo-obrys { fill: var(--mapa-hranice); stroke: var(--mapa-hranice); stroke-width: 2.2; stroke-linejoin: round; }
+.mo-vypln { fill: var(--mapa-oblast); stroke: none; cursor: pointer; }
+.je-hover .mo-obrys { fill: var(--text); stroke: var(--text); stroke-width: 3.5; }
+.je-hover .mo-vypln { fill: var(--mapa-oblast-hover); }
+.je-vybrana .mo-obrys { fill: var(--zlata); stroke: var(--zlata); stroke-width: 6; }
+.je-vybrana .mo-vypln { fill: var(--mapa-oblast-vybrana); }
+.mo-cara { stroke: var(--text-2); stroke-width: 1.2; }
+.mo-bod { fill: var(--text); stroke: var(--panel); stroke-width: 1.2; }
+.mo-hit { fill: transparent; cursor: pointer; }
+.je-hover .mo-cara { stroke: var(--text); }
+.je-vybrana .mo-cara { stroke: var(--zlata); stroke-width: 2; }
+.je-vybrana .mo-bod { fill: var(--zlata); }
+.mo-text { font-size: 13.5px; font-weight: 700; fill: var(--text); cursor: pointer; paint-order: stroke; stroke: var(--panel); stroke-width: 4.5px; stroke-linejoin: round; }
+.mapa-oblasti--mobil .mo-text { font-size: 21px; stroke-width: 6px; }
+.mo-pocet { font-weight: 500; fill: var(--text-2); }
+.je-hover .mo-nazev, .je-vybrana .mo-nazev { font-weight: 800; }
+.je-hover .mo-pocet, .je-vybrana .mo-pocet { fill: var(--text); }
+.mo-podtrzeni { fill: var(--zlata); }
+.mo-oblast:focus-visible { outline: none; }
+.mo-oblast:focus-visible .mo-text { stroke: var(--zlata); }
+
+/* pás „Další oblasti“ */
+.dalsi { display: flex; flex-direction: column; gap: 8px; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--karta); border: 1px solid var(--okraj-karty); font: 600 15px/1 var(--sans); color: var(--text); }
+.pill:hover { border-color: var(--odkaz); }
+.pill b { font-weight: 700; color: var(--pocet); }
+.pill.none { background: var(--nestazeno-bg); border-style: dashed; border-color: var(--nestazeno-okraj); color: var(--nestazeno-text); font-weight: 500; }
+
+/* kartička vybrané oblasti (mobil) */
+.selcard { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px 16px 16px; border-radius: 18px; border: 2px solid var(--zlata); background: var(--karta); }
+.selcard h2 { font: 600 28px/1.1 var(--serif); padding-right: 52px; }
+.selcard .cnt { font: 700 18px/1.2 var(--sans); color: var(--pocet); }
+.selcard .src { font-size: 14px; color: var(--text-2); text-wrap: pretty; }
+.selcard .btn { align-self: stretch; }
+.selcard .x { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--vypln-segment); color: var(--text); font: 500 24px/1 var(--sans); }
 
 /* ---------- štítky čerstvosti ---------- */
 .fresh {
