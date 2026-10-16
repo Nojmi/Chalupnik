@@ -220,6 +220,8 @@ body.locked { overflow: hidden; }
 .mo-oblast:focus-visible { outline: none; }
 .mo-oblast:focus-visible .mo-text { stroke: var(--zlata); }
 
+path.k-hover { stroke: var(--text) !important; stroke-width: 2.6; filter: brightness(1.3); }
+
 /* pás „Další oblasti“ */
 .dalsi { display: flex; flex-direction: column; gap: 8px; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; }

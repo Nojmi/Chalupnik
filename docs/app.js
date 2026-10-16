@@ -371,6 +371,16 @@ $app.addEventListener('pointerover', e => {
   svg.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.add('je-hover'));
   const pl = svg.querySelector(`.mo-plochy [data-id="${id}"]`); pl.parentNode.appendChild(pl);
 });
+// hover na mapě krajů: zvýrazní kraj, i když myš jede přes jeho popisek
+$app.addEventListener('pointerover', e => {
+  const t = e.target.closest?.('.mapbox [data-pick^="k:"]'), svg = $app.querySelector('.mapbox svg:not(.mapa-oblasti)'); if (!svg) return;
+  const key = t ? t.dataset.pick : null, cur = svg.querySelector('path.k-hover');
+  if ((cur && cur.dataset.pick === key) || (!cur && !key)) return;
+  if (cur) cur.classList.remove('k-hover');
+  if (!key) return;
+  const p = svg.querySelector(`path[data-pick="${key}"]`); if (!p) return;
+  p.classList.add('k-hover'); p.parentNode.insertBefore(p, svg.querySelector('text'));   // kraj navrch, ale pod popisky
+});
 $app.addEventListener('pointerleave', () => $app.querySelectorAll('.je-hover').forEach(n => n.classList.remove('je-hover')));
 $app.addEventListener('keydown', e => {
   const g = e.target.closest?.('.mo-popisky [data-id]');
