@@ -413,7 +413,6 @@ function introHTML() {
     body = `<div class="maps2">
       <section class="mapcard" aria-labelledby="m1"><div class="mhead"><h2 id="m1">Oblíbené oblasti</h2></div><div class="mapbox">${oblastiSVG()}</div></section>
       <section class="mapcard" aria-labelledby="m2"><div class="mhead"><h2 id="m2">Podle krajů</h2><span class="hint">jen nabídky ze stažených oblastí</span></div><div class="mapbox">${mapSVG('kraje', false)}</div></section></div>
-      ${dalsiHTML()}
       <h2 class="sect">Všechny oblasti</h2>
       <div class="rgrid">${[...have, ...none].map(o => oblastItem(byId[o.id], o)).join('')}</div>`;
   } else {
