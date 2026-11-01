@@ -98,17 +98,17 @@
    "region": "jizni-cechy",
    "region_label": "Jižní Čechy",
    "file": "jizni-cechy.json",
-   "listing_count": 2406,
-   "active_count": 2406,
-   "last_updated": "2026-10-14T18:41:33.774603+00:00",
+   "listing_count": 2419,
+   "active_count": 2394,
+   "last_updated": "2026-11-01T11:09:56.194360+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T18:41:33.774603+00:00",
-    "chata.cz": "2026-10-14T18:41:33.774603+00:00",
-    "cs-chalupy.cz": "2026-10-14T18:41:33.774603+00:00"
+    "e-chalupy.cz": "2026-11-01T11:09:56.194360+00:00",
+    "chata.cz": "2026-11-01T11:09:56.194360+00:00",
+    "cs-chalupy.cz": "2026-11-01T11:09:56.194360+00:00"
    },
    "kraje": {
     "Jihomoravský": 1,
-    "Jihočeský": 2326,
+    "Jihočeský": 2297,
     "Liberecký": 2,
     "Plzeňský": 18,
     "Středočeský": 17,
