@@ -246,19 +246,19 @@
    "region": "sumava",
    "region_label": "Šumava",
    "file": "sumava.json",
-   "listing_count": 1722,
-   "active_count": 1721,
-   "last_updated": "2026-10-14T18:06:44.020222+00:00",
+   "listing_count": 1732,
+   "active_count": 1720,
+   "last_updated": "2026-11-01T10:30:40.886844+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T18:06:44.020222+00:00",
-    "chata.cz": "2026-10-14T18:06:44.020222+00:00",
-    "cs-chalupy.cz": "2026-10-14T18:06:44.020222+00:00"
+    "e-chalupy.cz": "2026-11-01T10:30:40.886844+00:00",
+    "chata.cz": "2026-11-01T10:30:40.886844+00:00",
+    "cs-chalupy.cz": "2026-11-01T10:30:40.886844+00:00"
    },
    "kraje": {
-    "Jihočeský": 849,
-    "Karlovarský": 141,
-    "Plzeňský": 665,
-    "Středočeský": 12,
+    "Jihočeský": 838,
+    "Karlovarský": 143,
+    "Plzeňský": 661,
+    "Středočeský": 13,
     "Ústecký": 29
    }
   },
