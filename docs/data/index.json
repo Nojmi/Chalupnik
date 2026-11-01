@@ -222,13 +222,13 @@
    "region": "stredni-cechy",
    "region_label": "Střední Čechy",
    "file": "stredni-cechy.json",
-   "listing_count": 896,
+   "listing_count": 903,
    "active_count": 896,
-   "last_updated": "2026-10-14T18:59:47.728161+00:00",
+   "last_updated": "2026-11-01T11:29:32.852096+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T18:59:47.728161+00:00",
-    "chata.cz": "2026-10-14T18:59:47.728161+00:00",
-    "cs-chalupy.cz": "2026-10-14T18:59:47.728161+00:00"
+    "e-chalupy.cz": "2026-11-01T11:29:32.852096+00:00",
+    "chata.cz": "2026-11-01T11:29:32.852096+00:00",
+    "cs-chalupy.cz": "2026-11-01T11:29:32.852096+00:00"
    },
    "kraje": {
     "Jihočeský": 25,
@@ -236,8 +236,8 @@
     "Liberecký": 3,
     "Pardubický": 18,
     "Plzeňský": 17,
-    "Praha": 22,
-    "Středočeský": 740,
+    "Praha": 24,
+    "Středočeský": 699,
     "Vysočina": 14,
     "Ústecký": 42
    }
