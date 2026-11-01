@@ -73,7 +73,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -83,7 +84,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ1338",
@@ -134,7 +135,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -147,7 +149,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ1340",
@@ -216,7 +218,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -226,7 +229,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1478",
@@ -296,7 +299,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -306,7 +310,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1701",
@@ -379,7 +383,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -392,7 +397,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ2703",
@@ -459,7 +464,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -472,7 +478,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3947",
@@ -541,7 +547,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -554,7 +561,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ4194",
@@ -609,7 +616,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -622,7 +630,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ4412",
@@ -689,7 +697,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -702,7 +711,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ4924",
@@ -759,7 +768,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -772,7 +782,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5327",
@@ -830,7 +840,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -843,7 +854,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5392",
@@ -908,7 +919,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -921,7 +933,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5551",
@@ -989,7 +1001,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -999,7 +1012,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5565",
@@ -1054,7 +1067,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1067,7 +1081,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5646",
@@ -1119,7 +1133,8 @@
      "vyžití pro děti",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1132,7 +1147,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5796",
@@ -1187,7 +1202,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1200,7 +1216,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ6490",
@@ -1266,7 +1282,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1276,7 +1293,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ6856",
@@ -1343,7 +1360,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1356,7 +1374,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ6864",
@@ -1419,7 +1437,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1429,7 +1448,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7366",
@@ -1505,7 +1524,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1518,7 +1538,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7551",
@@ -1578,7 +1598,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1588,7 +1609,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7830",
@@ -1658,7 +1679,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1671,7 +1693,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8035",
@@ -1739,7 +1761,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1749,7 +1772,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8087",
@@ -1813,7 +1836,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -1826,7 +1850,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8162",
@@ -1900,7 +1924,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1910,7 +1935,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8429",
@@ -1982,7 +2007,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1995,7 +2021,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8448",
@@ -2065,7 +2091,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -2075,7 +2102,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8539",
@@ -2141,7 +2168,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -2151,7 +2179,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8564",
@@ -2221,7 +2249,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -2234,7 +2263,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8691",
@@ -2299,7 +2328,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Pardubický"
    },
    "okres": null,
    "gps": null,
@@ -2312,7 +2342,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Pardubický"
   },
   {
    "id": "cs-chalupy.cz:1M-251",

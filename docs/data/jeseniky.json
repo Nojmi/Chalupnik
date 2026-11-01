@@ -66,7 +66,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -79,7 +80,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ0695",
@@ -148,7 +149,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -161,7 +163,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ0789",
@@ -232,7 +234,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -245,7 +248,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ0849",
@@ -319,7 +322,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -332,7 +336,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ0991",
@@ -393,7 +397,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -403,7 +408,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ1085",
@@ -467,7 +472,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -480,7 +486,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ1086",
@@ -547,7 +553,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -560,7 +567,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ1592",
@@ -614,7 +621,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -627,7 +635,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ1599",
@@ -690,7 +698,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -703,7 +712,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ1675",
@@ -767,7 +776,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -780,7 +790,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ1726",
@@ -839,7 +849,8 @@
      "vyžití pro děti",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -849,7 +860,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ1852",
@@ -910,7 +921,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -923,7 +935,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ2969",
@@ -981,7 +993,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -994,7 +1007,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ3146",
@@ -1055,7 +1068,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1068,7 +1082,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ3258",
@@ -1141,7 +1155,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1154,7 +1169,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ3502",
@@ -1207,7 +1222,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1220,7 +1236,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ3877",
@@ -1274,7 +1290,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1287,7 +1304,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ4402",
@@ -1351,7 +1368,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1364,7 +1382,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ4644",
@@ -1414,7 +1432,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1427,7 +1446,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4865",
@@ -1493,7 +1512,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1503,7 +1523,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ4921",
@@ -1571,7 +1591,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1584,7 +1605,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ5431",
@@ -1645,7 +1666,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1658,7 +1680,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5469",
@@ -1724,7 +1746,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1737,7 +1760,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5526",
@@ -1788,7 +1811,8 @@
      "wifi",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -1801,7 +1825,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ5542",
@@ -1866,7 +1890,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1879,7 +1904,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5629",
@@ -1943,7 +1968,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -1956,7 +1982,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5678",
@@ -2014,7 +2040,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2027,7 +2054,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5682",
@@ -2088,7 +2115,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2101,7 +2129,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5803",
@@ -2162,7 +2190,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2175,7 +2204,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ5893",
@@ -2237,7 +2266,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2250,7 +2280,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ5930",
@@ -2308,7 +2338,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2321,7 +2352,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ5939",
@@ -2397,7 +2428,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2410,7 +2442,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ6164",
@@ -2481,7 +2513,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2494,7 +2527,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ6257",
@@ -2564,7 +2597,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2577,7 +2611,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ6408",
@@ -2634,7 +2668,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2647,7 +2682,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ6423",
@@ -2704,7 +2739,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2717,7 +2753,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ6768",
@@ -2772,7 +2808,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2785,7 +2822,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ6811",
@@ -2841,7 +2878,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -2854,7 +2892,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7017",
@@ -2920,7 +2958,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -2933,7 +2972,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7061",
@@ -3002,7 +3041,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3015,7 +3055,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7081",
@@ -3084,7 +3124,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3097,7 +3138,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7265",
@@ -3156,7 +3197,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3169,7 +3211,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7358",
@@ -3230,7 +3272,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3243,7 +3286,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7639",
@@ -3306,7 +3349,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3319,7 +3363,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ7940",
@@ -3404,7 +3448,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3417,7 +3462,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8028",
@@ -3487,7 +3532,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3500,7 +3546,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8063",
@@ -3577,7 +3623,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3590,7 +3637,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8078",
@@ -3671,7 +3718,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3684,7 +3732,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8117",
@@ -3750,7 +3798,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3763,7 +3812,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8175",
@@ -3836,7 +3885,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -3846,7 +3896,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8208",
@@ -3916,7 +3966,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -3929,7 +3980,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8273",
@@ -4007,7 +4058,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -4020,7 +4072,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8276",
@@ -4085,7 +4137,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4098,7 +4151,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8313",
@@ -4174,7 +4227,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4184,7 +4238,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8335",
@@ -4263,7 +4317,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4276,7 +4331,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8432",
@@ -4342,7 +4397,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4355,7 +4411,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8464",
@@ -4416,7 +4472,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4429,7 +4486,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8515",
@@ -4508,7 +4565,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4521,7 +4579,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8577",
@@ -4580,7 +4638,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -4593,7 +4652,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8585",
@@ -4656,7 +4715,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4666,7 +4726,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8646",
@@ -4730,7 +4790,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -4743,7 +4804,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8647",
@@ -4797,7 +4858,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4810,7 +4872,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8648",
@@ -4880,7 +4942,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4893,7 +4956,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8663",
@@ -4957,7 +5020,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -4970,7 +5034,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8664",
@@ -5037,7 +5101,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -5050,7 +5115,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8684",
@@ -5107,7 +5172,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -5120,7 +5186,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8705",
@@ -5174,7 +5240,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -5187,7 +5254,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8718",
@@ -5252,7 +5319,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -5262,7 +5330,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8727",
@@ -5341,7 +5409,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Moravskoslezský"
    },
    "okres": null,
    "gps": null,
@@ -5354,7 +5423,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8729",
@@ -5417,7 +5486,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -5430,7 +5500,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "cs-chalupy.cz:2M-002",

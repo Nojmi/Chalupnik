@@ -87,7 +87,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -100,7 +101,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8198",
@@ -164,7 +165,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -177,7 +179,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8200",
@@ -235,7 +237,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -248,7 +251,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8283",
@@ -320,7 +323,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -333,7 +337,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8305",
@@ -391,7 +395,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -404,7 +409,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8321",
@@ -466,7 +471,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -479,7 +485,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8469",
@@ -541,7 +547,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -554,7 +561,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8569",
@@ -608,7 +615,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Ústecký"
    },
    "okres": null,
    "gps": null,
@@ -618,7 +626,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Ústecký"
   },
   {
    "id": "cs-chalupy.cz:10C-001",
