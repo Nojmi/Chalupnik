@@ -61,18 +61,18 @@
    "region": "jeseniky",
    "region_label": "Jeseníky",
    "file": "jeseniky.json",
-   "listing_count": 2039,
-   "active_count": 2039,
-   "last_updated": "2026-10-15T05:06:23.414324+00:00",
+   "listing_count": 2047,
+   "active_count": 2033,
+   "last_updated": "2026-11-01T10:44:01.408037+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-15T05:06:23.414324+00:00",
-    "chata.cz": "2026-10-15T05:06:23.414324+00:00",
-    "cs-chalupy.cz": "2026-10-15T05:06:23.414324+00:00"
+    "e-chalupy.cz": "2026-11-01T10:44:01.408037+00:00",
+    "chata.cz": "2026-11-01T10:44:01.408037+00:00",
+    "cs-chalupy.cz": "2026-11-01T10:44:01.408037+00:00"
    },
    "kraje": {
     "Jihomoravský": 2,
-    "Moravskoslezský": 669,
-    "Olomoucký": 1221,
+    "Moravskoslezský": 648,
+    "Olomoucký": 1180,
     "Pardubický": 135,
     "Zlínský": 10
    }
