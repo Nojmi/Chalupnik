@@ -175,20 +175,20 @@
    "region": "orlicke-hory",
    "region_label": "Orlické hory",
    "file": "orlicke-hory.json",
-   "listing_count": 2011,
-   "active_count": 2011,
-   "last_updated": "2026-10-14T18:53:40.122109+00:00",
+   "listing_count": 2024,
+   "active_count": 2012,
+   "last_updated": "2026-11-01T11:23:00.907642+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-10-14T18:53:40.122109+00:00",
-    "chata.cz": "2026-10-14T18:53:40.122109+00:00",
-    "cs-chalupy.cz": "2026-10-14T18:53:40.122109+00:00"
+    "e-chalupy.cz": "2026-11-01T11:23:00.907642+00:00",
+    "chata.cz": "2026-11-01T11:23:00.907642+00:00",
+    "cs-chalupy.cz": "2026-11-01T11:23:00.907642+00:00"
    },
    "kraje": {
     "Jihomoravský": 21,
-    "Královéhradecký": 1003,
+    "Královéhradecký": 989,
     "Liberecký": 5,
     "Olomoucký": 46,
-    "Pardubický": 893,
+    "Pardubický": 888,
     "Středočeský": 7,
     "Vysočina": 32
    }
