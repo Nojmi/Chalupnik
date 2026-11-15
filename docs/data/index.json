@@ -157,18 +157,18 @@
    "region": "krusne-hory",
    "region_label": "Krušné hory",
    "file": "krusne-hory.json",
-   "listing_count": 811,
-   "active_count": 804,
-   "last_updated": "2026-11-01T11:12:55.173515+00:00",
+   "listing_count": 818,
+   "active_count": 802,
+   "last_updated": "2026-11-15T11:19:56.971083+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-11-01T11:12:55.173515+00:00",
-    "chata.cz": "2026-11-01T11:12:55.173515+00:00",
-    "cs-chalupy.cz": "2026-11-01T11:12:55.173515+00:00"
+    "e-chalupy.cz": "2026-11-15T11:19:56.971083+00:00",
+    "chata.cz": "2026-11-15T11:19:56.971083+00:00",
+    "cs-chalupy.cz": "2026-11-15T11:19:56.971083+00:00"
    },
    "kraje": {
-    "Karlovarský": 368,
+    "Karlovarský": 365,
     "Liberecký": 36,
-    "Ústecký": 405
+    "Ústecký": 396
    }
   },
   {
