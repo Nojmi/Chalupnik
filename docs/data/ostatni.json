@@ -2,17 +2,17 @@
  "schema_version": 1,
  "region": "ostatni",
  "region_label": "Ostatní nabídky",
- "last_updated": "2026-11-01T11:40:36.898642+00:00",
+ "last_updated": "2026-11-15T11:38:59.177909+00:00",
  "sources_updated": {
   "e-chalupy.cz": null,
-  "chata.cz": "2026-11-01T11:40:36.898642+00:00",
+  "chata.cz": "2026-11-15T11:38:59.177909+00:00",
   "cs-chalupy.cz": null
  },
  "listings": [
   {
    "id": "chata.cz:CZ0005",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Na peci",
@@ -78,15 +78,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ0209",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Moravský Karlov",
@@ -94,8 +94,8 @@
    "url": "https://www.chata.cz/chalupa/kralicky-sneznik/cervena-voda-72/chalupa-moravsky-karlov-CZ0209/",
    "capacity": 10,
    "bedrooms": 4,
-   "price": 28238.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -113,11 +113,9 @@
     "code": "CZ0209",
     "rooms": [
      {
-      "name": "Chalupa pro 10 osob",
-      "status": "available",
-      "price": 28238.0,
-      "room_id": 13159,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -128,7 +126,7 @@
     "badges": [],
     "equipment_tooltips": {
      "se psem": "malá rasa",
-     "bazén": "Venkovní bazén: 3,50(p)x0,90(h)",
+     "bazén": "Venkovní bazén: 6,00(d)x3,00(š)x1,50(h)",
      "parkování": "Parkování na vlastním pozemku.",
      "povlečení": "za poplatek"
     },
@@ -161,7 +159,7 @@
   {
    "id": "chata.cz:CZ0278",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Kerak",
@@ -233,7 +231,7 @@
   {
    "id": "chata.cz:CZ0497",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Pohádková chaloupka",
@@ -295,17 +293,17 @@
    "price_per_night_to": 6700,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ0644",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa statek Beranka",
@@ -383,17 +381,17 @@
    "price_per_night_to": 2059,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ0765",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Vejminek",
@@ -456,15 +454,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ1028",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Štěpánů",
@@ -553,7 +551,7 @@
   {
    "id": "chata.cz:CZ1285",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Strašidla I.",
@@ -610,17 +608,17 @@
    "price_per_night_to": 1681,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ1368",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Babeta",
@@ -685,17 +683,17 @@
    "price_per_night_to": 984,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ1370",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Hluboký",
@@ -756,7 +754,7 @@
   {
    "id": "chata.cz:CZ1374",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Pod Kapličkou",
@@ -836,7 +834,7 @@
   {
    "id": "chata.cz:CZ1409",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Lasvice",
@@ -903,17 +901,17 @@
    "price_per_night_to": 1540,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ1590",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Štrauska",
@@ -977,17 +975,17 @@
    "price_per_night_to": 1755,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ2179",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Bláňa",
@@ -1061,7 +1059,7 @@
   {
    "id": "chata.cz:CZ2522",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Roubenka",
@@ -1140,17 +1138,17 @@
    "price_per_night_to": 1530,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ2701",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Vítanov",
@@ -1236,7 +1234,7 @@
   {
    "id": "chata.cz:CZ2882",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Roubenka horní",
@@ -1298,7 +1296,7 @@
   {
    "id": "chata.cz:CZ2896",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Srub na Orlici",
@@ -1306,8 +1304,8 @@
    "url": "https://www.chata.cz/chalupa/kralicky-sneznik/cervena-voda-72/chalupa-srub-na-orlici-CZ2896/",
    "capacity": 16,
    "bedrooms": 4,
-   "price": null,
-   "price_unit": null,
+   "price": 26474.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "wifi",
     "pro děti",
@@ -1325,9 +1323,11 @@
     "code": "CZ2896",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chalupa pro 16 osob",
+      "status": "available",
+      "price": 26474.0,
+      "room_id": 13079,
+      "availability": "1 volný"
      }
     ],
     "rating": null,
@@ -1363,17 +1363,17 @@
    "price_per_night_to": 3782,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-10-15",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-10-17",
-    "to": "2026-10-24"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ2950",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Mezi Potůčky",
@@ -1381,8 +1381,8 @@
    "url": "https://www.chata.cz/chalupa/kralicky-sneznik/mala-morava/chalupa-mezi-potucky-CZ2950/",
    "capacity": 16,
    "bedrooms": 5,
-   "price": null,
-   "price_unit": null,
+   "price": 32942.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "se psem",
     "wifi",
@@ -1402,9 +1402,11 @@
     "code": "CZ2950",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chalupa pro 16 osob",
+      "status": "available",
+      "price": 32942.0,
+      "room_id": 13342,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -1443,21 +1445,21 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 4706,
+   "price_per_night_to": 4706,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ3383",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Kvítek",
@@ -1533,17 +1535,17 @@
    "price_per_night_to": 1496,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ3478",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Western",
@@ -1614,17 +1616,17 @@
    "price_per_night_to": 1496,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ3480",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Pohoda",
@@ -1695,17 +1697,17 @@
    "price_per_night_to": 1496,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ3487",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Mamutov",
@@ -1777,17 +1779,17 @@
    "price_per_night_to": 7000,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ3492",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Pod Bílým kamenem",
@@ -1850,7 +1852,7 @@
   {
    "id": "chata.cz:CZ3552",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Doksy",
@@ -1942,7 +1944,7 @@
   {
    "id": "chata.cz:CZ4082",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Dvouchata Lea",
@@ -2024,7 +2026,7 @@
   {
    "id": "chata.cz:CZ4205",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Lužické hory",
@@ -2087,17 +2089,17 @@
    "price_per_night_to": 9200,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ4246",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Bungalov U Draka",
@@ -2105,8 +2107,8 @@
    "url": "https://www.chata.cz/ubytovani/ostravsko/vresina-42/bungalov-u-draka-CZ4246/",
    "capacity": 5,
    "bedrooms": 2,
-   "price": 17500.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -2124,11 +2126,9 @@
     "code": "CZ4246",
     "rooms": [
      {
-      "name": "Bungalov pro 5 osob",
-      "status": "available",
-      "price": 17500.0,
-      "room_id": 61486,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -2179,7 +2179,7 @@
    "id": "chata.cz:CZ4250",
    "first_seen": "2026-10-15",
    "last_seen": "2026-11-01",
-   "seen_in_last_run": true,
+   "seen_in_last_run": false,
    "source": "chata.cz",
    "title": "Chata Hradiště",
    "location": "České Lhotice, Železné hory",
@@ -2248,7 +2248,7 @@
   {
    "id": "chata.cz:CZ4279",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Slunce",
@@ -2304,17 +2304,17 @@
    "price_per_night_to": 2824,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ4313",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Strašidla II.",
@@ -2369,17 +2369,17 @@
    "price_per_night_to": 1681,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ4400",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Bukovka",
@@ -2453,17 +2453,17 @@
    "price_per_night_to": 1681,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ4504",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Relax bez kompromisů",
@@ -2533,17 +2533,17 @@
    "price_per_night_to": 1600,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ4601",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Roubenka Na Vejminku",
@@ -2606,15 +2606,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ4708",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Lucie pod Řípem",
@@ -2691,15 +2691,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ4892",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata HANAČKA u OLOMOUCE - tož Haná",
@@ -2768,7 +2768,7 @@
   {
    "id": "chata.cz:CZ4896",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Líza",
@@ -2853,7 +2853,7 @@
   {
    "id": "chata.cz:CZ4899",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Chalupa Obora",
@@ -2920,17 +2920,17 @@
    "price_per_night_to": 4200,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ4903",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Dolní Morava",
@@ -2938,8 +2938,8 @@
    "url": "https://www.chata.cz/chalupa/kralicky-sneznik/dolni-morava/chalupa-dolni-morava-CZ4903/",
    "capacity": 16,
    "bedrooms": 8,
-   "price": 20993.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "wifi",
     "pro děti",
@@ -2956,11 +2956,9 @@
     "code": "CZ4903",
     "rooms": [
      {
-      "name": "Chalupa A pro 8 osob",
-      "status": "available",
-      "price": 20993.0,
-      "room_id": 37095,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -3008,7 +3006,7 @@
   {
    "id": "chata.cz:CZ5000",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Rabí",
@@ -3075,17 +3073,17 @@
    "price_per_night_to": 1500,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Plzeňský"
   },
   {
    "id": "chata.cz:CZ5136",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Eden",
@@ -3093,8 +3091,8 @@
    "url": "https://www.chata.cz/chalupa/lipno-a-okoli/nova-pec/chalupa-eden-CZ5136/",
    "capacity": 12,
    "bedrooms": 6,
-   "price": null,
-   "price_unit": null,
+   "price": 37009.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "se psem",
     "wifi",
@@ -3114,9 +3112,11 @@
     "code": "CZ5136",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chalupa pro 12 osob",
+      "status": "available",
+      "price": 37009.0,
+      "room_id": 9753,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -3148,21 +3148,21 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 5287,
+   "price_per_night_to": 5287,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ5218",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Antonín",
@@ -3235,15 +3235,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ5229",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Dyje",
@@ -3311,7 +3311,7 @@
   {
    "id": "chata.cz:CZ5326",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Pekařova",
@@ -3319,8 +3319,8 @@
    "url": "https://www.chata.cz/chalupa/podkrkonosi/jesenny/chalupa-pekarova-CZ5326/",
    "capacity": 10,
    "bedrooms": 3,
-   "price": 13930.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "wifi",
     "pro děti",
@@ -3339,11 +3339,9 @@
     "code": "CZ5326",
     "rooms": [
      {
-      "name": "Chalupa pro 10 osob",
-      "status": "available",
-      "price": 13930.0,
-      "room_id": 9275,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -3400,7 +3398,7 @@
   {
    "id": "chata.cz:CZ5361",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Sádek",
@@ -3476,7 +3474,7 @@
   {
    "id": "chata.cz:CZ5414",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Seeberg",
@@ -3546,17 +3544,17 @@
    "price_per_night_to": 1857,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ5438",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Třešně",
@@ -3635,15 +3633,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ5458",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Bungalov Ubytování Ratibořice - Bungalovy Zlíč",
@@ -3651,8 +3649,8 @@
    "url": "https://www.chata.cz/ubytovani/nachodsko/ceska-skalice/bungalov-ubytovani-ratiborice-bungalovy-zlic-CZ5458/",
    "capacity": 38,
    "bedrooms": null,
-   "price": 8400.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -3668,24 +3666,24 @@
     "rooms": [
      {
       "name": "2 l. bungalov s přísl. a možn. 1 přistýlky",
-      "status": "available",
-      "price": 8400.0,
-      "room_id": 3578,
-      "availability": "1 volný"
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
      },
      {
       "name": "2 l. bungalov s přísl. a možn. 3 přistýlek",
-      "status": "available",
-      "price": 8400.0,
-      "room_id": 3579,
-      "availability": "4 volné"
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
      },
      {
       "name": "4 l. bungalov s přísl. a možn. 1 přistýlky",
-      "status": "available",
-      "price": 8400.0,
-      "room_id": 3580,
-      "availability": "3 volné"
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
      }
     ],
     "rating": {
@@ -3705,6 +3703,7 @@
      "parkování": "u objektu",
      "povlečení": "zdarma"
     },
+    "bez_terminu": true,
     "location_prefiltered": true,
     "kraj_hint": "Královéhradecký",
     "amenities_original": [
@@ -3731,7 +3730,7 @@
   {
    "id": "chata.cz:CZ5524",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Monika",
@@ -3809,7 +3808,7 @@
   {
    "id": "chata.cz:CZ5603",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Maletínka",
@@ -3817,8 +3816,8 @@
    "url": "https://www.chata.cz/chalupa/drahanska-vrchovina/maletin/chalupa-maletinka-CZ5603/",
    "capacity": 13,
    "bedrooms": 4,
-   "price": 29001.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "pro děti",
@@ -3835,11 +3834,9 @@
     "code": "CZ5603",
     "rooms": [
      {
-      "name": "Chalupa pro 13 osob",
-      "status": "available",
-      "price": 29001.0,
-      "room_id": 42273,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -3888,7 +3885,7 @@
   {
    "id": "chata.cz:CZ5627",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Bárovky",
@@ -3955,17 +3952,17 @@
    "price_per_night_to": 3528,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5642",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Statek Arkáda",
@@ -4044,15 +4041,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5826",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Myšková",
@@ -4115,17 +4112,17 @@
    "price_per_night_to": 980,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5874",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Bungalov U Myslivce",
@@ -4202,17 +4199,17 @@
    "price_per_night_to": 1730,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ5941",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa ROUBENKA JAVOR",
@@ -4220,8 +4217,8 @@
    "url": "https://www.chata.cz/chalupa/broumovsko/teplice-nad-metuji/chalupa-roubenka-javor-CZ5941/",
    "capacity": 9,
    "bedrooms": 2,
-   "price": 21350.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "wifi",
     "pro děti",
@@ -4237,11 +4234,9 @@
     "code": "CZ5941",
     "rooms": [
      {
-      "name": "Chalupa pro 9 osob",
-      "status": "available",
-      "price": 21350.0,
-      "room_id": 9291,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -4298,7 +4293,7 @@
    "id": "chata.cz:CZ5978",
    "first_seen": "2026-10-15",
    "last_seen": "2026-11-01",
-   "seen_in_last_run": true,
+   "seen_in_last_run": false,
    "source": "chata.cz",
    "title": "Chatka Máchovo jezero",
    "location": "Doksy, Máchovo jezero",
@@ -4364,7 +4359,7 @@
   {
    "id": "chata.cz:CZ6012",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Roubenka",
@@ -4432,7 +4427,7 @@
   {
    "id": "chata.cz:CZ6112",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Pod smrkem",
@@ -4440,8 +4435,8 @@
    "url": "https://www.chata.cz/chalupa/podkrkonosi/roztoky-u-jilemnice/chalupa-pod-smrkem-CZ6112/",
    "capacity": 15,
    "bedrooms": 6,
-   "price": null,
-   "price_unit": null,
+   "price": 6300.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "se psem",
     "pro děti",
@@ -4458,9 +4453,11 @@
     "code": "CZ6112",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chalupa pro 15 osob",
+      "status": "available",
+      "price": 6300.0,
+      "room_id": 9910,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -4494,21 +4491,21 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 900,
+   "price_per_night_to": 900,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ6160",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Varnsdorf",
@@ -4584,17 +4581,17 @@
    "price_per_night_to": 1600,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ6215",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U lesa Frymburk Lipno",
@@ -4652,17 +4649,17 @@
    "price_per_night_to": 4202,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6334",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Náchoda",
@@ -4728,7 +4725,7 @@
   {
    "id": "chata.cz:CZ6406",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Aneta",
@@ -4792,17 +4789,17 @@
    "price_per_night_to": 3219,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ6419",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Adršpašské skály",
@@ -4874,15 +4871,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ6464",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Pohoda",
@@ -4957,15 +4954,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ6542",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata No 555",
@@ -5026,7 +5023,7 @@
   {
    "id": "chata.cz:CZ6637",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chatka Anna",
@@ -5034,8 +5031,8 @@
    "url": "https://www.chata.cz/ubytovani/novohradske-hory/horni-stropnice/chatka-anna-CZ6637/",
    "capacity": 5,
    "bedrooms": 2,
-   "price": 19226.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -5054,11 +5051,9 @@
     "code": "CZ6637",
     "rooms": [
      {
-      "name": "Chatka pro 5 osob",
-      "status": "available",
-      "price": 19226.0,
-      "room_id": 46510,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -5103,7 +5098,7 @@
   {
    "id": "chata.cz:CZ6716",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Ubytování na Šumavě",
@@ -5183,17 +5178,17 @@
    "price_per_night_to": 1180,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ6872",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Rezidence Náčkovice",
@@ -5264,15 +5259,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ6969",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Na Kopaninách",
@@ -5345,7 +5340,7 @@
   {
    "id": "chata.cz:CZ6992",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Výhled",
@@ -5353,8 +5348,8 @@
    "url": "https://www.chata.cz/chalupa/nachodsko/chvalkovice-38/chalupa-vyhled-CZ6992/",
    "capacity": 9,
    "bedrooms": 2,
-   "price": null,
-   "price_unit": null,
+   "price": 13230.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "wifi",
     "pro děti",
@@ -5373,9 +5368,11 @@
     "code": "CZ6992",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chalupa pro 9 osob",
+      "status": "available",
+      "price": 13230.0,
+      "room_id": 48622,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -5407,21 +5404,21 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 1890,
+   "price_per_night_to": 1890,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ6996",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U vodní nádrže Rozkoš",
@@ -5495,7 +5492,7 @@
   {
    "id": "chata.cz:CZ7144",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Bendův dvůr",
@@ -5553,15 +5550,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7223",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Alenka",
@@ -5651,7 +5648,7 @@
   {
    "id": "chata.cz:CZ7271",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Dvě Sestry",
@@ -5726,7 +5723,7 @@
   {
    "id": "chata.cz:CZ7349",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Roubenka Stříbrnice",
@@ -5734,8 +5731,8 @@
    "url": "https://www.chata.cz/chalupa/kralicky-sneznik/stare-mesto-pod-sneznikem/chata-roubenka-stribrnice-CZ7349/",
    "capacity": 14,
    "bedrooms": 4,
-   "price": null,
-   "price_unit": null,
+   "price": 17647.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "wifi",
     "pro děti",
@@ -5751,9 +5748,11 @@
     "code": "CZ7349",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chata pro 14 osob",
+      "status": "available",
+      "price": 17647.0,
+      "room_id": 9373,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -5783,17 +5782,17 @@
    "price_per_night_to": 2521,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-10-15",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-10-17",
-    "to": "2026-10-24"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7357",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Srub Kraličák",
@@ -5856,17 +5855,17 @@
    "price_per_night_to": 3362,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7363",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Ubytování U Bačmana - hora Říp",
@@ -5942,17 +5941,17 @@
    "price_per_night_to": 3532,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ7368",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Roubenka nad potokem",
@@ -6023,17 +6022,17 @@
    "price_per_night_to": 4202,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7420",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům v Českém lese",
@@ -6122,7 +6121,7 @@
   {
    "id": "chata.cz:CZ7436",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Šárka s privátním wellness",
@@ -6197,17 +6196,17 @@
    "price_per_night_to": 5042,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ7459",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Prameny",
@@ -6281,15 +6280,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ7491",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Cehnice",
@@ -6374,7 +6373,7 @@
   {
    "id": "chata.cz:CZ7495",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Šindelka - Wellness",
@@ -6454,15 +6453,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ7506",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům House of Relax",
@@ -6531,15 +6530,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ7596",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Radava",
@@ -6599,17 +6598,17 @@
    "price_per_night_to": 4942,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ7650",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Lipno",
@@ -6680,7 +6679,7 @@
   {
    "id": "chata.cz:CZ7665",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Roubenka",
@@ -6764,7 +6763,7 @@
   {
    "id": "chata.cz:CZ7733",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Josef",
@@ -6772,8 +6771,8 @@
    "url": "https://www.chata.cz/chalupa/novohradske-hory/horni-stropnice/chata-josef-CZ7733/",
    "capacity": 5,
    "bedrooms": 2,
-   "price": 19226.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -6793,11 +6792,9 @@
     "code": "CZ7733",
     "rooms": [
      {
-      "name": "Chata pro 5 osob",
-      "status": "available",
-      "price": 19226.0,
-      "room_id": 53044,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -6850,7 +6847,7 @@
   {
    "id": "chata.cz:CZ7766",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa u Levalenky",
@@ -6934,7 +6931,7 @@
   {
    "id": "chata.cz:CZ7973",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Dalibor",
@@ -7013,15 +7010,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ7986",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Chalupa pod Hvozdem",
@@ -7087,17 +7084,17 @@
    "price_per_night_to": 6300,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8022",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Svatý klid",
@@ -7183,7 +7180,7 @@
   {
    "id": "chata.cz:CZ8103",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Haškův dvůr",
@@ -7248,15 +7245,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8189",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Barborka",
@@ -7332,15 +7329,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8191",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Mařenice",
@@ -7410,17 +7407,17 @@
    "price_per_night_to": 3655,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8202",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Hvězdička",
@@ -7492,7 +7489,7 @@
   {
    "id": "chata.cz:CZ8223",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Pod Kralickým Sněžníkem",
@@ -7561,15 +7558,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8228",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Pepana",
@@ -7577,8 +7574,8 @@
    "url": "https://www.chata.cz/chalupa/podkrkonosi/velke-svatonovice/chata-u-pepana-CZ8228/",
    "capacity": 9,
    "bedrooms": 3,
-   "price": null,
-   "price_unit": null,
+   "price": 15120.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "wifi",
     "pro děti",
@@ -7597,9 +7594,11 @@
     "code": "CZ8228",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chata pro 9 osob",
+      "status": "available",
+      "price": 15120.0,
+      "room_id": 57078,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -7637,21 +7636,21 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 2160,
+   "price_per_night_to": 2160,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8259",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chatka Relax Wellness Holiday Skalka",
@@ -7728,15 +7727,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ8272",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Nás",
@@ -7805,17 +7804,17 @@
    "price_per_night_to": 7143,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8280",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Deni",
@@ -7888,7 +7887,7 @@
   {
    "id": "chata.cz:CZ8293",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Roubenka Evelínka",
@@ -7957,15 +7956,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8303",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata 2W sports",
@@ -7992,9 +7991,11 @@
     "code": "CZ8303",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chata pro 6 osob",
+      "status": "unknown",
+      "price": null,
+      "room_id": null,
+      "availability": null
      }
     ],
     "rating": {
@@ -8002,13 +8003,20 @@
      "word": "Naprosto výjimečné",
      "count_text": "dle 1 hodnocení"
     },
-    "badges": [],
+    "badges": [
+     {
+      "text": "ONLINE OBSAZENOST",
+      "title": "Garance obsazenosti",
+      "class": "indicator indicator-obsazenost"
+     }
+    ],
     "equipment_tooltips": {
      "lyžárna/kolárna": "úschovna kol, lyží, windsurfingů je přímo v objektu v garáži",
      "parkování": "Zdarma na pozemku přímo u chaty",
      "povlečení": "zdarma",
      "oplocení": "částečně oplocen"
     },
+    "bez_terminu": true,
     "location_prefiltered": true,
     "kraj_hint": "Jihočeský",
     "amenities_original": [
@@ -8029,16 +8037,13 @@
    "price_estimated": false,
    "price_note": null,
    "price_as_of": null,
-   "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
-   },
+   "price_term": null,
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8307",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Milavy U Hasičů",
@@ -8121,7 +8126,7 @@
   {
    "id": "chata.cz:CZ8325",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Peklo Hrádeček",
@@ -8205,15 +8210,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8348",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Villa Zavadilka",
@@ -8221,8 +8226,8 @@
    "url": "https://www.chata.cz/ubytovani/posazavi/svetla-nad-sazavou/rekreacni-dum-villa-zavadilka-CZ8348/",
    "capacity": 13,
    "bedrooms": 5,
-   "price": 39200.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -8241,11 +8246,9 @@
     "code": "CZ8348",
     "rooms": [
      {
-      "name": "Rekreační dům pro 13 osob",
-      "status": "available",
-      "price": 39200.0,
-      "room_id": 58663,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -8302,7 +8305,7 @@
   {
    "id": "chata.cz:CZ8353",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Jedová Chýše",
@@ -8365,17 +8368,17 @@
    "price_per_night_to": 3294,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8374",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Jestřebí",
@@ -8383,8 +8386,8 @@
    "url": "https://www.chata.cz/chalupa/podkrkonosi/velke-svatonovice/chalupa-jestrebi-CZ8374/",
    "capacity": 11,
    "bedrooms": 3,
-   "price": 26600.0,
-   "price_unit": "pobyt 7 nocí",
+   "price": null,
+   "price_unit": null,
    "amenities": [
     "se psem",
     "wifi",
@@ -8403,11 +8406,9 @@
     "code": "CZ8374",
     "rooms": [
      {
-      "name": "Chalupa pro 11 osob",
-      "status": "available",
-      "price": 26600.0,
-      "room_id": 58938,
-      "availability": "1 volný"
+      "name": "Termín je obsazen.",
+      "status": "obsazeno",
+      "price": null
      }
     ],
     "rating": {
@@ -8459,7 +8460,7 @@
   {
    "id": "chata.cz:CZ8378",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U dvou potoků",
@@ -8525,7 +8526,7 @@
   {
    "id": "chata.cz:CZ8382",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chatka V přírodě",
@@ -8606,7 +8607,7 @@
   {
    "id": "chata.cz:CZ8390",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Fajn Ubytko",
@@ -8675,17 +8676,17 @@
    "price_per_night_to": 2000,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8405",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Lipna",
@@ -8760,7 +8761,7 @@
   {
    "id": "chata.cz:CZ8411",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Miraj",
@@ -8845,7 +8846,7 @@
   {
    "id": "chata.cz:CZ8413",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Sněženky",
@@ -8919,10 +8920,10 @@
    "price_per_night_to": 2750,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
@@ -9005,7 +9006,7 @@
   {
    "id": "chata.cz:CZ8443",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Pod modřínem",
@@ -9077,15 +9078,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8445",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Glamping FAJNhaus",
@@ -9142,15 +9143,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Moravskoslezský"
   },
   {
    "id": "chata.cz:CZ8453",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Mráze",
@@ -9220,15 +9221,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Plzeňský"
   },
   {
    "id": "chata.cz:CZ8458",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Chvalkovice",
@@ -9236,8 +9237,8 @@
    "url": "https://www.chata.cz/chalupa/nachodsko/chvalkovice-38/chalupa-chvalkovice-CZ8458/",
    "capacity": 5,
    "bedrooms": 2,
-   "price": null,
-   "price_unit": null,
+   "price": 17913.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "se psem",
     "wifi",
@@ -9256,9 +9257,11 @@
     "code": "CZ8458",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chalupa pro 5 osob",
+      "status": "available",
+      "price": 17913.0,
+      "room_id": 59568,
+      "availability": "1 volný"
      }
     ],
     "rating": {
@@ -9293,17 +9296,17 @@
    "price_per_night_to": 2559,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-10-15",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-10-17",
-    "to": "2026-10-24"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8494",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Statek Hájek",
@@ -9381,15 +9384,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8506",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Studenec159",
@@ -9460,15 +9463,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8524",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Vlka",
@@ -9532,17 +9535,17 @@
    "price_per_night_to": 4014,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8531",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Deni2",
@@ -9619,7 +9622,7 @@
   {
    "id": "chata.cz:CZ8555",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Hana",
@@ -9684,7 +9687,7 @@
   {
    "id": "chata.cz:CZ8559",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Anna",
@@ -9751,7 +9754,7 @@
   {
    "id": "chata.cz:CZ8560",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Bára",
@@ -9814,7 +9817,7 @@
   {
    "id": "chata.cz:CZ8561",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata C",
@@ -9877,7 +9880,7 @@
   {
    "id": "chata.cz:CZ8562",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata D",
@@ -9940,7 +9943,7 @@
   {
    "id": "chata.cz:CZ8570",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U Lesa",
@@ -10022,17 +10025,17 @@
    "price_per_night_to": 1500,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8572",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Wellness dům pod Helfenburkem",
@@ -10113,17 +10116,17 @@
    "price_per_night_to": 3986,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8597",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Štěpánka",
@@ -10156,7 +10159,7 @@
       "status": "restricted",
       "price": null,
       "restrictions": [
-       "V období 6.11.-08.11.2026",
+       "V období 20.11.-22.11.2026",
        "pobyty jen PÁ - NE",
        "min. nocí: 2"
       ]
@@ -10166,7 +10169,7 @@
       "status": "restricted",
       "price": null,
       "restrictions": [
-       "V období 13.11.-15.11.2026",
+       "V období 27.11.-29.11.2026",
        "pobyty jen PÁ - NE",
        "min. nocí: 2"
       ]
@@ -10213,15 +10216,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Plzeňský"
   },
   {
    "id": "chata.cz:CZ8601",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Hugo",
@@ -10283,7 +10286,7 @@
   {
    "id": "chata.cz:CZ8603",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Chalet Pasečná",
@@ -10348,15 +10351,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Jihočeský"
   },
   {
    "id": "chata.cz:CZ8612",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata U lesa",
@@ -10425,7 +10428,7 @@
   {
    "id": "chata.cz:CZ8624",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Pod Rabštejnem",
@@ -10489,17 +10492,17 @@
    "price_per_night_to": 5000,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Plzeňský"
   },
   {
    "id": "chata.cz:CZ8639",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Rosemary - samota u lesa s výhledem na hory",
@@ -10568,17 +10571,17 @@
    "price_per_night_to": 3950,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8652",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Podlesí",
@@ -10643,15 +10646,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8654",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Na kopečku u lesa",
@@ -10724,15 +10727,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Karlovarský"
   },
   {
    "id": "chata.cz:CZ8656",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Kaštan",
@@ -10793,17 +10796,17 @@
    "price_per_night_to": 1711,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8657",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Villa Sea",
@@ -10861,17 +10864,17 @@
    "price_per_night_to": 3571,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Ústecký"
   },
   {
    "id": "chata.cz:CZ8666",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Rekreační dům Wellness chata Hluboká",
@@ -10949,15 +10952,15 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8679",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa Svatební dar",
@@ -11029,17 +11032,17 @@
    "price_per_night_to": 4600,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8680",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Hořký kalich",
@@ -11047,8 +11050,8 @@
    "url": "https://www.chata.cz/chalupa/kralicky-sneznik/dolni-morava/chata-horky-kalich-CZ8680/",
    "capacity": 25,
    "bedrooms": 5,
-   "price": null,
-   "price_unit": null,
+   "price": 40250.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "se psem",
     "wifi",
@@ -11068,9 +11071,11 @@
     "code": "CZ8680",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chata pro 25 osob",
+      "status": "available",
+      "price": 40250.0,
+      "room_id": 65017,
+      "availability": "1 volný"
      }
     ],
     "rating": null,
@@ -11105,21 +11110,21 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 5750,
+   "price_per_night_to": 5750,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Pardubický"
   },
   {
    "id": "chata.cz:CZ8699",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Rokycany - Borek",
@@ -11168,17 +11173,17 @@
    "price_per_night_to": 1177,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Plzeňský"
   },
   {
    "id": "chata.cz:CZ8712",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Holany",
@@ -11257,7 +11262,7 @@
   {
    "id": "chata.cz:CZ8720",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chalupa U Bruna",
@@ -11329,17 +11334,17 @@
    "price_per_night_to": 3333,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": "2026-11-01",
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8730",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-15",
    "seen_in_last_run": true,
    "source": "chata.cz",
    "title": "Chata Srub v lese",
@@ -11347,8 +11352,8 @@
    "url": "https://www.chata.cz/chalupa/oderske-vrchy/hrabuvka/chata-srub-v-lese-CZ8730/",
    "capacity": 7,
    "bedrooms": 2,
-   "price": null,
-   "price_unit": null,
+   "price": 14000.0,
+   "price_unit": "pobyt 7 nocí",
    "amenities": [
     "wifi",
     "pro děti",
@@ -11364,9 +11369,11 @@
     "code": "CZ8730",
     "rooms": [
      {
-      "name": "Termín je obsazen.",
-      "status": "obsazeno",
-      "price": null
+      "name": "Chata pro 7 osob",
+      "status": "available",
+      "price": 14000.0,
+      "room_id": 65469,
+      "availability": "1 volný"
      }
     ],
     "rating": null,
@@ -11396,14 +11403,14 @@
    },
    "okres": null,
    "gps": null,
-   "price_per_night_from": null,
-   "price_per_night_to": null,
+   "price_per_night_from": 2000,
+   "price_per_night_to": 2000,
    "price_estimated": false,
    "price_note": null,
-   "price_as_of": null,
+   "price_as_of": "2026-11-15",
    "price_term": {
-    "from": "2026-11-07",
-    "to": "2026-11-14"
+    "from": "2026-11-21",
+    "to": "2026-11-28"
    },
    "kraj": "Olomoucký"
   }

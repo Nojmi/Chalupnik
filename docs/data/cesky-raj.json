@@ -79,7 +79,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -89,7 +90,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ1457",
@@ -158,7 +159,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -168,7 +170,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ3072",
@@ -252,7 +254,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -262,7 +265,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ4835",
@@ -323,7 +326,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Středočeský"
    },
    "okres": null,
    "gps": null,
@@ -333,7 +337,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Středočeský"
   },
   {
    "id": "chata.cz:CZ5749",
@@ -394,7 +398,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -407,7 +412,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ5849",
@@ -471,7 +476,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -484,7 +490,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ6165",
@@ -549,7 +555,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -562,7 +569,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ6891",
@@ -634,7 +641,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -647,7 +655,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ7092",
@@ -705,7 +713,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -718,7 +727,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ7533",
@@ -770,7 +779,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -783,7 +793,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ7635",
@@ -850,7 +860,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -863,7 +874,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8043",
@@ -928,7 +939,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -941,7 +953,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "chata.cz:CZ8112",
@@ -1002,7 +1014,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Středočeský"
    },
    "okres": null,
    "gps": null,
@@ -1012,7 +1025,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Středočeský"
   },
   {
    "id": "chata.cz:CZ8347",
@@ -1062,7 +1075,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Královéhradecký"
    },
    "okres": null,
    "gps": null,
@@ -1072,7 +1086,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Královéhradecký"
   },
   {
    "id": "chata.cz:CZ8371",
@@ -1164,7 +1178,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Středočeský"
    },
    "okres": null,
    "gps": null,
@@ -1177,7 +1192,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Středočeský"
   },
   {
    "id": "chata.cz:CZ8466",
@@ -1239,7 +1254,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Středočeský"
    },
    "okres": null,
    "gps": null,
@@ -1252,7 +1268,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Středočeský"
   },
   {
    "id": "chata.cz:CZ8658",
@@ -1307,7 +1323,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Liberecký"
    },
    "okres": null,
    "gps": null,
@@ -1320,7 +1337,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Liberecký"
   },
   {
    "id": "cs-chalupy.cz:1C-053",

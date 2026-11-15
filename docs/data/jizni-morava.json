@@ -70,7 +70,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -80,7 +81,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0153",
@@ -141,7 +142,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -154,7 +156,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0257",
@@ -206,7 +208,8 @@
     "location_prefiltered": true,
     "amenities_original": [
      "parkování"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -216,7 +219,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0272",
@@ -295,7 +298,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -308,7 +312,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0296",
@@ -360,7 +364,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -373,7 +378,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0310",
@@ -433,7 +438,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -446,7 +452,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0321",
@@ -499,7 +505,8 @@
     "amenities_original": [
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -512,7 +519,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0355",
@@ -576,7 +583,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -589,7 +597,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0412",
@@ -640,7 +648,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -653,7 +662,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0576",
@@ -718,7 +727,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -731,7 +741,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ0585",
@@ -791,7 +801,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -801,7 +812,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ0586",
@@ -871,7 +882,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -884,7 +896,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ0717",
@@ -949,7 +961,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -962,7 +975,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0819",
@@ -1028,7 +1041,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1041,7 +1055,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ0882",
@@ -1103,7 +1117,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1116,7 +1131,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1016",
@@ -1170,7 +1185,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1183,7 +1199,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ1068",
@@ -1245,7 +1261,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -1258,7 +1275,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ1168",
@@ -1333,7 +1350,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1343,7 +1361,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1323",
@@ -1404,7 +1422,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1417,7 +1436,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ1338",
@@ -1468,7 +1487,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1481,7 +1501,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ1340",
@@ -1550,7 +1570,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1560,7 +1581,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1343",
@@ -1616,7 +1637,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -1629,7 +1651,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ1352",
@@ -1684,7 +1706,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1697,7 +1720,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1421",
@@ -1760,7 +1783,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1770,7 +1794,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1478",
@@ -1840,7 +1864,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1850,7 +1875,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1527",
@@ -1927,7 +1952,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -1940,7 +1966,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1542",
@@ -2006,7 +2032,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2016,7 +2043,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1652",
@@ -2084,7 +2111,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2094,7 +2122,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ1701",
@@ -2165,7 +2193,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -2178,7 +2207,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ1735",
@@ -2238,7 +2267,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -2248,7 +2278,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ2223",
@@ -2319,7 +2349,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -2332,7 +2363,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ2295",
@@ -2391,7 +2422,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2404,7 +2436,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ2337",
@@ -2459,7 +2491,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -2472,7 +2505,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ2703",
@@ -2539,7 +2572,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2552,7 +2586,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ2865",
@@ -2614,7 +2648,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2624,7 +2659,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ2996",
@@ -2682,7 +2717,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2695,7 +2731,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3033",
@@ -2756,7 +2792,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2769,7 +2806,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3121",
@@ -2838,7 +2875,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2848,7 +2886,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3151",
@@ -2902,7 +2940,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -2915,7 +2954,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3211",
@@ -3066,7 +3105,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3079,7 +3119,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3420",
@@ -3136,7 +3176,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3146,7 +3187,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3430",
@@ -3199,7 +3240,8 @@
      "bazén",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3209,7 +3251,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3566",
@@ -3286,7 +3328,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3299,7 +3342,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ3728",
@@ -3359,7 +3402,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -3372,7 +3416,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ4194",
@@ -3427,7 +3471,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3440,7 +3485,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ4388",
@@ -3508,7 +3553,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3521,7 +3567,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ4574",
@@ -3585,7 +3631,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3598,7 +3645,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ4843",
@@ -3662,7 +3709,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3675,7 +3723,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ4852",
@@ -3733,7 +3781,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -3746,7 +3795,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ4927",
@@ -3820,7 +3869,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3833,7 +3883,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ4937",
@@ -3891,7 +3941,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -3904,7 +3955,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ4970",
@@ -3970,7 +4021,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -3983,7 +4035,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5036",
@@ -4054,7 +4106,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4064,7 +4117,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5209",
@@ -4123,7 +4176,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4136,7 +4190,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5260",
@@ -4209,7 +4263,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4222,7 +4277,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5375",
@@ -4305,7 +4360,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4318,7 +4374,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5382",
@@ -4394,7 +4450,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4407,7 +4464,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5392",
@@ -4472,7 +4529,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -4485,7 +4543,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5416",
@@ -4578,7 +4636,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4591,7 +4650,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5439",
@@ -4665,7 +4724,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4675,7 +4735,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5472",
@@ -4726,7 +4786,8 @@
      "vyžití pro děti",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4739,7 +4800,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5500",
@@ -4796,7 +4857,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4809,7 +4871,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5525",
@@ -4882,7 +4944,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -4892,7 +4955,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5551",
@@ -4960,7 +5023,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -4970,7 +5034,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5565",
@@ -5025,7 +5089,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -5038,7 +5103,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5646",
@@ -5090,7 +5155,8 @@
      "vyžití pro děti",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5103,7 +5169,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5794",
@@ -5173,7 +5239,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5186,7 +5253,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5796",
@@ -5241,7 +5308,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -5254,7 +5322,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ5835",
@@ -5316,7 +5384,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5329,7 +5398,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5865",
@@ -5398,7 +5467,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5411,7 +5481,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ5984",
@@ -5477,7 +5547,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5490,7 +5561,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6021",
@@ -5545,7 +5616,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5558,7 +5630,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6041",
@@ -5631,7 +5703,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5641,7 +5714,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6121",
@@ -5711,7 +5784,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5724,7 +5798,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6263",
@@ -5786,7 +5860,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5799,7 +5874,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6264",
@@ -5861,7 +5936,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5874,7 +5950,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6293",
@@ -5936,7 +6012,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -5946,7 +6023,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6326",
@@ -6009,7 +6086,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6022,7 +6100,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6377",
@@ -6088,7 +6166,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -6101,7 +6180,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6407",
@@ -6164,7 +6243,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -6177,7 +6257,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6427",
@@ -6244,7 +6324,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6257,7 +6338,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6437",
@@ -6331,7 +6412,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -6344,7 +6426,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ6451",
@@ -6399,7 +6481,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6409,7 +6492,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6490",
@@ -6475,7 +6558,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -6485,7 +6569,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ6513",
@@ -6551,7 +6635,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6564,7 +6649,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6536",
@@ -6630,7 +6715,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6643,7 +6729,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6537",
@@ -6700,7 +6786,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6713,7 +6800,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6548",
@@ -6763,7 +6850,8 @@
      "wifi",
      "lyžárna/kolárna",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6776,7 +6864,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6581",
@@ -6840,7 +6928,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6853,7 +6942,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6737",
@@ -6902,7 +6991,8 @@
      "vyžití pro děti",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -6915,7 +7005,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6757",
@@ -6984,7 +7074,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -6997,7 +7088,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6760",
@@ -7047,7 +7138,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7060,7 +7152,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ6817",
@@ -7120,7 +7212,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -7130,7 +7223,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ6856",
@@ -7197,7 +7290,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -7210,7 +7304,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ6970",
@@ -7278,7 +7372,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7291,7 +7386,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7030",
@@ -7364,7 +7459,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7377,7 +7473,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7055",
@@ -7445,7 +7541,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -7458,7 +7555,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ7123",
@@ -7523,7 +7620,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7536,7 +7634,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7156",
@@ -7592,7 +7690,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -7605,7 +7704,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ7180",
@@ -7666,7 +7765,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7679,7 +7779,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7198",
@@ -7744,7 +7844,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7757,7 +7858,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7256",
@@ -7826,7 +7927,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7839,7 +7941,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7321",
@@ -7911,7 +8013,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7924,7 +8027,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7390",
@@ -7981,7 +8084,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -7994,7 +8098,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7403",
@@ -8069,7 +8173,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8082,7 +8187,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7404",
@@ -8150,7 +8255,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8163,7 +8269,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7429",
@@ -8229,7 +8335,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8242,7 +8349,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7462",
@@ -8304,7 +8411,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8317,7 +8425,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7513",
@@ -8372,7 +8480,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8385,7 +8494,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7532",
@@ -8441,7 +8550,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -8454,7 +8564,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7534",
@@ -8515,7 +8625,8 @@
      "lyžárna/kolárna",
      "parkování",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -8528,7 +8639,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7551",
@@ -8588,7 +8699,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -8598,7 +8710,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7552",
@@ -8660,7 +8772,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -8673,7 +8786,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ7675",
@@ -8734,7 +8847,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8747,7 +8861,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7713",
@@ -8814,7 +8928,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8827,7 +8942,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7743",
@@ -8907,7 +9022,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8920,7 +9036,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ7897",
@@ -8983,7 +9099,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -8996,7 +9113,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8001",
@@ -9061,7 +9178,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9074,7 +9192,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8021",
@@ -9145,7 +9263,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9158,7 +9277,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8039",
@@ -9236,7 +9355,8 @@
      "oplocení",
      "vířivka",
      "sauna"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9249,7 +9369,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8057",
@@ -9324,7 +9444,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -9337,7 +9458,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8058",
@@ -9407,7 +9528,8 @@
      "parkování",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -9420,7 +9542,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8065",
@@ -9492,7 +9614,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9505,7 +9628,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8076",
@@ -9574,7 +9697,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9587,7 +9711,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8096",
@@ -9647,7 +9771,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9660,7 +9785,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8124",
@@ -9738,7 +9863,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9748,7 +9874,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8141",
@@ -9815,7 +9941,8 @@
      "lyžárna/kolárna",
      "parkování",
      "povlečení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9828,7 +9955,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8143",
@@ -9887,7 +10014,8 @@
      "wifi",
      "lyžárna/kolárna",
      "parkování"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9900,7 +10028,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8151",
@@ -9966,7 +10094,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -9976,7 +10105,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8193",
@@ -10040,7 +10169,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -10053,7 +10183,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8194",
@@ -10122,7 +10252,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -10135,7 +10266,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8199",
@@ -10203,7 +10334,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -10216,7 +10348,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8213",
@@ -10300,7 +10432,8 @@
      "bazén",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -10313,7 +10446,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8221",
@@ -10378,7 +10511,8 @@
      "oplocení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -10391,7 +10525,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8222",
@@ -10450,7 +10584,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -10463,7 +10598,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8226",
@@ -10525,7 +10660,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -10538,7 +10674,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8262",
@@ -10605,7 +10741,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -10618,7 +10755,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8319",
@@ -10687,7 +10824,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -10700,7 +10838,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8330",
@@ -10757,7 +10895,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -10767,7 +10906,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8350",
@@ -10830,7 +10969,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -10840,7 +10980,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8370",
@@ -10913,7 +11053,8 @@
      "povlečení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Olomoucký"
    },
    "okres": null,
    "gps": null,
@@ -10926,7 +11067,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Olomoucký"
   },
   {
    "id": "chata.cz:CZ8404",
@@ -10993,7 +11134,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -11006,7 +11148,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8424",
@@ -11078,7 +11220,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -11091,7 +11234,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8425",
@@ -11159,7 +11302,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -11169,7 +11313,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8429",
@@ -11241,7 +11385,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -11254,7 +11399,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8448",
@@ -11322,7 +11467,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -11332,7 +11478,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8451",
@@ -11404,7 +11550,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -11414,7 +11561,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8488",
@@ -11478,7 +11625,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -11491,7 +11639,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8490",
@@ -11551,7 +11699,8 @@
      "povlečení",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -11564,7 +11713,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8493",
@@ -11632,7 +11781,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -11645,7 +11795,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8525",
@@ -11726,7 +11876,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -11739,7 +11890,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8526",
@@ -11801,7 +11952,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -11814,7 +11966,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8539",
@@ -11880,7 +12032,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -11890,7 +12043,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "chata.cz:CZ8553",
@@ -11948,7 +12101,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -11961,7 +12115,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8565",
@@ -12021,7 +12175,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12034,7 +12189,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8574",
@@ -12121,7 +12276,8 @@
      "oplocení",
      "vířivka",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12134,7 +12290,7 @@
     "from": "2026-11-07",
     "to": "2026-11-14"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8578",
@@ -12196,7 +12352,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12209,7 +12366,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8590",
@@ -12259,7 +12416,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12272,7 +12430,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8608",
@@ -12315,7 +12473,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12328,7 +12487,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8641",
@@ -12372,7 +12531,8 @@
     "amenities_original": [
      "parkování",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12382,7 +12542,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8644",
@@ -12456,7 +12616,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -12469,7 +12630,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8665",
@@ -12521,7 +12682,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12534,7 +12696,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8670",
@@ -12589,7 +12751,8 @@
      "parkování",
      "povlečení",
      "oplocení"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12602,7 +12765,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8674",
@@ -12658,7 +12821,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12671,7 +12835,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8688",
@@ -12737,7 +12901,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12750,7 +12915,7 @@
     "from": "2026-10-17",
     "to": "2026-10-24"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8700",
@@ -12821,7 +12986,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12834,7 +13000,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8703",
@@ -12897,7 +13063,8 @@
      "vířivka",
      "sauna",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -12910,7 +13077,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8704",
@@ -13042,7 +13209,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -13055,7 +13223,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8710",
@@ -13112,7 +13280,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -13122,7 +13291,7 @@
    "price_note": null,
    "price_as_of": null,
    "price_term": null,
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8711",
@@ -13175,7 +13344,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Jihomoravský"
    },
    "okres": null,
    "gps": null,
@@ -13188,7 +13358,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Jihomoravský"
   },
   {
    "id": "chata.cz:CZ8719",
@@ -13257,7 +13427,8 @@
      "parkování",
      "povlečení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Zlínský"
    },
    "okres": null,
    "gps": null,
@@ -13270,7 +13441,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Zlínský"
   },
   {
    "id": "chata.cz:CZ8732",
@@ -13353,7 +13524,8 @@
      "povlečení",
      "oplocení",
      "krb"
-    ]
+    ],
+    "kraj_hint": "Vysočina"
    },
    "okres": null,
    "gps": null,
@@ -13366,7 +13538,7 @@
     "from": "2026-11-21",
     "to": "2026-11-28"
    },
-   "kraj": null
+   "kraj": "Vysočina"
   },
   {
    "id": "cs-chalupy.cz:1M-005",
