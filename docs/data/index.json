@@ -140,17 +140,17 @@
    "region": "krkonose",
    "region_label": "Krkonoše",
    "file": "krkonose.json",
-   "listing_count": 1381,
-   "active_count": 1371,
-   "last_updated": "2026-11-01T10:36:57.269996+00:00",
+   "listing_count": 1389,
+   "active_count": 1373,
+   "last_updated": "2026-11-15T10:57:40.908468+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-11-01T10:36:57.269996+00:00",
-    "chata.cz": "2026-11-01T10:36:57.269996+00:00",
-    "cs-chalupy.cz": "2026-11-01T10:36:57.269996+00:00"
+    "e-chalupy.cz": "2026-11-15T10:57:40.908468+00:00",
+    "chata.cz": "2026-11-15T10:57:40.908468+00:00",
+    "cs-chalupy.cz": "2026-11-15T10:57:40.908468+00:00"
    },
    "kraje": {
-    "Královéhradecký": 812,
-    "Liberecký": 566
+    "Královéhradecký": 780,
+    "Liberecký": 548
    }
   },
   {
