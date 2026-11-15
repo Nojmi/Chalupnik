@@ -81,17 +81,17 @@
    "region": "jizerske-hory",
    "region_label": "Jizerské hory",
    "file": "jizerske-hory.json",
-   "listing_count": 825,
-   "active_count": 819,
-   "last_updated": "2026-11-01T11:04:14.910262+00:00",
+   "listing_count": 831,
+   "active_count": 814,
+   "last_updated": "2026-11-15T11:14:39.591872+00:00",
    "sources_updated": {
-    "e-chalupy.cz": "2026-11-01T11:04:14.910262+00:00",
-    "chata.cz": "2026-11-01T11:04:14.910262+00:00",
-    "cs-chalupy.cz": "2026-11-01T11:04:14.910262+00:00"
+    "e-chalupy.cz": "2026-11-15T11:14:39.591872+00:00",
+    "chata.cz": "2026-11-15T11:14:39.591872+00:00",
+    "cs-chalupy.cz": "2026-11-15T11:14:39.591872+00:00"
    },
    "kraje": {
     "Jihočeský": 1,
-    "Liberecký": 819
+    "Liberecký": 791
    }
   },
   {
