@@ -14,9 +14,9 @@
     "cs-chalupy.cz": "2026-11-15T11:04:57.689959+00:00"
    },
    "kraje": {
-    "Moravskoslezský": 524,
+    "Moravskoslezský": 552,
     "Olomoucký": 1,
-    "Zlínský": 638
+    "Zlínský": 659
    }
   },
   {
@@ -34,7 +34,7 @@
    "kraje": {
     "Jihočeský": 1,
     "Liberecký": 193,
-    "Ústecký": 433
+    "Ústecký": 441
    }
   },
   {
@@ -51,9 +51,9 @@
    },
    "kraje": {
     "Jihočeský": 1,
-    "Královéhradecký": 290,
-    "Liberecký": 552,
-    "Středočeský": 99,
+    "Královéhradecký": 295,
+    "Liberecký": 560,
+    "Středočeský": 103,
     "Ústecký": 22
    }
   },
@@ -71,8 +71,8 @@
    },
    "kraje": {
     "Jihomoravský": 2,
-    "Moravskoslezský": 652,
-    "Olomoucký": 1182,
+    "Moravskoslezský": 677,
+    "Olomoucký": 1227,
     "Pardubický": 135,
     "Zlínský": 10
    }
@@ -91,7 +91,7 @@
    },
    "kraje": {
     "Jihočeský": 1,
-    "Liberecký": 791
+    "Liberecký": 824
    }
   },
   {
@@ -108,7 +108,7 @@
    },
    "kraje": {
     "Jihomoravský": 1,
-    "Jihočeský": 2308,
+    "Jihočeský": 2350,
     "Liberecký": 2,
     "Plzeňský": 18,
     "Středočeský": 17,
@@ -128,12 +128,12 @@
     "cs-chalupy.cz": "2026-11-15T11:10:03.484009+00:00"
    },
    "kraje": {
-    "Jihomoravský": 1836,
+    "Jihomoravský": 1957,
     "Jihočeský": 1,
-    "Olomoucký": 34,
+    "Olomoucký": 36,
     "Plzeňský": 1,
-    "Vysočina": 15,
-    "Zlínský": 316
+    "Vysočina": 43,
+    "Zlínský": 337
    }
   },
   {
@@ -149,8 +149,8 @@
     "cs-chalupy.cz": "2026-11-15T10:57:40.908468+00:00"
    },
    "kraje": {
-    "Královéhradecký": 780,
-    "Liberecký": 548
+    "Královéhradecký": 815,
+    "Liberecký": 571
    }
   },
   {
@@ -166,9 +166,9 @@
     "cs-chalupy.cz": "2026-11-15T11:19:56.971083+00:00"
    },
    "kraje": {
-    "Karlovarský": 365,
+    "Karlovarský": 373,
     "Liberecký": 36,
-    "Ústecký": 396
+    "Ústecký": 407
    }
   },
   {
@@ -185,10 +185,10 @@
    },
    "kraje": {
     "Jihomoravský": 21,
-    "Královéhradecký": 995,
+    "Královéhradecký": 1014,
     "Liberecký": 6,
     "Olomoucký": 48,
-    "Pardubický": 892,
+    "Pardubický": 904,
     "Středočeský": 8,
     "Vysočina": 32
    }
@@ -198,11 +198,11 @@
    "region_label": "Ostatní nabídky",
    "file": "ostatni.json",
    "listing_count": 147,
-   "active_count": 146,
-   "last_updated": "2026-11-01T11:40:36.898642+00:00",
+   "active_count": 144,
+   "last_updated": "2026-11-15T11:38:59.177909+00:00",
    "sources_updated": {
     "e-chalupy.cz": null,
-    "chata.cz": "2026-11-01T11:40:36.898642+00:00",
+    "chata.cz": "2026-11-15T11:38:59.177909+00:00",
     "cs-chalupy.cz": null
    },
    "kraje": {
@@ -237,7 +237,7 @@
     "Pardubický": 18,
     "Plzeňský": 17,
     "Praha": 25,
-    "Středočeský": 701,
+    "Středočeský": 747,
     "Vysočina": 14,
     "Ústecký": 42
    }
@@ -255,9 +255,9 @@
     "cs-chalupy.cz": "2026-11-15T10:53:59.001709+00:00"
    },
    "kraje": {
-    "Jihočeský": 840,
+    "Jihočeský": 854,
     "Karlovarský": 145,
-    "Plzeňský": 663,
+    "Plzeňský": 670,
     "Středočeský": 13,
     "Ústecký": 29
    }
@@ -275,11 +275,11 @@
     "cs-chalupy.cz": "2026-11-15T11:22:27.545100+00:00"
    },
    "kraje": {
-    "Jihomoravský": 47,
+    "Jihomoravský": 52,
     "Jihočeský": 33,
-    "Pardubický": 249,
+    "Pardubický": 253,
     "Středočeský": 11,
-    "Vysočina": 887
+    "Vysočina": 908
    }
   }
  ]
